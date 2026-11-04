@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "browser": "140.0.7339.16",
+  "viewport_desktop": [
+    1440,
+    1000
+  ],
+  "viewport_mobile": [
+    390,
+    844
+  ],
+  "checks": [
+    {
+      "name": "Start und Überblick",
+      "passed": true,
+      "detail": "8 Ebenen; lokaler Start aus fremdem Arbeitsverzeichnis; q=0"
+    },
+    {
+      "name": "Nulldurchgang und Navigation",
+      "passed": true,
+      "detail": "1518 q = −1, nach +1 q Zyklus1"
+    },
+    {
+      "name": "UTC-Eingabe",
+      "passed": true,
+      "detail": "UTC auf nächstes Quantum gerundet"
+    },
+    {
+      "name": "4/6-Zwischenzyklus",
+      "passed": true,
+      "detail": "Jahr92 unverändert; Phase4 bei6er, Phase0 Gruppe1 bei4er"
+    },
+    {
+      "name": "Ungültiges Datum",
+      "passed": true,
+      "detail": "Vor jj auch bei−1µs abgewiesen; Zustand erhalten"
+    },
+    {
+      "name": "Ebenenregler",
+      "passed": true,
+      "detail": "Tag ausgewählt; tatsächliches Tagesintervall durchlaufen"
+    },
+    {
+      "name": "Bedienreihenfolge",
+      "passed": true,
+      "detail": "Preset überschreibt ausstehendes Slider-Debounce sicher"
+    },
+    {
+      "name": "JSON-Export",
+      "passed": true,
+      "detail": "Heruntergeladener Zustand lesbar und passend"
+    },
+    {
+      "name": "Restreihen und CSV",
+      "passed": true,
+      "detail": "Jahresmittel3/529; Kartenmittel0;768Zyklen;CSV529Datensätze"
+    },
+    {
+      "name": "Definitionen, Autoren, Prüfungen",
+      "passed": true,
+      "detail": "10lokalePrüfungen erfolgreich;Claude ausdrücklich genannt"
+    },
+    {
+      "name": "3D-System und Kamera",
+      "passed": true,
+      "detail": "9Körper;Kameraziehen verändertBild;Planetenauswahl,Zoom undSkalen funktionieren"
+    },
+    {
+      "name": "Gemeinsame Zeitanimation",
+      "passed": true,
+      "detail": "Zeit,Kalender undPlaneten ändern sich gemeinsam;100Tage/s"
+    },
+    {
+      "name": "Horizontstopp",
+      "passed": true,
+      "detail": "Animation hält automatisch amletztenzulässigenQuantum"
+    },
+    {
+      "name": "Kleine Ansicht",
+      "passed": true,
+      "detail": "390pxViewport;keinehorizontaleSeitenüberbreite;3DundÜberblickbedienbar"
+    },
+    {
+      "name": "Offline und JavaScript",
+      "passed": true,
+      "detail": "KeineexternenLaufzeitanfragen;keineJavaScript-Ausnahmen"
+    }
+  ],
+  "javascript_errors": [],
+  "external_requests": [],
+  "request_count": 36,
+  "scope": "Test des produktiven lokalen Starts aus fremdem Arbeitsverzeichnis; Screenshots nur interne Sichtprüfung.",
+  "code_sha256": {
+    "START.py": "39ee085365c22af650e61cc2b9c089b2875b53a98a4945c0b90c1b4e7dd981d5",
+    "config.py": "422ffd74ecd6ae1478d5807c9d977a2c55c26cee9143bbba94a96ffab7976070",
+    "demo.py": "ab2e46bd6fae3a69f924a6f4a97bcc4860768a50f3672a36be8c1267b156c899",
+    "planetarium.py": "3c09d17b16f72c55da5a4f1ba069bb44d69cfc90d75a798427b838c3847c7847",
+    "web/app.js": "8cbd82c9da3a003505a7ffebb41020a474967f007a47cedf114184aab038c1a7",
+    "web/index.html": "6327eea4f9e24d9d01c927590fd72a41e096eb2fd259328a728c0e1f394fa6c0",
+    "web/style.css": "87415ec584c302bfbbcfc7cc10ddf3695c525102646129acff0a14235d794c0f",
+    "zyklus23.py": "6f4ad0ef344a48665bc0392370a5cb978a2c8d4e807de82f5759a276df040fab"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "executed_utc": "2026-11-04T17:16:10.545466+00:00",
+  "stdlib_only": true,
+  "archive_integrity": true,
+  "manifest_verified": true,
+  "required_files": 18,
+  "http_statuses": {
+    "/": 200,
+    "/style.css": 200,
+    "/app.js": 200,
+    "/api/overview": 200,
+    "/api/state?q=1518&group=6": 200,
+    "/api/planets?q=0": 200,
+    "/api/series?mode=year&count=529": 200,
+    "/api/checks": 200
+  },
+  "tests_in_extracted_copy": 34,
+  "code_sha256": {
+    "START.py": "39ee085365c22af650e61cc2b9c089b2875b53a98a4945c0b90c1b4e7dd981d5",
+    "config.py": "422ffd74ecd6ae1478d5807c9d977a2c55c26cee9143bbba94a96ffab7976070",
+    "demo.py": "ab2e46bd6fae3a69f924a6f4a97bcc4860768a50f3672a36be8c1267b156c899",
+    "planetarium.py": "3c09d17b16f72c55da5a4f1ba069bb44d69cfc90d75a798427b838c3847c7847",
+    "zyklus23.py": "6f4ad0ef344a48665bc0392370a5cb978a2c8d4e807de82f5759a276df040fab"
+  },
+  "scope": "Start aus isoliert entpacktem ZIP und fremdem Arbeitsverzeichnis, ohne PYTHONPATH und mit python -S."
+}

@@ -1,0 +1,40 @@
+test_chart_residues_form_all_23_classes (test_core.DefinedCalendarTests.test_chart_residues_form_all_23_classes) ... ok
+test_epoch_and_horizon_are_checked (test_core.DefinedCalendarTests.test_epoch_and_horizon_are_checked) ... ok
+test_known_boundaries (test_core.DefinedCalendarTests.test_known_boundaries) ... ok
+test_year_residual_period_and_nonzero_mean (test_core.DefinedCalendarTests.test_year_residual_period_and_nonzero_mean) ... ok
+test_j2000_noon (test_core.JulianDateFormattingTests.test_j2000_noon) ... ok
+test_rounded_midnight_carries_date (test_core.JulianDateFormattingTests.test_rounded_midnight_carries_date) ... ok
+test_quantum_has_independently_derived_si_length (test_core.RoundingTests.test_quantum_has_independently_derived_si_length) ... ok
+test_ties_round_toward_positive_infinity (test_core.RoundingTests.test_ties_round_toward_positive_infinity) ... ok
+test_short_and_partial_card_horizons (test_core.SplineTests.test_short_and_partial_card_horizons) ... ok
+test_historical_tai_offsets (test_core.UtcConversionTests.test_historical_tai_offsets) ... ok
+test_measured_dut1_uses_the_historical_offset (test_core.UtcConversionTests.test_measured_dut1_uses_the_historical_offset) ... ok
+test_unsupported_or_invalid_utc_is_rejected (test_core.UtcConversionTests.test_unsupported_or_invalid_utc_is_rejected) ... ok
+test_date_conversion_rounding_and_offsets (test_demo.DemoTests.test_date_conversion_rounding_and_offsets) ... ok
+test_exact_year_mean_and_chart_classes (test_demo.DemoTests.test_exact_year_mean_and_chart_classes) ... ok
+test_groups_are_independent_of_count (test_demo.DemoTests.test_groups_are_independent_of_count) ... ok
+test_horizon_and_input_errors (test_demo.DemoTests.test_horizon_and_input_errors) ... ok
+test_jumps_use_actual_boundaries (test_demo.DemoTests.test_jumps_use_actual_boundaries) ... ok
+test_known_calendar_boundaries (test_demo.DemoTests.test_known_calendar_boundaries) ... ok
+test_null_day_and_progress_bounds (test_demo.DemoTests.test_null_day_and_progress_bounds) ... ok
+test_two_quantum_zero_crossing (test_demo.DemoTests.test_two_quantum_zero_crossing) ... ok
+test_visible_checks (test_demo.DemoTests.test_visible_checks) ... ok
+test_api_input_and_path_rejection (test_demo.HTTPTests.test_api_input_and_path_rejection) ... ok
+test_public_api_chain (test_demo.HTTPTests.test_public_api_chain) ... ok
+test_circle_and_apsides (test_planetarium.KeplerTests.test_circle_and_apsides) ... ok
+test_equation_including_high_eccentricity (test_planetarium.KeplerTests.test_equation_including_high_eccentricity) ... ok
+test_invalid_eccentricity (test_planetarium.KeplerTests.test_invalid_eccentricity) ... ok
+test_known_anomaly (test_planetarium.KeplerTests.test_known_anomaly) ... ok
+test_inclination_rotates_into_z (test_planetarium.OrbitTests.test_inclination_rotates_into_z) ... ok
+test_node_rotation (test_planetarium.OrbitTests.test_node_rotation) ... ok
+test_outer_planet_correction_present (test_planetarium.OrbitTests.test_outer_planet_correction_present) ... ok
+test_perihelion_and_aphelion (test_planetarium.OrbitTests.test_perihelion_and_aphelion) ... ok
+test_rotation_preserves_focus_distance (test_planetarium.OrbitTests.test_rotation_preserves_focus_distance) ... ok
+test_sun_eight_planets_and_closed_orbits (test_planetarium.ResponseTests.test_sun_eight_planets_and_closed_orbits) ... ok
+test_time_change_and_horizon_end (test_planetarium.ResponseTests.test_time_change_and_horizon_end) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.580s
+
+OK
+Prüfbericht: /workspace/scratch/38681290ce53/ZYKLUS23_DEMO_V1_0_0/nachweise/lokaler_test.json
