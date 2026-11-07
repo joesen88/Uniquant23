@@ -91,3 +91,4 @@ Der alleinige Start von `zyklus23.py` führt die älteren umfassenden Studien au
 
 Den entpackten Ordner als Projekt öffnen, einen vorhandenen Python-Interpreter ab Version 3.10 auswählen und **START.py** starten. Ein GPU-Interpreter ist nicht erforderlich; ein bestehendes venv kann unverändert verwendet werden. Der Arbeitsordner darf vom Projektordner abweichen, da Ressourcen relativ zu START.py aufgelöst werden.
 
+https://claude.ai/artifact/XWvNyZnRUALWByiC9KBuYT#c5e44717-6e8a
