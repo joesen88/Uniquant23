@@ -1,0 +1,52 @@
+P4 mit allen Ankern: Rangplatz 6.7 % | Rang 1 25.0 % | unter den ersten 10: 55.3 %
+N-a 20 Modelle aus vertauschten Ankern, Rangplatz %: Mittel 18.2, Spanne 17.4 bis 18.8
+N-a 20 Modelle aus vertauschten Ankern, Rang 1: Mittel 2.2, Spanne 1.0 bis 4.2
+N-a 20 Modelle aus vertauschten Ankern, unter den ersten 10: Mittel 21.4, Spanne 18.8 bis 23.7
+Obergrenze (am Koptischen gelernt): Rangplatz 2.3 % | Rang 1 51.4 % | unter den ersten 10: 83.2 %
+Anteil des Wegs von 'vertauschte Anker' (18.2 %) zur Obergrenze (2.3 %), den die echten Anker gehen: 72 %
+N-b Anker mit Zuruecklegen gezogen (20-mal), Rangplatz %: Mittel 8.2, Spanne 6.6 bis 10.9
+N-b Anker mit Zuruecklegen gezogen (20-mal), Rang 1: Mittel 19.0, Spanne 14.7 bis 26.8
+N-b Anker mit Zuruecklegen gezogen (20-mal), unter den ersten 10: Mittel 48.8, Spanne 39.9 bis 54.7
+N-c Zahlwoerter, nur ausgeschriebene Schreibungen (mindestens 2 Zeichen, die keine Zahlzeichen sind):
+       2 sn.w    T22-G43-Z1-Z1                  (  1 Belege) -> ⲥⲛⲁⲩ    SN    Rangplatz   3.9 % (ohne Zeichenwerte   2.7 %)
+       3 ḫmt.w   Aa1-D52-X1-N35                 (  1 Belege) -> ϣⲟⲙⲛⲧ   SMNT  Rangplatz  79.4 % (ohne Zeichenwerte  74.2 %)
+       4 jfd.w   M17-I9-D46-Z1-Z1-Z1-Z1         (  1 Belege) -> ϥⲧⲟⲟⲩ   PT    Rangplatz   0.2 % (ohne Zeichenwerte   4.2 %)
+       5: kein Paar in der Tabelle oder keine Schreibung im Korpus
+       6 sjs    : nur mit Zahlzeichen geschrieben (1 Belege)
+       7: kein Paar in der Tabelle oder keine Schreibung im Korpus
+       8: kein Paar in der Tabelle oder keine Schreibung im Korpus
+       9: kein Paar in der Tabelle oder keine Schreibung im Korpus
+      10 mḏ     : nur mit Zahlzeichen geschrieben (9 Belege)
+     100 šn.t   : nur mit Zahlzeichen geschrieben (3 Belege)
+    1000 ḫꜣ     : nur mit Zahlzeichen geschrieben (883 Belege)
+   10000 ḏbꜥ    : nur mit Zahlzeichen geschrieben (2 Belege)
+     1/2: kein Paar in der Tabelle oder keine Schreibung im Korpus
+N-d Woerter, deren haeufigste Schreibung nur Zeichen aus >= 3 Ankergruppen enthaelt: n=196 | Rangplatz 5.0 % gegen 15.8 % bei falschem Partner gleicher Laenge | Rang 1 33.7 %
+    uebrige Woerter (mindestens ein seltenes oder unbekanntes Zeichen): n=998 | Rangplatz 7.0 % gegen 20.2 % | Rang 1 23.2 %
+N-e Anker aus nur einer Ueberlieferung -> gewoehnliche Woerter (P4):
+   Griechisch                          80 Namensgruppen | Rangplatz  14.7 % | Rang 1  11.8 % | unter den ersten 10:  40.2 %
+   Keilschrift                         52 Namensgruppen | Rangplatz  18.3 % | Rang 1   9.5 % | unter den ersten 10:  32.1 %
+   Koptisch                            45 Namensgruppen | Rangplatz  13.3 % | Rang 1   8.1 % | unter den ersten 10:  32.7 %
+   Hebraeisch/Aramaeisch/Phoenizisch   30 Namensgruppen | Rangplatz  12.0 % | Rang 1  10.0 % | unter den ersten 10:  35.5 %
+   heutiges Arabisch                   23 Namensgruppen | Rangplatz  17.0 % | Rang 1   5.7 % | unter den ersten 10:  29.2 %
+N-f Ortsname Chemenu (Lemma 117260; koptisch Schmun = 'acht', arabisch al-Aschmunein): Strichzahl je Beleg {0: 2, 8: 7, 11: 4}
+N-g Ankernamen, die auch in der koptischen Tabelle stehen: meine koptische Form gegen die Form der Tabelle
+   Km.t       Tabelle ⲕⲏⲙⲉ      KM    | Ankertabelle koptisch: KM | alle Formen: KM
+   Wsjr       Tabelle ⲟⲩⲥⲓⲣⲉ    SR    | Ankertabelle koptisch: SR | alle Formen: SR
+   Ḥr.w       Tabelle ϩⲱⲣ       HR    | Ankertabelle koptisch: HR | alle Formen: HR, R
+   Jnp.w      Tabelle ⲁⲛⲟⲩⲡ     NP    | Ankertabelle koptisch: NP | alle Formen: NP
+   Stẖ        Tabelle ⲥⲏⲧ       ST    | Ankertabelle koptisch: ST | alle Formen: ST
+   Ꜣs.t       Tabelle ⲏⲥⲉ       S     | Ankertabelle koptisch: S | alle Formen: S
+   Ꜥꜣpp       Tabelle ⲁⲫⲱⲫ      PP    | Ankertabelle koptisch: PP | alle Formen: PP
+   Jmn        Tabelle ⲁⲙⲟⲩⲛ     MN    | Ankertabelle koptisch: MN | alle Formen: MN
+   Nb.t-ḥw.t  Tabelle ⲛⲉⲃⲑⲱ     NPT   | Ankertabelle koptisch: NPT | alle Formen: NPT
+   Ptḥ        Tabelle ⲡⲧⲁϩ      PTH   | Ankertabelle koptisch: PTH | alle Formen: PT, PTH
+   Bꜣs.tjt    Tabelle ⲟⲩⲃⲁⲥⲧⲉ   PST   | Ankertabelle koptisch: (keine koptische Form eingetragen) | alle Formen: PST
+   Wꜣḏ.t      Tabelle ⲁϫⲱ       C     | Ankertabelle koptisch: C | alle Formen: C
+   Wnn-nfr    Tabelle ⲟⲩⲉⲛⲟϥⲣⲉ  NPR   | Ankertabelle koptisch: (keine koptische Form eingetragen) | alle Formen: NPR
+   Jn-ḥr.t    Tabelle ⲁⲛϩⲟⲩⲣⲉ   NHR   | Ankertabelle koptisch: (keine koptische Form eingetragen) | alle Formen: NR
+   Bꜥr        Tabelle ⲃⲁϩⲁⲗ     PHR   | Ankertabelle koptisch: (keine koptische Form eingetragen) | alle Formen: PR
+   Bs         Tabelle ⲃⲏⲥ       PS    | Ankertabelle koptisch: (keine koptische Form eingetragen) | alle Formen: PS
+   Ḥp         Tabelle ϩⲁⲡⲉ      HP    | Ankertabelle koptisch: HP | alle Formen: HP, P
+   Mr-wr      Tabelle ⲉⲙⲛⲉⲩⲓ    MN    | Ankertabelle koptisch: (keine koptische Form eingetragen) | alle Formen: MN
+   Konsonantenfolge gleich: 12 von 12 vergleichbaren Namen

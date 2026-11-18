@@ -1,0 +1,3953 @@
+{
+ "protokoll": {
+  "einheit": "Abschnitt aus L aufeinanderfolgenden Woertern; lange Texte ergeben reine Abschnitte, Reste und kurze Texte werden je Teilkorpus in Dateireihenfolge aneinandergehaengt",
+  "ebenen": {
+   "wort": "Lemma-IDs (Deutungsschicht), alle Teilkorpora",
+   "zeichen": "Gardiner-Codes (Schriftschicht, ohne Lesung), nur Woerter mit vollstaendiger Schreibung",
+   "wort_gepaart": "Lemma-IDs derselben Woerter wie auf der Zeichenebene"
+  },
+  "primaer": {
+   "L": 1000,
+   "n": 150,
+   "distanz": "burrows",
+   "zeichen": "zusammengelegt",
+   "tau": 0.05
+  },
+  "robustheit": {
+   "n": [
+    30,
+    50,
+    100,
+    150,
+    300,
+    500
+   ],
+   "distanz": [
+    "burrows",
+    "cosinus",
+    "roh_l1"
+   ],
+   "L": [
+    500,
+    1000,
+    2000
+   ],
+   "tau": [
+    0.01,
+    0.05,
+    0.2,
+    null
+   ],
+   "zeichen": [
+    "zusammengelegt",
+    "roh"
+   ]
+  },
+  "ausschluss": "Kandidaten mit gemeinsamem Text immer; streng zusaetzlich Kandidaten, die mehr als tau der Lemma-5-Gramme teilen (Parallelueberlieferung, Formeln)",
+  "min_abschnitte_je_teilkorpus": 5,
+  "tests": {
+   "T_text": "naechster Nachbar stammt aus demselben Text (bekannte Antwort)",
+   "T_gattung": "naechster Nachbar (streng) hat dasselbe Teilkorpus",
+   "T_fremdbearbeiter": "wie T_gattung, Kandidaten desselben Bearbeiters ausgeschlossen",
+   "T_fremdepoche": "wie T_gattung, Kandidaten derselben Datierungsklasse ausgeschlossen",
+   "N_zufallsnachbar": "Trefferquote bei zufaelligem zulaessigem Nachbarn",
+   "N_wortmischung": "alle Woerter ueber alle Abschnitte gemischt, Etiketten bleiben"
+  },
+  "kriterien": {
+   "K1": "T_text mindestens das Zehnfache des Zufallsnachbarn",
+   "K2": "T_gattung ueber Mehrheitsklasse und Zufallsnachbar, p < 0.001",
+   "K3": "N_wortmischung nicht ueber der Mehrheitsklasse",
+   "K4": "anderes Vergleichskorpus aendert bei mehr als 5 % der Abschnitte den naechsten Nachbarn"
+  },
+  "auswahlkontrolle": "beste Kombination aus n x Distanz auf Haelfte A der Texte bestimmt, auf Haelfte B berichtet",
+  "seed": 20261112
+ },
+ "wort": {
+  "abschnitte": 765,
+  "merkmale_gesamt": 3000,
+  "je_teilkorpus": {
+   "bbawamarna": 27,
+   "bbawarchive": 11,
+   "bbawbriefe": 48,
+   "bbawgrabinschriften": 100,
+   "bbawhistbiospzt": 12,
+   "bbawpyramidentexte": 112,
+   "bbawramessiden": 43,
+   "bbawtempelbib": 18,
+   "bbawtotenlit": 37,
+   "sawlit": 191,
+   "sawmedizin": 56,
+   "tb": 110
+  },
+  "mittlere_laenge": 1000.0,
+  "top_merkmale": [
+   "10050",
+   "64360",
+   "10110",
+   "78870",
+   "10030",
+   "850787",
+   "850814",
+   "91900",
+   "107520",
+   "21881",
+   "851809",
+   "851711",
+   "10090",
+   "10100",
+   "81660",
+   "851446",
+   "90260",
+   "185810",
+   "851517",
+   "34360",
+   "59920",
+   "21930",
+   "400313",
+   "129490",
+   "851961"
+  ],
+  "T_text": {
+   "anfragen": 131,
+   "treffer": 0.5114503816793893,
+   "zufallsnachbar": 0.004556172814835538,
+   "mehrheitsklasse": 0.366412213740458,
+   "klassen": 8,
+   "ausgewogen": 0.39888575343738386,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.375,
+    0.6492537313432836
+   ],
+   "cluster": 48
+  },
+  "T_gattung": {
+   "anfragen": 765,
+   "treffer": 0.9320261437908497,
+   "zufallsnachbar": 0.12468175178121417,
+   "mehrheitsklasse": 0.2496732026143791,
+   "klassen": 12,
+   "ausgewogen": 0.853101424018187,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.9093263421541964,
+    0.9538079233409611
+   ],
+   "cluster": 682
+  },
+  "T_gattung_nur_textausschluss": {
+   "anfragen": 765,
+   "treffer": 0.954248366013072,
+   "zufallsnachbar": 0.13465694751385882,
+   "mehrheitsklasse": 0.2496732026143791,
+   "klassen": 12,
+   "ausgewogen": 0.8923447923361677,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.9331651144169582,
+    0.9732638146167558
+   ],
+   "cluster": 682
+  },
+  "je_klasse": {
+   "bbawamarna": {
+    "anfragen": 27,
+    "treffer": 0.8888888888888888,
+    "haeufigste_antworten": [
+     [
+      "bbawamarna",
+      24
+     ],
+     [
+      "bbawramessiden",
+      2
+     ],
+     [
+      "sawlit",
+      1
+     ]
+    ]
+   },
+   "bbawarchive": {
+    "anfragen": 11,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawarchive",
+      11
+     ]
+    ]
+   },
+   "bbawbriefe": {
+    "anfragen": 48,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawbriefe",
+      48
+     ]
+    ]
+   },
+   "bbawgrabinschriften": {
+    "anfragen": 100,
+    "treffer": 0.98,
+    "haeufigste_antworten": [
+     [
+      "bbawgrabinschriften",
+      98
+     ],
+     [
+      "bbawarchive",
+      2
+     ]
+    ]
+   },
+   "bbawhistbiospzt": {
+    "anfragen": 12,
+    "treffer": 0.3333333333333333,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      4
+     ],
+     [
+      "bbawhistbiospzt",
+      4
+     ],
+     [
+      "bbawramessiden",
+      3
+     ]
+    ]
+   },
+   "bbawpyramidentexte": {
+    "anfragen": 112,
+    "treffer": 0.9910714285714286,
+    "haeufigste_antworten": [
+     [
+      "bbawpyramidentexte",
+      111
+     ],
+     [
+      "sawlit",
+      1
+     ]
+    ]
+   },
+   "bbawramessiden": {
+    "anfragen": 43,
+    "treffer": 0.8837209302325582,
+    "haeufigste_antworten": [
+     [
+      "bbawramessiden",
+      38
+     ],
+     [
+      "sawlit",
+      3
+     ],
+     [
+      "bbawamarna",
+      2
+     ]
+    ]
+   },
+   "bbawtempelbib": {
+    "anfragen": 18,
+    "treffer": 0.6111111111111112,
+    "haeufigste_antworten": [
+     [
+      "bbawtempelbib",
+      11
+     ],
+     [
+      "bbawtotenlit",
+      3
+     ],
+     [
+      "sawlit",
+      2
+     ]
+    ]
+   },
+   "bbawtotenlit": {
+    "anfragen": 37,
+    "treffer": 0.6756756756756757,
+    "haeufigste_antworten": [
+     [
+      "bbawtotenlit",
+      25
+     ],
+     [
+      "sawlit",
+      5
+     ],
+     [
+      "bbawtempelbib",
+      4
+     ]
+    ]
+   },
+   "sawlit": {
+    "anfragen": 191,
+    "treffer": 0.9633507853403142,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      184
+     ],
+     [
+      "bbawramessiden",
+      3
+     ],
+     [
+      "bbawbriefe",
+      2
+     ]
+    ]
+   },
+   "sawmedizin": {
+    "anfragen": 56,
+    "treffer": 0.9464285714285714,
+    "haeufigste_antworten": [
+     [
+      "sawmedizin",
+      53
+     ],
+     [
+      "bbawtempelbib",
+      1
+     ],
+     [
+      "sawlit",
+      1
+     ]
+    ]
+   },
+   "tb": {
+    "anfragen": 110,
+    "treffer": 0.9636363636363636,
+    "haeufigste_antworten": [
+     [
+      "tb",
+      106
+     ],
+     [
+      "sawlit",
+      3
+     ],
+     [
+      "bbawtotenlit",
+      1
+     ]
+    ]
+   }
+  },
+  "nicht_auswertbar": {},
+  "T_fremdbearbeiter": {
+   "anfragen": 299,
+   "treffer": 0.46488294314381273,
+   "zufallsnachbar": 0.050931433713143265,
+   "mehrheitsklasse": 0.6387959866220736,
+   "klassen": 4,
+   "ausgewogen": 0.4145635469440172,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.3941318724706347,
+    0.5306815910953019
+   ],
+   "cluster": 228
+  },
+  "T_fremdepoche": {
+   "anfragen": 246,
+   "treffer": 0.6788617886178862,
+   "zufallsnachbar": 0.08463765188772038,
+   "mehrheitsklasse": 0.7032520325203252,
+   "klassen": 3,
+   "ausgewogen": 0.6485280936147988,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.6141697748307777,
+    0.7457694377185903
+   ],
+   "cluster": 199
+  },
+  "T_bearbeiter_fremde_gattung": {
+   "anfragen": 184,
+   "treffer": 0.21739130434782608,
+   "zufallsnachbar": 0.04023414162543768,
+   "mehrheitsklasse": 0.29891304347826086,
+   "klassen": 6,
+   "ausgewogen": 0.2276997776997777,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.12429378531073447,
+    0.3118811881188119
+   ],
+   "cluster": 114
+  },
+  "T_epoche": {
+   "anfragen": 428,
+   "treffer": 0.852803738317757,
+   "zufallsnachbar": 0.30615414485666786,
+   "mehrheitsklasse": 0.46261682242990654,
+   "klassen": 4,
+   "ausgewogen": 0.7878275546777296,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8022714646464646,
+    0.8997673031026253
+   ],
+   "cluster": 346
+  },
+  "T_epoche_fremde_gattung": {
+   "anfragen": 428,
+   "treffer": 0.46261682242990654,
+   "zufallsnachbar": 0.22946917889086255,
+   "mehrheitsklasse": 0.46261682242990654,
+   "klassen": 4,
+   "ausgewogen": 0.4489503956986978,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.40595741827417836,
+    0.518185988323603
+   ],
+   "cluster": 346
+  },
+  "gitter": {
+   "burrows|30": {
+    "T_gattung": 0.8183006535947712,
+    "ausgewogen": 0.7270388341497406,
+    "T_text": 0.3435114503816794
+   },
+   "burrows|50": {
+    "T_gattung": 0.8797385620915033,
+    "ausgewogen": 0.7771891787460854,
+    "T_text": 0.40458015267175573
+   },
+   "burrows|100": {
+    "T_gattung": 0.9202614379084967,
+    "ausgewogen": 0.8339579925350957,
+    "T_text": 0.5038167938931297
+   },
+   "burrows|150": {
+    "T_gattung": 0.9320261437908497,
+    "ausgewogen": 0.853101424018187,
+    "T_text": 0.5114503816793893
+   },
+   "burrows|300": {
+    "T_gattung": 0.9477124183006536,
+    "ausgewogen": 0.8770571687491255,
+    "T_text": 0.5725190839694656
+   },
+   "burrows|500": {
+    "T_gattung": 0.9477124183006536,
+    "ausgewogen": 0.8940245936527492,
+    "T_text": 0.5954198473282443
+   },
+   "cosinus|30": {
+    "T_gattung": 0.7673202614379085,
+    "ausgewogen": 0.7163497689853263,
+    "T_text": 0.366412213740458
+   },
+   "cosinus|50": {
+    "T_gattung": 0.8549019607843137,
+    "ausgewogen": 0.7906481998588007,
+    "T_text": 0.4198473282442748
+   },
+   "cosinus|100": {
+    "T_gattung": 0.8640522875816994,
+    "ausgewogen": 0.7907708698995632,
+    "T_text": 0.4732824427480916
+   },
+   "cosinus|150": {
+    "T_gattung": 0.9032679738562092,
+    "ausgewogen": 0.8308521243340028,
+    "T_text": 0.549618320610687
+   },
+   "cosinus|300": {
+    "T_gattung": 0.9124183006535947,
+    "ausgewogen": 0.846486762905601,
+    "T_text": 0.5801526717557252
+   },
+   "cosinus|500": {
+    "T_gattung": 0.9254901960784314,
+    "ausgewogen": 0.8723242858939823,
+    "T_text": 0.5954198473282443
+   },
+   "roh_l1|30": {
+    "T_gattung": 0.7986928104575164,
+    "ausgewogen": 0.7195451967684505,
+    "T_text": 0.3435114503816794
+   },
+   "roh_l1|50": {
+    "T_gattung": 0.8457516339869281,
+    "ausgewogen": 0.7645901521122717,
+    "T_text": 0.3893129770992366
+   },
+   "roh_l1|100": {
+    "T_gattung": 0.8875816993464052,
+    "ausgewogen": 0.8165080508509625,
+    "T_text": 0.48091603053435117
+   },
+   "roh_l1|150": {
+    "T_gattung": 0.918954248366013,
+    "ausgewogen": 0.8410189755160128,
+    "T_text": 0.5114503816793893
+   },
+   "roh_l1|300": {
+    "T_gattung": 0.9333333333333333,
+    "ausgewogen": 0.8618261641478138,
+    "T_text": 0.549618320610687
+   },
+   "roh_l1|500": {
+    "T_gattung": 0.9398692810457516,
+    "ausgewogen": 0.875199508509378,
+    "T_text": 0.5648854961832062
+   }
+  },
+  "auswahlkontrolle": {
+   "beste_auf_A": "burrows|300",
+   "A": 0.9347258485639687,
+   "B": 0.9607329842931938,
+   "primaer_A": 0.9190600522193212,
+   "primaer_B": 0.9450261780104712,
+   "anfragen_A": 383,
+   "anfragen_B": 382
+  },
+  "tau": {
+   "0.01": {
+    "anfragen": 716,
+    "treffer": 0.8910614525139665,
+    "ausgewogen": 0.7887200916265759,
+    "zufallsnachbar": 0.10987960285697686,
+    "mehrheitsklasse": 0.26675977653631283
+   },
+   "0.05": {
+    "anfragen": 765,
+    "treffer": 0.9320261437908497,
+    "ausgewogen": 0.853101424018187,
+    "zufallsnachbar": 0.12468175178121417,
+    "mehrheitsklasse": 0.2496732026143791
+   },
+   "0.2": {
+    "anfragen": 765,
+    "treffer": 0.9464052287581699,
+    "ausgewogen": 0.8763353575767331,
+    "zufallsnachbar": 0.13409364898315052,
+    "mehrheitsklasse": 0.2496732026143791
+   },
+   "None": {
+    "anfragen": 765,
+    "treffer": 0.954248366013072,
+    "ausgewogen": 0.8923447923361677,
+    "zufallsnachbar": 0.13465694751385882,
+    "mehrheitsklasse": 0.2496732026143791
+   }
+  },
+  "N_wortmischung": {
+   "mittel": 0.12444444444444444,
+   "max": 0.14248366013071895,
+   "laeufe": 20
+  },
+  "mu_kuerzt_sich_max_abweichung": 8.881784197001252e-16,
+  "vergleichskorpus": {
+   "sawlit": {
+    "abschnitte": 191,
+    "gemeinsame_merkmale": 115,
+    "T_gattung": 0.9359477124183007,
+    "ausgewogen": 0.8803378906987008,
+    "nachbar_geaendert": 0.611764705882353,
+    "antwort_geaendert": 0.07450980392156863,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 2,
+     "T_gattung": 0.9124183006535947,
+     "nachbar_geaendert": 0.5189542483660131,
+     "antwort_geaendert": 0.05751633986928104
+    }
+   },
+   "bbawpyramidentexte": {
+    "abschnitte": 112,
+    "gemeinsame_merkmale": 90,
+    "T_gattung": 0.8496732026143791,
+    "ausgewogen": 0.7788755170374757,
+    "nachbar_geaendert": 0.7150326797385621,
+    "antwort_geaendert": 0.13725490196078433,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 18,
+     "T_gattung": 0.8967320261437909,
+     "nachbar_geaendert": 0.7124183006535948,
+     "antwort_geaendert": 0.09673202614379085
+    }
+   },
+   "tb": {
+    "abschnitte": 110,
+    "gemeinsame_merkmale": 106,
+    "T_gattung": 0.8483660130718954,
+    "ausgewogen": 0.7847697776801027,
+    "nachbar_geaendert": 0.6784313725490196,
+    "antwort_geaendert": 0.12026143790849673,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 10,
+     "T_gattung": 0.8875816993464052,
+     "nachbar_geaendert": 0.6640522875816993,
+     "antwort_geaendert": 0.10718954248366012
+    }
+   },
+   "bbawgrabinschriften": {
+    "abschnitte": 100,
+    "gemeinsame_merkmale": 49,
+    "T_gattung": 0.8431372549019608,
+    "ausgewogen": 0.7563543521286581,
+    "nachbar_geaendert": 0.8169934640522876,
+    "antwort_geaendert": 0.13986928104575164,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 10,
+     "T_gattung": 0.8797385620915033,
+     "nachbar_geaendert": 0.7281045751633987,
+     "antwort_geaendert": 0.12156862745098039
+    }
+   },
+   "sawmedizin": {
+    "abschnitte": 56,
+    "gemeinsame_merkmale": 69,
+    "T_gattung": 0.8431372549019608,
+    "ausgewogen": 0.7256894662932853,
+    "nachbar_geaendert": 0.7764705882352941,
+    "antwort_geaendert": 0.15555555555555556,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 10,
+     "T_gattung": 0.8640522875816994,
+     "nachbar_geaendert": 0.7176470588235294,
+     "antwort_geaendert": 0.12287581699346405
+    }
+   },
+   "bbawbriefe": {
+    "abschnitte": 48,
+    "gemeinsame_merkmale": 81,
+    "T_gattung": 0.8784313725490196,
+    "ausgewogen": 0.7940943524903913,
+    "nachbar_geaendert": 0.7620915032679738,
+    "antwort_geaendert": 0.13725490196078433,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 5,
+     "T_gattung": 0.8745098039215686,
+     "nachbar_geaendert": 0.6718954248366014,
+     "antwort_geaendert": 0.1111111111111111
+    }
+   },
+   "bbawramessiden": {
+    "abschnitte": 43,
+    "gemeinsame_merkmale": 90,
+    "T_gattung": 0.8784313725490196,
+    "ausgewogen": 0.7939982488845572,
+    "nachbar_geaendert": 0.7176470588235294,
+    "antwort_geaendert": 0.12287581699346405,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 12,
+     "T_gattung": 0.873202614379085,
+     "nachbar_geaendert": 0.6901960784313725,
+     "antwort_geaendert": 0.11764705882352941
+    }
+   },
+   "bbawtotenlit": {
+    "abschnitte": 37,
+    "gemeinsame_merkmale": 89,
+    "T_gattung": 0.8483660130718954,
+    "ausgewogen": 0.73555304781808,
+    "nachbar_geaendert": 0.7215686274509804,
+    "antwort_geaendert": 0.13202614379084968,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 12,
+     "T_gattung": 0.9124183006535947,
+     "nachbar_geaendert": 0.7006535947712418,
+     "antwort_geaendert": 0.08104575163398693
+    }
+   }
+  },
+  "abstand_teilkorpora": {
+   "klassen": [
+    "bbawamarna",
+    "bbawarchive",
+    "bbawbriefe",
+    "bbawgrabinschriften",
+    "bbawhistbiospzt",
+    "bbawpyramidentexte",
+    "bbawramessiden",
+    "bbawtempelbib",
+    "bbawtotenlit",
+    "sawlit",
+    "sawmedizin",
+    "tb"
+   ],
+   "matrix": [
+    [
+     0.6044,
+     0.766,
+     0.8433,
+     0.8087,
+     0.7073,
+     0.911,
+     0.7176,
+     0.8204,
+     0.8253,
+     0.7576,
+     0.8358,
+     0.8815
+    ],
+    [
+     0.766,
+     0.2961,
+     0.8618,
+     0.5839,
+     0.8218,
+     0.8916,
+     0.8243,
+     0.8336,
+     0.8179,
+     0.8093,
+     0.7417,
+     0.9026
+    ],
+    [
+     0.8433,
+     0.8618,
+     0.5467,
+     0.9497,
+     0.8461,
+     1.0158,
+     0.793,
+     0.8768,
+     0.9115,
+     0.7565,
+     0.9124,
+     0.9536
+    ],
+    [
+     0.8087,
+     0.5839,
+     0.9497,
+     0.4064,
+     0.8179,
+     0.9413,
+     0.8846,
+     0.9043,
+     0.9009,
+     0.8409,
+     0.827,
+     0.931
+    ],
+    [
+     0.7073,
+     0.8218,
+     0.8461,
+     0.8179,
+     0.6733,
+     0.8923,
+     0.7001,
+     0.8015,
+     0.835,
+     0.7283,
+     0.8385,
+     0.8412
+    ],
+    [
+     0.911,
+     0.8916,
+     1.0158,
+     0.9413,
+     0.8923,
+     0.6293,
+     0.9193,
+     0.8587,
+     0.87,
+     0.9034,
+     0.9597,
+     0.8551
+    ],
+    [
+     0.7176,
+     0.8243,
+     0.793,
+     0.8846,
+     0.7001,
+     0.9193,
+     0.6246,
+     0.7915,
+     0.8251,
+     0.7214,
+     0.8436,
+     0.86
+    ],
+    [
+     0.8204,
+     0.8336,
+     0.8768,
+     0.9043,
+     0.8015,
+     0.8587,
+     0.7915,
+     0.7509,
+     0.7872,
+     0.7901,
+     0.8123,
+     0.8225
+    ],
+    [
+     0.8253,
+     0.8179,
+     0.9115,
+     0.9009,
+     0.835,
+     0.87,
+     0.8251,
+     0.7872,
+     0.759,
+     0.8218,
+     0.8641,
+     0.825
+    ],
+    [
+     0.7576,
+     0.8093,
+     0.7565,
+     0.8409,
+     0.7283,
+     0.9034,
+     0.7214,
+     0.7901,
+     0.8218,
+     0.6862,
+     0.8205,
+     0.835
+    ],
+    [
+     0.8358,
+     0.7417,
+     0.9124,
+     0.827,
+     0.8385,
+     0.9597,
+     0.8436,
+     0.8123,
+     0.8641,
+     0.8205,
+     0.6795,
+     0.9048
+    ],
+    [
+     0.8815,
+     0.9026,
+     0.9536,
+     0.931,
+     0.8412,
+     0.8551,
+     0.86,
+     0.8225,
+     0.825,
+     0.835,
+     0.9048,
+     0.7301
+    ]
+   ]
+  },
+  "nachrechnung_max_abweichung": 6.661338147750939e-16
+ },
+ "zeichen": {
+  "abschnitte": 243,
+  "merkmale_gesamt": 1292,
+  "je_teilkorpus": {
+   "bbawamarna": 21,
+   "bbawgrabinschriften": 21,
+   "bbawhistbiospzt": 8,
+   "bbawtempelbib": 14,
+   "bbawtotenlit": 36,
+   "sawlit": 91,
+   "sawmedizin": 52
+  },
+  "mittlere_laenge": 2943.090534979424,
+  "top_merkmale": [
+   "X1",
+   "N35",
+   "Z1",
+   "D21",
+   "M17",
+   "G17",
+   "Z7",
+   "I9",
+   "Z2",
+   "S29",
+   "D36",
+   "G1",
+   "V31",
+   "Y1",
+   "Aa1",
+   "A1",
+   "G7",
+   "V28",
+   "Q3",
+   "D46",
+   "G43",
+   "Z4",
+   "N5",
+   "D2",
+   "W24"
+  ],
+  "T_text": {
+   "anfragen": 82,
+   "treffer": 0.7682926829268293,
+   "zufallsnachbar": 0.016075388026607542,
+   "mehrheitsklasse": 0.32926829268292684,
+   "klassen": 5,
+   "ausgewogen": 0.7927284878863826,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.6300978473581212,
+    0.8780487804878049
+   ],
+   "cluster": 29
+  },
+  "T_gattung": {
+   "anfragen": 243,
+   "treffer": 0.9218106995884774,
+   "zufallsnachbar": 0.2078144491113798,
+   "mehrheitsklasse": 0.37448559670781895,
+   "klassen": 7,
+   "ausgewogen": 0.8338348159776732,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8540145985401459,
+    0.9762251761691222
+   ],
+   "cluster": 190
+  },
+  "T_gattung_nur_textausschluss": {
+   "anfragen": 243,
+   "treffer": 0.9300411522633745,
+   "zufallsnachbar": 0.21383396365375715,
+   "mehrheitsklasse": 0.37448559670781895,
+   "klassen": 7,
+   "ausgewogen": 0.8405503226931799,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8674565196268947,
+    0.9818181818181818
+   ],
+   "cluster": 190
+  },
+  "je_klasse": {
+   "bbawamarna": {
+    "anfragen": 21,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawamarna",
+      21
+     ]
+    ]
+   },
+   "bbawgrabinschriften": {
+    "anfragen": 21,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawgrabinschriften",
+      21
+     ]
+    ]
+   },
+   "bbawhistbiospzt": {
+    "anfragen": 8,
+    "treffer": 0.375,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      4
+     ],
+     [
+      "bbawhistbiospzt",
+      3
+     ],
+     [
+      "bbawamarna",
+      1
+     ]
+    ]
+   },
+   "bbawtempelbib": {
+    "anfragen": 14,
+    "treffer": 0.7142857142857143,
+    "haeufigste_antworten": [
+     [
+      "bbawtempelbib",
+      10
+     ],
+     [
+      "bbawtotenlit",
+      4
+     ]
+    ]
+   },
+   "bbawtotenlit": {
+    "anfragen": 36,
+    "treffer": 0.7777777777777778,
+    "haeufigste_antworten": [
+     [
+      "bbawtotenlit",
+      28
+     ],
+     [
+      "bbawtempelbib",
+      8
+     ]
+    ]
+   },
+   "sawlit": {
+    "anfragen": 91,
+    "treffer": 0.989010989010989,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      90
+     ],
+     [
+      "sawmedizin",
+      1
+     ]
+    ]
+   },
+   "sawmedizin": {
+    "anfragen": 52,
+    "treffer": 0.9807692307692307,
+    "haeufigste_antworten": [
+     [
+      "sawmedizin",
+      51
+     ],
+     [
+      "sawlit",
+      1
+     ]
+    ]
+   }
+  },
+  "nicht_auswertbar": {},
+  "T_fremdbearbeiter": {
+   "anfragen": 174,
+   "treffer": 0.6379310344827587,
+   "zufallsnachbar": 0.1378552568612014,
+   "mehrheitsklasse": 0.5229885057471264,
+   "klassen": 3,
+   "ausgewogen": 0.5967310000923446,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.5308522611008799,
+    0.7362199824715161
+   ],
+   "cluster": 128
+  },
+  "T_fremdepoche": {
+   "anfragen": 131,
+   "treffer": 0.42748091603053434,
+   "zufallsnachbar": 0.13769286508051487,
+   "mehrheitsklasse": 0.6259541984732825,
+   "klassen": 2,
+   "ausgewogen": 0.42770034843205573,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.31744047619047616,
+    0.5303321678321676
+   ],
+   "cluster": 103
+  },
+  "T_bearbeiter_fremde_gattung": {
+   "anfragen": 93,
+   "treffer": 0.5376344086021505,
+   "zufallsnachbar": 0.16492599771999306,
+   "mehrheitsklasse": 0.5161290322580645,
+   "klassen": 3,
+   "ausgewogen": 0.397875816993464,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.3863580108010801,
+    0.6836734693877551
+   ],
+   "cluster": 54
+  },
+  "T_epoche": {
+   "anfragen": 155,
+   "treffer": 0.9096774193548387,
+   "zufallsnachbar": 0.26604648217568405,
+   "mehrheitsklasse": 0.34838709677419355,
+   "klassen": 4,
+   "ausgewogen": 0.9266351457840819,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8518458781362007,
+    0.9583394970414201
+   ],
+   "cluster": 102
+  },
+  "T_epoche_fremde_gattung": {
+   "anfragen": 141,
+   "treffer": 0.425531914893617,
+   "zufallsnachbar": 0.21147994315548221,
+   "mehrheitsklasse": 0.3829787234042553,
+   "klassen": 3,
+   "ausgewogen": 0.41316653532965586,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.3070540769180712,
+    0.5357201213818861
+   ],
+   "cluster": 88
+  },
+  "gitter": {
+   "burrows|30": {
+    "T_gattung": 0.8436213991769548,
+    "ausgewogen": 0.7049101691958833,
+    "T_text": 0.6951219512195121
+   },
+   "burrows|50": {
+    "T_gattung": 0.8518518518518519,
+    "ausgewogen": 0.7216989359846503,
+    "T_text": 0.7682926829268293
+   },
+   "burrows|100": {
+    "T_gattung": 0.9012345679012346,
+    "ausgewogen": 0.7761861154718297,
+    "T_text": 0.7804878048780488
+   },
+   "burrows|150": {
+    "T_gattung": 0.9218106995884774,
+    "ausgewogen": 0.8338348159776732,
+    "T_text": 0.7682926829268293
+   },
+   "burrows|300": {
+    "T_gattung": 0.9423868312757202,
+    "ausgewogen": 0.876199197627769,
+    "T_text": 0.7682926829268293
+   },
+   "burrows|500": {
+    "T_gattung": 0.9382716049382716,
+    "ausgewogen": 0.8171114599686028,
+    "T_text": 0.8170731707317073
+   },
+   "cosinus|30": {
+    "T_gattung": 0.8477366255144033,
+    "ausgewogen": 0.7553418803418802,
+    "T_text": 0.7073170731707317
+   },
+   "cosinus|50": {
+    "T_gattung": 0.8847736625514403,
+    "ausgewogen": 0.7601386708529565,
+    "T_text": 0.7439024390243902
+   },
+   "cosinus|100": {
+    "T_gattung": 0.9053497942386831,
+    "ausgewogen": 0.8520408163265306,
+    "T_text": 0.7926829268292683
+   },
+   "cosinus|150": {
+    "T_gattung": 0.9218106995884774,
+    "ausgewogen": 0.8528039420896564,
+    "T_text": 0.7926829268292683
+   },
+   "cosinus|300": {
+    "T_gattung": 0.9218106995884774,
+    "ausgewogen": 0.8374324088609804,
+    "T_text": 0.7926829268292683
+   },
+   "cosinus|500": {
+    "T_gattung": 0.934156378600823,
+    "ausgewogen": 0.8694618873190302,
+    "T_text": 0.8414634146341463
+   },
+   "roh_l1|30": {
+    "T_gattung": 0.8683127572016461,
+    "ausgewogen": 0.7275422989708703,
+    "T_text": 0.6585365853658537
+   },
+   "roh_l1|50": {
+    "T_gattung": 0.8724279835390947,
+    "ausgewogen": 0.7268445839874411,
+    "T_text": 0.7073170731707317
+   },
+   "roh_l1|100": {
+    "T_gattung": 0.9053497942386831,
+    "ausgewogen": 0.7701029129600558,
+    "T_text": 0.7560975609756098
+   },
+   "roh_l1|150": {
+    "T_gattung": 0.9053497942386831,
+    "ausgewogen": 0.8026774812489099,
+    "T_text": 0.7560975609756098
+   },
+   "roh_l1|300": {
+    "T_gattung": 0.9176954732510288,
+    "ausgewogen": 0.8310875632304204,
+    "T_text": 0.7682926829268293
+   },
+   "roh_l1|500": {
+    "T_gattung": 0.9176954732510288,
+    "ausgewogen": 0.8148002790859934,
+    "T_text": 0.7804878048780488
+   }
+  },
+  "auswahlkontrolle": {
+   "beste_auf_A": "burrows|300",
+   "A": 0.9166666666666666,
+   "B": 0.972972972972973,
+   "primaer_A": 0.8863636363636364,
+   "primaer_B": 0.963963963963964,
+   "anfragen_A": 132,
+   "anfragen_B": 111
+  },
+  "tau": {
+   "0.01": {
+    "anfragen": 222,
+    "treffer": 0.9009009009009009,
+    "ausgewogen": 0.825593057735915,
+    "zufallsnachbar": 0.20552507158585023,
+    "mehrheitsklasse": 0.4099099099099099
+   },
+   "0.05": {
+    "anfragen": 243,
+    "treffer": 0.9218106995884774,
+    "ausgewogen": 0.8338348159776732,
+    "zufallsnachbar": 0.2078144491113798,
+    "mehrheitsklasse": 0.37448559670781895
+   },
+   "0.2": {
+    "anfragen": 243,
+    "treffer": 0.9300411522633745,
+    "ausgewogen": 0.8405503226931799,
+    "zufallsnachbar": 0.213230359622252,
+    "mehrheitsklasse": 0.37448559670781895
+   },
+   "None": {
+    "anfragen": 243,
+    "treffer": 0.9300411522633745,
+    "ausgewogen": 0.8405503226931799,
+    "zufallsnachbar": 0.21383396365375715,
+    "mehrheitsklasse": 0.37448559670781895
+   }
+  },
+  "N_wortmischung": {
+   "mittel": 0.20884773662551442,
+   "max": 0.2839506172839506,
+   "laeufe": 20
+  },
+  "mu_kuerzt_sich_max_abweichung": 8.881784197001252e-16,
+  "vergleichskorpus": {
+   "sawlit": {
+    "abschnitte": 91,
+    "gemeinsame_merkmale": 135,
+    "T_gattung": 0.9176954732510288,
+    "ausgewogen": 0.8011076225361939,
+    "nachbar_geaendert": 0.3374485596707819,
+    "antwort_geaendert": 0.03292181069958848,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 0,
+     "T_gattung": 0.8683127572016461,
+     "nachbar_geaendert": 0.36213991769547327,
+     "antwort_geaendert": 0.07407407407407407
+    }
+   },
+   "sawmedizin": {
+    "abschnitte": 52,
+    "gemeinsame_merkmale": 112,
+    "T_gattung": 0.8847736625514403,
+    "ausgewogen": 0.7688165009593579,
+    "nachbar_geaendert": 0.49382716049382713,
+    "antwort_geaendert": 0.09053497942386832,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 0,
+     "T_gattung": 0.9012345679012346,
+     "nachbar_geaendert": 0.6131687242798354,
+     "antwort_geaendert": 0.05761316872427984
+    }
+   },
+   "bbawtotenlit": {
+    "abschnitte": 36,
+    "gemeinsame_merkmale": 120,
+    "T_gattung": 0.9012345679012346,
+    "ausgewogen": 0.7651098901098902,
+    "nachbar_geaendert": 0.4567901234567901,
+    "antwort_geaendert": 0.06584362139917696,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 2,
+     "T_gattung": 0.8683127572016461,
+     "nachbar_geaendert": 0.654320987654321,
+     "antwort_geaendert": 0.09053497942386832
+    }
+   }
+  },
+  "abstand_teilkorpora": {
+   "klassen": [
+    "bbawamarna",
+    "bbawgrabinschriften",
+    "bbawhistbiospzt",
+    "bbawtempelbib",
+    "bbawtotenlit",
+    "sawlit",
+    "sawmedizin"
+   ],
+   "matrix": [
+    [
+     0.6465,
+     1.1918,
+     1.0104,
+     1.0988,
+     1.1709,
+     1.0648,
+     1.1901
+    ],
+    [
+     1.1918,
+     0.555,
+     1.063,
+     1.1697,
+     1.2407,
+     1.1241,
+     1.2331
+    ],
+    [
+     1.0104,
+     1.063,
+     0.8761,
+     0.9913,
+     1.0772,
+     0.9408,
+     1.0618
+    ],
+    [
+     1.0988,
+     1.1697,
+     0.9913,
+     0.7049,
+     0.7733,
+     0.8479,
+     0.8955
+    ],
+    [
+     1.1709,
+     1.2407,
+     1.0772,
+     0.7733,
+     0.7847,
+     0.9418,
+     0.9784
+    ],
+    [
+     1.0648,
+     1.1241,
+     0.9408,
+     0.8479,
+     0.9418,
+     0.8104,
+     0.9474
+    ],
+    [
+     1.1901,
+     1.2331,
+     1.0618,
+     0.8955,
+     0.9784,
+     0.9474,
+     0.7905
+    ]
+   ]
+  },
+  "nachrechnung_max_abweichung": 1.3322676295501878e-15
+ },
+ "wort_gepaart": {
+  "abschnitte": 243,
+  "merkmale_gesamt": 3000,
+  "je_teilkorpus": {
+   "bbawamarna": 21,
+   "bbawgrabinschriften": 21,
+   "bbawhistbiospzt": 8,
+   "bbawtempelbib": 14,
+   "bbawtotenlit": 36,
+   "sawlit": 91,
+   "sawmedizin": 52
+  },
+  "mittlere_laenge": 1000.0,
+  "top_merkmale": [
+   "10050",
+   "64360",
+   "10110",
+   "850787",
+   "850814",
+   "78870",
+   "91900",
+   "107520",
+   "10030",
+   "851809",
+   "21881",
+   "851711",
+   "10090",
+   "81660",
+   "185810",
+   "851446",
+   "10100",
+   "851961",
+   "163760",
+   "90260",
+   "851517",
+   "129490",
+   "851427",
+   "21930",
+   "34360"
+  ],
+  "T_text": {
+   "anfragen": 82,
+   "treffer": 0.6951219512195121,
+   "zufallsnachbar": 0.016075388026607542,
+   "mehrheitsklasse": 0.32926829268292684,
+   "klassen": 5,
+   "ausgewogen": 0.7389273182957393,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.5432098765432098,
+    0.8255813953488372
+   ],
+   "cluster": 29
+  },
+  "T_gattung": {
+   "anfragen": 243,
+   "treffer": 0.9053497942386831,
+   "zufallsnachbar": 0.2078144491113798,
+   "mehrheitsklasse": 0.37448559670781895,
+   "klassen": 7,
+   "ausgewogen": 0.7849293563579278,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8560871250735853,
+    0.9504183246607489
+   ],
+   "cluster": 190
+  },
+  "T_gattung_nur_textausschluss": {
+   "anfragen": 243,
+   "treffer": 0.9135802469135802,
+   "zufallsnachbar": 0.21383396365375715,
+   "mehrheitsklasse": 0.37448559670781895,
+   "klassen": 7,
+   "ausgewogen": 0.7916448630734345,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8638132295719845,
+    0.9579919467787115
+   ],
+   "cluster": 190
+  },
+  "je_klasse": {
+   "bbawamarna": {
+    "anfragen": 21,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawamarna",
+      21
+     ]
+    ]
+   },
+   "bbawgrabinschriften": {
+    "anfragen": 21,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawgrabinschriften",
+      21
+     ]
+    ]
+   },
+   "bbawhistbiospzt": {
+    "anfragen": 8,
+    "treffer": 0.0,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      6
+     ],
+     [
+      "bbawamarna",
+      2
+     ]
+    ]
+   },
+   "bbawtempelbib": {
+    "anfragen": 14,
+    "treffer": 0.7857142857142857,
+    "haeufigste_antworten": [
+     [
+      "bbawtempelbib",
+      11
+     ],
+     [
+      "sawlit",
+      2
+     ],
+     [
+      "bbawtotenlit",
+      1
+     ]
+    ]
+   },
+   "bbawtotenlit": {
+    "anfragen": 36,
+    "treffer": 0.75,
+    "haeufigste_antworten": [
+     [
+      "bbawtotenlit",
+      27
+     ],
+     [
+      "sawlit",
+      6
+     ],
+     [
+      "bbawtempelbib",
+      3
+     ]
+    ]
+   },
+   "sawlit": {
+    "anfragen": 91,
+    "treffer": 0.978021978021978,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      89
+     ],
+     [
+      "bbawhistbiospzt",
+      2
+     ]
+    ]
+   },
+   "sawmedizin": {
+    "anfragen": 52,
+    "treffer": 0.9807692307692307,
+    "haeufigste_antworten": [
+     [
+      "sawmedizin",
+      51
+     ],
+     [
+      "sawlit",
+      1
+     ]
+    ]
+   }
+  },
+  "nicht_auswertbar": {},
+  "T_fremdbearbeiter": {
+   "anfragen": 174,
+   "treffer": 0.5977011494252874,
+   "zufallsnachbar": 0.1378552568612014,
+   "mehrheitsklasse": 0.5229885057471264,
+   "klassen": 3,
+   "ausgewogen": 0.5773694093021824,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.4974834063364953,
+    0.6914505494505493
+   ],
+   "cluster": 128
+  },
+  "T_fremdepoche": {
+   "anfragen": 131,
+   "treffer": 0.46564885496183206,
+   "zufallsnachbar": 0.13769286508051487,
+   "mehrheitsklasse": 0.6259541984732825,
+   "klassen": 2,
+   "ausgewogen": 0.46229467396714785,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.35291764705882356,
+    0.5671694717899862
+   ],
+   "cluster": 103
+  },
+  "T_bearbeiter_fremde_gattung": {
+   "anfragen": 93,
+   "treffer": 0.4731182795698925,
+   "zufallsnachbar": 0.16492599771999306,
+   "mehrheitsklasse": 0.5161290322580645,
+   "klassen": 3,
+   "ausgewogen": 0.40686274509803927,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.33733957569408063,
+    0.6019417475728155
+   ],
+   "cluster": 54
+  },
+  "T_epoche": {
+   "anfragen": 155,
+   "treffer": 0.8258064516129032,
+   "zufallsnachbar": 0.26604648217568405,
+   "mehrheitsklasse": 0.34838709677419355,
+   "klassen": 4,
+   "ausgewogen": 0.8546936564223797,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.7397177251971773,
+    0.9
+   ],
+   "cluster": 102
+  },
+  "T_epoche_fremde_gattung": {
+   "anfragen": 141,
+   "treffer": 0.3049645390070922,
+   "zufallsnachbar": 0.21147994315548221,
+   "mehrheitsklasse": 0.3829787234042553,
+   "klassen": 3,
+   "ausgewogen": 0.29071447333858685,
+   "p_zufall": 0.0069965017491254375,
+   "ki95": [
+    0.21092722039473685,
+    0.3925992063492063
+   ],
+   "cluster": 88
+  },
+  "gitter": {
+   "burrows|30": {
+    "T_gattung": 0.8148148148148148,
+    "ausgewogen": 0.6694357230071516,
+    "T_text": 0.5365853658536586
+   },
+   "burrows|50": {
+    "T_gattung": 0.8559670781893004,
+    "ausgewogen": 0.7493894993894995,
+    "T_text": 0.5853658536585366
+   },
+   "burrows|100": {
+    "T_gattung": 0.8806584362139918,
+    "ausgewogen": 0.7621227978370836,
+    "T_text": 0.7439024390243902
+   },
+   "burrows|150": {
+    "T_gattung": 0.9053497942386831,
+    "ausgewogen": 0.7849293563579278,
+    "T_text": 0.6951219512195121
+   },
+   "burrows|300": {
+    "T_gattung": 0.9218106995884774,
+    "ausgewogen": 0.8731903017617304,
+    "T_text": 0.7560975609756098
+   },
+   "burrows|500": {
+    "T_gattung": 0.9300411522633745,
+    "ausgewogen": 0.873953427524856,
+    "T_text": 0.6707317073170732
+   },
+   "cosinus|30": {
+    "T_gattung": 0.7736625514403292,
+    "ausgewogen": 0.6764128728414442,
+    "T_text": 0.524390243902439
+   },
+   "cosinus|50": {
+    "T_gattung": 0.8189300411522634,
+    "ausgewogen": 0.7574786324786323,
+    "T_text": 0.6097560975609756
+   },
+   "cosinus|100": {
+    "T_gattung": 0.8559670781893004,
+    "ausgewogen": 0.7642377463806037,
+    "T_text": 0.6585365853658537
+   },
+   "cosinus|150": {
+    "T_gattung": 0.8930041152263375,
+    "ausgewogen": 0.816457352171638,
+    "T_text": 0.7073170731707317
+   },
+   "cosinus|300": {
+    "T_gattung": 0.9135802469135802,
+    "ausgewogen": 0.8266614338042909,
+    "T_text": 0.7439024390243902
+   },
+   "cosinus|500": {
+    "T_gattung": 0.9300411522633745,
+    "ausgewogen": 0.8542429792429793,
+    "T_text": 0.7317073170731707
+   },
+   "roh_l1|30": {
+    "T_gattung": 0.7860082304526749,
+    "ausgewogen": 0.6268969126111983,
+    "T_text": 0.5487804878048781
+   },
+   "roh_l1|50": {
+    "T_gattung": 0.8395061728395061,
+    "ausgewogen": 0.7118873190301762,
+    "T_text": 0.5975609756097561
+   },
+   "roh_l1|100": {
+    "T_gattung": 0.8724279835390947,
+    "ausgewogen": 0.7547531833246118,
+    "T_text": 0.6707317073170732
+   },
+   "roh_l1|150": {
+    "T_gattung": 0.8641975308641975,
+    "ausgewogen": 0.755668934240363,
+    "T_text": 0.6951219512195121
+   },
+   "roh_l1|300": {
+    "T_gattung": 0.8888888888888888,
+    "ausgewogen": 0.7825309611023897,
+    "T_text": 0.7195121951219512
+   },
+   "roh_l1|500": {
+    "T_gattung": 0.9053497942386831,
+    "ausgewogen": 0.8096546310832026,
+    "T_text": 0.7195121951219512
+   }
+  },
+  "auswahlkontrolle": {
+   "beste_auf_A": "burrows|500",
+   "A": 0.9242424242424242,
+   "B": 0.9369369369369369,
+   "primaer_A": 0.8787878787878788,
+   "primaer_B": 0.9369369369369369,
+   "anfragen_A": 132,
+   "anfragen_B": 111
+  },
+  "tau": {
+   "0.01": {
+    "anfragen": 222,
+    "treffer": 0.8378378378378378,
+    "ausgewogen": 0.6925349087003222,
+    "zufallsnachbar": 0.20552507158585023,
+    "mehrheitsklasse": 0.4099099099099099
+   },
+   "0.05": {
+    "anfragen": 243,
+    "treffer": 0.9053497942386831,
+    "ausgewogen": 0.7849293563579278,
+    "zufallsnachbar": 0.2078144491113798,
+    "mehrheitsklasse": 0.37448559670781895
+   },
+   "0.2": {
+    "anfragen": 243,
+    "treffer": 0.9135802469135802,
+    "ausgewogen": 0.7916448630734345,
+    "zufallsnachbar": 0.213230359622252,
+    "mehrheitsklasse": 0.37448559670781895
+   },
+   "None": {
+    "anfragen": 243,
+    "treffer": 0.9135802469135802,
+    "ausgewogen": 0.7916448630734345,
+    "zufallsnachbar": 0.21383396365375715,
+    "mehrheitsklasse": 0.37448559670781895
+   }
+  },
+  "N_wortmischung": {
+   "mittel": 0.21893004115226336,
+   "max": 0.2757201646090535,
+   "laeufe": 20
+  },
+  "mu_kuerzt_sich_max_abweichung": 5.551115123125783e-16,
+  "vergleichskorpus": {
+   "sawlit": {
+    "abschnitte": 91,
+    "gemeinsame_merkmale": 114,
+    "T_gattung": 0.9259259259259259,
+    "ausgewogen": 0.806929181929182,
+    "nachbar_geaendert": 0.4773662551440329,
+    "antwort_geaendert": 0.09053497942386832,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 1,
+     "T_gattung": 0.8641975308641975,
+     "nachbar_geaendert": 0.45267489711934156,
+     "antwort_geaendert": 0.06584362139917696
+    }
+   },
+   "sawmedizin": {
+    "abschnitte": 52,
+    "gemeinsame_merkmale": 79,
+    "T_gattung": 0.757201646090535,
+    "ausgewogen": 0.6454299668585384,
+    "nachbar_geaendert": 0.6831275720164609,
+    "antwort_geaendert": 0.1934156378600823,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 13,
+     "T_gattung": 0.8271604938271605,
+     "nachbar_geaendert": 0.6049382716049383,
+     "antwort_geaendert": 0.13991769547325103
+    }
+   },
+   "bbawtotenlit": {
+    "abschnitte": 36,
+    "gemeinsame_merkmale": 91,
+    "T_gattung": 0.8065843621399177,
+    "ausgewogen": 0.6679312750741323,
+    "nachbar_geaendert": 0.6008230452674898,
+    "antwort_geaendert": 0.1522633744855967,
+    "nur_sigma": {
+     "merkmale_mit_sigma_null": 11,
+     "T_gattung": 0.8765432098765432,
+     "nachbar_geaendert": 0.6296296296296297,
+     "antwort_geaendert": 0.13168724279835392
+    }
+   }
+  },
+  "abstand_teilkorpora": {
+   "klassen": [
+    "bbawamarna",
+    "bbawgrabinschriften",
+    "bbawhistbiospzt",
+    "bbawtempelbib",
+    "bbawtotenlit",
+    "sawlit",
+    "sawmedizin"
+   ],
+   "matrix": [
+    [
+     0.5365,
+     0.9059,
+     0.7641,
+     0.8869,
+     0.9065,
+     0.8368,
+     0.9535
+    ],
+    [
+     0.9059,
+     0.3434,
+     0.8541,
+     0.9191,
+     0.9151,
+     0.8669,
+     0.8643
+    ],
+    [
+     0.7641,
+     0.8541,
+     0.6762,
+     0.7881,
+     0.8335,
+     0.7256,
+     0.8611
+    ],
+    [
+     0.8869,
+     0.9191,
+     0.7881,
+     0.7197,
+     0.78,
+     0.7904,
+     0.8632
+    ],
+    [
+     0.9065,
+     0.9151,
+     0.8335,
+     0.78,
+     0.7546,
+     0.8382,
+     0.9144
+    ],
+    [
+     0.8368,
+     0.8669,
+     0.7256,
+     0.7904,
+     0.8382,
+     0.7145,
+     0.8838
+    ],
+    [
+     0.9535,
+     0.8643,
+     0.8611,
+     0.8632,
+     0.9144,
+     0.8838,
+     0.704
+    ]
+   ]
+  },
+  "nachrechnung_max_abweichung": 6.661338147750939e-16
+ },
+ "ebenen": {
+  "spearman": 0.6470448828536307,
+  "p_mantel": 0.001,
+  "perm_max": 0.1065432467510119,
+  "gleicher_nachbar": 0.23045267489711935,
+  "gleiche_antwort": 0.9012345679012346,
+  "paare": 29022
+ },
+ "L": {
+  "wort|500": {
+   "abschnitte": 1542,
+   "merkmale_gesamt": 3000,
+   "je_teilkorpus": {
+    "bbawamarna": 55,
+    "bbawarchive": 23,
+    "bbawbriefe": 96,
+    "bbawgrabinschriften": 200,
+    "bbawgraeberspzt": 6,
+    "bbawhistbiospzt": 25,
+    "bbawpyramidentexte": 224,
+    "bbawramessiden": 87,
+    "bbawtempelbib": 36,
+    "bbawtotenlit": 75,
+    "sawlit": 382,
+    "sawmedizin": 112,
+    "tb": 221
+   },
+   "mittlere_laenge": 500.0,
+   "top_merkmale": [
+    "10050",
+    "64360",
+    "10110",
+    "78870",
+    "850787",
+    "10030",
+    "850814",
+    "91900",
+    "107520",
+    "21881",
+    "851809",
+    "851711",
+    "10090",
+    "10100",
+    "81660",
+    "851446",
+    "90260",
+    "185810",
+    "851517",
+    "34360",
+    "59920",
+    "21930",
+    "400313",
+    "129490",
+    "851961"
+   ],
+   "T_text": {
+    "anfragen": 382,
+    "treffer": 0.47643979057591623,
+    "zufallsnachbar": 0.0038460101042703627,
+    "mehrheitsklasse": 0.36649214659685864,
+    "klassen": 8,
+    "ausgewogen": 0.412167486763377,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.3810821525297327,
+     0.565895129442738
+    ],
+    "cluster": 93
+   },
+   "T_gattung": {
+    "anfragen": 1542,
+    "treffer": 0.8690012970168612,
+    "zufallsnachbar": 0.12982254219458192,
+    "mehrheitsklasse": 0.24773022049286642,
+    "klassen": 13,
+    "ausgewogen": 0.7986605993673924,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8445276178289615,
+     0.8912631912199239
+    ],
+    "cluster": 1253
+   },
+   "T_gattung_nur_textausschluss": {
+    "anfragen": 1542,
+    "treffer": 0.9072632944228275,
+    "zufallsnachbar": 0.13440477109999635,
+    "mehrheitsklasse": 0.24773022049286642,
+    "klassen": 13,
+    "ausgewogen": 0.8414152363746796,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8844200698097375,
+     0.9294125628541783
+    ],
+    "cluster": 1253
+   },
+   "je_klasse": {
+    "bbawamarna": {
+     "anfragen": 55,
+     "treffer": 0.9090909090909091,
+     "haeufigste_antworten": [
+      [
+       "bbawamarna",
+       50
+      ],
+      [
+       "sawlit",
+       2
+      ],
+      [
+       "bbawramessiden",
+       2
+      ]
+     ]
+    },
+    "bbawarchive": {
+     "anfragen": 23,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawarchive",
+       23
+      ]
+     ]
+    },
+    "bbawbriefe": {
+     "anfragen": 96,
+     "treffer": 0.9479166666666666,
+     "haeufigste_antworten": [
+      [
+       "bbawbriefe",
+       91
+      ],
+      [
+       "sawlit",
+       5
+      ]
+     ]
+    },
+    "bbawgrabinschriften": {
+     "anfragen": 200,
+     "treffer": 0.965,
+     "haeufigste_antworten": [
+      [
+       "bbawgrabinschriften",
+       193
+      ],
+      [
+       "sawmedizin",
+       6
+      ],
+      [
+       "bbawarchive",
+       1
+      ]
+     ]
+    },
+    "bbawgraeberspzt": {
+     "anfragen": 6,
+     "treffer": 0.8333333333333334,
+     "haeufigste_antworten": [
+      [
+       "bbawgraeberspzt",
+       5
+      ],
+      [
+       "bbawtotenlit",
+       1
+      ]
+     ]
+    },
+    "bbawhistbiospzt": {
+     "anfragen": 25,
+     "treffer": 0.2,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       11
+      ],
+      [
+       "bbawramessiden",
+       7
+      ],
+      [
+       "bbawhistbiospzt",
+       5
+      ]
+     ]
+    },
+    "bbawpyramidentexte": {
+     "anfragen": 224,
+     "treffer": 0.9732142857142857,
+     "haeufigste_antworten": [
+      [
+       "bbawpyramidentexte",
+       218
+      ],
+      [
+       "sawlit",
+       2
+      ],
+      [
+       "bbawarchive",
+       2
+      ]
+     ]
+    },
+    "bbawramessiden": {
+     "anfragen": 87,
+     "treffer": 0.8275862068965517,
+     "haeufigste_antworten": [
+      [
+       "bbawramessiden",
+       72
+      ],
+      [
+       "sawlit",
+       8
+      ],
+      [
+       "bbawamarna",
+       5
+      ]
+     ]
+    },
+    "bbawtempelbib": {
+     "anfragen": 36,
+     "treffer": 0.5,
+     "haeufigste_antworten": [
+      [
+       "bbawtempelbib",
+       18
+      ],
+      [
+       "sawlit",
+       5
+      ],
+      [
+       "bbawtotenlit",
+       5
+      ]
+     ]
+    },
+    "bbawtotenlit": {
+     "anfragen": 75,
+     "treffer": 0.6,
+     "haeufigste_antworten": [
+      [
+       "bbawtotenlit",
+       45
+      ],
+      [
+       "sawlit",
+       10
+      ],
+      [
+       "tb",
+       7
+      ]
+     ]
+    },
+    "sawlit": {
+     "anfragen": 382,
+     "treffer": 0.8743455497382199,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       334
+      ],
+      [
+       "bbawbriefe",
+       13
+      ],
+      [
+       "bbawhistbiospzt",
+       7
+      ]
+     ]
+    },
+    "sawmedizin": {
+     "anfragen": 112,
+     "treffer": 0.9285714285714286,
+     "haeufigste_antworten": [
+      [
+       "sawmedizin",
+       104
+      ],
+      [
+       "bbawtotenlit",
+       3
+      ],
+      [
+       "bbawamarna",
+       1
+      ]
+     ]
+    },
+    "tb": {
+     "anfragen": 221,
+     "treffer": 0.8235294117647058,
+     "haeufigste_antworten": [
+      [
+       "tb",
+       182
+      ],
+      [
+       "sawlit",
+       13
+      ],
+      [
+       "bbawgraeberspzt",
+       12
+      ]
+     ]
+    }
+   },
+   "nicht_auswertbar": {},
+   "T_fremdbearbeiter": {
+    "anfragen": 636,
+    "treffer": 0.4418238993710692,
+    "zufallsnachbar": 0.06728271832849687,
+    "mehrheitsklasse": 0.60062893081761,
+    "klassen": 5,
+    "ausgewogen": 0.2987643540548328,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.38149070336570334,
+     0.500829256380328
+    ],
+    "cluster": 394
+   },
+   "T_fremdepoche": {
+    "anfragen": 615,
+    "treffer": 0.5869918699186992,
+    "zufallsnachbar": 0.08616623147946521,
+    "mehrheitsklasse": 0.6178861788617886,
+    "klassen": 4,
+    "ausgewogen": 0.4976702252943773,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.5372810612911695,
+     0.636802401171303
+    ],
+    "cluster": 445
+   },
+   "T_bearbeiter_fremde_gattung": {
+    "anfragen": 719,
+    "treffer": 0.24200278164116829,
+    "zufallsnachbar": 0.029255737031239355,
+    "mehrheitsklasse": 0.3198887343532684,
+    "klassen": 8,
+    "ausgewogen": 0.18794474119372231,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.19872119707755714,
+     0.28615859030837
+    ],
+    "cluster": 479
+   },
+   "T_epoche": {
+    "anfragen": 1055,
+    "treffer": 0.7914691943127962,
+    "zufallsnachbar": 0.2945558155622877,
+    "mehrheitsklasse": 0.4,
+    "klassen": 4,
+    "ausgewogen": 0.7367548670137799,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.755866661645452,
+     0.8265443908875484
+    ],
+    "cluster": 776
+   },
+   "T_epoche_fremde_gattung": {
+    "anfragen": 1055,
+    "treffer": 0.418957345971564,
+    "zufallsnachbar": 0.22454914774830664,
+    "mehrheitsklasse": 0.4,
+    "klassen": 4,
+    "ausgewogen": 0.4093338709817596,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.37863549521911255,
+     0.45850764471574523
+    ],
+    "cluster": 776
+   }
+  },
+  "zeichen|500": {
+   "abschnitte": 491,
+   "merkmale_gesamt": 1301,
+   "je_teilkorpus": {
+    "bbawamarna": 42,
+    "bbawgrabinschriften": 42,
+    "bbawgraeberspzt": 5,
+    "bbawhistbiospzt": 16,
+    "bbawtempelbib": 28,
+    "bbawtotenlit": 72,
+    "sawlit": 182,
+    "sawmedizin": 104
+   },
+   "mittlere_laenge": 1469.9551934826884,
+   "top_merkmale": [
+    "X1",
+    "N35",
+    "Z1",
+    "D21",
+    "M17",
+    "G17",
+    "Z7",
+    "I9",
+    "Z2",
+    "S29",
+    "D36",
+    "G1",
+    "V31",
+    "Y1",
+    "Aa1",
+    "A1",
+    "G7",
+    "V28",
+    "Q3",
+    "G43",
+    "D46",
+    "Z4",
+    "N5",
+    "D2",
+    "W24"
+   ],
+   "T_text": {
+    "anfragen": 230,
+    "treffer": 0.7347826086956522,
+    "zufallsnachbar": 0.013433895297249338,
+    "mehrheitsklasse": 0.34782608695652173,
+    "klassen": 6,
+    "ausgewogen": 0.7461016222957998,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.6239130434782608,
+     0.8270081262697296
+    ],
+    "cluster": 52
+   },
+   "T_gattung": {
+    "anfragen": 491,
+    "treffer": 0.8879837067209776,
+    "zufallsnachbar": 0.21031454437456096,
+    "mehrheitsklasse": 0.37067209775967414,
+    "klassen": 8,
+    "ausgewogen": 0.7964457417582418,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8288665811885626,
+     0.9410383150461504
+    ],
+    "cluster": 313
+   },
+   "T_gattung_nur_textausschluss": {
+    "anfragen": 491,
+    "treffer": 0.8920570264765784,
+    "zufallsnachbar": 0.21338110937618907,
+    "mehrheitsklasse": 0.37067209775967414,
+    "klassen": 8,
+    "ausgewogen": 0.798334478021978,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8270559606085921,
+     0.9456090611333043
+    ],
+    "cluster": 313
+   },
+   "je_klasse": {
+    "bbawamarna": {
+     "anfragen": 42,
+     "treffer": 0.9761904761904762,
+     "haeufigste_antworten": [
+      [
+       "bbawamarna",
+       41
+      ],
+      [
+       "bbawhistbiospzt",
+       1
+      ]
+     ]
+    },
+    "bbawgrabinschriften": {
+     "anfragen": 42,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawgrabinschriften",
+       42
+      ]
+     ]
+    },
+    "bbawgraeberspzt": {
+     "anfragen": 5,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawgraeberspzt",
+       5
+      ]
+     ]
+    },
+    "bbawhistbiospzt": {
+     "anfragen": 16,
+     "treffer": 0.0625,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       10
+      ],
+      [
+       "bbawamarna",
+       4
+      ],
+      [
+       "sawmedizin",
+       1
+      ]
+     ]
+    },
+    "bbawtempelbib": {
+     "anfragen": 28,
+     "treffer": 0.6428571428571429,
+     "haeufigste_antworten": [
+      [
+       "bbawtempelbib",
+       18
+      ],
+      [
+       "bbawtotenlit",
+       8
+      ],
+      [
+       "sawmedizin",
+       2
+      ]
+     ]
+    },
+    "bbawtotenlit": {
+     "anfragen": 72,
+     "treffer": 0.7916666666666666,
+     "haeufigste_antworten": [
+      [
+       "bbawtotenlit",
+       57
+      ],
+      [
+       "bbawtempelbib",
+       13
+      ],
+      [
+       "sawmedizin",
+       1
+      ]
+     ]
+    },
+    "sawlit": {
+     "anfragen": 182,
+     "treffer": 0.9560439560439561,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       174
+      ],
+      [
+       "sawmedizin",
+       4
+      ],
+      [
+       "bbawgraeberspzt",
+       2
+      ]
+     ]
+    },
+    "sawmedizin": {
+     "anfragen": 104,
+     "treffer": 0.9423076923076923,
+     "haeufigste_antworten": [
+      [
+       "sawmedizin",
+       98
+      ],
+      [
+       "sawlit",
+       5
+      ],
+      [
+       "bbawtempelbib",
+       1
+      ]
+     ]
+    }
+   },
+   "nicht_auswertbar": {},
+   "T_fremdbearbeiter": {
+    "anfragen": 364,
+    "treffer": 0.6318681318681318,
+    "zufallsnachbar": 0.16162632483347783,
+    "mehrheitsklasse": 0.5,
+    "klassen": 4,
+    "ausgewogen": 0.4755004896094005,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.5573483980268075,
+     0.7106013071895424
+    ],
+    "cluster": 203
+   },
+   "T_fremdepoche": {
+    "anfragen": 278,
+    "treffer": 0.5863309352517986,
+    "zufallsnachbar": 0.17587728641343198,
+    "mehrheitsklasse": 0.6366906474820144,
+    "klassen": 2,
+    "ausgewogen": 0.5901157912401409,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.5019758970781989,
+     0.6612953315968744
+    ],
+    "cluster": 176
+   },
+   "T_bearbeiter_fremde_gattung": {
+    "anfragen": 224,
+    "treffer": 0.39732142857142855,
+    "zufallsnachbar": 0.14225427416236766,
+    "mehrheitsklasse": 0.4375,
+    "klassen": 4,
+    "ausgewogen": 0.3488246327783551,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.2822905165010428,
+     0.5242412187400545
+    ],
+    "cluster": 92
+   },
+   "T_epoche": {
+    "anfragen": 375,
+    "treffer": 0.8666666666666667,
+    "zufallsnachbar": 0.2691022960453412,
+    "mehrheitsklasse": 0.32,
+    "klassen": 4,
+    "ausgewogen": 0.8912238409305949,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8027741228070175,
+     0.9210526315789473
+    ],
+    "cluster": 199
+   },
+   "T_epoche_fremde_gattung": {
+    "anfragen": 375,
+    "treffer": 0.41333333333333333,
+    "zufallsnachbar": 0.2018754428487153,
+    "mehrheitsklasse": 0.32,
+    "klassen": 4,
+    "ausgewogen": 0.3617154598244931,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.3313769741723492,
+     0.4926946207818242
+    ],
+    "cluster": 199
+   }
+  },
+  "wort|1000": {
+   "abschnitte": 765,
+   "merkmale_gesamt": 3000,
+   "je_teilkorpus": {
+    "bbawamarna": 27,
+    "bbawarchive": 11,
+    "bbawbriefe": 48,
+    "bbawgrabinschriften": 100,
+    "bbawhistbiospzt": 12,
+    "bbawpyramidentexte": 112,
+    "bbawramessiden": 43,
+    "bbawtempelbib": 18,
+    "bbawtotenlit": 37,
+    "sawlit": 191,
+    "sawmedizin": 56,
+    "tb": 110
+   },
+   "mittlere_laenge": 1000.0,
+   "top_merkmale": [
+    "10050",
+    "64360",
+    "10110",
+    "78870",
+    "10030",
+    "850787",
+    "850814",
+    "91900",
+    "107520",
+    "21881",
+    "851809",
+    "851711",
+    "10090",
+    "10100",
+    "81660",
+    "851446",
+    "90260",
+    "185810",
+    "851517",
+    "34360",
+    "59920",
+    "21930",
+    "400313",
+    "129490",
+    "851961"
+   ],
+   "T_text": {
+    "anfragen": 131,
+    "treffer": 0.5114503816793893,
+    "zufallsnachbar": 0.004556172814835538,
+    "mehrheitsklasse": 0.366412213740458,
+    "klassen": 8,
+    "ausgewogen": 0.39888575343738386,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.3739819724284199,
+     0.6423357664233577
+    ],
+    "cluster": 48
+   },
+   "T_gattung": {
+    "anfragen": 765,
+    "treffer": 0.9320261437908497,
+    "zufallsnachbar": 0.12468175178121417,
+    "mehrheitsklasse": 0.2496732026143791,
+    "klassen": 12,
+    "ausgewogen": 0.853101424018187,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.9086261238844099,
+     0.952
+    ],
+    "cluster": 682
+   },
+   "T_gattung_nur_textausschluss": {
+    "anfragen": 765,
+    "treffer": 0.954248366013072,
+    "zufallsnachbar": 0.13465694751385882,
+    "mehrheitsklasse": 0.2496732026143791,
+    "klassen": 12,
+    "ausgewogen": 0.8923447923361677,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.9322028673535496,
+     0.9735799207397622
+    ],
+    "cluster": 682
+   },
+   "je_klasse": {
+    "bbawamarna": {
+     "anfragen": 27,
+     "treffer": 0.8888888888888888,
+     "haeufigste_antworten": [
+      [
+       "bbawamarna",
+       24
+      ],
+      [
+       "bbawramessiden",
+       2
+      ],
+      [
+       "sawlit",
+       1
+      ]
+     ]
+    },
+    "bbawarchive": {
+     "anfragen": 11,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawarchive",
+       11
+      ]
+     ]
+    },
+    "bbawbriefe": {
+     "anfragen": 48,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawbriefe",
+       48
+      ]
+     ]
+    },
+    "bbawgrabinschriften": {
+     "anfragen": 100,
+     "treffer": 0.98,
+     "haeufigste_antworten": [
+      [
+       "bbawgrabinschriften",
+       98
+      ],
+      [
+       "bbawarchive",
+       2
+      ]
+     ]
+    },
+    "bbawhistbiospzt": {
+     "anfragen": 12,
+     "treffer": 0.3333333333333333,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       4
+      ],
+      [
+       "bbawhistbiospzt",
+       4
+      ],
+      [
+       "bbawramessiden",
+       3
+      ]
+     ]
+    },
+    "bbawpyramidentexte": {
+     "anfragen": 112,
+     "treffer": 0.9910714285714286,
+     "haeufigste_antworten": [
+      [
+       "bbawpyramidentexte",
+       111
+      ],
+      [
+       "sawlit",
+       1
+      ]
+     ]
+    },
+    "bbawramessiden": {
+     "anfragen": 43,
+     "treffer": 0.8837209302325582,
+     "haeufigste_antworten": [
+      [
+       "bbawramessiden",
+       38
+      ],
+      [
+       "sawlit",
+       3
+      ],
+      [
+       "bbawamarna",
+       2
+      ]
+     ]
+    },
+    "bbawtempelbib": {
+     "anfragen": 18,
+     "treffer": 0.6111111111111112,
+     "haeufigste_antworten": [
+      [
+       "bbawtempelbib",
+       11
+      ],
+      [
+       "bbawtotenlit",
+       3
+      ],
+      [
+       "sawlit",
+       2
+      ]
+     ]
+    },
+    "bbawtotenlit": {
+     "anfragen": 37,
+     "treffer": 0.6756756756756757,
+     "haeufigste_antworten": [
+      [
+       "bbawtotenlit",
+       25
+      ],
+      [
+       "sawlit",
+       5
+      ],
+      [
+       "bbawtempelbib",
+       4
+      ]
+     ]
+    },
+    "sawlit": {
+     "anfragen": 191,
+     "treffer": 0.9633507853403142,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       184
+      ],
+      [
+       "bbawramessiden",
+       3
+      ],
+      [
+       "bbawbriefe",
+       2
+      ]
+     ]
+    },
+    "sawmedizin": {
+     "anfragen": 56,
+     "treffer": 0.9464285714285714,
+     "haeufigste_antworten": [
+      [
+       "sawmedizin",
+       53
+      ],
+      [
+       "bbawtempelbib",
+       1
+      ],
+      [
+       "sawlit",
+       1
+      ]
+     ]
+    },
+    "tb": {
+     "anfragen": 110,
+     "treffer": 0.9636363636363636,
+     "haeufigste_antworten": [
+      [
+       "tb",
+       106
+      ],
+      [
+       "sawlit",
+       3
+      ],
+      [
+       "bbawtotenlit",
+       1
+      ]
+     ]
+    }
+   },
+   "nicht_auswertbar": {},
+   "T_fremdbearbeiter": {
+    "anfragen": 299,
+    "treffer": 0.46488294314381273,
+    "zufallsnachbar": 0.050931433713143265,
+    "mehrheitsklasse": 0.6387959866220736,
+    "klassen": 4,
+    "ausgewogen": 0.4145635469440172,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.39284584086799273,
+     0.5324243162980364
+    ],
+    "cluster": 228
+   },
+   "T_fremdepoche": {
+    "anfragen": 246,
+    "treffer": 0.6788617886178862,
+    "zufallsnachbar": 0.08463765188772038,
+    "mehrheitsklasse": 0.7032520325203252,
+    "klassen": 3,
+    "ausgewogen": 0.6485280936147988,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.6101642168928898,
+     0.7480322590490143
+    ],
+    "cluster": 199
+   },
+   "T_bearbeiter_fremde_gattung": {
+    "anfragen": 184,
+    "treffer": 0.21739130434782608,
+    "zufallsnachbar": 0.04023414162543768,
+    "mehrheitsklasse": 0.29891304347826086,
+    "klassen": 6,
+    "ausgewogen": 0.2276997776997777,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.12288472781603221,
+     0.3100040106951871
+    ],
+    "cluster": 114
+   },
+   "T_epoche": {
+    "anfragen": 428,
+    "treffer": 0.852803738317757,
+    "zufallsnachbar": 0.30615414485666786,
+    "mehrheitsklasse": 0.46261682242990654,
+    "klassen": 4,
+    "ausgewogen": 0.7878275546777296,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.801389705725101,
+     0.9
+    ],
+    "cluster": 346
+   },
+   "T_epoche_fremde_gattung": {
+    "anfragen": 428,
+    "treffer": 0.46261682242990654,
+    "zufallsnachbar": 0.22946917889086255,
+    "mehrheitsklasse": 0.46261682242990654,
+    "klassen": 4,
+    "ausgewogen": 0.4489503956986978,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.40748576248631263,
+     0.5185228452751817
+    ],
+    "cluster": 346
+   }
+  },
+  "zeichen|1000": {
+   "abschnitte": 243,
+   "merkmale_gesamt": 1292,
+   "je_teilkorpus": {
+    "bbawamarna": 21,
+    "bbawgrabinschriften": 21,
+    "bbawhistbiospzt": 8,
+    "bbawtempelbib": 14,
+    "bbawtotenlit": 36,
+    "sawlit": 91,
+    "sawmedizin": 52
+   },
+   "mittlere_laenge": 2943.090534979424,
+   "top_merkmale": [
+    "X1",
+    "N35",
+    "Z1",
+    "D21",
+    "M17",
+    "G17",
+    "Z7",
+    "I9",
+    "Z2",
+    "S29",
+    "D36",
+    "G1",
+    "V31",
+    "Y1",
+    "Aa1",
+    "A1",
+    "G7",
+    "V28",
+    "Q3",
+    "D46",
+    "G43",
+    "Z4",
+    "N5",
+    "D2",
+    "W24"
+   ],
+   "T_text": {
+    "anfragen": 82,
+    "treffer": 0.7682926829268293,
+    "zufallsnachbar": 0.016075388026607542,
+    "mehrheitsklasse": 0.32926829268292684,
+    "klassen": 5,
+    "ausgewogen": 0.7927284878863826,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.631578947368421,
+     0.875
+    ],
+    "cluster": 29
+   },
+   "T_gattung": {
+    "anfragen": 243,
+    "treffer": 0.9218106995884774,
+    "zufallsnachbar": 0.2078144491113798,
+    "mehrheitsklasse": 0.37448559670781895,
+    "klassen": 7,
+    "ausgewogen": 0.8338348159776732,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8576916058394161,
+     0.9742489270386266
+    ],
+    "cluster": 190
+   },
+   "T_gattung_nur_textausschluss": {
+    "anfragen": 243,
+    "treffer": 0.9300411522633745,
+    "zufallsnachbar": 0.21383396365375715,
+    "mehrheitsklasse": 0.37448559670781895,
+    "klassen": 7,
+    "ausgewogen": 0.8405503226931799,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8627281947261664,
+     0.9796020408163264
+    ],
+    "cluster": 190
+   },
+   "je_klasse": {
+    "bbawamarna": {
+     "anfragen": 21,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawamarna",
+       21
+      ]
+     ]
+    },
+    "bbawgrabinschriften": {
+     "anfragen": 21,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawgrabinschriften",
+       21
+      ]
+     ]
+    },
+    "bbawhistbiospzt": {
+     "anfragen": 8,
+     "treffer": 0.375,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       4
+      ],
+      [
+       "bbawhistbiospzt",
+       3
+      ],
+      [
+       "bbawamarna",
+       1
+      ]
+     ]
+    },
+    "bbawtempelbib": {
+     "anfragen": 14,
+     "treffer": 0.7142857142857143,
+     "haeufigste_antworten": [
+      [
+       "bbawtempelbib",
+       10
+      ],
+      [
+       "bbawtotenlit",
+       4
+      ]
+     ]
+    },
+    "bbawtotenlit": {
+     "anfragen": 36,
+     "treffer": 0.7777777777777778,
+     "haeufigste_antworten": [
+      [
+       "bbawtotenlit",
+       28
+      ],
+      [
+       "bbawtempelbib",
+       8
+      ]
+     ]
+    },
+    "sawlit": {
+     "anfragen": 91,
+     "treffer": 0.989010989010989,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       90
+      ],
+      [
+       "sawmedizin",
+       1
+      ]
+     ]
+    },
+    "sawmedizin": {
+     "anfragen": 52,
+     "treffer": 0.9807692307692307,
+     "haeufigste_antworten": [
+      [
+       "sawmedizin",
+       51
+      ],
+      [
+       "sawlit",
+       1
+      ]
+     ]
+    }
+   },
+   "nicht_auswertbar": {},
+   "T_fremdbearbeiter": {
+    "anfragen": 174,
+    "treffer": 0.6379310344827587,
+    "zufallsnachbar": 0.1378552568612014,
+    "mehrheitsklasse": 0.5229885057471264,
+    "klassen": 3,
+    "ausgewogen": 0.5967310000923446,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.5344729623824451,
+     0.735961087750741
+    ],
+    "cluster": 128
+   },
+   "T_fremdepoche": {
+    "anfragen": 131,
+    "treffer": 0.42748091603053434,
+    "zufallsnachbar": 0.13769286508051487,
+    "mehrheitsklasse": 0.6259541984732825,
+    "klassen": 2,
+    "ausgewogen": 0.42770034843205573,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.3220054389071591,
+     0.5270555767034638
+    ],
+    "cluster": 103
+   },
+   "T_bearbeiter_fremde_gattung": {
+    "anfragen": 93,
+    "treffer": 0.5376344086021505,
+    "zufallsnachbar": 0.16492599771999306,
+    "mehrheitsklasse": 0.5161290322580645,
+    "klassen": 3,
+    "ausgewogen": 0.397875816993464,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.383678468774497,
+     0.6767676767676768
+    ],
+    "cluster": 54
+   },
+   "T_epoche": {
+    "anfragen": 155,
+    "treffer": 0.9096774193548387,
+    "zufallsnachbar": 0.26604648217568405,
+    "mehrheitsklasse": 0.34838709677419355,
+    "klassen": 4,
+    "ausgewogen": 0.9266351457840819,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8534942764242127,
+     0.9578376379770579
+    ],
+    "cluster": 102
+   },
+   "T_epoche_fremde_gattung": {
+    "anfragen": 141,
+    "treffer": 0.425531914893617,
+    "zufallsnachbar": 0.21147994315548221,
+    "mehrheitsklasse": 0.3829787234042553,
+    "klassen": 3,
+    "ausgewogen": 0.41316653532965586,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.310320019846192,
+     0.5384615384615384
+    ],
+    "cluster": 88
+   }
+  },
+  "wort|2000": {
+   "abschnitte": 380,
+   "merkmale_gesamt": 3000,
+   "je_teilkorpus": {
+    "bbawamarna": 13,
+    "bbawarchive": 5,
+    "bbawbriefe": 24,
+    "bbawgrabinschriften": 50,
+    "bbawhistbiospzt": 6,
+    "bbawpyramidentexte": 56,
+    "bbawramessiden": 21,
+    "bbawtempelbib": 9,
+    "bbawtotenlit": 18,
+    "sawlit": 95,
+    "sawmedizin": 28,
+    "tb": 55
+   },
+   "mittlere_laenge": 2000.0,
+   "top_merkmale": [
+    "10050",
+    "64360",
+    "10110",
+    "78870",
+    "10030",
+    "850787",
+    "850814",
+    "91900",
+    "107520",
+    "21881",
+    "851809",
+    "851711",
+    "10090",
+    "10100",
+    "81660",
+    "851446",
+    "90260",
+    "185810",
+    "851517",
+    "34360",
+    "59920",
+    "21930",
+    "400313",
+    "129490",
+    "851961"
+   ],
+   "T_text": {
+    "anfragen": 22,
+    "treffer": 0.7272727272727273,
+    "zufallsnachbar": 0.006956104581434395,
+    "mehrheitsklasse": 0.36363636363636365,
+    "klassen": 5,
+    "ausgewogen": 0.6,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.4,
+     1.0
+    ],
+    "cluster": 10
+   },
+   "T_gattung": {
+    "anfragen": 378,
+    "treffer": 0.9470899470899471,
+    "zufallsnachbar": 0.11559198050803832,
+    "mehrheitsklasse": 0.25132275132275134,
+    "klassen": 12,
+    "ausgewogen": 0.8502660420893503,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.9214504275511473,
+     0.9684231247409864
+    ],
+    "cluster": 366
+   },
+   "T_gattung_nur_textausschluss": {
+    "anfragen": 380,
+    "treffer": 0.9657894736842105,
+    "zufallsnachbar": 0.13232519750304986,
+    "mehrheitsklasse": 0.25,
+    "klassen": 12,
+    "ausgewogen": 0.9046224000171367,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.9444407603890362,
+     0.9841269841269841
+    ],
+    "cluster": 368
+   },
+   "je_klasse": {
+    "bbawamarna": {
+     "anfragen": 12,
+     "treffer": 0.5833333333333334,
+     "haeufigste_antworten": [
+      [
+       "bbawamarna",
+       7
+      ],
+      [
+       "bbawhistbiospzt",
+       4
+      ],
+      [
+       "bbawramessiden",
+       1
+      ]
+     ]
+    },
+    "bbawarchive": {
+     "anfragen": 5,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawarchive",
+       5
+      ]
+     ]
+    },
+    "bbawbriefe": {
+     "anfragen": 24,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawbriefe",
+       24
+      ]
+     ]
+    },
+    "bbawgrabinschriften": {
+     "anfragen": 49,
+     "treffer": 0.9795918367346939,
+     "haeufigste_antworten": [
+      [
+       "bbawgrabinschriften",
+       48
+      ],
+      [
+       "bbawarchive",
+       1
+      ]
+     ]
+    },
+    "bbawhistbiospzt": {
+     "anfragen": 6,
+     "treffer": 0.16666666666666666,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       4
+      ],
+      [
+       "bbawamarna",
+       1
+      ],
+      [
+       "bbawhistbiospzt",
+       1
+      ]
+     ]
+    },
+    "bbawpyramidentexte": {
+     "anfragen": 56,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawpyramidentexte",
+       56
+      ]
+     ]
+    },
+    "bbawramessiden": {
+     "anfragen": 21,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawramessiden",
+       21
+      ]
+     ]
+    },
+    "bbawtempelbib": {
+     "anfragen": 9,
+     "treffer": 0.7777777777777778,
+     "haeufigste_antworten": [
+      [
+       "bbawtempelbib",
+       7
+      ],
+      [
+       "sawlit",
+       1
+      ],
+      [
+       "bbawtotenlit",
+       1
+      ]
+     ]
+    },
+    "bbawtotenlit": {
+     "anfragen": 18,
+     "treffer": 0.7777777777777778,
+     "haeufigste_antworten": [
+      [
+       "bbawtotenlit",
+       14
+      ],
+      [
+       "bbawtempelbib",
+       2
+      ],
+      [
+       "sawlit",
+       1
+      ]
+     ]
+    },
+    "sawlit": {
+     "anfragen": 95,
+     "treffer": 0.9894736842105263,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       94
+      ],
+      [
+       "bbawbriefe",
+       1
+      ]
+     ]
+    },
+    "sawmedizin": {
+     "anfragen": 28,
+     "treffer": 0.9285714285714286,
+     "haeufigste_antworten": [
+      [
+       "sawmedizin",
+       26
+      ],
+      [
+       "sawlit",
+       2
+      ]
+     ]
+    },
+    "tb": {
+     "anfragen": 55,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "tb",
+       55
+      ]
+     ]
+    }
+   },
+   "nicht_auswertbar": {
+    "bbawgrabinschriften": 1,
+    "bbawamarna": 1
+   },
+   "T_fremdbearbeiter": {
+    "anfragen": 140,
+    "treffer": 0.3357142857142857,
+    "zufallsnachbar": 0.02652140687271754,
+    "mehrheitsklasse": 0.6785714285714286,
+    "klassen": 4,
+    "ausgewogen": 0.30271024027459953,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.24817518248175183,
+     0.41845169637722823
+    ],
+    "cluster": 130
+   },
+   "T_fremdepoche": {
+    "anfragen": 87,
+    "treffer": 0.5517241379310345,
+    "zufallsnachbar": 0.08421031738194025,
+    "mehrheitsklasse": 0.8505747126436781,
+    "klassen": 2,
+    "ausgewogen": 0.577962577962578,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.44047619047619047,
+     0.6594234079173834
+    ],
+    "cluster": 82
+   },
+   "T_bearbeiter_fremde_gattung": {
+    "anfragen": 65,
+    "treffer": 0.1076923076923077,
+    "zufallsnachbar": 0.0438909532841566,
+    "mehrheitsklasse": 0.38461538461538464,
+    "klassen": 5,
+    "ausgewogen": 0.0939047619047619,
+    "p_zufall": 0.02148925537231384,
+    "ki95": [
+     0.03278688524590164,
+     0.1875
+    ],
+    "cluster": 55
+   },
+   "T_epoche": {
+    "anfragen": 169,
+    "treffer": 0.8875739644970414,
+    "zufallsnachbar": 0.33424440496645086,
+    "mehrheitsklasse": 0.5266272189349113,
+    "klassen": 4,
+    "ausgewogen": 0.8157925407925408,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8284023668639053,
+     0.9397590361445783
+    ],
+    "cluster": 157
+   },
+   "T_epoche_fremde_gattung": {
+    "anfragen": 169,
+    "treffer": 0.42011834319526625,
+    "zufallsnachbar": 0.24623173622108557,
+    "mehrheitsklasse": 0.5266272189349113,
+    "klassen": 4,
+    "ausgewogen": 0.34974791126476523,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.34336473802185485,
+     0.5
+    ],
+    "cluster": 157
+   }
+  },
+  "zeichen|2000": {
+   "abschnitte": 116,
+   "merkmale_gesamt": 1232,
+   "je_teilkorpus": {
+    "bbawamarna": 10,
+    "bbawgrabinschriften": 10,
+    "bbawtempelbib": 7,
+    "bbawtotenlit": 18,
+    "sawlit": 45,
+    "sawmedizin": 26
+   },
+   "mittlere_laenge": 5925.508620689655,
+   "top_merkmale": [
+    "X1",
+    "N35",
+    "Z1",
+    "D21",
+    "M17",
+    "G17",
+    "Z7",
+    "I9",
+    "Z2",
+    "S29",
+    "D36",
+    "G1",
+    "V31",
+    "Y1",
+    "Aa1",
+    "A1",
+    "G7",
+    "V28",
+    "Q3",
+    "D46",
+    "Z4",
+    "G43",
+    "N5",
+    "D2",
+    "W24"
+   ],
+   "T_text": {
+    "anfragen": 12,
+    "treffer": 1.0,
+    "zufallsnachbar": 0.026086956521739132,
+    "mehrheitsklasse": 0.6666666666666666,
+    "klassen": 3,
+    "ausgewogen": 1.0,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     1.0,
+     1.0
+    ],
+    "cluster": 5
+   },
+   "T_gattung": {
+    "anfragen": 114,
+    "treffer": 0.9385964912280702,
+    "zufallsnachbar": 0.21622968378107216,
+    "mehrheitsklasse": 0.39473684210526316,
+    "klassen": 6,
+    "ausgewogen": 0.9317460317460317,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8760330578512396,
+     0.9908277731442869
+    ],
+    "cluster": 107
+   },
+   "T_gattung_nur_textausschluss": {
+    "anfragen": 116,
+    "treffer": 0.9482758620689655,
+    "zufallsnachbar": 0.22140193630046412,
+    "mehrheitsklasse": 0.3879310344827586,
+    "klassen": 6,
+    "ausgewogen": 0.9410052910052911,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.8907530199579833,
+     0.9912280701754386
+    ],
+    "cluster": 109
+   },
+   "je_klasse": {
+    "bbawamarna": {
+     "anfragen": 10,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawamarna",
+       10
+      ]
+     ]
+    },
+    "bbawgrabinschriften": {
+     "anfragen": 8,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "bbawgrabinschriften",
+       8
+      ]
+     ]
+    },
+    "bbawtempelbib": {
+     "anfragen": 7,
+     "treffer": 0.8571428571428571,
+     "haeufigste_antworten": [
+      [
+       "bbawtempelbib",
+       6
+      ],
+      [
+       "bbawtotenlit",
+       1
+      ]
+     ]
+    },
+    "bbawtotenlit": {
+     "anfragen": 18,
+     "treffer": 0.7777777777777778,
+     "haeufigste_antworten": [
+      [
+       "bbawtotenlit",
+       14
+      ],
+      [
+       "bbawtempelbib",
+       4
+      ]
+     ]
+    },
+    "sawlit": {
+     "anfragen": 45,
+     "treffer": 0.9555555555555556,
+     "haeufigste_antworten": [
+      [
+       "sawlit",
+       43
+      ],
+      [
+       "sawmedizin",
+       2
+      ]
+     ]
+    },
+    "sawmedizin": {
+     "anfragen": 26,
+     "treffer": 1.0,
+     "haeufigste_antworten": [
+      [
+       "sawmedizin",
+       26
+      ]
+     ]
+    }
+   },
+   "nicht_auswertbar": {
+    "bbawgrabinschriften": 2
+   },
+   "T_fremdbearbeiter": {
+    "anfragen": 82,
+    "treffer": 0.5975609756097561,
+    "zufallsnachbar": 0.09651125360932934,
+    "mehrheitsklasse": 0.5487804878048781,
+    "klassen": 3,
+    "ausgewogen": 0.5740079365079365,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.4761759581881533,
+     0.7142857142857143
+    ],
+    "cluster": 75
+   },
+   "T_fremdepoche": {
+    "anfragen": 46,
+    "treffer": 0.34782608695652173,
+    "zufallsnachbar": 0.12399453231198146,
+    "mehrheitsklasse": 0.7608695652173914,
+    "klassen": 2,
+    "ausgewogen": 0.5090909090909091,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.2,
+     0.4888888888888889
+    ],
+    "cluster": 44
+   },
+   "T_bearbeiter_fremde_gattung": {
+    "anfragen": 37,
+    "treffer": 0.5945945945945946,
+    "zufallsnachbar": 0.21646005126694723,
+    "mehrheitsklasse": 0.6216216216216216,
+    "klassen": 3,
+    "ausgewogen": 0.38768115942028986,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.40625,
+     0.7708482142857143
+    ],
+    "cluster": 32
+   },
+   "T_epoche": {
+    "anfragen": 53,
+    "treffer": 0.8679245283018868,
+    "zufallsnachbar": 0.2814136410759271,
+    "mehrheitsklasse": 0.4339622641509434,
+    "klassen": 4,
+    "ausgewogen": 0.8886886770518484,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.75,
+     0.9615384615384616
+    ],
+    "cluster": 46
+   },
+   "T_epoche_fremde_gattung": {
+    "anfragen": 51,
+    "treffer": 0.5490196078431373,
+    "zufallsnachbar": 0.18944307818988124,
+    "mehrheitsklasse": 0.45098039215686275,
+    "klassen": 3,
+    "ausgewogen": 0.47926838719677595,
+    "p_zufall": 0.0004997501249375312,
+    "ki95": [
+     0.3829787234042553,
+     0.6896865203761754
+    ],
+    "cluster": 44
+   }
+  }
+ },
+ "zeichen_roh": {
+  "abschnitte": 243,
+  "merkmale_gesamt": 1801,
+  "je_teilkorpus": {
+   "bbawamarna": 21,
+   "bbawgrabinschriften": 21,
+   "bbawhistbiospzt": 8,
+   "bbawtempelbib": 14,
+   "bbawtotenlit": 36,
+   "sawlit": 91,
+   "sawmedizin": 52
+  },
+  "mittlere_laenge": 2943.090534979424,
+  "top_merkmale": [
+   "X1",
+   "N35",
+   "Z1",
+   "D21",
+   "M17",
+   "G17",
+   "Z7",
+   "I9",
+   "Z2",
+   "S29",
+   "D36",
+   "G1",
+   "Y1",
+   "Aa1",
+   "A1",
+   "G7",
+   "V28",
+   "Q3",
+   "G43",
+   "D46",
+   "N5",
+   "D2",
+   "V31",
+   "W24",
+   "Z4"
+  ],
+  "T_text": {
+   "anfragen": 82,
+   "treffer": 0.8048780487804879,
+   "zufallsnachbar": 0.016075388026607542,
+   "mehrheitsklasse": 0.32926829268292684,
+   "klassen": 5,
+   "ausgewogen": 0.8180696184906712,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.6764507154213037,
+    0.9029204509865331
+   ],
+   "cluster": 29
+  },
+  "T_gattung": {
+   "anfragen": 243,
+   "treffer": 0.9176954732510288,
+   "zufallsnachbar": 0.2078144491113798,
+   "mehrheitsklasse": 0.37448559670781895,
+   "klassen": 7,
+   "ausgewogen": 0.8248081283795569,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8479847389558233,
+    0.9732142857142857
+   ],
+   "cluster": 190
+  },
+  "T_gattung_nur_textausschluss": {
+   "anfragen": 243,
+   "treffer": 0.9176954732510288,
+   "zufallsnachbar": 0.21383396365375715,
+   "mehrheitsklasse": 0.37448559670781895,
+   "klassen": 7,
+   "ausgewogen": 0.8248081283795569,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8512373036401489,
+    0.9726611107183257
+   ],
+   "cluster": 190
+  },
+  "je_klasse": {
+   "bbawamarna": {
+    "anfragen": 21,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawamarna",
+      21
+     ]
+    ]
+   },
+   "bbawgrabinschriften": {
+    "anfragen": 21,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "bbawgrabinschriften",
+      21
+     ]
+    ]
+   },
+   "bbawhistbiospzt": {
+    "anfragen": 8,
+    "treffer": 0.375,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      4
+     ],
+     [
+      "bbawhistbiospzt",
+      3
+     ],
+     [
+      "bbawamarna",
+      1
+     ]
+    ]
+   },
+   "bbawtempelbib": {
+    "anfragen": 14,
+    "treffer": 0.6428571428571429,
+    "haeufigste_antworten": [
+     [
+      "bbawtempelbib",
+      9
+     ],
+     [
+      "bbawtotenlit",
+      5
+     ]
+    ]
+   },
+   "bbawtotenlit": {
+    "anfragen": 36,
+    "treffer": 0.7777777777777778,
+    "haeufigste_antworten": [
+     [
+      "bbawtotenlit",
+      28
+     ],
+     [
+      "bbawtempelbib",
+      8
+     ]
+    ]
+   },
+   "sawlit": {
+    "anfragen": 91,
+    "treffer": 0.978021978021978,
+    "haeufigste_antworten": [
+     [
+      "sawlit",
+      89
+     ],
+     [
+      "sawmedizin",
+      2
+     ]
+    ]
+   },
+   "sawmedizin": {
+    "anfragen": 52,
+    "treffer": 1.0,
+    "haeufigste_antworten": [
+     [
+      "sawmedizin",
+      52
+     ]
+    ]
+   }
+  },
+  "nicht_auswertbar": {},
+  "T_fremdbearbeiter": {
+   "anfragen": 174,
+   "treffer": 0.7011494252873564,
+   "zufallsnachbar": 0.1378552568612014,
+   "mehrheitsklasse": 0.5229885057471264,
+   "klassen": 3,
+   "ausgewogen": 0.6955705359066703,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.6105195681511472,
+    0.7904389024149502
+   ],
+   "cluster": 128
+  },
+  "T_fremdepoche": {
+   "anfragen": 131,
+   "treffer": 0.45038167938931295,
+   "zufallsnachbar": 0.13769286508051487,
+   "mehrheitsklasse": 0.6259541984732825,
+   "klassen": 2,
+   "ausgewogen": 0.45009955201592833,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.3412126715092817,
+    0.5514705882352942
+   ],
+   "cluster": 103
+  },
+  "T_bearbeiter_fremde_gattung": {
+   "anfragen": 93,
+   "treffer": 0.5591397849462365,
+   "zufallsnachbar": 0.16492599771999306,
+   "mehrheitsklasse": 0.5161290322580645,
+   "klassen": 3,
+   "ausgewogen": 0.42664565826330536,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.4,
+    0.7033068783068783
+   ],
+   "cluster": 54
+  },
+  "T_epoche": {
+   "anfragen": 155,
+   "treffer": 0.8838709677419355,
+   "zufallsnachbar": 0.26604648217568405,
+   "mehrheitsklasse": 0.34838709677419355,
+   "klassen": 4,
+   "ausgewogen": 0.9058067375886525,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.8193985849056603,
+    0.9440741773563859
+   ],
+   "cluster": 102
+  },
+  "T_epoche_fremde_gattung": {
+   "anfragen": 141,
+   "treffer": 0.5106382978723404,
+   "zufallsnachbar": 0.21147994315548221,
+   "mehrheitsklasse": 0.3829787234042553,
+   "klassen": 3,
+   "ausgewogen": 0.4865970580509587,
+   "p_zufall": 0.0004997501249375312,
+   "ki95": [
+    0.3896854575163399,
+    0.6214333976833977
+   ],
+   "cluster": 88
+  }
+ }
+}

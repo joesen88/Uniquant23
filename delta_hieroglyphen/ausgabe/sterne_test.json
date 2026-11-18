@@ -1,0 +1,243 @@
+{
+ "A": {
+  "lemmata": 40,
+  "belege": 633,
+  "liste": [
+   [
+    "Jḫm-sk",
+    "Nicht-Untergehender (Zirkumpolarstern)",
+    158
+   ],
+   [
+    "sbꜣ",
+    "Stern",
+    152
+   ],
+   [
+    "Spd.t",
+    "Sothis (Stern des Sirius als Göttin)",
+    63
+   ],
+   [
+    "Sꜣḥ",
+    "Orion (Sternbild)",
+    59
+   ],
+   [
+    "nṯr-dwꜣ.j",
+    "Morgendlicher Gott (Morgenstern, Venus)",
+    44
+   ],
+   [
+    "ḫꜣ-bꜣ=s",
+    "Sterne",
+    23
+   ],
+   [
+    "Jḫm-wrḏ",
+    "Nicht-Ermüdender (Zirkumpolarstern)",
+    21
+   ],
+   [
+    "Spd.t",
+    "Sirius",
+    16
+   ],
+   [
+    "sḥd",
+    "[ein Stern]",
+    16
+   ],
+   [
+    "Ꜣḫꜣḫ",
+    "Achach (Sterne eines Sternbildes)",
+    9
+   ],
+   [
+    "nḫḫ",
+    "Dauernder (Bez. eines Sterns)",
+    7
+   ],
+   [
+    "jm.j-Spd.t",
+    "der in Sothis ist (u.a. Horus)",
+    6
+   ],
+   [
+    "ḫpš",
+    "[Sternbild des Großen Bären]",
+    5
+   ],
+   [
+    "srwḏ-knm.tw-r-sšp-jtn",
+    "der die Kenemet-Sterne (am Himmel) befestigt b",
+    4
+   ],
+   [
+    "pr.t-spd.t",
+    "Siriusaufgang",
+    4
+   ],
+   [
+    "sbg",
+    "Planet Merkur",
+    4
+   ],
+   [
+    "Sꜣḥ",
+    "Orion (Bez. von verschiedenen Göttern)",
+    3
+   ],
+   [
+    "Msḫt.jw",
+    "[Sternbild des Großen Bären]",
+    3
+   ],
+   [
+    "sbꜣ.t",
+    "Sternkonstellationen",
+    3
+   ],
+   [
+    "gp",
+    "sich (mit Wolken, Sternen) beziehen, bedecken",
+    3
+   ],
+   [
+    "ḥr.jw",
+    "[Bez. d. Sterne]",
+    3
+   ],
+   [
+    "knm.tj",
+    "Finsterer, [Stern]",
+    3
+   ],
+   [
+    "Jḥ-p.t",
+    "Stier des Himmels (Sternbild)",
+    2
+   ],
+   [
+    "jḥy",
+    "sich verdunkeln (?) (von Sternen)",
+    2
+   ],
+   [
+    "Jꜣd",
+    "Iad (Stern oder Sternbild)",
+    2
+   ],
+   [
+    "gnẖ.t",
+    "Stern",
+    2
+   ],
+   [
+    "Sbꜣ.yt",
+    "Sternenhafte",
+    2
+   ],
+   [
+    "nb.t-sbꜣ.w",
+    "Herrin der Sterne (Hathor)",
+    2
+   ],
+   [
+    "sšd",
+    "[Sternbild]",
+    1
+   ],
+   [
+    "Wpš.t-sbꜣ.w",
+    "Die mit leuchtenden Sternen",
+    1
+   ]
+  ]
+ },
+ "B": {
+  "bbawpyramidentexte": {
+   "saetze": 14016,
+   "koenig": 4237,
+   "stern": 354,
+   "beide": 123,
+   "erwartet": 107.01327054794521,
+   "p": 0.035925399833575025
+  },
+  "sawlit": {
+   "saetze": 23505,
+   "koenig": 416,
+   "stern": 29,
+   "beide": 1,
+   "erwartet": 0.5132524994681983,
+   "p": 0.4043846098213039
+  },
+  "bbawamarna": {
+   "saetze": 2634,
+   "koenig": 385,
+   "stern": 1,
+   "beide": 0,
+   "erwartet": 0.14616552771450267,
+   "p": 1.0
+  },
+  "bbawbriefe": {
+   "saetze": 3860,
+   "koenig": 66,
+   "stern": 2,
+   "beide": 0,
+   "erwartet": 0.03419689119170984,
+   "p": 1.0
+  },
+  "bbawfelsinschriften": {
+   "saetze": 445,
+   "koenig": 64,
+   "stern": 0,
+   "beide": 0,
+   "erwartet": 0.0,
+   "p": 1.0
+  },
+  "bbawgrabinschriften": {
+   "saetze": 18255,
+   "koenig": 59,
+   "stern": 0,
+   "beide": 0,
+   "erwartet": 0.0,
+   "p": 1.0
+  },
+  "bbawhistbiospzt": {
+   "saetze": 1110,
+   "koenig": 65,
+   "stern": 1,
+   "beide": 0,
+   "erwartet": 0.05855855855855856,
+   "p": 1.0
+  },
+  "bbawramessiden": {
+   "saetze": 4061,
+   "koenig": 360,
+   "stern": 6,
+   "beide": 0,
+   "erwartet": 0.531888697365181,
+   "p": 1.0
+  },
+  "beispiele": [
+   "O (du) 'Dessen Gesicht hinter ihn gerichtet ist', Pförtner des Osiris, sag dem Osiris: \"Veranlasse, daß diesem Pepi jene deine Barke gebracht werde, in der deine Reinen ü",
+   "Dieser Pepi ist zu der großen Insel inmitten des Opfergefildes gegangen, auf der sich die Götter und die Schwalben niederlassen - die Schwalben sind die Nicht-Untergehend",
+   "Pepi ist das Kind mit vor den Nicht-Untergehenden verborgenen Eigenschaften.",
+   "Die Schwester des Pepi ist Sothis, der Abkömmling dieses Pepi ist der Morgenstern.",
+   "Duawer hat ihn geschoren und Sothis hat die Arme des Nemti-em-za-ef Merenre gewaschen, bei der Geburt dieses Nemti-em-za-ef Merenre an diesem Tag, Götter.",
+   "Pepi ist der Dritte dieser Sothis mit schönen Plätzen [...]"
+  ]
+ },
+ "C": [
+  "ḫpš"
+ ],
+ "D": {
+  "('Bꜣk.tj', 'Bakti (Dekansterne)')": 1,
+  "('Spd', '[der dem Sirius entsprechende Dekan]')": 1,
+  "('Jḫm-wrḏ', '[Bez. für Planet oder Dekanstern]')": 8,
+  "(None, '[ein Dekansternbild]')": 1,
+  "('Rmn-sꜣḥ', '[Dekan]')": 1
+ },
+ "E": []
+}

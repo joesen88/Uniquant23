@@ -1,0 +1,87 @@
+/home/claude/scripts/halbwertszeit.py:78: RuntimeWarning: invalid value encountered in scalar divide
+  A = max(0.0, float((w * y * e).sum() / (w * e * e).sum()))
+PROTOKOLL sha256: b7ecfda5b6d6cc7d
+Texte mit brauchbarer Datierung: 12494, Woerter 744191
+
+M1  gemeinsamer Wortlaut zwischen Abschnitten verschiedener Handschriften (L = 1000)
+   Abschnitte 687, Hintergrund zwischen Textgruppen 0.01152%
+   Literatur              Abschn. 175 Hss 515 Spanne  1502 J | gleichzeitig 0.571% | Normtreue/Jh. 57.7% [27.2%, 77.3%] p=0.001 | Halbwertszeit 126 J
+        Klassen: 0-50: 0.542% (2342)  50-150: 0.306% (2313)  150-300: 0.206% (2087)  300-600: 0.053% (3006)  600-1000: 0.048% (4583)  1000-: 0.002% (637)
+   Totenbuch              Abschn. 108 Hss  16 Spanne  1232 J | gleichzeitig 0.958% | Normtreue/Jh. 95.6% [69.3%, 122.1%] p=0.298 | Halbwertszeit 1554 J
+        Klassen: 0-50: 1.008% (1042)  50-150: 0.033% (23)  150-300: 0.270% (51)  300-600: 0.728% (662)  600-1000: 0.767% (480)  1000-: 0.557% (2240)
+   Pyramidentexte         Abschn.  98 Hss   5 Spanne   108 J | gleichzeitig 1.139% | Normtreue/Jh. 95.1% [0.7%, 122.1%] p=0.353 | Halbwertszeit 1377 J
+        Klassen: 0-50: 1.044% (1252)  50-150: 1.142% (2077)
+   Grabinschriften        Abschn.  92 Hss  62 Spanne   353 J | gleichzeitig 8.098% | Normtreue/Jh. 82.8% [62.8%, 106.9%] p=0.033 | Halbwertszeit 367 J
+        Klassen: 0-50: 7.051% (1340)  50-150: 7.648% (1983)  150-300: 3.708% (528)  300-600: 3.341% (22)
+   Medizin                Abschn.  51 Hss  25 Spanne  1394 J | gleichzeitig 0.415% | Normtreue/Jh. 89.1% [0.7%, 113.0%] p=0.341 | Halbwertszeit 601 J
+        Klassen: 0-50: 0.341% (88)  50-150: 0.151% (210)  150-300: 0.499% (417)  300-600: 0.128% (161)  600-1000: 0.062% (66)  1000-: 0.000% (10)
+   Briefe                 Abschn.  44 Hss 312 Spanne  1334 J | gleichzeitig 3.409% | Normtreue/Jh. 29.9% [14.5%, 48.0%] p=0.001 | Halbwertszeit 57 J
+        Klassen: 0-50: 2.523% (156)  50-150: 1.285% (174)  150-300: 0.501% (161)  300-600: 0.263% (81)  600-1000: 0.101% (300)  1000-: 0.064% (33)
+   Spaete Totenliteratur  Abschn.  36 Hss   7 Spanne   495 J | gleichzeitig 4.145% | Normtreue/Jh. 54.2% [0.7%, 122.1%] p=0.266 | Halbwertszeit 113 J
+        Klassen: 0-50: 3.981% (60)  50-150: 1.999% (239)  300-600: 0.010% (155)
+
+M2  derselbe Spruch / dasselbe Werk in zwei Handschriften
+   Totenbuch        Paare  273 Werke 116 Hss  11 Stellen  55206 | gleichzeitig 75.1% | Normtreue/Jh. 99.06% [98.4%, 99.4%] (ueber Handschriften gezogen: [77.8%, 122.1%]) p=0.243 | Halbwertszeit 7357 J
+        Klassen: 0-50: 74.7% (59)  150-300: 52.3% (1)  300-600: 74.1% (49)  600-1000: 68.3% (36)  1000-: 66.9% (128)
+   Pyramidentexte   Paare  383 Werke 191 Hss   5 Stellen  40658 | gleichzeitig 82.1% | Normtreue/Jh. 109.51% [99.1%, 117.5%] (ueber Handschriften gezogen: [75.3%, 122.1%]) p=0.911 | Halbwertszeit kein Zerfall
+        Klassen: 0-50: 84.6% (144)  50-150: 87.6% (239)
+   Literatur        Paare   46 Werke  17 Hss  56 Stellen   6607 | gleichzeitig 89.2% | Normtreue/Jh. 97.34% [91.8%, 99.5%] (ueber Handschriften gezogen: [89.5%, 100.8%]) p=0.047 | Halbwertszeit 2574 J
+        Klassen: 0-50: 90.6% (20)  50-150: 82.9% (9)  150-300: 86.5% (10)  600-1000: 73.7% (7)
+
+Robustheit
+ M1 mit L = 500
+   Abschnitte 1389, Hintergrund zwischen Textgruppen 0.00726%
+   Literatur              Abschn. 353 Hss 525 Spanne  1918 J | gleichzeitig 0.356% | Normtreue/Jh. 55.7% | Halbwertszeit 118 J
+        Klassen: 0-50: 0.341% (9672)  50-150: 0.180% (9466)  150-300: 0.122% (8371)  300-600: 0.032% (12346)  600-1000: 0.024% (18471)  1000-: 0.005% (2972)
+   Totenbuch              Abschn. 217 Hss  17 Spanne  1232 J | gleichzeitig 0.469% | Normtreue/Jh. 96.0% | Halbwertszeit 1704 J
+        Klassen: 0-50: 0.495% (4187)  50-150: 0.277% (218)  150-300: 0.131% (309)  300-600: 0.375% (2649)  600-1000: 0.398% (1920)  1000-: 0.283% (9040)
+   Pyramidentexte         Abschn. 197 Hss   6 Spanne   126 J | gleichzeitig 0.572% | Normtreue/Jh. 98.9% | Halbwertszeit 6200 J
+        Klassen: 0-50: 0.538% (5005)  50-150: 0.585% (8555)
+   Grabinschriften        Abschn. 185 Hss  63 Spanne   389 J | gleichzeitig 5.089% | Normtreue/Jh. 84.7% | Halbwertszeit 418 J
+        Klassen: 0-50: 4.377% (5704)  50-150: 4.982% (7943)  150-300: 2.554% (2088)  300-600: 1.315% (155)
+   Medizin                Abschn. 104 Hss  26 Spanne  1394 J | gleichzeitig 0.250% | Normtreue/Jh. 89.4% | Halbwertszeit 621 J
+        Klassen: 0-50: 0.176% (368)  50-150: 0.089% (859)  150-300: 0.315% (1715)  300-600: 0.082% (711)  600-1000: 0.026% (275)  1000-: 0.000% (40)
+   Briefe                 Abschn.  91 Hss 326 Spanne  1379 J | gleichzeitig 2.566% | Normtreue/Jh. 27.0% | Halbwertszeit 53 J
+        Klassen: 0-50: 1.868% (735)  50-150: 1.054% (688)  150-300: 0.292% (684)  300-600: 0.198% (379)  600-1000: 0.066% (1273)  1000-: 0.047% (243)
+   Spaete Totenliteratur  Abschn.  73 Hss   7 Spanne   495 J | gleichzeitig 2.153% | Normtreue/Jh. 54.1% | Halbwertszeit 113 J
+        Klassen: 0-50: 1.958% (242)  50-150: 1.091% (1014)  300-600: 0.005% (682)
+   bbawarchive            Abschn.  19 Hss 505 Spanne   128 J | gleichzeitig 0.737% | Normtreue/Jh. 19.6% | Halbwertszeit 43 J
+        Klassen: 0-50: 0.760% (108)  50-150: 0.000% (48)
+   bbawhistbiospzt        Abschn.  14 Hss  21 Spanne   330 J | gleichzeitig 21.504% | Normtreue/Jh. 0.7% | Halbwertszeit 14 J
+        Klassen: 0-50: 1.197% (37)  150-300: 0.000% (9)  300-600: 0.000% (4)
+ M1 nur ganz erhaltene Woerter
+   Abschnitte 667, Hintergrund zwischen Textgruppen 0.01193%
+   Literatur              Abschn. 169 Hss 516 Spanne  1502 J | gleichzeitig 0.544% | Normtreue/Jh. 60.9% | Halbwertszeit 140 J
+        Klassen: 0-50: 0.523% (2172)  50-150: 0.312% (2201)  150-300: 0.213% (1931)  300-600: 0.057% (2781)  600-1000: 0.050% (4310)  1000-: 0.001% (556)
+   Totenbuch              Abschn. 108 Hss  17 Spanne  1232 J | gleichzeitig 0.947% | Normtreue/Jh. 95.7% | Halbwertszeit 1579 J
+        Klassen: 0-50: 0.985% (1012)  50-150: 0.810% (64)  150-300: 0.280% (51)  300-600: 0.724% (662)  600-1000: 0.746% (480)  1000-: 0.557% (2240)
+   Pyramidentexte         Abschn.  95 Hss   5 Spanne   108 J | gleichzeitig 1.128% | Normtreue/Jh. 96.9% | Halbwertszeit 2207 J
+        Klassen: 0-50: 1.040% (1193)  50-150: 1.147% (1988)
+   Grabinschriften        Abschn.  88 Hss  62 Spanne   351 J | gleichzeitig 7.980% | Normtreue/Jh. 83.0% | Halbwertszeit 372 J
+        Klassen: 0-50: 6.871% (1235)  50-150: 7.609% (1790)  150-300: 3.830% (498)  300-600: 3.166% (20)
+   Medizin                Abschn.  50 Hss  22 Spanne  1394 J | gleichzeitig 0.421% | Normtreue/Jh. 88.1% | Halbwertszeit 545 J
+        Klassen: 0-50: 0.353% (83)  50-150: 0.151% (205)  150-300: 0.493% (390)  300-600: 0.131% (153)  600-1000: 0.060% (63)  1000-: 0.000% (10)
+   Briefe                 Abschn.  42 Hss 299 Spanne  1038 J | gleichzeitig 3.213% | Normtreue/Jh. 31.4% | Halbwertszeit 60 J
+        Klassen: 0-50: 2.455% (145)  50-150: 1.312% (166)  150-300: 0.488% (154)  300-600: 0.242% (58)  600-1000: 0.098% (296)  1000-: 0.000% (2)
+   Spaete Totenliteratur  Abschn.  36 Hss   7 Spanne   495 J | gleichzeitig 4.136% | Normtreue/Jh. 54.2% | Halbwertszeit 113 J
+        Klassen: 0-50: 3.992% (60)  50-150: 1.991% (239)  300-600: 0.010% (155)
+ M2 nur ganz erhaltene Woerter
+   Totenbuch        Paare  272 Werke 115 Hss  11 Stellen  54589 | gleichzeitig 75.2% | Normtreue/Jh. 99.10% | Halbwertszeit 7658 J
+        Klassen: 0-50: 74.9% (59)  150-300: 50.0% (1)  300-600: 74.8% (49)  600-1000: 68.3% (36)  1000-: 67.3% (127)
+   Pyramidentexte   Paare  359 Werke 179 Hss   5 Stellen  38181 | gleichzeitig 82.3% | Normtreue/Jh. 109.39% | Halbwertszeit kein Zerfall
+        Klassen: 0-50: 84.8% (139)  50-150: 87.8% (220)
+   Literatur        Paare   36 Werke  14 Hss  46 Stellen   5856 | gleichzeitig 90.8% | Normtreue/Jh. 97.16% | Halbwertszeit 2405 J
+        Klassen: 0-50: 91.1% (15)  50-150: 85.6% (7)  150-300: 89.4% (8)  600-1000: 73.7% (6)
+ M2 nur Paare mit gleichem Bearbeiter
+   Totenbuch        Paare  273 Werke 116 Hss  11 Stellen  55206 | gleichzeitig 75.1% | Normtreue/Jh. 99.06% | Halbwertszeit 7357 J
+        Klassen: 0-50: 74.7% (59)  150-300: 52.3% (1)  300-600: 74.1% (49)  600-1000: 68.3% (36)  1000-: 66.9% (128)
+   Pyramidentexte   Paare  383 Werke 191 Hss   5 Stellen  40658 | gleichzeitig 82.1% | Normtreue/Jh. 109.51% | Halbwertszeit kein Zerfall
+        Klassen: 0-50: 84.6% (144)  50-150: 87.6% (239)
+   Literatur        Paare   46 Werke  17 Hss  56 Stellen   6607 | gleichzeitig 89.2% | Normtreue/Jh. 97.34% | Halbwertszeit 2574 J
+        Klassen: 0-50: 90.6% (20)  50-150: 82.9% (9)  150-300: 86.5% (10)  600-1000: 73.7% (7)
+
+geschrieben: /home/claude/out/halbwertszeit_ergebnis.json
+
+real	0m44.514s
+user	0m43.595s
+sys	0m0.306s

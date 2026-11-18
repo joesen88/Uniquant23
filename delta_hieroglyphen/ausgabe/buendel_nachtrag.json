@@ -1,0 +1,509 @@
+{
+ "wort": {
+  "echt": {
+   "angepasst": 357,
+   "mittleres_gewicht": 0.43168928546989005,
+   "textgruppe": {
+    "anfragen": 693,
+    "vorher": 0.9047619047619048,
+    "nachher": 0.9393939393939394,
+    "zufall": 0.11811467580823562,
+    "aenderung_95": [
+     0.015623893413597734,
+     0.05519595489496339
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 407,
+    "vorher": 0.7616707616707616,
+    "nachher": 0.8624078624078624,
+    "zufall": 0.09325631469233997,
+    "aenderung_95": [
+     0.051276102088167054,
+     0.1556529670255623
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 342,
+    "vorher": 0.7602339181286549,
+    "nachher": 0.6929824561403509,
+    "zufall": 0.5562518846589295,
+    "aenderung_95": [
+     -0.11765150168828861,
+     -0.013028258386564576
+    ]
+   }
+  },
+  "kontrolle_0.0": {
+   "angepasst": 689,
+   "mittleres_gewicht": 0.21289230840800027,
+   "textgruppe": {
+    "anfragen": 693,
+    "vorher": 0.9047619047619048,
+    "nachher": 0.9191919191919192,
+    "zufall": 0.11811467580823562,
+    "aenderung_95": [
+     0.002912106626874871,
+     0.027034411460640964
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 693,
+    "vorher": 0.836940836940837,
+    "nachher": 0.8441558441558441,
+    "zufall": 0.06673896728466276,
+    "aenderung_95": [
+     -0.009435884946677605,
+     0.02251512928663121
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 651,
+    "vorher": 0.46390168970814133,
+    "nachher": 0.46236559139784944,
+    "zufall": 0.45852218453989896,
+    "aenderung_95": [
+     -0.024969929024258625,
+     0.02287863421230561
+    ]
+   }
+  },
+  "kontrolle_0.5": {
+   "angepasst": 689,
+   "mittleres_gewicht": 0.27527703064977793,
+   "textgruppe": {
+    "anfragen": 693,
+    "vorher": 0.8888888888888888,
+    "nachher": 0.9148629148629148,
+    "zufall": 0.11811467580823562,
+    "aenderung_95": [
+     0.010924142612893492,
+     0.04141309126552264
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 693,
+    "vorher": 0.6810966810966811,
+    "nachher": 0.8167388167388168,
+    "zufall": 0.06673896728466276,
+    "aenderung_95": [
+     0.10027464024678509,
+     0.17253997977307922
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 651,
+    "vorher": 0.7788018433179723,
+    "nachher": 0.5422427035330261,
+    "zufall": 0.45852218453989896,
+    "aenderung_95": [
+     -0.29758497610362844,
+     -0.18309859154929578
+    ]
+   }
+  },
+  "schriftart": {
+   "abschnitte_je_schriftart": {
+    "hieroglyphisch": 246,
+    "unbekannt": 61,
+    "hieratisch": 291,
+    "kursivhieroglyphisch": 96
+   },
+   "schriftart_allein": 0.1384755242908039,
+   "bearbeiter_eigen_ohne_schriftart": 0.034671951733467044,
+   "bearbeiter_eigen_mit_schriftart": 0.02659112902113392,
+   "schriftart_eigen": 0.005834248042454249,
+   "schriftart_neben_gruppe_und_zeit": 0.013915070754787373,
+   "test_bearbeiter": {
+    "roh": 0.03605544434584235,
+    "vertauscht_mittel": 0.02082280513273968,
+    "p": 0.001
+   }
+  }
+ },
+ "zeichen": {
+  "echt": {
+   "angepasst": 126,
+   "mittleres_gewicht": 0.5131159668038444,
+   "textgruppe": {
+    "anfragen": 208,
+    "vorher": 0.8653846153846154,
+    "nachher": 0.8653846153846154,
+    "zufall": 0.18507129609505257,
+    "aenderung_95": [
+     -0.0503924984164329,
+     0.06227557755775572
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 174,
+    "vorher": 0.7298850574712644,
+    "nachher": 0.8735632183908046,
+    "zufall": 0.18128269091541507,
+    "aenderung_95": [
+     0.01084535083943177,
+     0.3055669398907104
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 117,
+    "vorher": 0.8717948717948718,
+    "nachher": 0.6495726495726496,
+    "zufall": 0.5571175093956874,
+    "aenderung_95": [
+     -0.32878787878787874,
+     -0.12842935779816517
+    ]
+   }
+  },
+  "kontrolle_0.0": {
+   "angepasst": 203,
+   "mittleres_gewicht": 0.2709864340014621,
+   "textgruppe": {
+    "anfragen": 208,
+    "vorher": 0.8653846153846154,
+    "nachher": 0.8605769230769231,
+    "zufall": 0.18507129609505257,
+    "aenderung_95": [
+     -0.03665403692477266,
+     0.030158406244420063
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 203,
+    "vorher": 0.7339901477832512,
+    "nachher": 0.7733990147783252,
+    "zufall": 0.0991963199473522,
+    "aenderung_95": [
+     -0.004631259780907668,
+     0.08197685631629699
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 182,
+    "vorher": 0.5439560439560439,
+    "nachher": 0.489010989010989,
+    "zufall": 0.5296091805820573,
+    "aenderung_95": [
+     -0.1186509390746679,
+     -0.004538655788655794
+    ]
+   }
+  },
+  "kontrolle_0.5": {
+   "angepasst": 203,
+   "mittleres_gewicht": 0.3155468662866322,
+   "textgruppe": {
+    "anfragen": 208,
+    "vorher": 0.8701923076923077,
+    "nachher": 0.8653846153846154,
+    "zufall": 0.18507129609505257,
+    "aenderung_95": [
+     -0.05264322310200279,
+     0.03398213179095228
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 203,
+    "vorher": 0.6995073891625616,
+    "nachher": 0.7536945812807881,
+    "zufall": 0.0991963199473522,
+    "aenderung_95": [
+     0.011045219793418208,
+     0.10283104745721565
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 182,
+    "vorher": 0.7032967032967034,
+    "nachher": 0.532967032967033,
+    "zufall": 0.5296091805820573,
+    "aenderung_95": [
+     -0.26063852813852817,
+     -0.1041409753363229
+    ]
+   }
+  },
+  "paare": {
+   "Z2/Z3": {
+    "Amarna / Gunnar Sperveslage": {
+     "anteil_zweite": 0.05225863596102746,
+     "n": 1129
+    },
+    "Hist.-biogr. Spaetzeit / Silke Grallert": {
+     "anteil_zweite": 0.12934362934362933,
+     "n": 518
+    },
+    "Tempelbibliothek / Frank Feder": {
+     "anteil_zweite": 0.3415750915750916,
+     "n": 1092
+    },
+    "Spaete Totenliteratur / Frank Feder": {
+     "anteil_zweite": 0.28801528801528803,
+     "n": 3663
+    },
+    "Spaete Totenliteratur / Susanne Töpfer": {
+     "anteil_zweite": 0.3584905660377358,
+     "n": 583
+    },
+    "Literatur / Frank Feder": {
+     "anteil_zweite": 0.13636363636363635,
+     "n": 528
+    },
+    "Literatur / Lutz Popko": {
+     "anteil_zweite": 0.33513097072419107,
+     "n": 2596
+    },
+    "Literatur / Peter Dils": {
+     "anteil_zweite": 0.12170263788968826,
+     "n": 1668
+    },
+    "Literatur / Renata & Peter Landgrafova & Dils": {
+     "anteil_zweite": 0.2527075812274368,
+     "n": 1108
+    },
+    "Medizin / Lutz Popko": {
+     "anteil_zweite": 0.03787047200878156,
+     "n": 5466
+    },
+    "Medizin / Marc Brose": {
+     "anteil_zweite": 0.5979228486646885,
+     "n": 2022
+    },
+    "Medizin / Peter Dils": {
+     "anteil_zweite": 0.1969439728353141,
+     "n": 589
+    }
+   },
+   "D40/A24": {
+    "Amarna / Gunnar Sperveslage": {
+     "anteil_zweite": 0.034782608695652174,
+     "n": 115
+    },
+    "Hist.-biogr. Spaetzeit / Silke Grallert": {
+     "anteil_zweite": 0.03333333333333333,
+     "n": 120
+    },
+    "Tempelbibliothek / Frank Feder": {
+     "anteil_zweite": 0.7991803278688525,
+     "n": 244
+    },
+    "Spaete Totenliteratur / Frank Feder": {
+     "anteil_zweite": 0.7206085753803596,
+     "n": 723
+    },
+    "Spaete Totenliteratur / Susanne Töpfer": {
+     "anteil_zweite": 0.8214285714285714,
+     "n": 84
+    },
+    "Literatur / Frank Feder": {
+     "anteil_zweite": 0.8761061946902655,
+     "n": 113
+    },
+    "Literatur / Lutz Popko": {
+     "anteil_zweite": 0.5803030303030303,
+     "n": 660
+    },
+    "Literatur / Peter Dils": {
+     "anteil_zweite": 0.9257246376811594,
+     "n": 552
+    },
+    "Literatur / Renata & Peter Landgrafova & Dils": {
+     "anteil_zweite": 0.7021276595744681,
+     "n": 94
+    },
+    "Medizin / Lutz Popko": {
+     "anteil_zweite": 0.9339019189765458,
+     "n": 469
+    },
+    "Medizin / Marc Brose": {
+     "anteil_zweite": 0.827708703374778,
+     "n": 563
+    },
+    "Medizin / Peter Dils": {
+     "anteil_zweite": 0.4966442953020134,
+     "n": 149
+    }
+   },
+   "G43/Z7": {
+    "Amarna / Gunnar Sperveslage": {
+     "anteil_zweite": 0.09572784810126582,
+     "n": 1264
+    },
+    "Grabinschriften / Stefan Grunert": {
+     "anteil_zweite": 0.002228826151560178,
+     "n": 1346
+    },
+    "Hist.-biogr. Spaetzeit / Silke Grallert": {
+     "anteil_zweite": 0.05965909090909091,
+     "n": 352
+    },
+    "Tempelbibliothek / Frank Feder": {
+     "anteil_zweite": 0.9902135231316725,
+     "n": 1124
+    },
+    "Spaete Totenliteratur / Frank Feder": {
+     "anteil_zweite": 0.9988271170537181,
+     "n": 4263
+    },
+    "Spaete Totenliteratur / Susanne Töpfer": {
+     "anteil_zweite": 1.0,
+     "n": 645
+    },
+    "Literatur / Frank Feder": {
+     "anteil_zweite": 0.7772675086107922,
+     "n": 871
+    },
+    "Literatur / Lutz Popko": {
+     "anteil_zweite": 0.8491976258518356,
+     "n": 4549
+    },
+    "Literatur / Peter Dils": {
+     "anteil_zweite": 0.6425057395867497,
+     "n": 3049
+    },
+    "Literatur / Renata & Peter Landgrafova & Dils": {
+     "anteil_zweite": 0.0014214641080312722,
+     "n": 1407
+    },
+    "Medizin / Lutz Popko": {
+     "anteil_zweite": 0.9231111111111111,
+     "n": 2250
+    },
+    "Medizin / Marc Brose": {
+     "anteil_zweite": 0.9629629629629629,
+     "n": 1782
+    },
+    "Medizin / Peter Dils": {
+     "anteil_zweite": 0.9511323003575686,
+     "n": 839
+    }
+   },
+   "W24/W22": {
+    "Amarna / Gunnar Sperveslage": {
+     "anteil_zweite": 0.1569767441860465,
+     "n": 172
+    },
+    "Grabinschriften / Stefan Grunert": {
+     "anteil_zweite": 0.423562412342216,
+     "n": 713
+    },
+    "Hist.-biogr. Spaetzeit / Silke Grallert": {
+     "anteil_zweite": 0.04918032786885246,
+     "n": 122
+    },
+    "Tempelbibliothek / Frank Feder": {
+     "anteil_zweite": 0.018779342723004695,
+     "n": 213
+    },
+    "Spaete Totenliteratur / Frank Feder": {
+     "anteil_zweite": 0.009060022650056626,
+     "n": 883
+    },
+    "Spaete Totenliteratur / Susanne Töpfer": {
+     "anteil_zweite": 0.0,
+     "n": 251
+    },
+    "Literatur / Frank Feder": {
+     "anteil_zweite": 0.010638297872340425,
+     "n": 94
+    },
+    "Literatur / Lutz Popko": {
+     "anteil_zweite": 0.037694013303769404,
+     "n": 451
+    },
+    "Literatur / Peter Dils": {
+     "anteil_zweite": 0.07374631268436578,
+     "n": 339
+    },
+    "Literatur / Renata & Peter Landgrafova & Dils": {
+     "anteil_zweite": 0.21991701244813278,
+     "n": 482
+    },
+    "Medizin / Lutz Popko": {
+     "anteil_zweite": 0.03285077951002227,
+     "n": 1796
+    },
+    "Medizin / Marc Brose": {
+     "anteil_zweite": 0.6633941093969145,
+     "n": 713
+    },
+    "Medizin / Peter Dils": {
+     "anteil_zweite": 0.10801393728222997,
+     "n": 287
+    }
+   },
+   "N35/D35": {
+    "Amarna / Gunnar Sperveslage": {
+     "anteil_zweite": 0.007121525384792098,
+     "n": 4353
+    },
+    "Grabinschriften / Stefan Grunert": {
+     "anteil_zweite": 0.013663220088626292,
+     "n": 2708
+    },
+    "Hist.-biogr. Spaetzeit / Silke Grallert": {
+     "anteil_zweite": 0.04646175839885633,
+     "n": 1399
+    },
+    "Tempelbibliothek / Frank Feder": {
+     "anteil_zweite": 0.04086021505376344,
+     "n": 2325
+    },
+    "Spaete Totenliteratur / Frank Feder": {
+     "anteil_zweite": 0.06688487263412551,
+     "n": 7027
+    },
+    "Spaete Totenliteratur / Susanne Töpfer": {
+     "anteil_zweite": 0.02119071644803229,
+     "n": 991
+    },
+    "Literatur / Frank Feder": {
+     "anteil_zweite": 0.08982035928143713,
+     "n": 1336
+    },
+    "Literatur / Lutz Popko": {
+     "anteil_zweite": 0.02593965060878772,
+     "n": 5667
+    },
+    "Literatur / Peter Dils": {
+     "anteil_zweite": 0.10541436464088398,
+     "n": 4525
+    },
+    "Literatur / Renata & Peter Landgrafova & Dils": {
+     "anteil_zweite": 0.04441379310344828,
+     "n": 3625
+    },
+    "Medizin / Lutz Popko": {
+     "anteil_zweite": 0.03295932678821879,
+     "n": 4278
+    },
+    "Medizin / Marc Brose": {
+     "anteil_zweite": 0.04675834970530452,
+     "n": 2545
+    },
+    "Medizin / Peter Dils": {
+     "anteil_zweite": 0.06852960745176315,
+     "n": 1503
+    }
+   }
+  },
+  "schriftart": {
+   "abschnitte_je_schriftart": {
+    "hieroglyphisch": 49,
+    "unbekannt": 25,
+    "hieratisch": 135
+   },
+   "schriftart_allein": 0.18660506549075695,
+   "bearbeiter_eigen_ohne_schriftart": 0.07334964119679177,
+   "bearbeiter_eigen_mit_schriftart": 0.05069346753542747,
+   "schriftart_eigen": 0.01331774438084432,
+   "schriftart_neben_gruppe_und_zeit": 0.03597391804220862,
+   "test_bearbeiter": {
+    "roh": 0.06750968160663007,
+    "vertauscht_mittel": 0.05117701916422091,
+    "p": 0.001
+   }
+  }
+ }
+}

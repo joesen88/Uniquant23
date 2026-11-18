@@ -1,0 +1,294 @@
+PROTOKOLL sha256: a0beee6f7839bbca
+
+=== WORTEBENE (Lemmata), alle Teilkorpora: 765 Abschnitte, 3000 Merkmale, mittlere Laenge 1000 ===
+   je Teilkorpus: {'sawlit': 191, 'bbawpyramidentexte': 112, 'tb': 110, 'bbawgrabinschriften': 100, 'sawmedizin': 56, 'bbawbriefe': 48, 'bbawramessiden': 43, 'bbawtotenlit': 37, 'bbawamarna': 27, 'bbawtempelbib': 18, 'bbawhistbiospzt': 12, 'bbawarchive': 11}
+   haeufigste Merkmale: 10050 64360 10110 78870 10030 850787 850814 91900 107520 21881 851809 851711 10090 10100 81660 851446 90260 185810 851517 34360
+   T_text       Treffer 51.1% (n=131, 95%-KI 37.5%-64.9%, 48 Cluster) | Zufallsnachbar 0.5% | Mehrheitsklasse 36.6% | ausgewogen 39.9% bei 8 Klassen | p 0.0005
+   T_gattung    Treffer 93.2% (n=765, 95%-KI 90.9%-95.4%, 682 Cluster) | Zufallsnachbar 12.5% | Mehrheitsklasse 25.0% | ausgewogen 85.3% bei 12 Klassen | p 0.0005
+   ..ohne tau   Treffer 95.4% (n=765, 95%-KI 93.3%-97.3%, 682 Cluster) | Zufallsnachbar 13.5% | Mehrheitsklasse 25.0% | ausgewogen 89.2% bei 12 Klassen | p 0.0005
+      sawlit                 n= 191 Treffer  96.3%  -> [('sawlit', 184), ('bbawramessiden', 3), ('bbawbriefe', 2)]
+      bbawpyramidentexte     n= 112 Treffer  99.1%  -> [('bbawpyramidentexte', 111), ('sawlit', 1)]
+      tb                     n= 110 Treffer  96.4%  -> [('tb', 106), ('sawlit', 3), ('bbawtotenlit', 1)]
+      bbawgrabinschriften    n= 100 Treffer  98.0%  -> [('bbawgrabinschriften', 98), ('bbawarchive', 2)]
+      sawmedizin             n=  56 Treffer  94.6%  -> [('sawmedizin', 53), ('bbawtempelbib', 1), ('sawlit', 1)]
+      bbawbriefe             n=  48 Treffer 100.0%  -> [('bbawbriefe', 48)]
+      bbawramessiden         n=  43 Treffer  88.4%  -> [('bbawramessiden', 38), ('sawlit', 3), ('bbawamarna', 2)]
+      bbawtotenlit           n=  37 Treffer  67.6%  -> [('bbawtotenlit', 25), ('sawlit', 5), ('bbawtempelbib', 4)]
+      bbawamarna             n=  27 Treffer  88.9%  -> [('bbawamarna', 24), ('bbawramessiden', 2), ('sawlit', 1)]
+      bbawtempelbib          n=  18 Treffer  61.1%  -> [('bbawtempelbib', 11), ('bbawtotenlit', 3), ('sawlit', 2)]
+      bbawhistbiospzt        n=  12 Treffer  33.3%  -> [('sawlit', 4), ('bbawhistbiospzt', 4), ('bbawramessiden', 3)]
+      bbawarchive            n=  11 Treffer 100.0%  -> [('bbawarchive', 11)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 46.5% (n=299, 95%-KI 39.4%-53.1%, 228 Cluster) | Zufallsnachbar 5.1% | Mehrheitsklasse 63.9% | ausgewogen 41.5% bei 4 Klassen | p 0.0005
+   T_fremdepoch Treffer 67.9% (n=246, 95%-KI 61.4%-74.6%, 199 Cluster) | Zufallsnachbar 8.5% | Mehrheitsklasse 70.3% | ausgewogen 64.9% bei 3 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 21.7% (n=184, 95%-KI 12.4%-31.2%, 114 Cluster) | Zufallsnachbar 4.0% | Mehrheitsklasse 29.9% | ausgewogen 22.8% bei 6 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 85.3% (n=428, 95%-KI 80.2%-90.0%, 346 Cluster) | Zufallsnachbar 30.6% | Mehrheitsklasse 46.3% | ausgewogen 78.8% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 46.3% (n=428, 95%-KI 40.6%-51.8%, 346 Cluster) | Zufallsnachbar 22.9% | Mehrheitsklasse 46.3% | ausgewogen 44.9% bei 4 Klassen | p 0.0005
+   n x Distanz (T_gattung streng / ausgewogen / T_text):
+      burrows  n=30: 81.8%/72.7%/34.4%  n=50: 88.0%/77.7%/40.5%  n=100: 92.0%/83.4%/50.4%  n=150: 93.2%/85.3%/51.1%  n=300: 94.8%/87.7%/57.3%  n=500: 94.8%/89.4%/59.5%
+      cosinus  n=30: 76.7%/71.6%/36.6%  n=50: 85.5%/79.1%/42.0%  n=100: 86.4%/79.1%/47.3%  n=150: 90.3%/83.1%/55.0%  n=300: 91.2%/84.6%/58.0%  n=500: 92.5%/87.2%/59.5%
+      roh_l1   n=30: 79.9%/72.0%/34.4%  n=50: 84.6%/76.5%/38.9%  n=100: 88.8%/81.7%/48.1%  n=150: 91.9%/84.1%/51.1%  n=300: 93.3%/86.2%/55.0%  n=500: 94.0%/87.5%/56.5%
+   Auswahlkontrolle: {'beste_auf_A': 'burrows|300', 'A': 0.9347258485639687, 'B': 0.9607329842931938, 'primaer_A': 0.9190600522193212, 'primaer_B': 0.9450261780104712, 'anfragen_A': 383, 'anfragen_B': 382}
+   tau: {'0.01': (716, 0.891, 0.789), '0.05': (765, 0.932, 0.853), '0.2': (765, 0.946, 0.876), 'None': (765, 0.954, 0.892)}
+   N_wortmischung {'mittel': 0.12444444444444444, 'max': 0.14248366013071895, 'laeufe': 20}
+   mu kuerzt sich: groesste Abweichung 8.88e-16
+   Vergleichskorpus sawlit               (191): gemeinsame Merkmale 115/150, T_gattung 93.6%, Nachbar geaendert 61.2%, Antwort geaendert 7.5% | nur sigma: sigma=0 bei 2, T_gattung 91.2%, Nachbar 51.9%, Antwort 5.8%
+   Vergleichskorpus bbawpyramidentexte   (112): gemeinsame Merkmale 90/150, T_gattung 85.0%, Nachbar geaendert 71.5%, Antwort geaendert 13.7% | nur sigma: sigma=0 bei 18, T_gattung 89.7%, Nachbar 71.2%, Antwort 9.7%
+   Vergleichskorpus tb                   (110): gemeinsame Merkmale 106/150, T_gattung 84.8%, Nachbar geaendert 67.8%, Antwort geaendert 12.0% | nur sigma: sigma=0 bei 10, T_gattung 88.8%, Nachbar 66.4%, Antwort 10.7%
+   Vergleichskorpus bbawgrabinschriften  (100): gemeinsame Merkmale 49/150, T_gattung 84.3%, Nachbar geaendert 81.7%, Antwort geaendert 14.0% | nur sigma: sigma=0 bei 10, T_gattung 88.0%, Nachbar 72.8%, Antwort 12.2%
+   Vergleichskorpus sawmedizin           ( 56): gemeinsame Merkmale 69/150, T_gattung 84.3%, Nachbar geaendert 77.6%, Antwort geaendert 15.6% | nur sigma: sigma=0 bei 10, T_gattung 86.4%, Nachbar 71.8%, Antwort 12.3%
+   Vergleichskorpus bbawbriefe           ( 48): gemeinsame Merkmale 81/150, T_gattung 87.8%, Nachbar geaendert 76.2%, Antwort geaendert 13.7% | nur sigma: sigma=0 bei 5, T_gattung 87.5%, Nachbar 67.2%, Antwort 11.1%
+   Vergleichskorpus bbawramessiden       ( 43): gemeinsame Merkmale 90/150, T_gattung 87.8%, Nachbar geaendert 71.8%, Antwort geaendert 12.3% | nur sigma: sigma=0 bei 12, T_gattung 87.3%, Nachbar 69.0%, Antwort 11.8%
+   Vergleichskorpus bbawtotenlit         ( 37): gemeinsame Merkmale 89/150, T_gattung 84.8%, Nachbar geaendert 72.2%, Antwort geaendert 13.2% | nur sigma: sigma=0 bei 12, T_gattung 91.2%, Nachbar 70.1%, Antwort 8.1%
+      bbawamarna             innen 0.604 | naechstes Teilkorpus bbawhistbiospzt      0.707
+      bbawarchive            innen 0.296 | naechstes Teilkorpus bbawgrabinschriften  0.584
+      bbawbriefe             innen 0.547 | naechstes Teilkorpus sawlit               0.757
+      bbawgrabinschriften    innen 0.406 | naechstes Teilkorpus bbawarchive          0.584
+      bbawhistbiospzt        innen 0.673 | naechstes Teilkorpus bbawramessiden       0.700
+      bbawpyramidentexte     innen 0.629 | naechstes Teilkorpus tb                   0.855
+      bbawramessiden         innen 0.625 | naechstes Teilkorpus bbawhistbiospzt      0.700
+      bbawtempelbib          innen 0.751 | naechstes Teilkorpus bbawtotenlit         0.787
+      bbawtotenlit           innen 0.759 | naechstes Teilkorpus bbawtempelbib        0.787
+      sawlit                 innen 0.686 | naechstes Teilkorpus bbawramessiden       0.721
+      sawmedizin             innen 0.680 | naechstes Teilkorpus bbawarchive          0.742
+      tb                     innen 0.730 | naechstes Teilkorpus bbawtempelbib        0.822
+   Nachrechnung von 300 Paaren ohne NumPy: groesste Abweichung 6.66e-16
+
+=== ZEICHENEBENE (Gardiner-Codes, zusammengelegt): 243 Abschnitte, 1292 Merkmale, mittlere Laenge 2943 ===
+   je Teilkorpus: {'sawlit': 91, 'sawmedizin': 52, 'bbawtotenlit': 36, 'bbawamarna': 21, 'bbawgrabinschriften': 21, 'bbawtempelbib': 14, 'bbawhistbiospzt': 8}
+   haeufigste Merkmale: X1 N35 Z1 D21 M17 G17 Z7 I9 Z2 S29 D36 G1 V31 Y1 Aa1 A1 G7 V28 Q3 D46
+   T_text       Treffer 76.8% (n=82, 95%-KI 63.0%-87.8%, 29 Cluster) | Zufallsnachbar 1.6% | Mehrheitsklasse 32.9% | ausgewogen 79.3% bei 5 Klassen | p 0.0005
+   T_gattung    Treffer 92.2% (n=243, 95%-KI 85.4%-97.6%, 190 Cluster) | Zufallsnachbar 20.8% | Mehrheitsklasse 37.4% | ausgewogen 83.4% bei 7 Klassen | p 0.0005
+   ..ohne tau   Treffer 93.0% (n=243, 95%-KI 86.7%-98.2%, 190 Cluster) | Zufallsnachbar 21.4% | Mehrheitsklasse 37.4% | ausgewogen 84.1% bei 7 Klassen | p 0.0005
+      sawlit                 n=  91 Treffer  98.9%  -> [('sawlit', 90), ('sawmedizin', 1)]
+      sawmedizin             n=  52 Treffer  98.1%  -> [('sawmedizin', 51), ('sawlit', 1)]
+      bbawtotenlit           n=  36 Treffer  77.8%  -> [('bbawtotenlit', 28), ('bbawtempelbib', 8)]
+      bbawamarna             n=  21 Treffer 100.0%  -> [('bbawamarna', 21)]
+      bbawgrabinschriften    n=  21 Treffer 100.0%  -> [('bbawgrabinschriften', 21)]
+      bbawtempelbib          n=  14 Treffer  71.4%  -> [('bbawtempelbib', 10), ('bbawtotenlit', 4)]
+      bbawhistbiospzt        n=   8 Treffer  37.5%  -> [('sawlit', 4), ('bbawhistbiospzt', 3), ('bbawamarna', 1)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 63.8% (n=174, 95%-KI 53.1%-73.6%, 128 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 52.3% | ausgewogen 59.7% bei 3 Klassen | p 0.0005
+   T_fremdepoch Treffer 42.7% (n=131, 95%-KI 31.7%-53.0%, 103 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 62.6% | ausgewogen 42.8% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 53.8% (n=93, 95%-KI 38.6%-68.4%, 54 Cluster) | Zufallsnachbar 16.5% | Mehrheitsklasse 51.6% | ausgewogen 39.8% bei 3 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 91.0% (n=155, 95%-KI 85.2%-95.8%, 102 Cluster) | Zufallsnachbar 26.6% | Mehrheitsklasse 34.8% | ausgewogen 92.7% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 42.6% (n=141, 95%-KI 30.7%-53.6%, 88 Cluster) | Zufallsnachbar 21.1% | Mehrheitsklasse 38.3% | ausgewogen 41.3% bei 3 Klassen | p 0.0005
+   n x Distanz (T_gattung streng / ausgewogen / T_text):
+      burrows  n=30: 84.4%/70.5%/69.5%  n=50: 85.2%/72.2%/76.8%  n=100: 90.1%/77.6%/78.0%  n=150: 92.2%/83.4%/76.8%  n=300: 94.2%/87.6%/76.8%  n=500: 93.8%/81.7%/81.7%
+      cosinus  n=30: 84.8%/75.5%/70.7%  n=50: 88.5%/76.0%/74.4%  n=100: 90.5%/85.2%/79.3%  n=150: 92.2%/85.3%/79.3%  n=300: 92.2%/83.7%/79.3%  n=500: 93.4%/86.9%/84.1%
+      roh_l1   n=30: 86.8%/72.8%/65.9%  n=50: 87.2%/72.7%/70.7%  n=100: 90.5%/77.0%/75.6%  n=150: 90.5%/80.3%/75.6%  n=300: 91.8%/83.1%/76.8%  n=500: 91.8%/81.5%/78.0%
+   Auswahlkontrolle: {'beste_auf_A': 'burrows|300', 'A': 0.9166666666666666, 'B': 0.972972972972973, 'primaer_A': 0.8863636363636364, 'primaer_B': 0.963963963963964, 'anfragen_A': 132, 'anfragen_B': 111}
+   tau: {'0.01': (222, 0.901, 0.826), '0.05': (243, 0.922, 0.834), '0.2': (243, 0.93, 0.841), 'None': (243, 0.93, 0.841)}
+   N_wortmischung {'mittel': 0.20884773662551442, 'max': 0.2839506172839506, 'laeufe': 20}
+   mu kuerzt sich: groesste Abweichung 8.88e-16
+   Vergleichskorpus sawlit               ( 91): gemeinsame Merkmale 135/150, T_gattung 91.8%, Nachbar geaendert 33.7%, Antwort geaendert 3.3% | nur sigma: sigma=0 bei 0, T_gattung 86.8%, Nachbar 36.2%, Antwort 7.4%
+   Vergleichskorpus sawmedizin           ( 52): gemeinsame Merkmale 112/150, T_gattung 88.5%, Nachbar geaendert 49.4%, Antwort geaendert 9.1% | nur sigma: sigma=0 bei 0, T_gattung 90.1%, Nachbar 61.3%, Antwort 5.8%
+   Vergleichskorpus bbawtotenlit         ( 36): gemeinsame Merkmale 120/150, T_gattung 90.1%, Nachbar geaendert 45.7%, Antwort geaendert 6.6% | nur sigma: sigma=0 bei 2, T_gattung 86.8%, Nachbar 65.4%, Antwort 9.1%
+      bbawamarna             innen 0.646 | naechstes Teilkorpus bbawhistbiospzt      1.010
+      bbawgrabinschriften    innen 0.555 | naechstes Teilkorpus bbawhistbiospzt      1.063
+      bbawhistbiospzt        innen 0.876 | naechstes Teilkorpus sawlit               0.941
+      bbawtempelbib          innen 0.705 | naechstes Teilkorpus bbawtotenlit         0.773
+      bbawtotenlit           innen 0.785 | naechstes Teilkorpus bbawtempelbib        0.773
+      sawlit                 innen 0.810 | naechstes Teilkorpus bbawtempelbib        0.848
+      sawmedizin             innen 0.791 | naechstes Teilkorpus bbawtempelbib        0.896
+   Nachrechnung von 300 Paaren ohne NumPy: groesste Abweichung 1.33e-15
+
+=== WORTEBENE, dieselben Woerter wie Zeichenebene: 243 Abschnitte, 3000 Merkmale, mittlere Laenge 1000 ===
+   je Teilkorpus: {'sawlit': 91, 'sawmedizin': 52, 'bbawtotenlit': 36, 'bbawamarna': 21, 'bbawgrabinschriften': 21, 'bbawtempelbib': 14, 'bbawhistbiospzt': 8}
+   haeufigste Merkmale: 10050 64360 10110 850787 850814 78870 91900 107520 10030 851809 21881 851711 10090 81660 185810 851446 10100 851961 163760 90260
+   T_text       Treffer 69.5% (n=82, 95%-KI 54.3%-82.6%, 29 Cluster) | Zufallsnachbar 1.6% | Mehrheitsklasse 32.9% | ausgewogen 73.9% bei 5 Klassen | p 0.0005
+   T_gattung    Treffer 90.5% (n=243, 95%-KI 85.6%-95.0%, 190 Cluster) | Zufallsnachbar 20.8% | Mehrheitsklasse 37.4% | ausgewogen 78.5% bei 7 Klassen | p 0.0005
+   ..ohne tau   Treffer 91.4% (n=243, 95%-KI 86.4%-95.8%, 190 Cluster) | Zufallsnachbar 21.4% | Mehrheitsklasse 37.4% | ausgewogen 79.2% bei 7 Klassen | p 0.0005
+      sawlit                 n=  91 Treffer  97.8%  -> [('sawlit', 89), ('bbawhistbiospzt', 2)]
+      sawmedizin             n=  52 Treffer  98.1%  -> [('sawmedizin', 51), ('sawlit', 1)]
+      bbawtotenlit           n=  36 Treffer  75.0%  -> [('bbawtotenlit', 27), ('sawlit', 6), ('bbawtempelbib', 3)]
+      bbawamarna             n=  21 Treffer 100.0%  -> [('bbawamarna', 21)]
+      bbawgrabinschriften    n=  21 Treffer 100.0%  -> [('bbawgrabinschriften', 21)]
+      bbawtempelbib          n=  14 Treffer  78.6%  -> [('bbawtempelbib', 11), ('sawlit', 2), ('bbawtotenlit', 1)]
+      bbawhistbiospzt        n=   8 Treffer   0.0%  -> [('sawlit', 6), ('bbawamarna', 2)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 59.8% (n=174, 95%-KI 49.7%-69.1%, 128 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 52.3% | ausgewogen 57.7% bei 3 Klassen | p 0.0005
+   T_fremdepoch Treffer 46.6% (n=131, 95%-KI 35.3%-56.7%, 103 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 62.6% | ausgewogen 46.2% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 47.3% (n=93, 95%-KI 33.7%-60.2%, 54 Cluster) | Zufallsnachbar 16.5% | Mehrheitsklasse 51.6% | ausgewogen 40.7% bei 3 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 82.6% (n=155, 95%-KI 74.0%-90.0%, 102 Cluster) | Zufallsnachbar 26.6% | Mehrheitsklasse 34.8% | ausgewogen 85.5% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 30.5% (n=141, 95%-KI 21.1%-39.3%, 88 Cluster) | Zufallsnachbar 21.1% | Mehrheitsklasse 38.3% | ausgewogen 29.1% bei 3 Klassen | p 0.0070
+   n x Distanz (T_gattung streng / ausgewogen / T_text):
+      burrows  n=30: 81.5%/66.9%/53.7%  n=50: 85.6%/74.9%/58.5%  n=100: 88.1%/76.2%/74.4%  n=150: 90.5%/78.5%/69.5%  n=300: 92.2%/87.3%/75.6%  n=500: 93.0%/87.4%/67.1%
+      cosinus  n=30: 77.4%/67.6%/52.4%  n=50: 81.9%/75.7%/61.0%  n=100: 85.6%/76.4%/65.9%  n=150: 89.3%/81.6%/70.7%  n=300: 91.4%/82.7%/74.4%  n=500: 93.0%/85.4%/73.2%
+      roh_l1   n=30: 78.6%/62.7%/54.9%  n=50: 84.0%/71.2%/59.8%  n=100: 87.2%/75.5%/67.1%  n=150: 86.4%/75.6%/69.5%  n=300: 88.9%/78.3%/72.0%  n=500: 90.5%/81.0%/72.0%
+   Auswahlkontrolle: {'beste_auf_A': 'burrows|500', 'A': 0.9242424242424242, 'B': 0.9369369369369369, 'primaer_A': 0.8787878787878788, 'primaer_B': 0.9369369369369369, 'anfragen_A': 132, 'anfragen_B': 111}
+   tau: {'0.01': (222, 0.838, 0.693), '0.05': (243, 0.905, 0.785), '0.2': (243, 0.914, 0.792), 'None': (243, 0.914, 0.792)}
+   N_wortmischung {'mittel': 0.21893004115226336, 'max': 0.2757201646090535, 'laeufe': 20}
+   mu kuerzt sich: groesste Abweichung 5.55e-16
+   Vergleichskorpus sawlit               ( 91): gemeinsame Merkmale 114/150, T_gattung 92.6%, Nachbar geaendert 47.7%, Antwort geaendert 9.1% | nur sigma: sigma=0 bei 1, T_gattung 86.4%, Nachbar 45.3%, Antwort 6.6%
+   Vergleichskorpus sawmedizin           ( 52): gemeinsame Merkmale 79/150, T_gattung 75.7%, Nachbar geaendert 68.3%, Antwort geaendert 19.3% | nur sigma: sigma=0 bei 13, T_gattung 82.7%, Nachbar 60.5%, Antwort 14.0%
+   Vergleichskorpus bbawtotenlit         ( 36): gemeinsame Merkmale 91/150, T_gattung 80.7%, Nachbar geaendert 60.1%, Antwort geaendert 15.2% | nur sigma: sigma=0 bei 11, T_gattung 87.7%, Nachbar 63.0%, Antwort 13.2%
+      bbawamarna             innen 0.537 | naechstes Teilkorpus bbawhistbiospzt      0.764
+      bbawgrabinschriften    innen 0.343 | naechstes Teilkorpus bbawhistbiospzt      0.854
+      bbawhistbiospzt        innen 0.676 | naechstes Teilkorpus sawlit               0.726
+      bbawtempelbib          innen 0.720 | naechstes Teilkorpus bbawtotenlit         0.780
+      bbawtotenlit           innen 0.755 | naechstes Teilkorpus bbawtempelbib        0.780
+      sawlit                 innen 0.714 | naechstes Teilkorpus bbawhistbiospzt      0.726
+      sawmedizin             innen 0.704 | naechstes Teilkorpus bbawhistbiospzt      0.861
+   Nachrechnung von 300 Paaren ohne NumPy: groesste Abweichung 6.66e-16
+
+=== EBENENVERGLEICH ===
+   {'spearman': 0.6470448828536307, 'p_mantel': 0.001, 'perm_max': 0.1065432467510119, 'gleicher_nachbar': 0.23045267489711935, 'gleiche_antwort': 0.9012345679012346, 'paare': 29022}
+
+=== L=500 wort: 1542 Abschnitte, 3000 Merkmale, mittlere Laenge 500 ===
+   je Teilkorpus: {'sawlit': 382, 'bbawpyramidentexte': 224, 'tb': 221, 'bbawgrabinschriften': 200, 'sawmedizin': 112, 'bbawbriefe': 96, 'bbawramessiden': 87, 'bbawtotenlit': 75, 'bbawamarna': 55, 'bbawtempelbib': 36, 'bbawhistbiospzt': 25, 'bbawarchive': 23, 'bbawgraeberspzt': 6}
+   haeufigste Merkmale: 10050 64360 10110 78870 850787 10030 850814 91900 107520 21881 851809 851711 10090 10100 81660 851446 90260 185810 851517 34360
+   T_text       Treffer 47.6% (n=382, 95%-KI 38.1%-56.6%, 93 Cluster) | Zufallsnachbar 0.4% | Mehrheitsklasse 36.6% | ausgewogen 41.2% bei 8 Klassen | p 0.0005
+   T_gattung    Treffer 86.9% (n=1542, 95%-KI 84.5%-89.1%, 1253 Cluster) | Zufallsnachbar 13.0% | Mehrheitsklasse 24.8% | ausgewogen 79.9% bei 13 Klassen | p 0.0005
+   ..ohne tau   Treffer 90.7% (n=1542, 95%-KI 88.4%-92.9%, 1253 Cluster) | Zufallsnachbar 13.4% | Mehrheitsklasse 24.8% | ausgewogen 84.1% bei 13 Klassen | p 0.0005
+      sawlit                 n= 382 Treffer  87.4%  -> [('sawlit', 334), ('bbawbriefe', 13), ('bbawhistbiospzt', 7)]
+      bbawpyramidentexte     n= 224 Treffer  97.3%  -> [('bbawpyramidentexte', 218), ('sawlit', 2), ('bbawarchive', 2)]
+      tb                     n= 221 Treffer  82.4%  -> [('tb', 182), ('sawlit', 13), ('bbawgraeberspzt', 12)]
+      bbawgrabinschriften    n= 200 Treffer  96.5%  -> [('bbawgrabinschriften', 193), ('sawmedizin', 6), ('bbawarchive', 1)]
+      sawmedizin             n= 112 Treffer  92.9%  -> [('sawmedizin', 104), ('bbawtotenlit', 3), ('bbawamarna', 1)]
+      bbawbriefe             n=  96 Treffer  94.8%  -> [('bbawbriefe', 91), ('sawlit', 5)]
+      bbawramessiden         n=  87 Treffer  82.8%  -> [('bbawramessiden', 72), ('sawlit', 8), ('bbawamarna', 5)]
+      bbawtotenlit           n=  75 Treffer  60.0%  -> [('bbawtotenlit', 45), ('sawlit', 10), ('tb', 7)]
+      bbawamarna             n=  55 Treffer  90.9%  -> [('bbawamarna', 50), ('sawlit', 2), ('bbawramessiden', 2)]
+      bbawtempelbib          n=  36 Treffer  50.0%  -> [('bbawtempelbib', 18), ('sawlit', 5), ('bbawtotenlit', 5)]
+      bbawhistbiospzt        n=  25 Treffer  20.0%  -> [('sawlit', 11), ('bbawramessiden', 7), ('bbawhistbiospzt', 5)]
+      bbawarchive            n=  23 Treffer 100.0%  -> [('bbawarchive', 23)]
+      bbawgraeberspzt        n=   6 Treffer  83.3%  -> [('bbawgraeberspzt', 5), ('bbawtotenlit', 1)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 44.2% (n=636, 95%-KI 38.1%-50.1%, 394 Cluster) | Zufallsnachbar 6.7% | Mehrheitsklasse 60.1% | ausgewogen 29.9% bei 5 Klassen | p 0.0005
+   T_fremdepoch Treffer 58.7% (n=615, 95%-KI 53.7%-63.7%, 445 Cluster) | Zufallsnachbar 8.6% | Mehrheitsklasse 61.8% | ausgewogen 49.8% bei 4 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 24.2% (n=719, 95%-KI 19.9%-28.6%, 479 Cluster) | Zufallsnachbar 2.9% | Mehrheitsklasse 32.0% | ausgewogen 18.8% bei 8 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 79.1% (n=1055, 95%-KI 75.6%-82.7%, 776 Cluster) | Zufallsnachbar 29.5% | Mehrheitsklasse 40.0% | ausgewogen 73.7% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 41.9% (n=1055, 95%-KI 37.9%-45.9%, 776 Cluster) | Zufallsnachbar 22.5% | Mehrheitsklasse 40.0% | ausgewogen 40.9% bei 4 Klassen | p 0.0005
+
+=== L=500 zeichen: 491 Abschnitte, 1301 Merkmale, mittlere Laenge 1470 ===
+   je Teilkorpus: {'sawlit': 182, 'sawmedizin': 104, 'bbawtotenlit': 72, 'bbawamarna': 42, 'bbawgrabinschriften': 42, 'bbawtempelbib': 28, 'bbawhistbiospzt': 16, 'bbawgraeberspzt': 5}
+   haeufigste Merkmale: X1 N35 Z1 D21 M17 G17 Z7 I9 Z2 S29 D36 G1 V31 Y1 Aa1 A1 G7 V28 Q3 G43
+   T_text       Treffer 73.5% (n=230, 95%-KI 62.4%-82.7%, 52 Cluster) | Zufallsnachbar 1.3% | Mehrheitsklasse 34.8% | ausgewogen 74.6% bei 6 Klassen | p 0.0005
+   T_gattung    Treffer 88.8% (n=491, 95%-KI 82.9%-94.1%, 313 Cluster) | Zufallsnachbar 21.0% | Mehrheitsklasse 37.1% | ausgewogen 79.6% bei 8 Klassen | p 0.0005
+   ..ohne tau   Treffer 89.2% (n=491, 95%-KI 82.7%-94.6%, 313 Cluster) | Zufallsnachbar 21.3% | Mehrheitsklasse 37.1% | ausgewogen 79.8% bei 8 Klassen | p 0.0005
+      sawlit                 n= 182 Treffer  95.6%  -> [('sawlit', 174), ('sawmedizin', 4), ('bbawgraeberspzt', 2)]
+      sawmedizin             n= 104 Treffer  94.2%  -> [('sawmedizin', 98), ('sawlit', 5), ('bbawtempelbib', 1)]
+      bbawtotenlit           n=  72 Treffer  79.2%  -> [('bbawtotenlit', 57), ('bbawtempelbib', 13), ('sawmedizin', 1)]
+      bbawamarna             n=  42 Treffer  97.6%  -> [('bbawamarna', 41), ('bbawhistbiospzt', 1)]
+      bbawgrabinschriften    n=  42 Treffer 100.0%  -> [('bbawgrabinschriften', 42)]
+      bbawtempelbib          n=  28 Treffer  64.3%  -> [('bbawtempelbib', 18), ('bbawtotenlit', 8), ('sawmedizin', 2)]
+      bbawhistbiospzt        n=  16 Treffer   6.2%  -> [('sawlit', 10), ('bbawamarna', 4), ('sawmedizin', 1)]
+      bbawgraeberspzt        n=   5 Treffer 100.0%  -> [('bbawgraeberspzt', 5)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 63.2% (n=364, 95%-KI 55.7%-71.1%, 203 Cluster) | Zufallsnachbar 16.2% | Mehrheitsklasse 50.0% | ausgewogen 47.6% bei 4 Klassen | p 0.0005
+   T_fremdepoch Treffer 58.6% (n=278, 95%-KI 50.2%-66.1%, 176 Cluster) | Zufallsnachbar 17.6% | Mehrheitsklasse 63.7% | ausgewogen 59.0% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 39.7% (n=224, 95%-KI 28.2%-52.4%, 92 Cluster) | Zufallsnachbar 14.2% | Mehrheitsklasse 43.8% | ausgewogen 34.9% bei 4 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 86.7% (n=375, 95%-KI 80.3%-92.1%, 199 Cluster) | Zufallsnachbar 26.9% | Mehrheitsklasse 32.0% | ausgewogen 89.1% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 41.3% (n=375, 95%-KI 33.1%-49.3%, 199 Cluster) | Zufallsnachbar 20.2% | Mehrheitsklasse 32.0% | ausgewogen 36.2% bei 4 Klassen | p 0.0005
+
+=== L=1000 wort: 765 Abschnitte, 3000 Merkmale, mittlere Laenge 1000 ===
+   je Teilkorpus: {'sawlit': 191, 'bbawpyramidentexte': 112, 'tb': 110, 'bbawgrabinschriften': 100, 'sawmedizin': 56, 'bbawbriefe': 48, 'bbawramessiden': 43, 'bbawtotenlit': 37, 'bbawamarna': 27, 'bbawtempelbib': 18, 'bbawhistbiospzt': 12, 'bbawarchive': 11}
+   haeufigste Merkmale: 10050 64360 10110 78870 10030 850787 850814 91900 107520 21881 851809 851711 10090 10100 81660 851446 90260 185810 851517 34360
+   T_text       Treffer 51.1% (n=131, 95%-KI 37.4%-64.2%, 48 Cluster) | Zufallsnachbar 0.5% | Mehrheitsklasse 36.6% | ausgewogen 39.9% bei 8 Klassen | p 0.0005
+   T_gattung    Treffer 93.2% (n=765, 95%-KI 90.9%-95.2%, 682 Cluster) | Zufallsnachbar 12.5% | Mehrheitsklasse 25.0% | ausgewogen 85.3% bei 12 Klassen | p 0.0005
+   ..ohne tau   Treffer 95.4% (n=765, 95%-KI 93.2%-97.4%, 682 Cluster) | Zufallsnachbar 13.5% | Mehrheitsklasse 25.0% | ausgewogen 89.2% bei 12 Klassen | p 0.0005
+      sawlit                 n= 191 Treffer  96.3%  -> [('sawlit', 184), ('bbawramessiden', 3), ('bbawbriefe', 2)]
+      bbawpyramidentexte     n= 112 Treffer  99.1%  -> [('bbawpyramidentexte', 111), ('sawlit', 1)]
+      tb                     n= 110 Treffer  96.4%  -> [('tb', 106), ('sawlit', 3), ('bbawtotenlit', 1)]
+      bbawgrabinschriften    n= 100 Treffer  98.0%  -> [('bbawgrabinschriften', 98), ('bbawarchive', 2)]
+      sawmedizin             n=  56 Treffer  94.6%  -> [('sawmedizin', 53), ('bbawtempelbib', 1), ('sawlit', 1)]
+      bbawbriefe             n=  48 Treffer 100.0%  -> [('bbawbriefe', 48)]
+      bbawramessiden         n=  43 Treffer  88.4%  -> [('bbawramessiden', 38), ('sawlit', 3), ('bbawamarna', 2)]
+      bbawtotenlit           n=  37 Treffer  67.6%  -> [('bbawtotenlit', 25), ('sawlit', 5), ('bbawtempelbib', 4)]
+      bbawamarna             n=  27 Treffer  88.9%  -> [('bbawamarna', 24), ('bbawramessiden', 2), ('sawlit', 1)]
+      bbawtempelbib          n=  18 Treffer  61.1%  -> [('bbawtempelbib', 11), ('bbawtotenlit', 3), ('sawlit', 2)]
+      bbawhistbiospzt        n=  12 Treffer  33.3%  -> [('sawlit', 4), ('bbawhistbiospzt', 4), ('bbawramessiden', 3)]
+      bbawarchive            n=  11 Treffer 100.0%  -> [('bbawarchive', 11)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 46.5% (n=299, 95%-KI 39.3%-53.2%, 228 Cluster) | Zufallsnachbar 5.1% | Mehrheitsklasse 63.9% | ausgewogen 41.5% bei 4 Klassen | p 0.0005
+   T_fremdepoch Treffer 67.9% (n=246, 95%-KI 61.0%-74.8%, 199 Cluster) | Zufallsnachbar 8.5% | Mehrheitsklasse 70.3% | ausgewogen 64.9% bei 3 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 21.7% (n=184, 95%-KI 12.3%-31.0%, 114 Cluster) | Zufallsnachbar 4.0% | Mehrheitsklasse 29.9% | ausgewogen 22.8% bei 6 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 85.3% (n=428, 95%-KI 80.1%-90.0%, 346 Cluster) | Zufallsnachbar 30.6% | Mehrheitsklasse 46.3% | ausgewogen 78.8% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 46.3% (n=428, 95%-KI 40.7%-51.9%, 346 Cluster) | Zufallsnachbar 22.9% | Mehrheitsklasse 46.3% | ausgewogen 44.9% bei 4 Klassen | p 0.0005
+
+=== L=1000 zeichen: 243 Abschnitte, 1292 Merkmale, mittlere Laenge 2943 ===
+   je Teilkorpus: {'sawlit': 91, 'sawmedizin': 52, 'bbawtotenlit': 36, 'bbawamarna': 21, 'bbawgrabinschriften': 21, 'bbawtempelbib': 14, 'bbawhistbiospzt': 8}
+   haeufigste Merkmale: X1 N35 Z1 D21 M17 G17 Z7 I9 Z2 S29 D36 G1 V31 Y1 Aa1 A1 G7 V28 Q3 D46
+   T_text       Treffer 76.8% (n=82, 95%-KI 63.2%-87.5%, 29 Cluster) | Zufallsnachbar 1.6% | Mehrheitsklasse 32.9% | ausgewogen 79.3% bei 5 Klassen | p 0.0005
+   T_gattung    Treffer 92.2% (n=243, 95%-KI 85.8%-97.4%, 190 Cluster) | Zufallsnachbar 20.8% | Mehrheitsklasse 37.4% | ausgewogen 83.4% bei 7 Klassen | p 0.0005
+   ..ohne tau   Treffer 93.0% (n=243, 95%-KI 86.3%-98.0%, 190 Cluster) | Zufallsnachbar 21.4% | Mehrheitsklasse 37.4% | ausgewogen 84.1% bei 7 Klassen | p 0.0005
+      sawlit                 n=  91 Treffer  98.9%  -> [('sawlit', 90), ('sawmedizin', 1)]
+      sawmedizin             n=  52 Treffer  98.1%  -> [('sawmedizin', 51), ('sawlit', 1)]
+      bbawtotenlit           n=  36 Treffer  77.8%  -> [('bbawtotenlit', 28), ('bbawtempelbib', 8)]
+      bbawamarna             n=  21 Treffer 100.0%  -> [('bbawamarna', 21)]
+      bbawgrabinschriften    n=  21 Treffer 100.0%  -> [('bbawgrabinschriften', 21)]
+      bbawtempelbib          n=  14 Treffer  71.4%  -> [('bbawtempelbib', 10), ('bbawtotenlit', 4)]
+      bbawhistbiospzt        n=   8 Treffer  37.5%  -> [('sawlit', 4), ('bbawhistbiospzt', 3), ('bbawamarna', 1)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 63.8% (n=174, 95%-KI 53.4%-73.6%, 128 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 52.3% | ausgewogen 59.7% bei 3 Klassen | p 0.0005
+   T_fremdepoch Treffer 42.7% (n=131, 95%-KI 32.2%-52.7%, 103 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 62.6% | ausgewogen 42.8% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 53.8% (n=93, 95%-KI 38.4%-67.7%, 54 Cluster) | Zufallsnachbar 16.5% | Mehrheitsklasse 51.6% | ausgewogen 39.8% bei 3 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 91.0% (n=155, 95%-KI 85.3%-95.8%, 102 Cluster) | Zufallsnachbar 26.6% | Mehrheitsklasse 34.8% | ausgewogen 92.7% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 42.6% (n=141, 95%-KI 31.0%-53.8%, 88 Cluster) | Zufallsnachbar 21.1% | Mehrheitsklasse 38.3% | ausgewogen 41.3% bei 3 Klassen | p 0.0005
+
+=== L=2000 wort: 380 Abschnitte, 3000 Merkmale, mittlere Laenge 2000 ===
+   je Teilkorpus: {'sawlit': 95, 'bbawpyramidentexte': 56, 'tb': 55, 'bbawgrabinschriften': 50, 'sawmedizin': 28, 'bbawbriefe': 24, 'bbawramessiden': 21, 'bbawtotenlit': 18, 'bbawamarna': 13, 'bbawtempelbib': 9, 'bbawhistbiospzt': 6, 'bbawarchive': 5}
+   haeufigste Merkmale: 10050 64360 10110 78870 10030 850787 850814 91900 107520 21881 851809 851711 10090 10100 81660 851446 90260 185810 851517 34360
+   T_text       Treffer 72.7% (n=22, 95%-KI 40.0%-100.0%, 10 Cluster) | Zufallsnachbar 0.7% | Mehrheitsklasse 36.4% | ausgewogen 60.0% bei 5 Klassen | p 0.0005
+   T_gattung    Treffer 94.7% (n=378, 95%-KI 92.1%-96.8%, 366 Cluster) | Zufallsnachbar 11.6% | Mehrheitsklasse 25.1% | ausgewogen 85.0% bei 12 Klassen | p 0.0005
+   ..ohne tau   Treffer 96.6% (n=380, 95%-KI 94.4%-98.4%, 368 Cluster) | Zufallsnachbar 13.2% | Mehrheitsklasse 25.0% | ausgewogen 90.5% bei 12 Klassen | p 0.0005
+      sawlit                 n=  95 Treffer  98.9%  -> [('sawlit', 94), ('bbawbriefe', 1)]
+      bbawpyramidentexte     n=  56 Treffer 100.0%  -> [('bbawpyramidentexte', 56)]
+      tb                     n=  55 Treffer 100.0%  -> [('tb', 55)]
+      bbawgrabinschriften    n=  49 Treffer  98.0%  -> [('bbawgrabinschriften', 48), ('bbawarchive', 1)]
+      sawmedizin             n=  28 Treffer  92.9%  -> [('sawmedizin', 26), ('sawlit', 2)]
+      bbawbriefe             n=  24 Treffer 100.0%  -> [('bbawbriefe', 24)]
+      bbawramessiden         n=  21 Treffer 100.0%  -> [('bbawramessiden', 21)]
+      bbawtotenlit           n=  18 Treffer  77.8%  -> [('bbawtotenlit', 14), ('bbawtempelbib', 2), ('sawlit', 1)]
+      bbawamarna             n=  12 Treffer  58.3%  -> [('bbawamarna', 7), ('bbawhistbiospzt', 4), ('bbawramessiden', 1)]
+      bbawtempelbib          n=   9 Treffer  77.8%  -> [('bbawtempelbib', 7), ('sawlit', 1), ('bbawtotenlit', 1)]
+      bbawhistbiospzt        n=   6 Treffer  16.7%  -> [('sawlit', 4), ('bbawamarna', 1), ('bbawhistbiospzt', 1)]
+      bbawarchive            n=   5 Treffer 100.0%  -> [('bbawarchive', 5)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {'bbawgrabinschriften': 1, 'bbawamarna': 1}
+   T_fremdbearb Treffer 33.6% (n=140, 95%-KI 24.8%-41.8%, 130 Cluster) | Zufallsnachbar 2.7% | Mehrheitsklasse 67.9% | ausgewogen 30.3% bei 4 Klassen | p 0.0005
+   T_fremdepoch Treffer 55.2% (n=87, 95%-KI 44.0%-65.9%, 82 Cluster) | Zufallsnachbar 8.4% | Mehrheitsklasse 85.1% | ausgewogen 57.8% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 10.8% (n=65, 95%-KI 3.3%-18.8%, 55 Cluster) | Zufallsnachbar 4.4% | Mehrheitsklasse 38.5% | ausgewogen 9.4% bei 5 Klassen | p 0.0215
+   Epoche (alle Kandidaten) Treffer 88.8% (n=169, 95%-KI 82.8%-94.0%, 157 Cluster) | Zufallsnachbar 33.4% | Mehrheitsklasse 52.7% | ausgewogen 81.6% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 42.0% (n=169, 95%-KI 34.3%-50.0%, 157 Cluster) | Zufallsnachbar 24.6% | Mehrheitsklasse 52.7% | ausgewogen 35.0% bei 4 Klassen | p 0.0005
+
+=== L=2000 zeichen: 116 Abschnitte, 1232 Merkmale, mittlere Laenge 5926 ===
+   je Teilkorpus: {'sawlit': 45, 'sawmedizin': 26, 'bbawtotenlit': 18, 'bbawamarna': 10, 'bbawgrabinschriften': 10, 'bbawtempelbib': 7}
+   haeufigste Merkmale: X1 N35 Z1 D21 M17 G17 Z7 I9 Z2 S29 D36 G1 V31 Y1 Aa1 A1 G7 V28 Q3 D46
+   T_text       Treffer 100.0% (n=12, 95%-KI 100.0%-100.0%, 5 Cluster) | Zufallsnachbar 2.6% | Mehrheitsklasse 66.7% | ausgewogen 100.0% bei 3 Klassen | p 0.0005
+   T_gattung    Treffer 93.9% (n=114, 95%-KI 87.6%-99.1%, 107 Cluster) | Zufallsnachbar 21.6% | Mehrheitsklasse 39.5% | ausgewogen 93.2% bei 6 Klassen | p 0.0005
+   ..ohne tau   Treffer 94.8% (n=116, 95%-KI 89.1%-99.1%, 109 Cluster) | Zufallsnachbar 22.1% | Mehrheitsklasse 38.8% | ausgewogen 94.1% bei 6 Klassen | p 0.0005
+      sawlit                 n=  45 Treffer  95.6%  -> [('sawlit', 43), ('sawmedizin', 2)]
+      sawmedizin             n=  26 Treffer 100.0%  -> [('sawmedizin', 26)]
+      bbawtotenlit           n=  18 Treffer  77.8%  -> [('bbawtotenlit', 14), ('bbawtempelbib', 4)]
+      bbawamarna             n=  10 Treffer 100.0%  -> [('bbawamarna', 10)]
+      bbawgrabinschriften    n=   8 Treffer 100.0%  -> [('bbawgrabinschriften', 8)]
+      bbawtempelbib          n=   7 Treffer  85.7%  -> [('bbawtempelbib', 6), ('bbawtotenlit', 1)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {'bbawgrabinschriften': 2}
+   T_fremdbearb Treffer 59.8% (n=82, 95%-KI 47.6%-71.4%, 75 Cluster) | Zufallsnachbar 9.7% | Mehrheitsklasse 54.9% | ausgewogen 57.4% bei 3 Klassen | p 0.0005
+   T_fremdepoch Treffer 34.8% (n=46, 95%-KI 20.0%-48.9%, 44 Cluster) | Zufallsnachbar 12.4% | Mehrheitsklasse 76.1% | ausgewogen 50.9% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 59.5% (n=37, 95%-KI 40.6%-77.1%, 32 Cluster) | Zufallsnachbar 21.6% | Mehrheitsklasse 62.2% | ausgewogen 38.8% bei 3 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 86.8% (n=53, 95%-KI 75.0%-96.2%, 46 Cluster) | Zufallsnachbar 28.1% | Mehrheitsklasse 43.4% | ausgewogen 88.9% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 54.9% (n=51, 95%-KI 38.3%-69.0%, 44 Cluster) | Zufallsnachbar 18.9% | Mehrheitsklasse 45.1% | ausgewogen 47.9% bei 3 Klassen | p 0.0005
+
+=== ZEICHENEBENE, Codes unveraendert: 243 Abschnitte, 1801 Merkmale, mittlere Laenge 2943 ===
+   je Teilkorpus: {'sawlit': 91, 'sawmedizin': 52, 'bbawtotenlit': 36, 'bbawamarna': 21, 'bbawgrabinschriften': 21, 'bbawtempelbib': 14, 'bbawhistbiospzt': 8}
+   haeufigste Merkmale: X1 N35 Z1 D21 M17 G17 Z7 I9 Z2 S29 D36 G1 Y1 Aa1 A1 G7 V28 Q3 G43 D46
+   T_text       Treffer 80.5% (n=82, 95%-KI 67.6%-90.3%, 29 Cluster) | Zufallsnachbar 1.6% | Mehrheitsklasse 32.9% | ausgewogen 81.8% bei 5 Klassen | p 0.0005
+   T_gattung    Treffer 91.8% (n=243, 95%-KI 84.8%-97.3%, 190 Cluster) | Zufallsnachbar 20.8% | Mehrheitsklasse 37.4% | ausgewogen 82.5% bei 7 Klassen | p 0.0005
+   ..ohne tau   Treffer 91.8% (n=243, 95%-KI 85.1%-97.3%, 190 Cluster) | Zufallsnachbar 21.4% | Mehrheitsklasse 37.4% | ausgewogen 82.5% bei 7 Klassen | p 0.0005
+      sawlit                 n=  91 Treffer  97.8%  -> [('sawlit', 89), ('sawmedizin', 2)]
+      sawmedizin             n=  52 Treffer 100.0%  -> [('sawmedizin', 52)]
+      bbawtotenlit           n=  36 Treffer  77.8%  -> [('bbawtotenlit', 28), ('bbawtempelbib', 8)]
+      bbawamarna             n=  21 Treffer 100.0%  -> [('bbawamarna', 21)]
+      bbawgrabinschriften    n=  21 Treffer 100.0%  -> [('bbawgrabinschriften', 21)]
+      bbawtempelbib          n=  14 Treffer  64.3%  -> [('bbawtempelbib', 9), ('bbawtotenlit', 5)]
+      bbawhistbiospzt        n=   8 Treffer  37.5%  -> [('sawlit', 4), ('bbawhistbiospzt', 3), ('bbawamarna', 1)]
+      nicht auswertbar (kein zulaessiger Kandidat der eigenen Klasse): {}
+   T_fremdbearb Treffer 70.1% (n=174, 95%-KI 61.1%-79.0%, 128 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 52.3% | ausgewogen 69.6% bei 3 Klassen | p 0.0005
+   T_fremdepoch Treffer 45.0% (n=131, 95%-KI 34.1%-55.1%, 103 Cluster) | Zufallsnachbar 13.8% | Mehrheitsklasse 62.6% | ausgewogen 45.0% bei 2 Klassen | p 0.0005
+   Bearbeiter ueber Gattungsgrenze Treffer 55.9% (n=93, 95%-KI 40.0%-70.3%, 54 Cluster) | Zufallsnachbar 16.5% | Mehrheitsklasse 51.6% | ausgewogen 42.7% bei 3 Klassen | p 0.0005
+   Epoche (alle Kandidaten) Treffer 88.4% (n=155, 95%-KI 81.9%-94.4%, 102 Cluster) | Zufallsnachbar 26.6% | Mehrheitsklasse 34.8% | ausgewogen 90.6% bei 4 Klassen | p 0.0005
+   Epoche ueber Gattungsgrenze Treffer 51.1% (n=141, 95%-KI 39.0%-62.1%, 88 Cluster) | Zufallsnachbar 21.1% | Mehrheitsklasse 38.3% | ausgewogen 48.7% bei 3 Klassen | p 0.0005
+
+geschrieben: /home/claude/out/delta_ergebnis.json

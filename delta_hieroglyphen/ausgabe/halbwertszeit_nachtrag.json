@@ -1,0 +1,423 @@
+{
+ "A": {
+  "V1_tb_ueber_literatur": 0.982,
+  "V1_literatur_ueber_briefen": 0.955,
+  "V1_ganz": 0.937,
+  "tb_ueber_briefen": 0.99,
+  "tb_ueber_grabinschriften": 0.806,
+  "tb_zerfall_groesser_null": 0.802,
+  "V2_tb_ueber_literatur": 0.968
+ },
+ "B": {
+  "tb|ohne": {
+   "paare": 273,
+   "gleichzeitig": 0.7509221370937215,
+   "gesamt": 0.7071695105604463,
+   "rate_je_jahr": 9.421593667730188e-05,
+   "normtreue_je_jahrhundert": 0.9906226504867155,
+   "halbwertszeit": 7357.005672342219,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 59,
+     "mittel": 0.7474732607202433,
+     "dt_mittel": 28.033898305084747
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 1,
+     "mittel": 0.5234375,
+     "dt_mittel": 270.5
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 49,
+     "mittel": 0.7414998411185256,
+     "dt_mittel": 436.9795918367347
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 36,
+     "mittel": 0.6831258926749643,
+     "dt_mittel": 787.5
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 128,
+     "mittel": 0.6690353601974384,
+     "dt_mittel": 1219.7421875
+    }
+   ],
+   "normtreue_ki": [
+    0.9847514079216472,
+    0.994510148472185
+   ]
+  },
+  "bbawpyramidentexte|ohne": {
+   "paare": 383,
+   "gleichzeitig": 0.8207770675461812,
+   "gesamt": 0.8644547198583304,
+   "rate_je_jahr": -0.0009083322018613636,
+   "normtreue_je_jahrhundert": 1.095086351729522,
+   "halbwertszeit": null,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 144,
+     "mittel": 0.8464329643296433,
+     "dt_mittel": 32.798611111111114
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 239,
+     "mittel": 0.8764652840396754,
+     "dt_mittel": 76.9163179916318
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ],
+   "normtreue_ki": [
+    0.9936944798776889,
+    1.1764334375662195
+   ]
+  },
+  "sawlit|ohne": {
+   "paare": 46,
+   "gleichzeitig": 0.8919019903029439,
+   "gesamt": 0.8065687906765552,
+   "rate_je_jahr": 0.0002692924180373886,
+   "normtreue_je_jahrhundert": 0.9734301172468298,
+   "halbwertszeit": 2573.957282613537,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 20,
+     "mittel": 0.906030855539972,
+     "dt_mittel": 7.125
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 9,
+     "mittel": 0.8294283036551078,
+     "dt_mittel": 78.33333333333333
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 10,
+     "mittel": 0.865323435843054,
+     "dt_mittel": 238.1
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 7,
+     "mittel": 0.7366761274046042,
+     "dt_mittel": 676.4285714285714
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ],
+   "normtreue_ki": [
+    0.9199779385560521,
+    0.9924142258372091
+   ]
+  },
+  "tb|mit": {
+   "paare": 273,
+   "gleichzeitig": 0.7509221370937215,
+   "gesamt": 0.7071695105604463,
+   "rate_je_jahr": 9.421593667730188e-05,
+   "normtreue_je_jahrhundert": 0.9906226504867155,
+   "halbwertszeit": 7357.005672342219,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 59,
+     "mittel": 0.7474732607202433,
+     "dt_mittel": 28.033898305084747
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 1,
+     "mittel": 0.5234375,
+     "dt_mittel": 270.5
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 49,
+     "mittel": 0.7414998411185256,
+     "dt_mittel": 436.9795918367347
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 36,
+     "mittel": 0.6831258926749643,
+     "dt_mittel": 787.5
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 128,
+     "mittel": 0.6690353601974384,
+     "dt_mittel": 1219.7421875
+    }
+   ],
+   "normtreue_ki": [
+    0.9844635151224824,
+    0.9942515592755566
+   ]
+  },
+  "bbawpyramidentexte|mit": {
+   "paare": 393,
+   "gleichzeitig": 0.8583093697606657,
+   "gesamt": 0.9032258064516129,
+   "rate_je_jahr": -0.0008930894668620695,
+   "normtreue_je_jahrhundert": 1.093418412144443,
+   "halbwertszeit": null,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 147,
+     "mittel": 0.8912764003673095,
+     "dt_mittel": 32.76190476190476
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 246,
+     "mittel": 0.9111753685753848,
+     "dt_mittel": 77.10162601626017
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ],
+   "normtreue_ki": [
+    1.0036441167872945,
+    1.1569001491394988
+   ]
+  },
+  "sawlit|mit": {
+   "paare": 46,
+   "gleichzeitig": 0.8922716868106746,
+   "gesamt": 0.8067201453004389,
+   "rate_je_jahr": 0.0002699223489012663,
+   "normtreue_je_jahrhundert": 0.9733687998106691,
+   "halbwertszeit": 2567.950313790017,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 20,
+     "mittel": 0.9067321178120618,
+     "dt_mittel": 7.125
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 9,
+     "mittel": 0.8294283036551078,
+     "dt_mittel": 78.33333333333333
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 10,
+     "mittel": 0.865323435843054,
+     "dt_mittel": 238.1
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 7,
+     "mittel": 0.7366761274046042,
+     "dt_mittel": 676.4285714285714
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ],
+   "normtreue_ki": [
+    0.9180559636808912,
+    0.9944946267364047
+   ]
+  }
+ },
+ "C": [
+  {
+   "a": "tb|inv:cg 25095",
+   "b": "tb|inv:ea 10477",
+   "dt": 0.0,
+   "stellen": 5847,
+   "sprueche": 19,
+   "uebereinstimmung": 0.7186591414400547
+  },
+  {
+   "a": "tb|inv:cg 25095",
+   "b": "tb|inv:cg 51189, j.e. 95839",
+   "dt": 43.0,
+   "stellen": 4724,
+   "sprueche": 12,
+   "uebereinstimmung": 0.7093564775613886
+  },
+  {
+   "a": "tb|inv:ea 10477",
+   "b": "tb|inv:cg 51189, j.e. 95839",
+   "dt": 43.0,
+   "stellen": 9681,
+   "sprueche": 26,
+   "uebereinstimmung": 0.7834934407602521
+  },
+  {
+   "a": "tb|inv:cg 51189, j.e. 95839",
+   "b": "tb|inv:10793",
+   "dt": 401.0,
+   "stellen": 1394,
+   "sprueche": 8,
+   "uebereinstimmung": 0.7101865136298422
+  },
+  {
+   "a": "tb|inv:ea 10477",
+   "b": "tb|inv:10793",
+   "dt": 444.0,
+   "stellen": 4205,
+   "sprueche": 35,
+   "uebereinstimmung": 0.7460166468489893
+  },
+  {
+   "a": "tb|inv:10793",
+   "b": "tb|inv:1791",
+   "dt": 787.5,
+   "stellen": 4901,
+   "sprueche": 36,
+   "uebereinstimmung": 0.6831258926749643
+  },
+  {
+   "a": "tb|inv:cg 51189, j.e. 95839",
+   "b": "tb|inv:1791",
+   "dt": 1188.5,
+   "stellen": 4623,
+   "sprueche": 16,
+   "uebereinstimmung": 0.6599610642439974
+  },
+  {
+   "a": "tb|inv:ea 10477",
+   "b": "tb|inv:1791",
+   "dt": 1231.5,
+   "stellen": 15596,
+   "sprueche": 86,
+   "uebereinstimmung": 0.6769043344447294
+  },
+  {
+   "a": "tb|inv:cg 25095",
+   "b": "tb|inv:1791",
+   "dt": 1231.5,
+   "stellen": 2230,
+   "sprueche": 15,
+   "uebereinstimmung": 0.6739910313901345
+  }
+ ]
+}

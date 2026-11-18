@@ -1,0 +1,136 @@
+{
+ "E1": [
+  {
+   "koenig": "Sethos I.",
+   "jahr": 1,
+   "tage": [
+    31,
+    83,
+    310,
+    360
+   ],
+   "spanne": 329
+  },
+  {
+   "koenig": "Ramses II.",
+   "jahr": 8,
+   "tage": [
+    158,
+    321
+   ],
+   "spanne": 163
+  },
+  {
+   "koenig": "Ramses V.",
+   "jahr": 2,
+   "tage": [
+    86,
+    88,
+    206
+   ],
+   "spanne": 120
+  },
+  {
+   "koenig": "Amenophis IV. / Echnaton",
+   "jahr": 6,
+   "tage": [
+    126,
+    223
+   ],
+   "spanne": 97
+  },
+  {
+   "koenig": "Ramses II.",
+   "jahr": 3,
+   "tage": [
+    56,
+    94,
+    101,
+    124
+   ],
+   "spanne": 68
+  },
+  {
+   "koenig": "Amenemhet III.",
+   "jahr": 18,
+   "tage": [
+    283,
+    287,
+    333
+   ],
+   "spanne": 50
+  },
+  {
+   "koenig": "Amenemhet III.",
+   "jahr": 25,
+   "tage": [
+    316,
+    338,
+    349
+   ],
+   "spanne": 33
+  },
+  {
+   "koenig": "Merenptah",
+   "jahr": 3,
+   "tage": [
+    255,
+    257,
+    262,
+    265
+   ],
+   "spanne": 10
+  },
+  {
+   "koenig": "Amenemhet III.",
+   "jahr": 3,
+   "tage": [
+    212,
+    218
+   ],
+   "spanne": 6
+  },
+  {
+   "koenig": "Sesostris I.",
+   "jahr": 17,
+   "tage": [
+    37,
+    38
+   ],
+   "spanne": 1
+  }
+ ],
+ "E2": {
+  "365 Tage": {
+   "abstand": 649.0,
+   "monate": 21.977211494156112,
+   "fehler_tage": -0.6729579999999522
+  },
+  "360 Tage": {
+   "abstand": 639.0,
+   "monate": 21.638579575910253,
+   "fehler_tage": -10.672958000000023
+  },
+  "12 Mondmonate": {
+   "abstand": 627.734136,
+   "monate": 21.25708146220856,
+   "fehler_tage": 7.591767000000036
+  },
+  "56 Wochen": {
+   "abstand": 703.0,
+   "monate": 23.805823852683737,
+   "fehler_tage": -5.734136000000012
+  },
+  "56 Mondmonate": {
+   "abstand": 3226.425968,
+   "monate": 109.25708146220856,
+   "fehler_tage": 7.591767000000036
+  }
+ },
+ "E3": {
+  "summe": 56.85225,
+  "schwebung": 365.25624275138324,
+  "56_monate_jahre": 4.527716085381153,
+  "drei_knoten": 55.83
+ }
+}

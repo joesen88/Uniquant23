@@ -1,0 +1,405 @@
+{
+ "A": {
+  "lemmata": 257,
+  "belege": 9339,
+  "arten": {
+   "thron": 64,
+   "geburt": 108,
+   "horus_nebti_gold": 85
+  },
+  "thron_mit_re": 62,
+  "wiederholung": [
+   [
+    "Wḥm-msw.t-sḫm-ḫpš-dr-pḏ.wt-9",
+    "[Nebti-Name Sethos' I.]",
+    8
+   ],
+   [
+    "Wḥm-msw.t",
+    "[Horusname und Nebtiname Amenemhets I.]",
+    5
+   ]
+  ],
+  "jahr1": [
+   "rnp,t-zp 1 HA,t r nHH Szp D,t jri,t HH.pl m HAb-sd.pl Hfn.pl m rnp,t.pl Htp,pl aHa,w n ⸢raw⸣ [m] [p,t] [nsw],yt [n] [(j)tm,w] [m] [tA] Hr,w kA-nxt-sanx-tA,wj nb,tj sxm-pH,tj-dr-pD,wt Hr,w-nbw wsr-pD,w",
+   "Regierungsjahr 1 vom Beginn der Nechech-Ewigkeit, vom Anfang der Djet-Ewigkeit; die Durchführung von Millionen von Hebsedfesten und Hundertausende von Jahren des Friedens; die Lebenszeit des Re im Himmel und das Königtum des Atum auf Erden (von/für): Horus: Ka"
+  ]
+ },
+ "B": {
+  "angaben": 218,
+  "einmal": 197,
+  "hoechste": 56,
+  "median": 8.0,
+  "bis10": 0.6294416243654822,
+  "ueber30": 0.09644670050761421,
+  "verteilung": {
+   "1": 19,
+   "2": 16,
+   "3": 20,
+   "4": 9,
+   "5": 12,
+   "6": 17,
+   "7": 4,
+   "8": 15,
+   "9": 7,
+   "10": 5,
+   "11": 6,
+   "12": 5,
+   "13": 1,
+   "14": 4,
+   "15": 2,
+   "16": 3,
+   "17": 5,
+   "18": 4,
+   "19": 1,
+   "21": 1,
+   "23": 1,
+   "24": 2,
+   "25": 8,
+   "26": 2,
+   "27": 2,
+   "30": 7,
+   "31": 2,
+   "33": 5,
+   "34": 3,
+   "36": 1,
+   "37": 2,
+   "38": 1,
+   "39": 1,
+   "43": 1,
+   "44": 1,
+   "46": 1,
+   "56": 1
+  },
+  "verknuepft": 73,
+  "tabelle": [
+   {
+    "thronname": "Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw",
+    "koenig": "[Thronname Ramses' II.]",
+    "angaben": 11,
+    "jahre": [
+     2,
+     3,
+     5,
+     5,
+     8,
+     18,
+     21,
+     33,
+     34,
+     34,
+     56
+    ],
+    "hoechstes": 56,
+    "p_fester_zyklus": 1.0
+   },
+   {
+    "thronname": "Ḫpr-kꜣ-Rꜥw",
+    "koenig": "[Thronname Sesostris' I.]",
+    "angaben": 11,
+    "jahre": [
+     2,
+     3,
+     9,
+     9,
+     10,
+     17,
+     18,
+     25,
+     33,
+     34,
+     43
+    ],
+    "hoechstes": 43,
+    "p_fester_zyklus": 0.05471226752750098
+   },
+   {
+    "thronname": "Nb-mꜣꜥ.t-Rꜥw",
+    "koenig": "[Thronname Amenophis' III.]",
+    "angaben": 2,
+    "jahre": [
+     27,
+     33
+    ],
+    "hoechstes": 33,
+    "p_fester_zyklus": 0.3472576530612245
+   },
+   {
+    "thronname": "Nbw-kꜣ.w-Rꜥw",
+    "koenig": "[Thronname Amenemhets II.]",
+    "angaben": 6,
+    "jahre": [
+     2,
+     3,
+     3,
+     9,
+     12,
+     13
+    ],
+    "hoechstes": 13,
+    "p_fester_zyklus": 0.00015650634594424216
+   },
+   {
+    "thronname": "Mn-mꜣꜥ.t-Rꜥw",
+    "koenig": "[Thronname Sethos I.]",
+    "angaben": 7,
+    "jahre": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     6,
+     11
+    ],
+    "hoechstes": 11,
+    "p_fester_zyklus": 1.1283208334061911e-05
+   },
+   {
+    "thronname": "Ḏsr-kꜣ-Rꜥw",
+    "koenig": "[Thronname Amenophis' I.]",
+    "angaben": 1,
+    "jahre": [
+     9
+    ],
+    "hoechstes": 9,
+    "p_fester_zyklus": 0.16071428571428573
+   },
+   {
+    "thronname": "Nfr-ḫpr.w-Rꜥw-wꜥ-n-Rꜥw",
+    "koenig": "[Thronname Amenophis' IV.]",
+    "angaben": 3,
+    "jahre": [
+     3,
+     4,
+     8
+    ],
+    "hoechstes": 8,
+    "p_fester_zyklus": 0.0029154518950437313
+   },
+   {
+    "thronname": "Ḫꜥi̯-kꜣ.w-Rꜥw",
+    "koenig": "[Thronname Sesostris' III.]",
+    "angaben": 3,
+    "jahre": [
+     7,
+     8,
+     8
+    ],
+    "hoechstes": 8,
+    "p_fester_zyklus": 0.0029154518950437313
+   },
+   {
+    "thronname": "Bꜣ-n-Rꜥw-mr-Jmn",
+    "koenig": "[Thronname Merenptahs]",
+    "angaben": 2,
+    "jahre": [
+     3,
+     8
+    ],
+    "hoechstes": 8,
+    "p_fester_zyklus": 0.02040816326530612
+   },
+   {
+    "thronname": "Ḫwi̯-Nfr-tm-Rꜥw",
+    "koenig": "[Thronname Taharqas]",
+    "angaben": 1,
+    "jahre": [
+     6
+    ],
+    "hoechstes": 6,
+    "p_fester_zyklus": 0.10714285714285714
+   },
+   {
+    "thronname": "Ḫꜥi̯-ḫpr-Rꜥw",
+    "koenig": "[Thronname Sesostris' II.]",
+    "angaben": 3,
+    "jahre": [
+     2,
+     6,
+     6
+    ],
+    "hoechstes": 6,
+    "p_fester_zyklus": 0.0012299562682215742
+   },
+   {
+    "thronname": "Ꜥꜣ-ḫpr.w-Rꜥw",
+    "koenig": "[Thronname Amenhoteps II.]",
+    "angaben": 1,
+    "jahre": [
+     5
+    ],
+    "hoechstes": 5,
+    "p_fester_zyklus": 0.08928571428571429
+   },
+   {
+    "thronname": "Nbw-ḫpr-Rꜥw-zꜣ-Rꜥw-Jni̯-jtj=f",
+    "koenig": "[Thron- und Eigenname Antefs V.]",
+    "angaben": 1,
+    "jahre": [
+     3
+    ],
+    "hoechstes": 3,
+    "p_fester_zyklus": 0.05357142857142857
+   },
+   {
+    "thronname": "Wꜣḏ-ḫpr-Rꜥw",
+    "koenig": "[Thronname Kamoses]",
+    "angaben": 1,
+    "jahre": [
+     3
+    ],
+    "hoechstes": 3,
+    "p_fester_zyklus": 0.05357142857142857
+   },
+   {
+    "thronname": "Mn-pḥ.tj-Rꜥw",
+    "koenig": "[Thronname Ramses I.]",
+    "angaben": 1,
+    "jahre": [
+     2
+    ],
+    "hoechstes": 2,
+    "p_fester_zyklus": 0.03571428571428571
+   },
+   {
+    "thronname": "Ḫꜥi̯-sḫm-Rꜥw",
+    "koenig": "[Thronname Neferhoteps I.]",
+    "angaben": 1,
+    "jahre": [
+     2
+    ],
+    "hoechstes": 2,
+    "p_fester_zyklus": 0.03571428571428571
+   },
+   {
+    "thronname": "Mn-mꜣꜥ.t-Rꜥw-ḥqꜣ-Wꜣs.t",
+    "koenig": "[Thronname Sethos I.]",
+    "angaben": 1,
+    "jahre": [
+     1
+    ],
+    "hoechstes": 1,
+    "p_fester_zyklus": 0.017857142857142856
+   },
+   {
+    "thronname": "Mn-mꜣꜥ.t-Rꜥw-jwꜥ-n-Rꜥw",
+    "koenig": "[Thronname Sethos I.]",
+    "angaben": 1,
+    "jahre": [
+     1
+    ],
+    "hoechstes": 1,
+    "p_fester_zyklus": 0.017857142857142856
+   },
+   {
+    "thronname": "Mri̯-ḥtp-Rꜥw",
+    "koenig": "[Thronname des Ini]",
+    "angaben": 1,
+    "jahre": [
+     1
+    ],
+    "hoechstes": 1,
+    "p_fester_zyklus": 0.017857142857142856
+   }
+  ],
+  "wechsel": [
+   {
+    "thronname": "Nfr-ḫpr.w-Rꜥw-wꜥ-n-Rꜥw",
+    "geburtsnamen": {
+     "Jmn-ḥtp.w-nṯr-ḥqꜣ-Wꜣs.t": [
+      4
+     ],
+     "Jmn-ḥtp.w": [
+      3
+     ],
+     "Ꜣḫ-n-Jtn": [
+      8
+     ]
+    }
+   },
+   {
+    "thronname": "Nb-mꜣꜥ.t-Rꜥw",
+    "geburtsnamen": {
+     "Jmn-ḥtp.w-nṯr-ḥqꜣ-Wꜣs.t": [
+      27
+     ],
+     "Jmn-ḥtp.w-ḥqꜣ-Wꜣs.t": [
+      33
+     ]
+    }
+   }
+  ],
+  "doppeldatum": [
+   "[...] rnp,t-zp 43 xr Hm n(,j) Hr,w anx-ms,t.pl nswt-bj,tj xpr-kA-ra anx D,t nb,tj anx-ms,t.pl Hr,w-nbw anx-ms,t.pl zA-ra s-n(,j)-wsr,t anx D,t r nwHH xft rnp,t-zp 25 m mA-HD m (j)r(,j)-pa(,t) HA(,tj)-a jAm-a jmn mAa-xrw",
+   "Year 43 under the Majesty of Horus Ankh-mesut, King of Upper and Lower Egypt 𓍹Kheper-ka-Ra𓍺, may he live forever, Two Ladies Ankh-mesut, Golden Falcon Ankh-mesut, Son of Re 𓍹Senwosret𓍺, living for ever and ever, corresponding to year 25 in the Oryx nome of the governor and local prince, gracious one, Amen〈y〉, justified."
+  ]
+ },
+ "C": {
+  "jahre": [
+   1
+  ],
+  "saetze": [
+   [
+    "bbawramessiden",
+    1,
+    "rnp,t-zp 1 HA,t r nHH Szp D,t jri,t HH.pl m HAb-sd.pl Hfn.pl m rnp,t.pl Htp,pl aHa,w n ⸢raw⸣ [m] [p,t] [nsw],yt [n] [(j)tm,w] [m] [tA] Hr,w ",
+    "Regierungsjahr 1 vom Beginn der Nechech-Ewigkeit, vom Anfang der Djet-Ewigkeit; die Durchführung von Millionen von Hebsedfesten und Hundertausende von Jahren de"
+   ]
+  ]
+ },
+ "D": {
+  "geburt_nach_thronzahl": {
+   "1": 17,
+   "2": 3,
+   "3": 1
+  },
+  "thron_nach_geburtszahl": {
+   "4": 1,
+   "1": 20,
+   "2": 1
+  },
+  "geburt": {
+   "Jmn-ḥtp.w": {
+    "Nfr-ḫpr.w-Rꜥw-wꜥ-n-Rꜥw": 3,
+    "Nfr-ḫpr.w-Rꜥw": 2
+   },
+   "Stẖ.y-mr-n-Ptḥ": {
+    "Mn-mꜣꜥ.t-Rꜥw": 18,
+    "Mn-mꜣꜥ.t-Rꜥw-jwꜥ-n-Rꜥw": 2
+   },
+   "Z-n-wsr.t": {
+    "Ḫꜥi̯-kꜣ.w-Rꜥw": 5,
+    "Ḫpr-kꜣ-Rꜥw": 14,
+    "Ḫꜥi̯-ḫpr-Rꜥw": 4
+   },
+   "Jmn-m-ḥꜣ.t": {
+    "Sḥtp-jb-Rꜥw": 4,
+    "Nbw-kꜣ.w-Rꜥw": 4
+   }
+  },
+  "thron": {
+   "Nfr-ḫpr.w-Rꜥw-wꜥ-n-Rꜥw": {
+    "Ꜣḫ-n-Jtn": 76,
+    "Jmn-ḥtp.w-nṯr-ḥqꜣ-Wꜣs.t": 6,
+    "Jmn-ḥtp.w": 3,
+    "Jmn-ḥtp.w-nṯr-ḥqꜣ-Wꜣs.t-ꜥꜣ-m-ꜥḥꜥ.w=f": 3
+   },
+   "Mn-mꜣꜥ.t-Rꜥw": {
+    "Stẖ.y-mr-n-Ptḥ": 18,
+    "Stẖ.y-mr-n-Jmn": 10
+   }
+  }
+ },
+ "E": {
+  "große Königsgemahlin": 235,
+  "Königsmutter": 37,
+  "Königsgemahlin": 121,
+  "leibliche Königstochter": 130,
+  "Königstochter": 120,
+  "Königssohn": 236,
+  "leiblicher Königssohn": 37,
+  "Königsbruder": 1,
+  "Königsschwester": 3
+ }
+}

@@ -1,0 +1,163 @@
+# Ankertabelle: Namen des AES-Korpus mit unabhaengiger fremder Ueberlieferung.
+# Spalten: gruppe <TAB> lemma_id <TAB> umschrift (AES) <TAB> satz <TAB> formen
+# satz A = Lernen und Pruefen; satz M = getrennter Pruefsatz (Koenigslisten bei Manetho/Herodot, Koenige vor der Spaetzeit).
+# formen: sprache:form:konsonanten, getrennt durch " ; ".
+# sprache: akk = Keilschrift (Amarna, Hattusa, Assyrien), heb = hebraeische Bibel, sem = aramaeisch/phoenizisch/ugaritisch,
+#          gr = griechisch, kop = koptisch, arab = heutiger arabischer Name, man = Manetho/Herodot.
+# konsonanten: p b f | m | n | r l | t d | s z S(=sch) | c (=emphatisch/Affrikate: sem. s mit Punkt, kopt. Djandja) | k g q x(=ch) | h H(=h mit Punkt).
+#   Vokale, w, y, Aleph und Ajin entfallen; griechische Nominativendung -s entfaellt; Doppelkonsonanten zaehlen einfach.
+# Aufnahmeregel: die fremde Form gibt denselben Namen in derselben Zusammensetzung wieder (Gleichsetzung der Standardliteratur);
+#   wie gut die Konsonanten zur Zeichenfolge passen, war kein Kriterium. Zusammengestellt aus Handbuchwissen, nicht aus einer Datenbank.
+nibmuaria	400837	Nb-mꜣꜥ.t-Rꜥw	A	akk:Nibmuaria:nbmr
+naphururia	852057	Nfr-ḫpr.w-Rꜥw	A	akk:Napḫururia:npxrr
+manahpiria	400414	Mn-ḫpr-Rꜥw	A	akk:Manaḫpiria:mnxpr
+manahpiria	701973	Mn-ḫpr-Rꜥw	A	akk:Manaḫpiria:mnxpr
+wasmuaria	600505	Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw	A	akk:Wašmuaria Šatepnaria:SmrStpnr
+riamasesa	400876	Rꜥw-ms-sw-mr.y-Jmn	A	akk:Riamašeša mai-Amana:rmSSmmn
+minmuaria	500079	Mn-mꜣꜥ.t-Rꜥw	A	akk:Minmuaria:mnmr
+nibhururia	500068	Nb-ḫpr.w-Rꜥw	A	akk:Nibḫururia:nbxrr
+amenhotep	600285	Jmn-ḥtp.w	A	akk:Amanḫatpi:mnxtp ; gr:Amenōthēs:mnt
+amenhotep	600139	Jmn-ḥtp.w	A	akk:Amanḫatpi:mnxtp ; gr:Amenōthēs:mnt
+taharqa	862990	Thr-qꜣ	A	akk:Tarqû:trq ; heb:Tirhāqā:trhq ; gr:Tarakos:trk
+nimlot	861213	Nmlt	A	akk:Lamintu:lmnt
+osorkon	861216	Wsrkn	A	akk:Šilkanni:Slkn ; gr:Osorchōn:srxn
+psammetich	550322	Psmṯk	A	akk:Pišamilki:pSmlk ; gr:Psammētichos:psmtx
+wahibre	550318	Wꜣḥ-jb-Rꜥw	A	heb:Ḥopraʿ:Hpr ; gr:Ouaphris:pr
+smendes	863237	N.j-sw-bꜣ-nb-Ḏd.t	A	gr:Smendēs:smnd
+smendes	702743	N.j-sw-bꜣ-nb-Ḏd.t	A	gr:Smendēs:smnd
+alexander	860196	Ꜣlksntrs	A	gr:Alexandros:lksndr
+scheschonq	707419	Ššnq	A	heb:Šîšaq:SSq ; akk:Susinqu:ssnq ; gr:Sesōnchis:ssnx
+tefnacht	708709	Tꜣy=f-nḫt.t	A	akk:Tapnaḫti:tpnxt ; gr:Tnephachthos:tnpxt
+montemhet	400233	Mnṯ.w-m-ḥꜣ.t	A	akk:Mantimeanḫe:mntmnx
+pinhas	400840	Pꜣ-nḥsj	A	heb:Pînəḥās:pnHs
+imhotep	400243	Jy-m-ḥtp	A	gr:Imouthēs:mt
+djedhor	709833	Ḏd-Ḥr.w	A	gr:Teōs:t ; akk:Ṣiḫa:cx
+harsiese	853039	Ḥr.w-zꜣ-Ꜣs.t	A	gr:Harsiēsis:rss ; kop:Harsiēse:hrss ; akk:Ḫarsiyaešu:xrsS
+harsiese	705024	Ḥr.w-zꜣ-Ꜣs.t	A	gr:Harsiēsis:rss ; kop:Harsiēse:hrss ; akk:Ḫarsiyaešu:xrsS
+petese	701120	Pꜣ-ḏ-Ꜣs.t	A	gr:Petēsis:pts
+petamun	701126	Pꜣ-ḏ-Jmn	A	gr:Petamounis:ptmn
+petemestous	701158	Pꜣ-ḏ-Jmn-nb-nswt-Tꜣ.wj	A	gr:Petemestous:ptmst
+nesmin	702786	N.j-sw-Mnw	A	gr:Sminis:smn
+amasis	550247	Jꜥḥ-ms.w	A	gr:Amasis:ms
+teje	708799	Tjy	A	akk:Teye:t
+mayati	702312	Mr.yt-Jtn	A	akk:Mayati:mt
+nephotes	450077	Nfr-ḥtp.w	A	gr:Nephōtēs:npt
+sochotes	400122	Sbk-ḥtp.w	A	gr:Sochōtēs:sxt
+horus	400146	Ḥr.w	A	gr:Hōros:r ; kop:Hōr:hr
+wenamun	711510	Wn-Jmn	A	akk:Unamunu:nmn
+bakennef	711916	Bꜣk-n-nf	A	akk:Bukkunanniʾpi:bknnp
+sesostris	400051	Z-n-wsr.t	M	man:Sesōstris:ssstr
+sesostris	400058	Z-n-wsr.t	M	man:Sesōstris:ssstr
+amenemhet	400161	Jmn-m-ḥꜣ.t	M	man:Ammenemēs:mnm
+amenemhet	600435	Jmn-m-ḥꜣ.t	M	man:Ammenemēs:mnm
+cheops	400277	Ḫwi̯=f-wj	M	man:Cheops:xp ; man:Souphis:sp
+unas	800001	Wnjs	M	man:Onnos:n
+teti	450656	Ttj	M	man:Othoēs:t
+teti	550233	Ttj	M	man:Othoēs:t
+apophis_koenig	400949	Jpp	M	man:Apōphis:pp
+djoser	853625	Ḏsr	M	man:Tosorthros:tsrtr
+sahure	400280	Sꜣḥ.w-Rꜥw	M	man:Sephrēs:spr
+neferkare	400330	Nfr-kꜣ-Rꜥw	M	man:Nephercherēs:nprxr
+djedkare	400288	Ḏd-kꜣ-Rꜥw	M	man:Tancherēs:tnxr
+lamares	400117	N.j-mꜣꜥ.t-Rꜥw	M	man:Lamarēs:lmr
+thutmose	600180	Ḏḥw.tj-ms.w	M	man:Tuthmōsis:ttms
+abydos	103	Ꜣbḏ.w	A	gr:Abydos:bd ; kop:Ebōt:bt
+kemet	164430	Km.t	A	kop:Kēme:km ; gr:Chēmia:xm
+on	22850	Jwn.w	A	heb:ʾŌn:n ; kop:Ōn:n ; akk:Unu:n
+memphis	70010	Mn-nfr	A	gr:Memphis:mmp ; akk:Mempi:mmp ; heb:Mōp:mp ; kop:Menfe:mnf ; arab:Manf:mnf
+elephantine	81	Ꜣbw	A	sem:Yēb:b ; kop:Iēb:b
+hnes	84750	Nn-nswt	A	kop:Hnēs:hns ; heb:Ḥānēs:Hns ; akk:Ḫininši:xnnS ; arab:Ihnāsiya:hns
+hnes	99920	Ḥw.t-Nn-nswt	A	kop:Hnēs:hns ; heb:Ḥānēs:Hns ; akk:Ḫininši:xnnS ; arab:Ihnāsiya:hns
+chemmis	211	Ꜣḫ-bj.t	A	gr:Chemmis:xm
+hurru	119580	ḫr	A	akk:Ḫurru:xr
+kusch	163680	Kꜣš	A	heb:Kūš:kS ; akk:Kūsu:ks
+byblos	163970	Kbnj	A	akk:Gubla:gbl ; heb:Gəbal:gbl
+schmun	117260	Ḫmn.w	A	kop:Šmoun:Smn ; akk:Ḫimuni:xmn ; arab:Ašmūnayn:Smnn
+letopolis	116940	Ḫm	A	kop:Oušēm:Sm ; arab:Awsīm:sm
+assiut	126430	Zꜣ.wtj	A	kop:Sioout:st ; akk:Šiyāutu:St ; arab:Asyūṭ:st
+koptos	166970	Gbtw	A	gr:Koptos:kpt ; kop:Kebt:kbt ; arab:Qifṭ:qft
+sais	126380	Zꜣw	A	gr:Sais:s ; akk:Saya:s ; kop:Sai:s ; arab:Ṣā:s
+achmim	852412	Ḫnt.j-Mnw	A	kop:Šmin:Smn ; arab:Aḫmīm:xmm ; gr:Chemmis:xm
+basta	53630	Bꜣs.t	A	arab:Basṭa:bst
+bubastis	60550	Pr-Bꜣs.tjt	A	gr:Boubastis:bbst ; heb:Pî-beset:pbst ; kop:Poubasti:pbst
+edfu	183280	Ḏbꜣ	A	kop:Tbō:tb ; arab:Idfū:df
+naharina	85740	Nhrn	A	akk:Naḫrima:nxrm ; heb:Naharayim:nhrm
+thinis	175730	Ṯnj	A	gr:Thinis:tn ; kop:Tin:tn ; akk:Taini:tn
+qatna	854941	Qdnꜣ	A	akk:Qaṭna:qtn
+libanon	94000	Rbrn	A	heb:Ləbānōn:lbnn ; akk:Labnānu:lbnn
+schutb	852413	Šꜣs-ḥtp	A	kop:Šōtp:Stp ; arab:Šuṭb:Stb
+atfih	171000	Tp-jḥ.w	A	kop:Tpēh:tph ; arab:Aṭfīḥ:tfH
+kusae	159740	Qjs	A	gr:Kousai:ks ; arab:Qūṣiyya:qs
+moiris	72220	Mr-wr	A	gr:Moiris:mr
+keftiu	164260	Kft.w	A	heb:Kaptōr:kptr ; akk:Kaptara:kptr
+joppe	854639	Ypw	A	heb:Yāpō:p ; akk:Yapu:p ; gr:Ioppē:p
+sile	174740	Ṯꜣr.w	A	akk:Zilû:zl ; gr:Selē:sl
+djeme	550363	Ṯꜣ-mw.t	A	kop:Džēme:cm
+tanis	853903	Ḏꜥn.t	A	heb:Ṣōʿan:cn ; akk:Ṣaʾnu:cn ; gr:Tanis:tn ; kop:Džani:cn ; arab:Ṣān:sn
+alaschia	853913	Jrs	A	akk:Alašiya:lS
+sichem	859173	Skmm	A	heb:Šəkem:Skm ; akk:Šakmu:Skm
+auaris	99860	Ḥw.t-wꜥr.t	A	gr:Auaris:r
+dor	853904	Dr	A	heb:Dōr:dr ; akk:Duʾru:dr
+tyros	853906	Ḏr	A	heb:Ṣōr:cr ; akk:Ṣurru:cr ; gr:Tyros:tr
+sidon	859074	Ḏdn	A	heb:Ṣîdōn:cdn ; akk:Ṣidūnu:cdn ; gr:Sidōn:sdn
+napata	850127	Npyt	A	gr:Napata:npt
+hatti	121250	Ḫt	A	akk:Ḫatti:xt ; heb:Ḥēt:Ht
+oxyrhynchos	861223	Pr-mḏd	A	kop:Pemdje:pmc
+sebennytos	800046	Ṯb-nṯr	A	gr:Sebennytos:sbnt ; akk:Ṣabnūti:cbnt ; kop:Džemnouti:cmnt ; arab:Samannūd:smnd
+xois	800043	Ḫꜣsw.w	A	kop:Sḫōou:sx ; arab:Saḫā:sx ; gr:Xois:ks
+behbeit	853258	Pr-ḥby.t	A	arab:Bahbīt:bhbt
+saft	857911	Pr-Spd.w	A	akk:Pišaptu:pSpt ; arab:Ṣafṭ:sft
+balamun	852505	Pꜣ-jw-n-Jmn	A	arab:Balamūn:blmn ; kop:Pounemou:pnm
+meidum	861219	Mr-Jtm.w	A	arab:Maydūm:mdm
+lahun	92990	Rʾ-ḥn.t	A	arab:al-Lāhūn:lhn ; kop:Lehōne:lhn
+ombos	81780	Nbw.t	A	gr:Ombos:mb
+hikuptah	100020	Ḥw.t-kꜣ-Ptḥ	A	akk:Ḫikuptaḫ:xkptx ; gr:Aigyptos:gpt
+no	80900	Nʾ.t	A	heb:Nōʾ:n ; akk:Niʾ:n ; kop:Nē:n
+pithom	858997	Pr-Jtm.w	A	heb:Pîtōm:ptm ; gr:Patoumos:ptm
+busiris	857152	Pr-Wsjr	A	gr:Bousiris:bsr ; kop:Pousiri:psr ; arab:Abūṣīr:bsr ; akk:Puširu:pSr
+re	400015	Rꜥw	A	kop:Rē:r
+osiris	49460	Wsjr	A	gr:Osiris:sr ; kop:Ousire:sr ; sem:ʾwsry:sr
+horus	107500	Ḥr.w	A	gr:Hōros:r ; kop:Hōr:hr
+anubis	27360	Jnp.w	A	gr:Anoubis:nb ; kop:Anoup:np
+seth	148520	Stẖ	A	gr:Sēth:st ; kop:Sēt:st
+isis	271	Ꜣs.t	A	gr:Isis:s ; kop:Ēse:s
+thot	185290	Ḏḥw.tj	A	gr:Thōth:tt ; kop:Thoout:tt ; sem:tḥwt:tHt
+apophis	35360	Ꜥꜣpp	A	gr:Apōphis:pp ; kop:Aphōph:pp
+hathor	99960	Ḥw.t-Ḥr.w	A	gr:Hathōr:tr ; kop:Hathōr:htr ; arab:Hatūr:htr
+amun	26060	Jmn	A	gr:Ammōn:mn ; kop:Amoun:mn ; akk:Amānu:mn ; heb:ʾĀmōn:mn
+geb	167010	Gbb	A	gr:Kēb:kb
+schu	152710	Šw	A	gr:Sōs:s
+nephthys	82260	Nb.t-ḥw.t	A	gr:Nephthys:npt ; kop:Nebthō:nbt
+ptah	62980	Ptḥ	A	gr:Phtha:pt ; kop:Ptah:pth
+tefnut	171880	Tfn.t	A	gr:Tphēnis:tpn
+chnum	123590	H̱nm.w	A	gr:Chnoumis:xnm ; gr:Chnoubis:xnb
+min	70530	Mnw	A	gr:Min:mn
+nun	500006	Nw.w	A	gr:Noun:nn ; kop:Noun:nn
+bastet	53640	Bꜣs.tjt	A	gr:Oubastis:bst
+wadjet	43760	Wꜣḏ.t	A	kop:Edžō:c
+month	71660	Mnṯ.w	A	gr:Mōnth:mnt
+sobek	132180	Sbk	A	gr:Souchos:sx
+maat	66630	Mꜣꜥ.t	A	kop:Me:m
+neith	79010	Nj.t	A	gr:Nēith:nt
+sokar	146890	Zkr	A	gr:Sokaris:skr
+onnophris	850648	Wnn-nfr	A	gr:Onnōphris:npr
+chons	118720	Ḫns.w	A	gr:Chōns:xns ; kop:Šons:Sns
+mut	69030	Mw.t	A	gr:Mouth:mt
+mut	69020	Mw.t	A	gr:Mouth:mt
+onuris	26850	Jn-ḥr.t	A	gr:Onouris:nr
+haroeris	550351	Ḥr.w-wr	A	gr:Haroēris:rr
+mendes	850187	Bꜣ-nb-Ḏd.t	A	gr:Mendēs:mnd ; akk:Binṭiṭi:bntt
+astarte	40880	Ꜥztr.t	A	sem:ʿAštart:Strt ; gr:Astartē:strt
+baal	54960	Bꜥr	A	sem:Baʿal:bl
+anat	38980	ꜥnt	A	sem:ʿAnat:nt
+reschef	96230	Ršp	A	sem:Rašap:rSp
+nefertem	83860	Nfr-tm	A	gr:Nephthēmis:nptm
+iah	850333	Jꜥḥ	A	kop:Ooh:h
+sothis	851672	Spd.t	A	gr:Sōthis:st
+bes	57210	Bs	A	gr:Bēs:bs
+thermuthis	95190	Rnn.wtt	A	gr:Ermouthis:rmt
+harsaphes	550128	Ḥr.j-š=f	A	gr:Harsaphēs:rsp
+apis	104000	Ḥp	A	gr:Apis:p ; kop:Hape:hp
+mnevis	72230	Mr-wr	A	gr:Mneuis:mn
+nikkal	89400	Nkr	A	akk:Nikkal:nkl
+upuaut	45580	Wp-wꜣ.wt	A	gr:Ophois:p

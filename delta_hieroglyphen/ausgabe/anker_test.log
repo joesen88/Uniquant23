@@ -1,0 +1,141 @@
+Protokoll sha256 21587b85a6db8c48
+Anker: 131 Namensgruppen (Satz A), 138 Lemmata, 245 fremde Formen {'akk': 56, 'gr': 86, 'heb': 24, 'kop': 48, 'arab': 24, 'sem': 7}; Satz M: 12 Gruppen; ohne Schreibung im Korpus: []
+verschiedene Zeichen in den Ankern: 192, davon in >= 3 Gruppen: 68; verschiedene Konsonantenfolgen (Kandidaten): 138
+
+P1 zurueckgehaltene Namen: 180 Abfragen | Rang 1: 14.4 % [9.4; 20.1] (Zufall 0.73 %) | Kehrwert 0.234 (Zufall 0.040) | mittlerer Rangplatz 23.1 % [18.3; 28.1] (Zufall 50 %)
+   Form bezeugt in akk  : n= 56 | Rang 1  12.5 % | Rangplatz  33.2 %
+   Form bezeugt in arab : n= 24 | Rang 1   4.2 % | Rangplatz  26.9 %
+   Form bezeugt in gr   : n= 86 | Rang 1  22.1 % | Rangplatz  13.3 %
+   Form bezeugt in heb  : n= 24 | Rang 1  16.7 % | Rangplatz  28.9 %
+   Form bezeugt in kop  : n= 48 | Rang 1  12.5 % | Rangplatz  17.8 %
+   Form bezeugt in sem  : n=  7 | Rang 1  57.1 % | Rangplatz   9.3 %
+   Folgen mit 1 Konsonanten: n= 18 | Rang 1  55.6 % | Rangplatz   1.7 %
+   Folgen mit 2 Konsonanten: n= 57 | Rang 1  10.5 % | Rangplatz  11.2 %
+   Folgen mit 3 Konsonanten: n= 56 | Rang 1  12.5 % | Rangplatz  23.6 %
+   Folgen mit 4+ Konsonanten: n= 49 | Rang 1   6.1 % | Rangplatz  44.3 %
+   Nebenrechnung ohne Voranstellung: Rang 1 15.0 % | Rangplatz 23.2 %
+N1 Vertauschung 1: Rang 1 1.7 % | Kehrwert 0.057 | Rangplatz 43.8 %
+N1 Vertauschung 2: Rang 1 0.0 % | Kehrwert 0.045 | Rangplatz 45.0 %
+N1 Vertauschung 3: Rang 1 0.0 % | Kehrwert 0.040 | Rangplatz 43.5 %
+N1 Vertauschung 4: Rang 1 1.7 % | Kehrwert 0.060 | Rangplatz 44.8 %
+N1 Vertauschung 5: Rang 1 0.0 % | Kehrwert 0.042 | Rangplatz 44.8 %
+
+Modell aus allen A-Ankern: Anteile der Voranstellung k=0..4: [0.98, 0.005, 0.005, 0.005, 0.004] | Laengenanteile 0..3: [0.665, 0.226, 0.066, 0.043] | log-Likelihood Start -2184.9 -> Ende -550.5
+P2 Koenigslisten (Satz M): 16 Abfragen | Rang 1 12.5 % (Zufall 0.73 %) | Rangplatz 31.8 %
+   sesostris       SSSTR  Rang 111.0 von 138
+   sesostris       SSSTR  Rang 112.0 von 138
+   amenemhet       MNM    Rang 1.0 von 138
+   amenemhet       MNM    Rang 2.0 von 138
+   cheops          KP     Rang 18.0 von 137
+   cheops          SP     Rang 14.0 von 137
+   unas            N      Rang 2.0 von 138
+   teti            T      Rang 2.0 von 138
+   teti            T      Rang 2.0 von 138
+   apophis_koenig  PP     Rang 1.0 von 138
+   djoser          TSRTR  Rang 120.0 von 138
+   sahure          SPR    Rang 42.0 von 138
+   neferkare       NPRKR  Rang 97.0 von 138
+   djedkare        TNKR   Rang 117.0 von 138
+   lamares         RMR    Rang 52.0 von 138
+   thutmose        TTMS   Rang 19.0 von 138
+
+P3a starke Einkonsonantenzeichen: 16 von 20 kommen in >= 3 Namensgruppen vor, davon 13 mit passender Klasse
+   D58  Gruppen  14 | gelernt P    (p=0.69, kein Laut 0.22) | Standard b/bw               | passt
+   Q3   Gruppen  20 | gelernt P    (p=0.66, kein Laut 0.32) | Standard p                  | passt
+   I9   Gruppen   5 | gelernt P    (p=0.32, kein Laut 0.19) | Standard f/it/sA-tA         | passt
+   G17  Gruppen   9 | gelernt M    (p=0.60, kein Laut 0.36) | Standard m/mwt              | passt
+   N35  Gruppen  40 | gelernt -    (p=0.85, kein Laut 0.85) | Standard mw/n/nt            | passt nicht
+   D21  Gruppen  25 | gelernt R    (p=0.76, kein Laut 0.22) | Standard r/rA               | passt
+   O4   Gruppen   2 | gelernt -    (p=0.73, kein Laut 0.73) | Standard h                  | zu selten
+   V28  Gruppen   6 | gelernt H    (p=0.36, kein Laut 0.30) | Standard H                  | passt
+   Aa1  Gruppen   4 | gelernt -    (p=0.68, kein Laut 0.68) | Standard x                  | passt nicht
+   F32  kommt in den Ankern nicht vor
+   S29  Gruppen  13 | gelernt S    (p=0.65, kein Laut 0.17) | Standard s                  | passt
+   O34  Gruppen   8 | gelernt S    (p=0.83, kein Laut 0.14) | Standard s/z                | passt
+   N37  Gruppen   5 | gelernt S    (p=0.59, kein Laut 0.22) | Standard S/sn               | passt
+   N29  Gruppen   2 | gelernt K    (p=0.61, kein Laut 0.17) | Standard q/qAA              | zu selten
+   V31  Gruppen  11 | gelernt K    (p=0.89, kein Laut 0.08) | Standard k                  | passt
+   W11  Gruppen   1 | gelernt -    (p=0.74, kein Laut 0.74) | Standard g/nst              | zu selten
+   X1   Gruppen  56 | gelernt -    (p=0.99, kein Laut 0.99) | Standard t                  | passt nicht
+   V13  Gruppen   6 | gelernt T    (p=0.57, kein Laut 0.14) | Standard T                  | passt
+   D46  Gruppen   9 | gelernt T    (p=0.54, kein Laut 0.42) | Standard Drt/Hnt/Sp/Ssp/d/i | passt
+   I10  Gruppen   3 | gelernt C    (p=0.50, kein Laut 0.19) | Standard D/Dt/d             | passt
+   schwache Zeichen (Aleph, j, y, Ajin, w): 6 von 6 ohne Lautwert gelernt: M17=-, G1=-, D36=-, G43=-, Z7=-, Z4=-
+P3b Zeichen mit nichtleerem gelerntem Wert (in >= 3 Gruppen): 24 | genau 20 (83 %), teilweise 3, nein 1 | bei vertauschten Standardwerten genau im Mittel 3.7 (hoechstens 10), p = 0.0001; genau oder teilweise 23 gegen 7.1, p = 0.0001
+   D21   Gruppen  25 | gelernt R    (p=0.76) | Standard r/rA                         | genau
+   Q3    Gruppen  20 | gelernt P    (p=0.66) | Standard p                            | genau
+   D58   Gruppen  14 | gelernt P    (p=0.69) | Standard b/bw                         | genau
+   Y5    Gruppen  13 | gelernt MN   (p=0.63) | Standard mn                           | genau
+   S29   Gruppen  13 | gelernt S    (p=0.65) | Standard s                            | genau
+   V31   Gruppen  11 | gelernt K    (p=0.89) | Standard k                            | genau
+   A40   Gruppen  10 | gelernt R    (p=0.54) | Standard nTr                          | teil
+   G17   Gruppen   9 | gelernt M    (p=0.60) | Standard m/mwt                        | genau
+   D46   Gruppen   9 | gelernt T    (p=0.54) | Standard Drt/Hnt/Sp/Ssp/d/iAdt/ia/iai | genau
+   W24   Gruppen   8 | gelernt N    (p=0.68) | Standard nw                           | genau
+   O34   Gruppen   8 | gelernt S    (p=0.83) | Standard s/z                          | genau
+   V13   Gruppen   6 | gelernt T    (p=0.57) | Standard T                            | genau
+   V28   Gruppen   6 | gelernt H    (p=0.36) | Standard H                            | genau
+   R4    Gruppen   5 | gelernt T    (p=0.62) | Standard Htp                          | nein
+   I9    Gruppen   5 | gelernt P    (p=0.32) | Standard f/it/sA-tA                   | genau
+   U33   Gruppen   5 | gelernt T    (p=0.73) | Standard ti/tit                       | genau
+   Q1    Gruppen   5 | gelernt S    (p=0.84) | Standard As/Htm/st/ws/wz              | genau
+   N37   Gruppen   5 | gelernt S    (p=0.59) | Standard S/sn                         | genau
+   C10   Gruppen   4 | gelernt M    (p=0.37) | Standard mAat                         | teil
+   D37   Gruppen   4 | gelernt T    (p=0.63) | Standard D/d/di/imi/m/mi/rdi          | genau
+   L1    Gruppen   3 | gelernt KPR  (p=0.33) | Standard xpr                          | genau
+   I10   Gruppen   3 | gelernt C    (p=0.50) | Standard D/Dt/d                       | genau
+   G5    Gruppen   3 | gelernt R    (p=0.36) | Standard Hr                           | teil
+   U15   Gruppen   3 | gelernt TM   (p=0.38) | Standard tm                           | genau
+   ohne Lautwert gelernt: 44 Zeichen: X1 G7 N35 O49 Z1 Z7 M17 Z4 G1 N25 A1 T14 H8 N5 O1 Z5 B7 D36 Z2 N23 N36 B1 V30 F35 M23 Y1 Ff100 G29 G43 I12 G41 O6 Aa1 R8 E1 E23 D54 D2 G39 F18 R118 G36 R12 N1
+
+Korrektur: 18 Lemmata der koptischen Tabelle sind selbst Anker und werden in P4 und P5 nicht geprueft
+P4 gewoehnliche Woerter: 1159 aegyptische Lemmata mit Zeichenfolge und koptischem Nachfolger, 1194 Paare, 462 verschiedene koptische Konsonantenfolgen als Kandidaten
+   Werte aus allen Ankern        : mittlerer Rangplatz 6.7 % (Median 1.5 %) | Rang 1 25.0 % | unter den ersten 10: 55.3 % | vertauschte Partner 19.3 % (kleinster Wert 18.4 %), p = 0.0005
+   Anker ohne koptische Formen   : mittlerer Rangplatz 8.0 % (Median 2.0 %) | Rang 1 22.0 % | unter den ersten 10: 51.8 % | vertauschte Partner 19.5 % (kleinster Wert 18.6 %), p = 0.0005
+   nur Keilschrift und Semitisch : mittlerer Rangplatz 10.4 % (Median 3.3 %) | Rang 1 14.4 % | unter den ersten 10: 41.8 % | vertauschte Partner 19.4 % (kleinster Wert 18.5 %), p = 0.0005
+   vertauschte Anker (Gegenprobe): mittlerer Rangplatz 18.3 % (Median 8.7 %) | Rang 1 3.1 % | unter den ersten 10: 22.5 % | vertauschte Partner 18.5 % (kleinster Wert 18.1 %), p = 0.0530
+      koptische Folge mit 1 Konsonanten: n= 286 | Rangplatz 0.6 %
+      koptische Folge mit 2 Konsonanten: n= 603 | Rangplatz 4.2 %
+      koptische Folge mit 3 Konsonanten: n= 265 | Rangplatz 14.1 %
+      koptische Folge mit 4+ Konsonanten: n=  40 | Rangplatz 39.0 %
+   Obergrenze (am Koptischen gelernt): mittlerer Rangplatz 2.4 % (Median 0.0 %) | Rang 1 51.5 % | unter den ersten 10: 83.6 % | vertauschte Partner 20.0 % (kleinster Wert 18.6 %), p = 0.0005
+   Anteil des Abstands Zufall -> Obergrenze, den die Ankerwerte erreichen: 91 %
+   Zahlwoerter (Bedeutung durch Rechnen gesichert):
+       1000 ḫꜣ       M12                        -> ϣⲟ       S     Rangplatz 0.7 %
+          3 ḫmt.w    Z1-Z1-Z1                   -> ϣⲟⲙⲛⲧ    SMNT  Rangplatz 79.0 %
+          6 sjs      Z1-Z1-Z1-Z1-Z1-Z1          -> ⲥⲟⲟⲩ     S     Rangplatz 0.7 %
+          2 sn.w     Z1-Z1                      -> ⲥⲛⲁⲩ     SN    Rangplatz 2.8 %
+        100 šn.t     V1-V1-V1-X1                -> ϣⲉ       S     Rangplatz 0.4 %
+      10000 ḏbꜥ      D50                        -> ⲧⲃⲁ      TP    Rangplatz 4.4 %
+         10 mḏ       V20                        -> ⲙⲏⲧ      MT    Rangplatz 6.8 %
+          4 jfd.w    Z1-Z1-Z1-Z1-X1             -> ϥⲧⲟⲟⲩ    PT    Rangplatz 1.7 %
+   Beispiele vom oberen Ende, aus der Mitte und vom unteren Ende (Lemma, Schreibung, koptisch, Rangplatz):
+      =f         I9                       -> ϥ          P        0.0 %  ([Suffix Pron. sg.3.m.])
+      =n         N35-Z2                   -> ⲛ          N        0.0 %  ([Suffix Pron. pl.1.c.])
+      =s         S29                      -> ⲥ          S        0.0 %  ([Suffix Pron.sg.3.f.])
+      =k         V31                      -> ⲕ          K        0.0 %  ([Suffix Pron. sg.2.m.])
+      ḥꜣp.t      V28-M16-G1-Q3-X1-S27     -> ϩⲏⲡⲓ       HP       0.0 %  (Versteck)
+      ḥwꜣ        V28-V4-G1-Aa2            -> ϩⲟⲟⲩ       H        0.0 %  (faulen; verwesen)
+      ꜣb         R15-D58-T19-Z1-F51       -> ⲉⲓⲃ        P        0.0 %  (Fingernagel)
+      ḥbs        V28-D58-S29-S28          -> ϩⲱⲃⲥ       HPS      0.0 %  (bekleiden; verhüllen)
+      ...
+      wḥꜥ.t      P4-D36-Z4-M17-M17-N33-Z2 -> ⲟⲩⲟⲟϩⲉ     H        1.5 %  (Skorpion; Skorpiongift)
+      wḏb        V24-D58-F46-D54          -> ⲟⲩⲱⲧⲃ      TP       1.5 %  (umwenden; zuwenden)
+      nfr-ḥtp    F35-R4-X1-Q3             -> ⲉⲫⲱⲧ       PT       1.5 %  (der vollkommen Gnädige ()
+      btꜣ.w      D58-X1-U30-G37           -> ⲃⲟⲧⲉ       PT       1.5 %  (Verbrechen; Vergehen)
+      psi̯       Q7                       -> ⲡⲓⲥⲉ       PS       1.5 %  (kochen; backen; erhitzen)
+      mr.yt      U7-D21-M17-M17-X1-N23-Z1 -> ⲙⲣⲱ        MR       1.5 %  (Damm; Hafen; Kai)
+      nnšm       M22-M22-N40-F51          -> ⲛⲟⲉⲓϣ      NS       1.5 %  (Milz)
+      ꜥḥꜥ        P6-D36-D54               -> ⲱϩⲉ        H        1.5 %  (aufstehen)
+      ...
+      ḫmt.w      Z1-Z1-Z1                 -> ϣⲟⲙⲛⲧ      SMNT    79.0 %  (drei)
+      qd         A35                      -> ⲕⲱⲧ        KTPR    82.6 %  (formen; bauen; schaffen)
+      ḥmt        N34-Z1-N33-Z2            -> ϩⲟⲙⲛⲧ      HMNT    88.9 %  (Kupfer; Kupfererz; Erz ()
+      m-ḥr       G17-D2-Z1                -> ⲛⲁϩⲣⲛ-     NHRN    91.5 %  (angesichts; vor)
+      tḫtḫ       X1-Aa1-X1-Aa1-D54        -> ⲧⲁϩⲧϩ      THTH    92.6 %  (verwirren; verworren sei)
+      ẖnẖn       Aa1-N35-Aa1-N35-G38-D54- -> ϩⲟⲗϩⲗ      HRHR    95.4 %  (herantreten (an))
+      hbhb       O4-D58-O4-D58-A13        -> ϩⲟⲙϩⲉⲙ     HMHM    96.5 %  ((einen Ort) durchziehen;)
+      ḏrḏr       M36-Z7-M36-Z7-M2-Z2      -> ϫⲟⲗϫⲗ      CRCR    97.8 %  (Blätter (der Bäume))
+      ...
+
+Kriterien: {'K1': True, 'K2': True, 'K3': True, 'K4': True}

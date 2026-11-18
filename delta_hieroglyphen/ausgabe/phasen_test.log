@@ -1,0 +1,37 @@
+
+=== TOTENBUCH: 273 Spruchpaare, 55206 pruefbare Stellen ===
+   H1 gleichzeitig (unter 50 Jahre)  n= 59: Mittel 25.3%, Median 21.5%, Quartile 15.7%-28.2%, Streuung 10.3%, Spanne 4.3%-69.3%, zwischen 23 und 27 %: 10% der Paare
+   H1 alle Paare                     n=273: Mittel 29.3%, Median 27.4%, Quartile 20.0%-34.4%, Streuung 12.0%, Spanne 4.3%-86.5%, zwischen 23 und 27 %: 14% der Paare
+   Bloecke: mittlere Laenge eines Abweichungslaufs 2.29 Woerter (bei unabhaengigen Stellen 1.41); 56% der abweichenden Stellen liegen in Laeufen ab 3 Woertern; laengster Lauf 144; Autokorrelation zum Nachbarwort 0.38
+   H2 Takt: 352 Fenster zu 64 Woertern; groesster Ausschlag z = 2.31 bei Periode 4.6 Woerter, p ueber alle Perioden 0.284; Periode 4: z = -0.47, Leistung 0.98-fach der Ersatzfolgen
+   H3 Lage: Abweichungsrate je Zehntel, beobachtet:   23.6% 30.3% 29.1% 32.3% 30.9% 30.8% 35.0% 28.4% 30.2% 22.7%
+            bei vertauschten inneren Laeufen:        22.6% 31.0% 31.3% 31.2% 31.2% 31.1% 31.1% 31.0% 30.6% 22.4%
+      erste 10 Woerter 13.4% (Ersatz 13.9% [12.3%, 15.4%]), Mitte 30.7% (Ersatz 30.9%), letzte 10 Woerter 17.3% (Ersatz 13.7% [12.1%, 15.5%])
+   H4 feste Stellen: 13 Sprueche mit mindestens 4 Handschriften, 1184 Stellen, im Mittel 4.1 Zeugen je Stelle
+      Stellen ohne jede Abweichung: beobachtet 63.7%, bei verschobenen Handschriften 60.6% [59.4%, 62.2%]
+      Stellen, an denen mindestens 2 Handschriften abweichen: beobachtet 10.4%, verschoben 7.1% [5.9%, 8.4%]; Streuung je Stelle 1.12-fach
+      Zusatz: an 123 Stellen weichen mehrere ab, davon 23 mit derselben Lesart; ohne Mehrheit 74 Stellen. Die zeitliche Trennung ist nicht auswertbar, wenn nur eine spaete Handschrift Parallelen hat.
+   H5 zwei Fassungen (Grenze -700): Handschriften frueh 10, spaet 1
+      frueh-frueh  Paare 109, Stellen  26804: gleich 74.5%
+      frueh-spaet  Paare 164, Stellen  28402: gleich 67.1%
+         frueh-frueh, 0-50 Jahre: Paare  59, gleich 74.7%
+         frueh-frueh, 50-300 Jahre: Paare   1, gleich 52.3%
+         frueh-frueh, 300-600 Jahre: Paare  49, gleich 74.1%
+      Innerhalb der fruehen Fassung (bis 444 Jahre Abstand): Normtreue je Jahrhundert 99.89% [97.81%, 101.39%]
+      Sprung frueh-frueh minus frueh-spaet: +7.4% [-0.8%, +28.6%] (ueber Handschriften gezogen)
+      erklaerter Anteil der Unterschiede zwischen Paaren: Zerfall 13.1%, zwei Fassungen 13.8%
+
+=== PYRAMIDENTEXTE: 383 Spruchpaare, 40658 pruefbare Stellen ===
+   H1 gleichzeitig (unter 50 Jahre)  n=144: Mittel 15.4%, Median 10.9%, Quartile 2.5%-23.5%, Streuung 12.4%, Spanne 0.0%-56.5%, zwischen 23 und 27 %: 13% der Paare
+   H1 alle Paare                     n=383: Mittel 13.6%, Median 8.3%, Quartile 2.5%-20.4%, Streuung 12.1%, Spanne 0.0%-66.0%, zwischen 23 und 27 %: 8% der Paare
+   Bloecke: mittlere Laenge eines Abweichungslaufs 2.09 Woerter (bei unabhaengigen Stellen 1.16); 42% der abweichenden Stellen liegen in Laeufen ab 3 Woertern; laengster Lauf 46; Autokorrelation zum Nachbarwort 0.44
+   H2 Takt: 191 Fenster zu 64 Woertern; groesster Ausschlag z = 4.61 bei Periode 64.0 Woerter, p ueber alle Perioden 0.005; Periode 4: z = -0.24, Leistung 0.98-fach der Ersatzfolgen
+   H3 Lage: Abweichungsrate je Zehntel, beobachtet:    6.6% 14.5% 12.8% 18.2% 14.2% 13.5% 15.6% 15.2% 15.3% 10.7%
+            bei vertauschten inneren Laeufen:         7.0% 13.8% 14.9% 15.4% 15.8% 15.7% 16.0% 15.8% 14.8%  8.3%
+      erste 10 Woerter 6.1% (Ersatz 5.3% [4.5%, 6.3%]), Mitte 14.9% (Ersatz 15.2%), letzte 10 Woerter 8.3% (Ersatz 6.1% [5.2%, 7.1%])
+   H4 feste Stellen: 6 Sprueche mit mindestens 4 Handschriften, 657 Stellen, im Mittel 4.0 Zeugen je Stelle
+      Stellen ohne jede Abweichung: beobachtet 93.0%, bei verschobenen Handschriften 91.5% [91.0%, 92.1%]
+      Stellen, an denen mindestens 2 Handschriften abweichen: beobachtet 2.1%, verschoben 0.6% [0.2%, 1.2%]; Streuung je Stelle 1.30-fach
+      Zusatz: an 15 Stellen weichen mehrere ab, davon 0 mit derselben Lesart; ohne Mehrheit 11 Stellen. Die zeitliche Trennung ist nicht auswertbar, wenn nur eine spaete Handschrift Parallelen hat.
+
+geschrieben: /home/claude/out/phasen_ergebnis.json

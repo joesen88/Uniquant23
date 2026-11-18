@@ -1,0 +1,945 @@
+{
+ "protokoll": {
+  "einheit": "Abschnitt aus 1000 Woertern, je Zelle (Textgruppe, Bearbeiter) in Datierungsreihenfolge gebildet; gemischte Abschnitte, deren Handschriften mehr als 150 Jahre auseinanderliegen, entfallen",
+  "aufnahme": "nur Texte mit brauchbarer Datierung; Textgruppen mit mindestens 5 und Bearbeiter mit mindestens 3 Abschnitten",
+  "ebenen": {
+   "wort": "Lemma-IDs",
+   "zeichen": "Gardiner-Codes (Varianten zusammengelegt), Woerter mit vollstaendiger Schreibung"
+  },
+  "merkmale": "die 150 haeufigsten, z-Werte ueber alle Abschnitte, Burrows' Delta",
+  "faktoren": {
+   "G": "Textgruppe (Teilkorpus)",
+   "Z": "Zeit: Datum des Abschnitts, natuerlicher kubischer Spline mit 5 Knoten",
+   "B": "Bearbeiter"
+  },
+  "zerlegung": "abstandsbasiert auf der Delta-Matrix (Gower-zentriert, Spur der Hutmatrix); eigene und gemeinsame Anteile aus dem korrigierten R2 der sieben Modelle; Gegenrechnung euklidisch auf den z-Werten",
+  "test": "eigener Anteil eines Faktors gegen 999 Vertauschungen seiner Werte zwischen Handschriften, jeweils innerhalb der Schichten der beiden anderen Faktoren (Zeit dafuer in vier Epochen)",
+  "bereinigung": "Modell z ~ Zelle(Textgruppe, Bearbeiter) + Spline(Zeit). Abgezogen wird die Abweichung der Zelle vom Mittel der Bearbeiter derselben Textgruppe, geschaetzt ohne die Handschriften des jeweiligen Zehntels. Textgruppen mit einem einzigen Bearbeiter bleiben unveraendert",
+  "pruefgroessen": [
+   "Textgruppe wiedererkannt (alle Kandidaten)",
+   "Textgruppe, nur fremde Bearbeiter zugelassen",
+   "Bearbeiter bei gleicher Textgruppe und Epoche"
+  ],
+  "vorhersagen": {
+   "V1": "Der gemeinsame, nicht zuordenbare Anteil ist auf beiden Ebenen groesser als jeder eigene Anteil",
+   "V2": "Der eigene Bearbeiteranteil ist auf beiden Ebenen groesser als bei Vertauschung (p < 0.01) und im Verhaeltnis zum eigenen Textgruppenanteil auf der Zeichenebene groesser als auf der Wortebene",
+   "V3": "Nach der Bereinigung faellt die Bearbeiter-Erkennung Richtung Zufall, und die Textgruppe wird ueber Bearbeitergrenzen besser erkannt",
+   "dagegen": "eigener Bearbeiteranteil nicht von Vertauschungen zu unterscheiden"
+  },
+  "seed": 20261114
+ },
+ "wort": {
+  "abschnitte": 694,
+  "textgruppen": {
+   "bbawamarna": 26,
+   "bbawarchive": 9,
+   "bbawbriefe": 43,
+   "bbawgrabinschriften": 96,
+   "bbawhistbiospzt": 6,
+   "bbawpyramidentexte": 110,
+   "bbawramessiden": 28,
+   "bbawtempelbib": 10,
+   "bbawtotenlit": 36,
+   "sawlit": 171,
+   "sawmedizin": 51,
+   "tb": 108
+  },
+  "bearbeiter": {
+   "Gunnar Sperveslage": 24,
+   "Ingelore Hafemann": 55,
+   "Stefan Grunert": 96,
+   "Adelheid Burkhardt": 9,
+   "Silke Grallert": 25,
+   "Doris Topmann": 110,
+   "Frank Feder": 48,
+   "Susanne Töpfer": 5,
+   "Peter Dils": 84,
+   "Lutz Popko": 73,
+   "Alexander Schütze": 6,
+   "Renata & Peter Landgrafova & Dils": 19,
+   "Marc Brose": 22,
+   "Roland Enmarch": 3,
+   "Verena Lepper": 3,
+   "Ines Köhler": 4,
+   "Burkhard Backes": 108
+  },
+  "cluster": 316,
+  "zellen": 27,
+  "knoten": [
+   -2402.5,
+   -2265.5,
+   -1413.0,
+   -1197.5,
+   -181.5
+  ],
+  "zerlegung": {
+   "G": 0.04700331535740265,
+   "Z": 0.020360518668283478,
+   "B": 0.034671951733467044,
+   "G+Z": 0.008555006947193022,
+   "G+B": 0.220682061437384,
+   "Z+B": 0.011304125853750735,
+   "G+Z+B": 0.1102494763905697,
+   "rest": 0.5471735436119494
+  },
+  "zerlegung_euklidisch": {
+   "G": 0.04547450785677176,
+   "Z": 0.018133654622211615,
+   "B": 0.0330734303040503,
+   "G+Z": 0.007461133542375653,
+   "G+B": 0.16452107876633493,
+   "Z+B": 0.008051718732360658,
+   "G+Z+B": 0.07782619594910478,
+   "rest": 0.6454582802267903
+  },
+  "modelle": {
+   "G": {
+    "r2": 0.3962281163209216,
+    "r2_korrigiert": 0.3864898601325494,
+    "parameter": 11
+   },
+   "Z": {
+    "r2": 0.15537262495728732,
+    "r2_korrigiert": 0.15046912785979694,
+    "parameter": 4
+   },
+   "B": {
+    "r2": 0.39129358677643733,
+    "r2_korrigiert": 0.3769076154151715,
+    "parameter": 16
+   },
+   "GZ": {
+    "r2": 0.4307485629953936,
+    "r2_korrigiert": 0.4181545046545836,
+    "parameter": 15
+   },
+   "GB": {
+    "r2": 0.45212079701951546,
+    "r2_korrigiert": 0.43246593771976716,
+    "parameter": 24
+   },
+   "ZB": {
+    "r2": 0.42297110232846485,
+    "r2_korrigiert": 0.405823141030648,
+    "parameter": 20
+   },
+   "GZB": {
+    "r2": 0.4749344783521698,
+    "r2_korrigiert": 0.45282645638805064,
+    "parameter": 28
+   }
+  },
+  "test": {
+   "G": {
+    "eigener_anteil_roh": 0.05196337602370493,
+    "vertauscht_mittel": 0.017577041741599294,
+    "vertauscht_95": 0.020081995219881823,
+    "p": 0.001,
+    "schichten_mit_auswahl": 7
+   },
+   "Z": {
+    "eigener_anteil_roh": 0.022813681332654323,
+    "vertauscht_mittel": 0.006582718635633083,
+    "vertauscht_95": 0.00852520722249561,
+    "p": 0.001,
+    "schichten_mit_auswahl": 20
+   },
+   "B": {
+    "eigener_anteil_roh": 0.044185915356776184,
+    "vertauscht_mittel": 0.020628670741934776,
+    "vertauscht_95": 0.02565692360438386,
+    "p": 0.001,
+    "schichten_mit_auswahl": 9
+   }
+  },
+  "bereinigung": {
+   "unveraendert": 337,
+   "textgruppe": {
+    "anfragen": 693,
+    "vorher": 0.9047619047619048,
+    "nachher": 0.9307359307359307,
+    "zufall": 0.11811467580823562,
+    "aenderung_95": [
+     -0.02133706163455749,
+     0.06360761869488182
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 407,
+    "vorher": 0.7616707616707616,
+    "nachher": 0.8353808353808354,
+    "zufall": 0.09325631469233997,
+    "aenderung_95": [
+     -0.02101397883994362,
+     0.15606748765469727
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 342,
+    "vorher": 0.7602339181286549,
+    "nachher": 0.7660818713450293,
+    "zufall": 0.5562518846589295,
+    "aenderung_95": [
+     -0.05123352277212092,
+     0.07052469135802468
+    ]
+   },
+   "textgruppe_gleicher_bearbeiter": {
+    "anfragen": 400,
+    "vorher": 0.9075,
+    "nachher": 0.925,
+    "zufall": 0.6682525535539291,
+    "aenderung_95": [
+     -0.005041037757340258,
+     0.042120470774927254
+    ]
+   }
+  },
+  "merkmale": {
+   "B": [
+    {
+     "merkmal": "64440",
+     "name": "m",
+     "eigener_anteil": 0.24286733837666596,
+     "rang": 92
+    },
+    {
+     "merkmal": "65370",
+     "name": "m-ẖnw",
+     "eigener_anteil": 0.2021073508911213,
+     "rang": 146
+    },
+    {
+     "merkmal": "64410",
+     "name": "m",
+     "eigener_anteil": 0.16189754343557528,
+     "rang": 140
+    },
+    {
+     "merkmal": "44000",
+     "name": "wj",
+     "eigener_anteil": 0.1414060553725871,
+     "rang": 97
+    },
+    {
+     "merkmal": "107",
+     "name": "ꜣpd",
+     "eigener_anteil": 0.12278825542883987,
+     "rang": 127
+    },
+    {
+     "merkmal": "25090",
+     "name": "jmꜣḫ.w",
+     "eigener_anteil": 0.11931989120181918,
+     "rang": 116
+    },
+    {
+     "merkmal": "157160",
+     "name": "šzp",
+     "eigener_anteil": 0.11736698772690157,
+     "rang": 118
+    },
+    {
+     "merkmal": "107520",
+     "name": "ḥr",
+     "eigener_anteil": 0.110001802619756,
+     "rang": 9
+    },
+    {
+     "merkmal": "550034",
+     "name": "nfr",
+     "eigener_anteil": 0.09646636879686099,
+     "rang": 65
+    },
+    {
+     "merkmal": "850238",
+     "name": "pr.t-ḫrw",
+     "eigener_anteil": 0.09529904861088001,
+     "rang": 101
+    },
+    {
+     "merkmal": "74950",
+     "name": "msi̯",
+     "eigener_anteil": 0.09090449138094148,
+     "rang": 96
+    },
+    {
+     "merkmal": "72470",
+     "name": "mri̯",
+     "eigener_anteil": 0.07925945715666871,
+     "rang": 67
+    }
+   ],
+   "Z": [
+    {
+     "merkmal": "42370",
+     "name": "=w",
+     "eigener_anteil": 0.13644063682481733,
+     "rang": 64
+    },
+    {
+     "merkmal": "64440",
+     "name": "m",
+     "eigener_anteil": 0.11792750559023168,
+     "rang": 92
+    },
+    {
+     "merkmal": "600030",
+     "name": "mtw=",
+     "eigener_anteil": 0.11550709773949175,
+     "rang": 120
+    },
+    {
+     "merkmal": "49461",
+     "name": "Wsjr",
+     "eigener_anteil": 0.10751295108311021,
+     "rang": 50
+    },
+    {
+     "merkmal": "550008",
+     "name": "nꜣy=",
+     "eigener_anteil": 0.10162631448231363,
+     "rang": 143
+    },
+    {
+     "merkmal": "550021",
+     "name": "pꜣy=",
+     "eigener_anteil": 0.09998014650872133,
+     "rang": 56
+    },
+    {
+     "merkmal": "851623",
+     "name": "nꜣ",
+     "eigener_anteil": 0.09647110752251475,
+     "rang": 83
+    },
+    {
+     "merkmal": "851446",
+     "name": "pꜣ",
+     "eigener_anteil": 0.0912644719369321,
+     "rang": 16
+    },
+    {
+     "merkmal": "850806",
+     "name": "n",
+     "eigener_anteil": 0.08774760327173858,
+     "rang": 29
+    },
+    {
+     "merkmal": "66750",
+     "name": "mꜣꜥ-ḫrw",
+     "eigener_anteil": 0.08566743447839797,
+     "rang": 54
+    },
+    {
+     "merkmal": "851173",
+     "name": "=st",
+     "eigener_anteil": 0.08314699079021903,
+     "rang": 82
+    },
+    {
+     "merkmal": "400330",
+     "name": "Nfr-kꜣ-Rꜥw",
+     "eigener_anteil": 0.07243983109869012,
+     "rang": 68
+    }
+   ],
+   "G": [
+    {
+     "merkmal": "64750",
+     "name": "m-bꜣḥ",
+     "eigener_anteil": 0.32135173664869143,
+     "rang": 110
+    },
+    {
+     "merkmal": "850830",
+     "name": "_",
+     "eigener_anteil": 0.305303032144873,
+     "rang": 132
+    },
+    {
+     "merkmal": "163760",
+     "name": "ky",
+     "eigener_anteil": 0.25091044451805666,
+     "rang": 76
+    },
+    {
+     "merkmal": "180130",
+     "name": "dr",
+     "eigener_anteil": 0.2288457633571499,
+     "rang": 139
+    },
+    {
+     "merkmal": "850814",
+     "name": "1...n",
+     "eigener_anteil": 0.20227166800504603,
+     "rang": 5
+    },
+    {
+     "merkmal": "30750",
+     "name": "jḫ.t",
+     "eigener_anteil": 0.1575927097451144,
+     "rang": 51
+    },
+    {
+     "merkmal": "850815",
+     "name": "1...n",
+     "eigener_anteil": 0.1496383149216065,
+     "rang": 112
+    },
+    {
+     "merkmal": "97580",
+     "name": "hꜣb",
+     "eigener_anteil": 0.14874530923539286,
+     "rang": 147
+    },
+    {
+     "merkmal": "850787",
+     "name": "n.j",
+     "eigener_anteil": 0.12840176687721416,
+     "rang": 7
+    },
+    {
+     "merkmal": "125010",
+     "name": "z",
+     "eigener_anteil": 0.12294200821662071,
+     "rang": 100
+    },
+    {
+     "merkmal": "44000",
+     "name": "wj",
+     "eigener_anteil": 0.11413940543504075,
+     "rang": 97
+    },
+    {
+     "merkmal": "81660",
+     "name": "nb",
+     "eigener_anteil": 0.1104649624889602,
+     "rang": 15
+    }
+   ]
+  },
+  "merkmale_mittel": {
+   "B": 0.03307343030405033,
+   "Z": 0.01813365462221156,
+   "G": 0.04547450785677178
+  },
+  "kontrolle": {
+   "0.0": {
+    "eigener_anteil": 0.007845570725683038,
+    "vorher": 0.5371329879101899,
+    "nachher": 0.6286701208981001,
+    "zufall": 0.5489249478560746
+   },
+   "0.5": {
+    "eigener_anteil": 0.0421065373855829,
+    "vorher": 0.844559585492228,
+    "nachher": 0.6511226252158895,
+    "zufall": 0.5489249478560746
+   }
+  }
+ },
+ "zeichen": {
+  "abschnitte": 209,
+  "textgruppen": {
+   "bbawamarna": 20,
+   "bbawgrabinschriften": 20,
+   "bbawhistbiospzt": 6,
+   "bbawtempelbib": 9,
+   "bbawtotenlit": 35,
+   "sawlit": 72,
+   "sawmedizin": 47
+  },
+  "bearbeiter": {
+   "Gunnar Sperveslage": 18,
+   "Ingelore Hafemann": 3,
+   "Stefan Grunert": 20,
+   "Silke Grallert": 6,
+   "Frank Feder": 44,
+   "Susanne Töpfer": 5,
+   "Peter Dils": 27,
+   "Lutz Popko": 50,
+   "Renata & Peter Landgrafova & Dils": 18,
+   "Roland Enmarch": 3,
+   "Marc Brose": 12,
+   "Ines Köhler": 3
+  },
+  "cluster": 109,
+  "zellen": 17,
+  "knoten": [
+   -2376.5,
+   -1697.1999999999996,
+   -1344.5,
+   -1108.0,
+   -181.5
+  ],
+  "zerlegung": {
+   "G": 0.050576729222834405,
+   "Z": 0.02595494297522638,
+   "B": 0.07334964119679177,
+   "G+Z": 0.03392609183729933,
+   "G+B": 0.143287497957017,
+   "Z+B": 0.04409066250152771,
+   "G+Z+B": 0.15926400801342866,
+   "rest": 0.46955042629587473
+  },
+  "zerlegung_euklidisch": {
+   "G": 0.04312396140450081,
+   "Z": 0.024269610169915357,
+   "B": 0.06801466737929152,
+   "G+Z": 0.03042753887016958,
+   "G+B": 0.11870830721812098,
+   "Z+B": 0.037084594168454776,
+   "G+Z+B": 0.1182566856166033,
+   "rest": 0.5601146351729437
+  },
+  "modelle": {
+   "G": {
+    "r2": 0.4047354522123896,
+    "r2_korrigiert": 0.3870543270305794,
+    "parameter": 6
+   },
+   "Z": {
+    "r2": 0.2774042494557997,
+    "r2_korrigiert": 0.2632357053274821,
+    "parameter": 4
+   },
+   "B": {
+    "r2": 0.4506653197343593,
+    "r2_korrigiert": 0.41999180966876515,
+    "parameter": 11
+   },
+   "GZ": {
+    "r2": 0.4832008972906348,
+    "r2_korrigiert": 0.4570999325073335,
+    "parameter": 10
+   },
+   "GB": {
+    "r2": 0.5402281910128724,
+    "r2_korrigiert": 0.5044946307288989,
+    "parameter": 15
+   },
+   "ZB": {
+    "r2": 0.5173820143504285,
+    "r2_korrigiert": 0.47987284448129086,
+    "parameter": 15
+   },
+   "GZB": {
+    "r2": 0.5733411991830754,
+    "r2_korrigiert": 0.5304495737041253,
+    "parameter": 19
+   }
+  },
+  "test": {
+   "G": {
+    "eigener_anteil_roh": 0.055959184832646836,
+    "vertauscht_mittel": 0.03629855018034549,
+    "vertauscht_95": 0.05091907107239123,
+    "p": 0.01,
+    "schichten_mit_auswahl": 3
+   },
+   "Z": {
+    "eigener_anteil_roh": 0.03311300817020291,
+    "vertauscht_mittel": 0.021795077827721124,
+    "vertauscht_95": 0.027861192323612873,
+    "p": 0.001,
+    "schichten_mit_auswahl": 11
+   },
+   "B": {
+    "eigener_anteil_roh": 0.09014030189244054,
+    "vertauscht_mittel": 0.04944680064771454,
+    "vertauscht_95": 0.060279696917561326,
+    "p": 0.001,
+    "schichten_mit_auswahl": 6
+   }
+  },
+  "bereinigung": {
+   "unveraendert": 83,
+   "textgruppe": {
+    "anfragen": 208,
+    "vorher": 0.8653846153846154,
+    "nachher": 0.8701923076923077,
+    "zufall": 0.18507129609505257,
+    "aenderung_95": [
+     -0.04839423351413075,
+     0.06937424384997982
+    ]
+   },
+   "textgruppe_fremde_bearbeiter": {
+    "anfragen": 174,
+    "vorher": 0.7298850574712644,
+    "nachher": 0.8620689655172413,
+    "zufall": 0.18128269091541507,
+    "aenderung_95": [
+     0.005198317307692308,
+     0.2896718576195773
+    ]
+   },
+   "bearbeiter_gleiche_gruppe_epoche": {
+    "anfragen": 117,
+    "vorher": 0.8717948717948718,
+    "nachher": 0.6410256410256411,
+    "zufall": 0.5571175093956874,
+    "aenderung_95": [
+     -0.35653726708074535,
+     -0.11849673202614382
+    ]
+   },
+   "textgruppe_gleicher_bearbeiter": {
+    "anfragen": 114,
+    "vorher": 0.8245614035087719,
+    "nachher": 0.7280701754385965,
+    "zufall": 0.530190286908503,
+    "aenderung_95": [
+     -0.2067164930293422,
+     0.025885160098522146
+    ]
+   }
+  },
+  "merkmale": {
+   "B": [
+    {
+     "merkmal": "T14",
+     "name": [
+      "am",
+      "nHsi",
+      "qmA"
+     ],
+     "eigener_anteil": 0.2990090117884272,
+     "rang": 105
+    },
+    {
+     "merkmal": "W22",
+     "name": [
+      "Hnqt",
+      "wdpw"
+     ],
+     "eigener_anteil": 0.2875226296550829,
+     "rang": 80
+    },
+    {
+     "merkmal": "G37",
+     "name": [
+      "bin",
+      "nDs"
+     ],
+     "eigener_anteil": 0.28519511763762184,
+     "rang": 48
+    },
+    {
+     "merkmal": "Z3",
+     "name": [
+      "3"
+     ],
+     "eigener_anteil": 0.24794330627664873,
+     "rang": 31
+    },
+    {
+     "merkmal": "A24",
+     "name": [
+      "Hwi",
+      "nxt",
+      "sbA"
+     ],
+     "eigener_anteil": 0.23685236523433928,
+     "rang": 38
+    },
+    {
+     "merkmal": "A2",
+     "name": null,
+     "eigener_anteil": 0.22789908851274165,
+     "rang": 33
+    },
+    {
+     "merkmal": "D40",
+     "name": [
+      "nxt",
+      "xAi"
+     ],
+     "eigener_anteil": 0.21759908113272797,
+     "rang": 74
+    },
+    {
+     "merkmal": "D35",
+     "name": [
+      "n",
+      "smx",
+      "xm"
+     ],
+     "eigener_anteil": 0.20930953738695868,
+     "rang": 46
+    },
+    {
+     "merkmal": "N26",
+     "name": [
+      "Dw"
+     ],
+     "eigener_anteil": 0.18815526684044825,
+     "rang": 117
+    },
+    {
+     "merkmal": "Z2",
+     "name": [
+      "3"
+     ],
+     "eigener_anteil": 0.18606596949882293,
+     "rang": 9
+    },
+    {
+     "merkmal": "F39",
+     "name": [
+      "imAx",
+      "psD"
+     ],
+     "eigener_anteil": 0.18488733901164678,
+     "rang": 112
+    },
+    {
+     "merkmal": "D36",
+     "name": [
+      "a",
+      "mH",
+      "di"
+     ],
+     "eigener_anteil": 0.18404486584593516,
+     "rang": 11
+    }
+   ],
+   "Z": [
+    {
+     "merkmal": "F32",
+     "name": [
+      "X"
+     ],
+     "eigener_anteil": 0.13445833281593533,
+     "rang": 95
+    },
+    {
+     "merkmal": "U6",
+     "name": [
+      "mr"
+     ],
+     "eigener_anteil": 0.12781844589400937,
+     "rang": 109
+    },
+    {
+     "merkmal": "D36",
+     "name": [
+      "a",
+      "mH",
+      "di"
+     ],
+     "eigener_anteil": 0.12277195691765741,
+     "rang": 11
+    },
+    {
+     "merkmal": "O29",
+     "name": [
+      "a",
+      "aA"
+     ],
+     "eigener_anteil": 0.11117264661686332,
+     "rang": 51
+    },
+    {
+     "merkmal": "D37",
+     "name": [
+      "d",
+      "D",
+      "di"
+     ],
+     "eigener_anteil": 0.1075033688058541,
+     "rang": 62
+    },
+    {
+     "merkmal": "U1",
+     "name": [
+      "mA"
+     ],
+     "eigener_anteil": 0.10657662970241033,
+     "rang": 67
+    },
+    {
+     "merkmal": "F20",
+     "name": [
+      "dp",
+      "imy-rA",
+      "mr"
+     ],
+     "eigener_anteil": 0.10177777893450224,
+     "rang": 140
+    },
+    {
+     "merkmal": "G41",
+     "name": [
+      "pA",
+      "qmA",
+      "qmyt"
+     ],
+     "eigener_anteil": 0.09355384037016656,
+     "rang": 47
+    },
+    {
+     "merkmal": "V6",
+     "name": [
+      "g",
+      "Ss",
+      "Ssr"
+     ],
+     "eigener_anteil": 0.0881688766480273,
+     "rang": 120
+    },
+    {
+     "merkmal": "Z7",
+     "name": [
+      "w"
+     ],
+     "eigener_anteil": 0.08754749304637532,
+     "rang": 7
+    },
+    {
+     "merkmal": "G43",
+     "name": [
+      "w"
+     ],
+     "eigener_anteil": 0.08365299438116924,
+     "rang": 19
+    },
+    {
+     "merkmal": "Y2",
+     "name": [
+      "dmD",
+      "mDAt"
+     ],
+     "eigener_anteil": 0.08152653844253055,
+     "rang": 127
+    }
+   ],
+   "G": [
+    {
+     "merkmal": "A1",
+     "name": null,
+     "eigener_anteil": 0.3455581887282143,
+     "rang": 16
+    },
+    {
+     "merkmal": "W24",
+     "name": [
+      "nw"
+     ],
+     "eigener_anteil": 0.22933514614362616,
+     "rang": 25
+    },
+    {
+     "merkmal": "Aa2",
+     "name": [
+      "gA",
+      "Hsb",
+      "wHA"
+     ],
+     "eigener_anteil": 0.22257062699025665,
+     "rang": 63
+    },
+    {
+     "merkmal": "D40",
+     "name": [
+      "nxt",
+      "xAi"
+     ],
+     "eigener_anteil": 0.21601072378305752,
+     "rang": 74
+    },
+    {
+     "merkmal": "N33",
+     "name": [
+      "msdmt",
+      "nbw",
+      "Sai"
+     ],
+     "eigener_anteil": 0.2149708127136123,
+     "rang": 35
+    },
+    {
+     "merkmal": "T14",
+     "name": [
+      "am",
+      "nHsi",
+      "qmA"
+     ],
+     "eigener_anteil": 0.1773810311075501,
+     "rang": 105
+    },
+    {
+     "merkmal": "M17",
+     "name": [
+      "i"
+     ],
+     "eigener_anteil": 0.16636855319164168,
+     "rang": 5
+    },
+    {
+     "merkmal": "F51",
+     "name": [
+      "As",
+      "at",
+      "Haw"
+     ],
+     "eigener_anteil": 0.1472752818167804,
+     "rang": 44
+    },
+    {
+     "merkmal": "A2",
+     "name": null,
+     "eigener_anteil": 0.14518342457521316,
+     "rang": 33
+    },
+    {
+     "merkmal": "D54",
+     "name": [
+      "iw",
+      "nmtt"
+     ],
+     "eigener_anteil": 0.14456312069642474,
+     "rang": 29
+    },
+    {
+     "merkmal": "Z2",
+     "name": [
+      "3"
+     ],
+     "eigener_anteil": 0.14065887672731137,
+     "rang": 9
+    },
+    {
+     "merkmal": "M2",
+     "name": [
+      "Hn",
+      "Hrrt",
+      "i"
+     ],
+     "eigener_anteil": 0.13945008201429598,
+     "rang": 75
+    }
+   ]
+  },
+  "merkmale_mittel": {
+   "B": 0.06801466737929146,
+   "Z": 0.024269610169915214,
+   "G": 0.04312396140450081
+  },
+  "kontrolle": {
+   "0.0": {
+    "eigener_anteil": 0.010783624267874825,
+    "vorher": 0.4388888888888889,
+    "nachher": 0.4722222222222222,
+    "zufall": 0.4479700169259649
+   },
+   "0.5": {
+    "eigener_anteil": 0.03254951970110709,
+    "vorher": 0.7,
+    "nachher": 0.4722222222222222,
+    "zufall": 0.4479700169259649
+   }
+  }
+ }
+}

@@ -1,0 +1,4979 @@
+{
+ "protokoll": {
+  "frage": "Lassen sich Zeichenwerte allein aus Namen mit fremder Ueberlieferung bestimmen, und passen die so bestimmten Werte zu den Standardwerten und zu gewoehnlichen Woertern mit koptischem Nachfolger?",
+  "anker": "anker_tabelle.tsv, Satz A: Namen des Korpus mit vollstaendiger Zeichenfolge und fremder Form desselben Namens in derselben Zusammensetzung (Keilschrift, hebr. Bibel, Aramaeisch/Phoenizisch, Griechisch, Koptisch, heutiges Arabisch). Satz M (Koenigslisten Manetho/Herodot fuer Koenige vor der Spaetzeit) geht nicht ins Lernen ein und dient nur als zweiter Pruefsatz.",
+  "klassen": "9 Konsonantenklassen der fremden Form: P(p b f) M N R(r l) T(t d) S(s z sch) C(emphatisch/Affrikate) K(k g q ch) H(h); Vokale, w, y, Aleph, Ajin entfallen",
+  "schreibungen": "je Name die bis zu 4 haeufigsten Schreibungen mit Anteil >= 10 % (sonst die haeufigste), Gewicht = Anteil; Varianten eines Zeichens zusammengelegt",
+  "modell": {
+   "art": "jedes Zeichen erzeugt 0 bis 3 Konsonantenklassen, Zeichen und Konsonanten in gleicher Reihenfolge; Summe ueber alle Aufteilungen (EM)",
+   "voranstellung": "die ersten k = 0..4 Zeichen duerfen als Block ans Ende rücken (Mischung mit gelernten Anteilen); Nebenrechnung ohne diese Freiheit",
+   "glaettung": "Wert je Zeichen = (erwartete Zaehlung + alpha * Grundverteilung) / (Summe + alpha), alpha = 2; Grundverteilung = Laengenanteile x Klassenhaeufigkeiten, aus allen Zeichen geschaetzt",
+   "start": "alle Zeichen gleich: Laengenanteile 0.30/0.50/0.15/0.05, Klassen gleich haeufig, Anteile der Voranstellung 0.80/0.05/0.05/0.05/0.05",
+   "durchlaeufe": 50
+  },
+  "pruefungen": {
+   "P1": "zurueckgehaltene Namen: 10 Teile nach Namensgruppe; fuer jeden zurueckgehaltenen Namen Rang der richtigen fremden Konsonantenfolge unter allen verschiedenen Folgen der Tabelle (andere richtige Folgen desselben Namens ausgenommen); Kennzahlen Rang 1, mittlerer Kehrwert des Rangs, mittlerer Rangplatz in Prozent",
+   "N1": "Gegenprobe: beim Lernen die fremden Formen zwischen den Namensgruppen vertauscht (5 Vertauschungen), geprueft an den echten zurueckgehaltenen Paaren",
+   "P2": "Satz M mit dem Modell aus allen A-Ankern",
+   "P3": "gelernter Wert (wahrscheinlichste Klassenfolge) gegen die Lautwerte der JSesh-Zeichenliste, fuer Zeichen in mindestens 3 Namensgruppen; a) die 20 starken Einkonsonantenzeichen, b) alle Zeichen mit nichtleerem gelerntem Wert; Zufallsvergleich: Standardwerte unter den geprueften Zeichen vertauscht (10000-mal)",
+   "P4": "gewoehnliche Woerter: aegyptische Lemmata mit koptischem Nachfolger (Tabelle des Coptic Dictionary Online), Schreibungen aus dem Korpus (bis zu 3, Anteil >= 10 %); Rang der richtigen koptischen Konsonantenfolge unter allen verschiedenen koptischen Folgen der Tabelle; Zufallsvergleich: Partner innerhalb gleicher Laenge vertauscht (2000-mal); Nebenrechnung mit Ankern ohne koptische Formen",
+   "P5": "Obergrenze: dasselbe Modell direkt an den koptischen Paaren gelernt (10 Teile nach Lemma)"
+  },
+  "entsprechungen_fuer_P3": "aegyptisch b p f -> P; m -> M; n -> N; r l -> R; t d -> T; s z sch -> S; q k g -> K; h -> H; h mit Punkt -> H oder K; ch-Laute -> K, H oder S; tsch dsch -> T, S oder C; Aleph, j, y, Ajin, w zaehlen nicht",
+  "kriterien": {
+   "K1": "P1: Rang 1 mindestens fuenfmal so oft wie bei Zufall und ueber jeder der 5 Vertauschungen; mittlerer Rangplatz unter 25 %",
+   "K2": "P3a: mindestens 75 % der geprueften starken Einkonsonantenzeichen mit passender Klasse",
+   "K3": "P3b: genaue Uebereinstimmung ueber 99,9 % der Vertauschungen",
+   "K4": "P4: mittlerer Rangplatz besser als bei vertauschten Partnern (p < 0,001) und mindestens die Haelfte des Abstands zwischen Zufall (50 %) und Obergrenze P5"
+  },
+  "seed": 20261112
+ },
+ "sha": "21587b85a6db8c48",
+ "anker": {
+  "gruppen_A": 131,
+  "lemmata_A": 138,
+  "formen_A": 245,
+  "sprachen": {
+   "akk": 56,
+   "gr": 86,
+   "heb": 24,
+   "kop": 48,
+   "arab": 24,
+   "sem": 7
+  },
+  "gruppen_M": 12,
+  "zeichen": 192,
+  "zeichen_ab3": 68,
+  "kandidaten": 138
+ },
+ "P1": {
+  "gesamt": {
+   "n": 180,
+   "rang1": 0.14444444444444443,
+   "kehrwert": 0.23385898800129018,
+   "rangplatz_prozent": 23.12940877737378,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414,
+   "rang1_ki": [
+    0.09423288305226925,
+    0.2012408378617464
+   ],
+   "rangplatz_ki": [
+    18.337066385471378,
+    28.130681754803707
+   ]
+  },
+  "nach_sprache": {
+   "akk": {
+    "n": 56,
+    "rang1": 0.125,
+    "kehrwert": 0.1884443926929044,
+    "rangplatz_prozent": 33.166132396961395,
+    "zufall_rang1": 0.007273879393782971,
+    "zufall_kehrwert": 0.040037610585923936
+   },
+   "arab": {
+    "n": 24,
+    "rang1": 0.041666666666666664,
+    "kehrwert": 0.1475834728669992,
+    "rangplatz_prozent": 26.930440830728596,
+    "zufall_rang1": 0.007284070462582108,
+    "zufall_kehrwert": 0.04008349460442354
+   },
+   "gr": {
+    "n": 86,
+    "rang1": 0.22093023255813954,
+    "kehrwert": 0.324060216842664,
+    "rangplatz_prozent": 13.29901861565875,
+    "zufall_rang1": 0.007267975697303065,
+    "zufall_kehrwert": 0.04001101567288303
+   },
+   "heb": {
+    "n": 24,
+    "rang1": 0.16666666666666666,
+    "kehrwert": 0.23163457084852987,
+    "rangplatz_prozent": 28.877248554193237,
+    "zufall_rang1": 0.007275092148358339,
+    "zufall_kehrwert": 0.04004310119775415
+   },
+   "kop": {
+    "n": 48,
+    "rang1": 0.125,
+    "kehrwert": 0.24495687716021863,
+    "rangplatz_prozent": 17.76691289014748,
+    "zufall_rang1": 0.007275173533687014,
+    "zufall_kehrwert": 0.040043427277289274
+   },
+   "sem": {
+    "n": 7,
+    "rang1": 0.5714285714285714,
+    "kehrwert": 0.6802325581395349,
+    "rangplatz_prozent": 9.345672575599583,
+    "zufall_rang1": 0.0072539329917939875,
+    "zufall_kehrwert": 0.03994774626460126
+   }
+  },
+  "nach_laenge": {
+   "1": {
+    "n": 18,
+    "rang1": 0.5555555555555556,
+    "kehrwert": 0.6492470492470493,
+    "rangplatz_prozent": 1.7460998998139403,
+    "zufall_rang1": 0.007258130869682758,
+    "zufall_kehrwert": 0.03996667066821989
+   },
+   "2": {
+    "n": 57,
+    "rang1": 0.10526315789473684,
+    "kehrwert": 0.246771008414295,
+    "rangplatz_prozent": 11.238709538823285,
+    "zufall_rang1": 0.007268715890260182,
+    "zufall_kehrwert": 0.04001435475830579
+   },
+   "3": {
+    "n": 56,
+    "rang1": 0.125,
+    "kehrwert": 0.20938649806758547,
+    "rangplatz_prozent": 23.58535608079404,
+    "zufall_rang1": 0.0072804907427902925,
+    "zufall_kehrwert": 0.040067415387345935
+   },
+   "4": {
+    "n": 49,
+    "rang1": 0.061224489795918366,
+    "kehrwert": 0.09421590984460686,
+    "rangplatz_prozent": 44.2954570916987,
+    "zufall_rang1": 0.007287667350165849,
+    "zufall_kehrwert": 0.0400996876185868
+   }
+  },
+  "ohne_voranstellung": {
+   "n": 180,
+   "rang1": 0.15,
+   "kehrwert": 0.23832049661273647,
+   "rangplatz_prozent": 23.193539532036237,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414
+  },
+  "abfragen": [
+   {
+    "g": "smendes",
+    "id": "863237",
+    "spr": [
+     "gr"
+    ],
+    "c": "SMNT",
+    "rang": 22.0,
+    "n": 138
+   },
+   {
+    "g": "smendes",
+    "id": "702743",
+    "spr": [
+     "gr"
+    ],
+    "c": "SMNT",
+    "rang": 19.0,
+    "n": 138
+   },
+   {
+    "g": "nesmin",
+    "id": "702786",
+    "spr": [
+     "gr"
+    ],
+    "c": "SMN",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "kemet",
+    "id": "164430",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "KM",
+    "rang": 9.0,
+    "n": 138
+   },
+   {
+    "g": "hurru",
+    "id": "119580",
+    "spr": [
+     "akk"
+    ],
+    "c": "KR",
+    "rang": 40.0,
+    "n": 138
+   },
+   {
+    "g": "basta",
+    "id": "53630",
+    "spr": [
+     "arab"
+    ],
+    "c": "PST",
+    "rang": 13.0,
+    "n": 138
+   },
+   {
+    "g": "moiris",
+    "id": "72220",
+    "spr": [
+     "gr"
+    ],
+    "c": "MR",
+    "rang": 8.0,
+    "n": 138
+   },
+   {
+    "g": "keftiu",
+    "id": "164260",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "KPTR",
+    "rang": 23.0,
+    "n": 138
+   },
+   {
+    "g": "oxyrhynchos",
+    "id": "861223",
+    "spr": [
+     "kop"
+    ],
+    "c": "PMC",
+    "rang": 81.0,
+    "n": 138
+   },
+   {
+    "g": "behbeit",
+    "id": "853258",
+    "spr": [
+     "arab"
+    ],
+    "c": "PHPT",
+    "rang": 55.0,
+    "n": 138
+   },
+   {
+    "g": "busiris",
+    "id": "857152",
+    "spr": [
+     "akk",
+     "arab",
+     "gr",
+     "kop"
+    ],
+    "c": "PSR",
+    "rang": 24.0,
+    "n": 138
+   },
+   {
+    "g": "hathor",
+    "id": "99960",
+    "spr": [
+     "gr"
+    ],
+    "c": "TR",
+    "rang": 8.0,
+    "n": 137
+   },
+   {
+    "g": "hathor",
+    "id": "99960",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "HTR",
+    "rang": 55.0,
+    "n": 137
+   },
+   {
+    "g": "schu",
+    "id": "152710",
+    "spr": [
+     "gr"
+    ],
+    "c": "S",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "bastet",
+    "id": "53640",
+    "spr": [
+     "gr"
+    ],
+    "c": "PST",
+    "rang": 50.0,
+    "n": 138
+   },
+   {
+    "g": "mut",
+    "id": "69030",
+    "spr": [
+     "gr"
+    ],
+    "c": "MT",
+    "rang": 8.0,
+    "n": 138
+   },
+   {
+    "g": "mut",
+    "id": "69020",
+    "spr": [
+     "gr"
+    ],
+    "c": "MT",
+    "rang": 10.0,
+    "n": 138
+   },
+   {
+    "g": "imhotep",
+    "id": "400243",
+    "spr": [
+     "gr"
+    ],
+    "c": "MT",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "djedhor",
+    "id": "709833",
+    "spr": [
+     "gr"
+    ],
+    "c": "T",
+    "rang": 4.0,
+    "n": 137
+   },
+   {
+    "g": "djedhor",
+    "id": "709833",
+    "spr": [
+     "akk"
+    ],
+    "c": "CK",
+    "rang": 107.0,
+    "n": 137
+   },
+   {
+    "g": "bakennef",
+    "id": "711916",
+    "spr": [
+     "akk"
+    ],
+    "c": "PKNNP",
+    "rang": 120.0,
+    "n": 138
+   },
+   {
+    "g": "atfih",
+    "id": "171000",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "TPH",
+    "rang": 87.0,
+    "n": 138
+   },
+   {
+    "g": "joppe",
+    "id": "854639",
+    "spr": [
+     "akk",
+     "gr",
+     "heb"
+    ],
+    "c": "P",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "tanis",
+    "id": "853903",
+    "spr": [
+     "akk",
+     "heb",
+     "kop"
+    ],
+    "c": "CN",
+    "rang": 45.0,
+    "n": 136
+   },
+   {
+    "g": "tanis",
+    "id": "853903",
+    "spr": [
+     "gr"
+    ],
+    "c": "TN",
+    "rang": 10.0,
+    "n": 136
+   },
+   {
+    "g": "tanis",
+    "id": "853903",
+    "spr": [
+     "arab"
+    ],
+    "c": "SN",
+    "rang": 10.0,
+    "n": 136
+   },
+   {
+    "g": "sidon",
+    "id": "859074",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "CTN",
+    "rang": 99.0,
+    "n": 137
+   },
+   {
+    "g": "sidon",
+    "id": "859074",
+    "spr": [
+     "gr"
+    ],
+    "c": "STN",
+    "rang": 52.0,
+    "n": 137
+   },
+   {
+    "g": "sebennytos",
+    "id": "800046",
+    "spr": [
+     "gr"
+    ],
+    "c": "SPNT",
+    "rang": 96.0,
+    "n": 135
+   },
+   {
+    "g": "sebennytos",
+    "id": "800046",
+    "spr": [
+     "akk"
+    ],
+    "c": "CPNT",
+    "rang": 118.0,
+    "n": 135
+   },
+   {
+    "g": "sebennytos",
+    "id": "800046",
+    "spr": [
+     "kop"
+    ],
+    "c": "CMNT",
+    "rang": 118.0,
+    "n": 135
+   },
+   {
+    "g": "sebennytos",
+    "id": "800046",
+    "spr": [
+     "arab"
+    ],
+    "c": "SMNT",
+    "rang": 98.0,
+    "n": 135
+   },
+   {
+    "g": "meidum",
+    "id": "861219",
+    "spr": [
+     "arab"
+    ],
+    "c": "MTM",
+    "rang": 72.0,
+    "n": 138
+   },
+   {
+    "g": "no",
+    "id": "80900",
+    "spr": [
+     "akk",
+     "heb",
+     "kop"
+    ],
+    "c": "N",
+    "rang": 4.0,
+    "n": 138
+   },
+   {
+    "g": "isis",
+    "id": "271",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "S",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "maat",
+    "id": "66630",
+    "spr": [
+     "kop"
+    ],
+    "c": "M",
+    "rang": 7.0,
+    "n": 138
+   },
+   {
+    "g": "sokar",
+    "id": "146890",
+    "spr": [
+     "gr"
+    ],
+    "c": "SKR",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "nibmuaria",
+    "id": "400837",
+    "spr": [
+     "akk"
+    ],
+    "c": "NPMR",
+    "rang": 108.0,
+    "n": 138
+   },
+   {
+    "g": "nibhururia",
+    "id": "500068",
+    "spr": [
+     "akk"
+    ],
+    "c": "NPKRR",
+    "rang": 81.0,
+    "n": 138
+   },
+   {
+    "g": "taharqa",
+    "id": "862990",
+    "spr": [
+     "akk",
+     "gr"
+    ],
+    "c": "TRK",
+    "rang": 24.0,
+    "n": 137
+   },
+   {
+    "g": "taharqa",
+    "id": "862990",
+    "spr": [
+     "heb"
+    ],
+    "c": "TRHK",
+    "rang": 92.0,
+    "n": 137
+   },
+   {
+    "g": "nimlot",
+    "id": "861213",
+    "spr": [
+     "akk"
+    ],
+    "c": "RMNT",
+    "rang": 76.0,
+    "n": 138
+   },
+   {
+    "g": "harsiese",
+    "id": "853039",
+    "spr": [
+     "gr"
+    ],
+    "c": "RSS",
+    "rang": 12.0,
+    "n": 136
+   },
+   {
+    "g": "harsiese",
+    "id": "853039",
+    "spr": [
+     "kop"
+    ],
+    "c": "HRSS",
+    "rang": 16.0,
+    "n": 136
+   },
+   {
+    "g": "harsiese",
+    "id": "853039",
+    "spr": [
+     "akk"
+    ],
+    "c": "KRSS",
+    "rang": 100.0,
+    "n": 136
+   },
+   {
+    "g": "harsiese",
+    "id": "705024",
+    "spr": [
+     "gr"
+    ],
+    "c": "RSS",
+    "rang": 9.0,
+    "n": 136
+   },
+   {
+    "g": "harsiese",
+    "id": "705024",
+    "spr": [
+     "kop"
+    ],
+    "c": "HRSS",
+    "rang": 30.0,
+    "n": 136
+   },
+   {
+    "g": "harsiese",
+    "id": "705024",
+    "spr": [
+     "akk"
+    ],
+    "c": "KRSS",
+    "rang": 54.0,
+    "n": 136
+   },
+   {
+    "g": "amasis",
+    "id": "550247",
+    "spr": [
+     "gr"
+    ],
+    "c": "MS",
+    "rang": 3.0,
+    "n": 138
+   },
+   {
+    "g": "hnes",
+    "id": "84750",
+    "spr": [
+     "arab",
+     "heb",
+     "kop"
+    ],
+    "c": "HNS",
+    "rang": 76.0,
+    "n": 137
+   },
+   {
+    "g": "hnes",
+    "id": "84750",
+    "spr": [
+     "akk"
+    ],
+    "c": "KNNS",
+    "rang": 89.0,
+    "n": 137
+   },
+   {
+    "g": "hnes",
+    "id": "99920",
+    "spr": [
+     "arab",
+     "heb",
+     "kop"
+    ],
+    "c": "HNS",
+    "rang": 86.0,
+    "n": 137
+   },
+   {
+    "g": "hnes",
+    "id": "99920",
+    "spr": [
+     "akk"
+    ],
+    "c": "KNNS",
+    "rang": 94.0,
+    "n": 137
+   },
+   {
+    "g": "schmun",
+    "id": "117260",
+    "spr": [
+     "kop"
+    ],
+    "c": "SMN",
+    "rang": 6.0,
+    "n": 136
+   },
+   {
+    "g": "schmun",
+    "id": "117260",
+    "spr": [
+     "akk"
+    ],
+    "c": "KMN",
+    "rang": 63.0,
+    "n": 136
+   },
+   {
+    "g": "schmun",
+    "id": "117260",
+    "spr": [
+     "arab"
+    ],
+    "c": "SMNN",
+    "rang": 26.0,
+    "n": 136
+   },
+   {
+    "g": "xois",
+    "id": "800043",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "SK",
+    "rang": 36.0,
+    "n": 137
+   },
+   {
+    "g": "xois",
+    "id": "800043",
+    "spr": [
+     "gr"
+    ],
+    "c": "KS",
+    "rang": 36.0,
+    "n": 137
+   },
+   {
+    "g": "osiris",
+    "id": "49460",
+    "spr": [
+     "gr",
+     "kop",
+     "sem"
+    ],
+    "c": "SR",
+    "rang": 4.0,
+    "n": 138
+   },
+   {
+    "g": "nephthys",
+    "id": "82260",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "NPT",
+    "rang": 42.0,
+    "n": 138
+   },
+   {
+    "g": "tefnut",
+    "id": "171880",
+    "spr": [
+     "gr"
+    ],
+    "c": "TPN",
+    "rang": 9.0,
+    "n": 138
+   },
+   {
+    "g": "bes",
+    "id": "57210",
+    "spr": [
+     "gr"
+    ],
+    "c": "PS",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "manahpiria",
+    "id": "400414",
+    "spr": [
+     "akk"
+    ],
+    "c": "MNKPR",
+    "rang": 83.0,
+    "n": 138
+   },
+   {
+    "g": "manahpiria",
+    "id": "701973",
+    "spr": [
+     "akk"
+    ],
+    "c": "MNKPR",
+    "rang": 83.0,
+    "n": 138
+   },
+   {
+    "g": "osorkon",
+    "id": "861216",
+    "spr": [
+     "akk",
+     "gr"
+    ],
+    "c": "SRKN",
+    "rang": 23.0,
+    "n": 138
+   },
+   {
+    "g": "alexander",
+    "id": "860196",
+    "spr": [
+     "gr"
+    ],
+    "c": "RKSNTR",
+    "rang": 16.0,
+    "n": 138
+   },
+   {
+    "g": "tefnacht",
+    "id": "708709",
+    "spr": [
+     "akk"
+    ],
+    "c": "TPNKT",
+    "rang": 89.0,
+    "n": 137
+   },
+   {
+    "g": "tefnacht",
+    "id": "708709",
+    "spr": [
+     "gr"
+    ],
+    "c": "TNPKT",
+    "rang": 119.0,
+    "n": 137
+   },
+   {
+    "g": "petemestous",
+    "id": "701158",
+    "spr": [
+     "gr"
+    ],
+    "c": "PTMST",
+    "rang": 62.0,
+    "n": 138
+   },
+   {
+    "g": "nephotes",
+    "id": "450077",
+    "spr": [
+     "gr"
+    ],
+    "c": "NPT",
+    "rang": 24.0,
+    "n": 138
+   },
+   {
+    "g": "wenamun",
+    "id": "711510",
+    "spr": [
+     "akk"
+    ],
+    "c": "NMN",
+    "rang": 4.0,
+    "n": 138
+   },
+   {
+    "g": "koptos",
+    "id": "166970",
+    "spr": [
+     "arab",
+     "gr",
+     "kop"
+    ],
+    "c": "KPT",
+    "rang": 58.0,
+    "n": 138
+   },
+   {
+    "g": "edfu",
+    "id": "183280",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "TP",
+    "rang": 8.0,
+    "n": 138
+   },
+   {
+    "g": "qatna",
+    "id": "854941",
+    "spr": [
+     "akk"
+    ],
+    "c": "KTN",
+    "rang": 17.0,
+    "n": 138
+   },
+   {
+    "g": "schutb",
+    "id": "852413",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "STP",
+    "rang": 3.0,
+    "n": 138
+   },
+   {
+    "g": "month",
+    "id": "71660",
+    "spr": [
+     "gr"
+    ],
+    "c": "MNT",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "iah",
+    "id": "850333",
+    "spr": [
+     "kop"
+    ],
+    "c": "H",
+    "rang": 10.0,
+    "n": 138
+   },
+   {
+    "g": "minmuaria",
+    "id": "500079",
+    "spr": [
+     "akk"
+    ],
+    "c": "MNMR",
+    "rang": 24.0,
+    "n": 138
+   },
+   {
+    "g": "on",
+    "id": "22850",
+    "spr": [
+     "akk",
+     "heb",
+     "kop"
+    ],
+    "c": "N",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "letopolis",
+    "id": "116940",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "SM",
+    "rang": 3.0,
+    "n": 138
+   },
+   {
+    "g": "achmim",
+    "id": "852412",
+    "spr": [
+     "kop"
+    ],
+    "c": "SMN",
+    "rang": 19.0,
+    "n": 136
+   },
+   {
+    "g": "achmim",
+    "id": "852412",
+    "spr": [
+     "arab"
+    ],
+    "c": "KMM",
+    "rang": 99.0,
+    "n": 136
+   },
+   {
+    "g": "achmim",
+    "id": "852412",
+    "spr": [
+     "gr"
+    ],
+    "c": "KM",
+    "rang": 49.0,
+    "n": 136
+   },
+   {
+    "g": "kusae",
+    "id": "159740",
+    "spr": [
+     "arab",
+     "gr"
+    ],
+    "c": "KS",
+    "rang": 14.0,
+    "n": 138
+   },
+   {
+    "g": "alaschia",
+    "id": "853913",
+    "spr": [
+     "akk"
+    ],
+    "c": "RS",
+    "rang": 8.0,
+    "n": 138
+   },
+   {
+    "g": "hatti",
+    "id": "121250",
+    "spr": [
+     "akk"
+    ],
+    "c": "KT",
+    "rang": 36.0,
+    "n": 137
+   },
+   {
+    "g": "hatti",
+    "id": "121250",
+    "spr": [
+     "heb"
+    ],
+    "c": "HT",
+    "rang": 43.0,
+    "n": 137
+   },
+   {
+    "g": "saft",
+    "id": "857911",
+    "spr": [
+     "akk"
+    ],
+    "c": "PSPT",
+    "rang": 54.0,
+    "n": 137
+   },
+   {
+    "g": "saft",
+    "id": "857911",
+    "spr": [
+     "arab"
+    ],
+    "c": "SPT",
+    "rang": 50.0,
+    "n": 137
+   },
+   {
+    "g": "ombos",
+    "id": "81780",
+    "spr": [
+     "gr"
+    ],
+    "c": "MP",
+    "rang": 33.0,
+    "n": 138
+   },
+   {
+    "g": "hikuptah",
+    "id": "100020",
+    "spr": [
+     "akk"
+    ],
+    "c": "KKPTK",
+    "rang": 126.0,
+    "n": 137
+   },
+   {
+    "g": "hikuptah",
+    "id": "100020",
+    "spr": [
+     "gr"
+    ],
+    "c": "KPT",
+    "rang": 51.0,
+    "n": 137
+   },
+   {
+    "g": "anubis",
+    "id": "27360",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "NP",
+    "rang": 9.0,
+    "n": 138
+   },
+   {
+    "g": "ptah",
+    "id": "62980",
+    "spr": [
+     "gr"
+    ],
+    "c": "PT",
+    "rang": 3.0,
+    "n": 137
+   },
+   {
+    "g": "ptah",
+    "id": "62980",
+    "spr": [
+     "kop"
+    ],
+    "c": "PTH",
+    "rang": 12.0,
+    "n": 137
+   },
+   {
+    "g": "reschef",
+    "id": "96230",
+    "spr": [
+     "sem"
+    ],
+    "c": "RSP",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "scheschonq",
+    "id": "707419",
+    "spr": [
+     "heb"
+    ],
+    "c": "SSK",
+    "rang": 39.0,
+    "n": 137
+   },
+   {
+    "g": "scheschonq",
+    "id": "707419",
+    "spr": [
+     "akk",
+     "gr"
+    ],
+    "c": "SSNK",
+    "rang": 62.0,
+    "n": 137
+   },
+   {
+    "g": "libanon",
+    "id": "94000",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "RPNN",
+    "rang": 25.0,
+    "n": 138
+   },
+   {
+    "g": "sile",
+    "id": "174740",
+    "spr": [
+     "akk",
+     "gr"
+    ],
+    "c": "SR",
+    "rang": 12.0,
+    "n": 138
+   },
+   {
+    "g": "tyros",
+    "id": "853906",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "CR",
+    "rang": 15.0,
+    "n": 137
+   },
+   {
+    "g": "tyros",
+    "id": "853906",
+    "spr": [
+     "gr"
+    ],
+    "c": "TR",
+    "rang": 2.0,
+    "n": 137
+   },
+   {
+    "g": "balamun",
+    "id": "852505",
+    "spr": [
+     "arab"
+    ],
+    "c": "PRMN",
+    "rang": 20.0,
+    "n": 137
+   },
+   {
+    "g": "balamun",
+    "id": "852505",
+    "spr": [
+     "kop"
+    ],
+    "c": "PNM",
+    "rang": 20.0,
+    "n": 137
+   },
+   {
+    "g": "sobek",
+    "id": "132180",
+    "spr": [
+     "gr"
+    ],
+    "c": "SK",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "onnophris",
+    "id": "850648",
+    "spr": [
+     "gr"
+    ],
+    "c": "NPR",
+    "rang": 19.0,
+    "n": 138
+   },
+   {
+    "g": "mendes",
+    "id": "850187",
+    "spr": [
+     "gr"
+    ],
+    "c": "MNT",
+    "rang": 1.0,
+    "n": 137
+   },
+   {
+    "g": "mendes",
+    "id": "850187",
+    "spr": [
+     "akk"
+    ],
+    "c": "PNTT",
+    "rang": 53.0,
+    "n": 137
+   },
+   {
+    "g": "astarte",
+    "id": "40880",
+    "spr": [
+     "gr",
+     "sem"
+    ],
+    "c": "STRT",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "harsaphes",
+    "id": "550128",
+    "spr": [
+     "gr"
+    ],
+    "c": "RSP",
+    "rang": 12.0,
+    "n": 138
+   },
+   {
+    "g": "apis",
+    "id": "104000",
+    "spr": [
+     "gr"
+    ],
+    "c": "P",
+    "rang": 1.0,
+    "n": 137
+   },
+   {
+    "g": "apis",
+    "id": "104000",
+    "spr": [
+     "kop"
+    ],
+    "c": "HP",
+    "rang": 16.0,
+    "n": 137
+   },
+   {
+    "g": "mnevis",
+    "id": "72230",
+    "spr": [
+     "gr"
+    ],
+    "c": "MN",
+    "rang": 19.0,
+    "n": 138
+   },
+   {
+    "g": "upuaut",
+    "id": "45580",
+    "spr": [
+     "gr"
+    ],
+    "c": "P",
+    "rang": 5.0,
+    "n": 138
+   },
+   {
+    "g": "naphururia",
+    "id": "852057",
+    "spr": [
+     "akk"
+    ],
+    "c": "NPKRR",
+    "rang": 3.0,
+    "n": 138
+   },
+   {
+    "g": "montemhet",
+    "id": "400233",
+    "spr": [
+     "akk"
+    ],
+    "c": "MNTMNK",
+    "rang": 36.0,
+    "n": 138
+   },
+   {
+    "g": "pinhas",
+    "id": "400840",
+    "spr": [
+     "heb"
+    ],
+    "c": "PNHS",
+    "rang": 38.0,
+    "n": 138
+   },
+   {
+    "g": "memphis",
+    "id": "70010",
+    "spr": [
+     "akk",
+     "gr"
+    ],
+    "c": "MMP",
+    "rang": 49.0,
+    "n": 136
+   },
+   {
+    "g": "memphis",
+    "id": "70010",
+    "spr": [
+     "heb"
+    ],
+    "c": "MP",
+    "rang": 12.0,
+    "n": 136
+   },
+   {
+    "g": "memphis",
+    "id": "70010",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "MNP",
+    "rang": 2.0,
+    "n": 136
+   },
+   {
+    "g": "chemmis",
+    "id": "211",
+    "spr": [
+     "gr"
+    ],
+    "c": "KM",
+    "rang": 39.0,
+    "n": 138
+   },
+   {
+    "g": "thinis",
+    "id": "175730",
+    "spr": [
+     "akk",
+     "gr",
+     "kop"
+    ],
+    "c": "TN",
+    "rang": 5.0,
+    "n": 138
+   },
+   {
+    "g": "sichem",
+    "id": "859173",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "SKM",
+    "rang": 3.0,
+    "n": 138
+   },
+   {
+    "g": "napata",
+    "id": "850127",
+    "spr": [
+     "gr"
+    ],
+    "c": "NPT",
+    "rang": 35.0,
+    "n": 138
+   },
+   {
+    "g": "lahun",
+    "id": "92990",
+    "spr": [
+     "arab",
+     "kop"
+    ],
+    "c": "RHN",
+    "rang": 5.0,
+    "n": 138
+   },
+   {
+    "g": "pithom",
+    "id": "858997",
+    "spr": [
+     "gr",
+     "heb"
+    ],
+    "c": "PTM",
+    "rang": 48.0,
+    "n": 138
+   },
+   {
+    "g": "wadjet",
+    "id": "43760",
+    "spr": [
+     "kop"
+    ],
+    "c": "C",
+    "rang": 13.0,
+    "n": 138
+   },
+   {
+    "g": "neith",
+    "id": "79010",
+    "spr": [
+     "gr"
+    ],
+    "c": "NT",
+    "rang": 11.0,
+    "n": 138
+   },
+   {
+    "g": "sothis",
+    "id": "851672",
+    "spr": [
+     "gr"
+    ],
+    "c": "ST",
+    "rang": 8.0,
+    "n": 138
+   },
+   {
+    "g": "wasmuaria",
+    "id": "600505",
+    "spr": [
+     "akk"
+    ],
+    "c": "SMRSTPNR",
+    "rang": 138.0,
+    "n": 138
+   },
+   {
+    "g": "riamasesa",
+    "id": "400876",
+    "spr": [
+     "akk"
+    ],
+    "c": "RMSSMMN",
+    "rang": 137.0,
+    "n": 138
+   },
+   {
+    "g": "petese",
+    "id": "701120",
+    "spr": [
+     "gr"
+    ],
+    "c": "PTS",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "sochotes",
+    "id": "400122",
+    "spr": [
+     "gr"
+    ],
+    "c": "SKT",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "horus",
+    "id": "400146",
+    "spr": [
+     "gr"
+    ],
+    "c": "R",
+    "rang": 6.0,
+    "n": 137
+   },
+   {
+    "g": "horus",
+    "id": "400146",
+    "spr": [
+     "kop"
+    ],
+    "c": "HR",
+    "rang": 40.0,
+    "n": 137
+   },
+   {
+    "g": "elephantine",
+    "id": "81",
+    "spr": [
+     "kop",
+     "sem"
+    ],
+    "c": "P",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "auaris",
+    "id": "99860",
+    "spr": [
+     "gr"
+    ],
+    "c": "R",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "re",
+    "id": "400015",
+    "spr": [
+     "kop"
+    ],
+    "c": "R",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "horus",
+    "id": "107500",
+    "spr": [
+     "gr"
+    ],
+    "c": "R",
+    "rang": 1.0,
+    "n": 137
+   },
+   {
+    "g": "horus",
+    "id": "107500",
+    "spr": [
+     "kop"
+    ],
+    "c": "HR",
+    "rang": 11.0,
+    "n": 137
+   },
+   {
+    "g": "amun",
+    "id": "26060",
+    "spr": [
+     "akk",
+     "gr",
+     "heb",
+     "kop"
+    ],
+    "c": "MN",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "geb",
+    "id": "167010",
+    "spr": [
+     "gr"
+    ],
+    "c": "KP",
+    "rang": 9.0,
+    "n": 138
+   },
+   {
+    "g": "chnum",
+    "id": "123590",
+    "spr": [
+     "gr"
+    ],
+    "c": "KNM",
+    "rang": 35.0,
+    "n": 137
+   },
+   {
+    "g": "chnum",
+    "id": "123590",
+    "spr": [
+     "gr"
+    ],
+    "c": "KNP",
+    "rang": 79.0,
+    "n": 137
+   },
+   {
+    "g": "nun",
+    "id": "500006",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "NN",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "haroeris",
+    "id": "550351",
+    "spr": [
+     "gr"
+    ],
+    "c": "RR",
+    "rang": 11.0,
+    "n": 138
+   },
+   {
+    "g": "petamun",
+    "id": "701126",
+    "spr": [
+     "gr"
+    ],
+    "c": "PTMN",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "teje",
+    "id": "708799",
+    "spr": [
+     "akk"
+    ],
+    "c": "T",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "mayati",
+    "id": "702312",
+    "spr": [
+     "akk"
+    ],
+    "c": "MT",
+    "rang": 32.0,
+    "n": 138
+   },
+   {
+    "g": "abydos",
+    "id": "103",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "PT",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "kusch",
+    "id": "163680",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "KS",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "byblos",
+    "id": "163970",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "KPR",
+    "rang": 21.0,
+    "n": 138
+   },
+   {
+    "g": "bubastis",
+    "id": "60550",
+    "spr": [
+     "gr",
+     "heb",
+     "kop"
+    ],
+    "c": "PPST",
+    "rang": 99.0,
+    "n": 138
+   },
+   {
+    "g": "naharina",
+    "id": "85740",
+    "spr": [
+     "akk"
+    ],
+    "c": "NKRM",
+    "rang": 95.0,
+    "n": 137
+   },
+   {
+    "g": "naharina",
+    "id": "85740",
+    "spr": [
+     "heb"
+    ],
+    "c": "NHRM",
+    "rang": 102.0,
+    "n": 137
+   },
+   {
+    "g": "dor",
+    "id": "853904",
+    "spr": [
+     "akk",
+     "heb"
+    ],
+    "c": "TR",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "apophis",
+    "id": "35360",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "PP",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "baal",
+    "id": "54960",
+    "spr": [
+     "sem"
+    ],
+    "c": "PR",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "thermuthis",
+    "id": "95190",
+    "spr": [
+     "gr"
+    ],
+    "c": "RMT",
+    "rang": 21.0,
+    "n": 138
+   },
+   {
+    "g": "nikkal",
+    "id": "89400",
+    "spr": [
+     "akk"
+    ],
+    "c": "NKR",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "amenhotep",
+    "id": "600285",
+    "spr": [
+     "akk"
+    ],
+    "c": "MNKTP",
+    "rang": 29.0,
+    "n": 137
+   },
+   {
+    "g": "amenhotep",
+    "id": "600285",
+    "spr": [
+     "gr"
+    ],
+    "c": "MNT",
+    "rang": 1.0,
+    "n": 137
+   },
+   {
+    "g": "amenhotep",
+    "id": "600139",
+    "spr": [
+     "akk"
+    ],
+    "c": "MNKTP",
+    "rang": 30.0,
+    "n": 137
+   },
+   {
+    "g": "amenhotep",
+    "id": "600139",
+    "spr": [
+     "gr"
+    ],
+    "c": "MNT",
+    "rang": 1.0,
+    "n": 137
+   },
+   {
+    "g": "psammetich",
+    "id": "550322",
+    "spr": [
+     "akk"
+    ],
+    "c": "PSMRK",
+    "rang": 14.0,
+    "n": 137
+   },
+   {
+    "g": "psammetich",
+    "id": "550322",
+    "spr": [
+     "gr"
+    ],
+    "c": "PSMTK",
+    "rang": 1.0,
+    "n": 137
+   },
+   {
+    "g": "wahibre",
+    "id": "550318",
+    "spr": [
+     "heb"
+    ],
+    "c": "HPR",
+    "rang": 92.0,
+    "n": 137
+   },
+   {
+    "g": "wahibre",
+    "id": "550318",
+    "spr": [
+     "gr"
+    ],
+    "c": "PR",
+    "rang": 27.0,
+    "n": 137
+   },
+   {
+    "g": "assiut",
+    "id": "126430",
+    "spr": [
+     "akk",
+     "arab",
+     "kop"
+    ],
+    "c": "ST",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "sais",
+    "id": "126380",
+    "spr": [
+     "akk",
+     "arab",
+     "gr",
+     "kop"
+    ],
+    "c": "S",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "djeme",
+    "id": "550363",
+    "spr": [
+     "kop"
+    ],
+    "c": "CM",
+    "rang": 48.0,
+    "n": 138
+   },
+   {
+    "g": "seth",
+    "id": "148520",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "ST",
+    "rang": 11.0,
+    "n": 138
+   },
+   {
+    "g": "thot",
+    "id": "185290",
+    "spr": [
+     "gr",
+     "kop"
+    ],
+    "c": "TT",
+    "rang": 20.0,
+    "n": 137
+   },
+   {
+    "g": "thot",
+    "id": "185290",
+    "spr": [
+     "sem"
+    ],
+    "c": "THT",
+    "rang": 86.0,
+    "n": 137
+   },
+   {
+    "g": "min",
+    "id": "70530",
+    "spr": [
+     "gr"
+    ],
+    "c": "MN",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "chons",
+    "id": "118720",
+    "spr": [
+     "gr"
+    ],
+    "c": "KNS",
+    "rang": 22.0,
+    "n": 137
+   },
+   {
+    "g": "chons",
+    "id": "118720",
+    "spr": [
+     "kop"
+    ],
+    "c": "SNS",
+    "rang": 57.0,
+    "n": 137
+   },
+   {
+    "g": "onuris",
+    "id": "26850",
+    "spr": [
+     "gr"
+    ],
+    "c": "NR",
+    "rang": 22.0,
+    "n": 138
+   },
+   {
+    "g": "anat",
+    "id": "38980",
+    "spr": [
+     "sem"
+    ],
+    "c": "NT",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "nefertem",
+    "id": "83860",
+    "spr": [
+     "gr"
+    ],
+    "c": "NPTM",
+    "rang": 4.0,
+    "n": 138
+   }
+  ]
+ },
+ "N1": [
+  {
+   "n": 180,
+   "rang1": 0.016666666666666666,
+   "kehrwert": 0.05673296768897891,
+   "rangplatz_prozent": 43.787564326536675,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414
+  },
+  {
+   "n": 180,
+   "rang1": 0.0,
+   "kehrwert": 0.04452980458888446,
+   "rangplatz_prozent": 45.04278168787969,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414
+  },
+  {
+   "n": 180,
+   "rang1": 0.0,
+   "kehrwert": 0.0403246042494261,
+   "rangplatz_prozent": 43.530177773753344,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414
+  },
+  {
+   "n": 180,
+   "rang1": 0.016666666666666666,
+   "kehrwert": 0.06048934695646521,
+   "rangplatz_prozent": 44.77973054422663,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414
+  },
+  {
+   "n": 180,
+   "rang1": 0.0,
+   "kehrwert": 0.042458491963141824,
+   "rangplatz_prozent": 44.84700444234942,
+   "zufall_rang1": 0.00727647968418613,
+   "zufall_kehrwert": 0.040049323601408414
+  }
+ ],
+ "modell": {
+  "pi": [
+   0.9803678771129728,
+   0.004667856395917037,
+   0.0054843808077083,
+   0.005255971897977896,
+   0.0042239137854240974
+  ],
+  "lam": [
+   0.6651784443456449,
+   0.22597860891011787,
+   0.06557479432527046,
+   0.04326815241896689
+  ],
+  "verlauf": [
+   -2184.936448529031,
+   -550.5405116418306
+  ]
+ },
+ "P2": {
+  "gesamt": {
+   "n": 16,
+   "rang1": 0.125,
+   "kehrwert": 0.2667364499775141,
+   "rangplatz_prozent": 31.761888149420347,
+   "zufall_rang1": 0.007252988469269014,
+   "zufall_kehrwert": 0.03994348827378706
+  },
+  "abfragen": [
+   {
+    "g": "sesostris",
+    "id": "400051",
+    "spr": [
+     "man"
+    ],
+    "c": "SSSTR",
+    "rang": 111.0,
+    "n": 138
+   },
+   {
+    "g": "sesostris",
+    "id": "400058",
+    "spr": [
+     "man"
+    ],
+    "c": "SSSTR",
+    "rang": 112.0,
+    "n": 138
+   },
+   {
+    "g": "amenemhet",
+    "id": "400161",
+    "spr": [
+     "man"
+    ],
+    "c": "MNM",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "amenemhet",
+    "id": "600435",
+    "spr": [
+     "man"
+    ],
+    "c": "MNM",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "cheops",
+    "id": "400277",
+    "spr": [
+     "man"
+    ],
+    "c": "KP",
+    "rang": 18.0,
+    "n": 137
+   },
+   {
+    "g": "cheops",
+    "id": "400277",
+    "spr": [
+     "man"
+    ],
+    "c": "SP",
+    "rang": 14.0,
+    "n": 137
+   },
+   {
+    "g": "unas",
+    "id": "800001",
+    "spr": [
+     "man"
+    ],
+    "c": "N",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "teti",
+    "id": "450656",
+    "spr": [
+     "man"
+    ],
+    "c": "T",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "teti",
+    "id": "550233",
+    "spr": [
+     "man"
+    ],
+    "c": "T",
+    "rang": 2.0,
+    "n": 138
+   },
+   {
+    "g": "apophis_koenig",
+    "id": "400949",
+    "spr": [
+     "man"
+    ],
+    "c": "PP",
+    "rang": 1.0,
+    "n": 138
+   },
+   {
+    "g": "djoser",
+    "id": "853625",
+    "spr": [
+     "man"
+    ],
+    "c": "TSRTR",
+    "rang": 120.0,
+    "n": 138
+   },
+   {
+    "g": "sahure",
+    "id": "400280",
+    "spr": [
+     "man"
+    ],
+    "c": "SPR",
+    "rang": 42.0,
+    "n": 138
+   },
+   {
+    "g": "neferkare",
+    "id": "400330",
+    "spr": [
+     "man"
+    ],
+    "c": "NPRKR",
+    "rang": 97.0,
+    "n": 138
+   },
+   {
+    "g": "djedkare",
+    "id": "400288",
+    "spr": [
+     "man"
+    ],
+    "c": "TNKR",
+    "rang": 117.0,
+    "n": 138
+   },
+   {
+    "g": "lamares",
+    "id": "400117",
+    "spr": [
+     "man"
+    ],
+    "c": "RMR",
+    "rang": 52.0,
+    "n": 138
+   },
+   {
+    "g": "thutmose",
+    "id": "600180",
+    "spr": [
+     "man"
+    ],
+    "c": "TTMS",
+    "rang": 19.0,
+    "n": 138
+   }
+  ]
+ },
+ "P3": {
+  "stark_geprueft": [
+   "D58",
+   "Q3",
+   "I9",
+   "G17",
+   "N35",
+   "D21",
+   "V28",
+   "Aa1",
+   "S29",
+   "O34",
+   "N37",
+   "V31",
+   "X1",
+   "V13",
+   "D46",
+   "I10"
+  ],
+  "stark_passt": [
+   "D58",
+   "Q3",
+   "I9",
+   "G17",
+   "D21",
+   "V28",
+   "S29",
+   "O34",
+   "N37",
+   "V31",
+   "V13",
+   "D46",
+   "I10"
+  ],
+  "schwach_geprueft": [
+   "M17",
+   "G1",
+   "D36",
+   "G43",
+   "Z7",
+   "Z4"
+  ],
+  "schwach_leer": [
+   "M17",
+   "G1",
+   "D36",
+   "G43",
+   "Z7",
+   "Z4"
+  ],
+  "nichtleer": 24,
+  "genau": 20,
+  "teil": 3,
+  "null_genau_mittel": 3.6549,
+  "null_genau_max": 10,
+  "p_genau": 9.999000099990002e-05,
+  "null_teil_mittel": 7.0739,
+  "p_teil": 9.999000099990002e-05,
+  "tabelle": [
+   {
+    "zeichen": "X1",
+    "gruppen": 56,
+    "gelernt": "-",
+    "p": 0.9905903865249331,
+    "p_leer": 0.9905903865249331,
+    "zaehlung": 101.28744572234272,
+    "standard": [
+     "t"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "G7",
+    "gruppen": 52,
+    "gelernt": "-",
+    "p": 0.9888919430393169,
+    "p_leer": 0.9888919430393169,
+    "zaehlung": 70.48561317390248,
+    "standard": [
+     "Hr",
+     "anty",
+     "nTr",
+     "nmty",
+     "nsw"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "N35",
+    "gruppen": 40,
+    "gelernt": "-",
+    "p": 0.8534545757103783,
+    "p_leer": 0.8534545757103783,
+    "zaehlung": 105.78461332963441,
+    "standard": [
+     "mw",
+     "n",
+     "nt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "O49",
+    "gruppen": 40,
+    "gelernt": "-",
+    "p": 0.9511352118323341,
+    "p_leer": 0.9511352118323341,
+    "zaehlung": 88.07936507936508,
+    "standard": [
+     "niwt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "Z1",
+    "gruppen": 35,
+    "gelernt": "-",
+    "p": 0.9873321138266713,
+    "p_leer": 0.9873321138266713,
+    "zaehlung": 73.73571428571432,
+    "standard": [
+     "1"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "Z7",
+    "gruppen": 28,
+    "gelernt": "-",
+    "p": 0.9652715797062025,
+    "p_leer": 0.9652715797062025,
+    "zaehlung": 34.415343915343925,
+    "standard": [
+     "w"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "M17",
+    "gruppen": 25,
+    "gelernt": "-",
+    "p": 0.9823990169170318,
+    "p_leer": 0.9823990169170318,
+    "zaehlung": 39.17711213517664,
+    "standard": [
+     "i"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "D21",
+    "gruppen": 25,
+    "gelernt": "R",
+    "p": 0.7616158842276345,
+    "p_leer": 0.22156725676900935,
+    "zaehlung": 38.94197395643179,
+    "standard": [
+     "r",
+     "rA"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "Q3",
+    "gruppen": 20,
+    "gelernt": "P",
+    "p": 0.6624882964895084,
+    "p_leer": 0.3173614565615871,
+    "zaehlung": 29.30654622765422,
+    "standard": [
+     "p"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "Z4",
+    "gruppen": 19,
+    "gelernt": "-",
+    "p": 0.9593624115611598,
+    "p_leer": 0.9593624115611598,
+    "zaehlung": 20.021978021978025,
+    "standard": [
+     "2",
+     "y"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "G1",
+    "gruppen": 19,
+    "gelernt": "-",
+    "p": 0.9779150213297221,
+    "p_leer": 0.9779150213297221,
+    "zaehlung": 32.61904761904763,
+    "standard": [
+     "A"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "N25",
+    "gruppen": 18,
+    "gelernt": "-",
+    "p": 0.9730454427975318,
+    "p_leer": 0.9730454427975318,
+    "zaehlung": 30.351612903225814,
+    "standard": [
+     "xAst"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "A1",
+    "gruppen": 17,
+    "gelernt": "-",
+    "p": 0.9706638250403665,
+    "p_leer": 0.9706638250403665,
+    "zaehlung": 22.2743961352657,
+    "standard": [
+     "i",
+     "z"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "T14",
+    "gruppen": 16,
+    "gelernt": "-",
+    "p": 0.9733682853964775,
+    "p_leer": 0.9733682853964775,
+    "zaehlung": 25.219047619047625,
+    "standard": [
+     "THnw",
+     "am",
+     "nHsi",
+     "qmA"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "D58",
+    "gruppen": 14,
+    "gelernt": "P",
+    "p": 0.6920437172249461,
+    "p_leer": 0.21536353049038282,
+    "zaehlung": 17.32063492063492,
+    "standard": [
+     "b",
+     "bw"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "Y5",
+    "gruppen": 13,
+    "gelernt": "MN",
+    "p": 0.6317098694352897,
+    "p_leer": 0.07927139231550266,
+    "zaehlung": 23.799999999999997,
+    "standard": [
+     "mn"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "S29",
+    "gruppen": 13,
+    "gelernt": "S",
+    "p": 0.6454852052947113,
+    "p_leer": 0.16898178720515927,
+    "zaehlung": 20.079744651483786,
+    "standard": [
+     "s"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "H8",
+    "gruppen": 13,
+    "gelernt": "-",
+    "p": 0.7543687890174101,
+    "p_leer": 0.7543687890174101,
+    "zaehlung": 21.276281613123714,
+    "standard": [
+     "mrwt",
+     "sA",
+     "swHt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "N5",
+    "gruppen": 11,
+    "gelernt": "-",
+    "p": 0.5939562882447295,
+    "p_leer": 0.5939562882447295,
+    "zaehlung": 14.052229299363054,
+    "standard": [
+     "hrw",
+     "ra",
+     "sw",
+     "wnwt",
+     "zw"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "V31",
+    "gruppen": 11,
+    "gelernt": "K",
+    "p": 0.886358296519547,
+    "p_leer": 0.07725618722593026,
+    "zaehlung": 15.539682539682538,
+    "standard": [
+     "k"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "O1",
+    "gruppen": 11,
+    "gelernt": "-",
+    "p": 0.7672488813051751,
+    "p_leer": 0.7672488813051751,
+    "zaehlung": 22.58333333333332,
+    "standard": [
+     "p",
+     "pr"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "Z5",
+    "gruppen": 10,
+    "gelernt": "-",
+    "p": 0.9384986891812808,
+    "p_leer": 0.9384986891812808,
+    "zaehlung": 11.413512413512409,
+    "standard": [
+     "ms"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "B7",
+    "gruppen": 10,
+    "gelernt": "-",
+    "p": 0.8154563589160746,
+    "p_leer": 0.8154563589160746,
+    "zaehlung": 5.50460372960373,
+    "standard": [
+     "Hnwt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "A40",
+    "gruppen": 10,
+    "gelernt": "R",
+    "p": 0.5401463568544964,
+    "p_leer": 0.39719749443155344,
+    "zaehlung": 8.123838637387516,
+    "standard": [
+     "nTr"
+    ],
+    "urteil": "teil"
+   },
+   {
+    "zeichen": "G17",
+    "gruppen": 9,
+    "gelernt": "M",
+    "p": 0.6025108904471876,
+    "p_leer": 0.3600550971424087,
+    "zaehlung": 15.093749999999998,
+    "standard": [
+     "m",
+     "mwt"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "D46",
+    "gruppen": 9,
+    "gelernt": "T",
+    "p": 0.5408379543801346,
+    "p_leer": 0.4170768917260704,
+    "zaehlung": 15.551612903225807,
+    "standard": [
+     "Drt",
+     "Hnt",
+     "Sp",
+     "Ssp",
+     "d",
+     "iAdt",
+     "ia",
+     "iai",
+     "idt",
+     "sSp",
+     "siA"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "W24",
+    "gruppen": 8,
+    "gelernt": "N",
+    "p": 0.675895744957136,
+    "p_leer": 0.2578448722498103,
+    "zaehlung": 15.3,
+    "standard": [
+     "nw"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "O34",
+    "gruppen": 8,
+    "gelernt": "S",
+    "p": 0.8295297047697984,
+    "p_leer": 0.13566341483391117,
+    "zaehlung": 15.666666666666664,
+    "standard": [
+     "s",
+     "z"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "D36",
+    "gruppen": 8,
+    "gelernt": "-",
+    "p": 0.8343957908393356,
+    "p_leer": 0.8343957908393356,
+    "zaehlung": 11.666666666666666,
+    "standard": [
+     "a",
+     "di",
+     "mH"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "Z2",
+    "gruppen": 7,
+    "gelernt": "-",
+    "p": 0.9423570783545759,
+    "p_leer": 0.9423570783545759,
+    "zaehlung": 9.952380952380953,
+    "standard": [
+     "3"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "N23",
+    "gruppen": 7,
+    "gelernt": "-",
+    "p": 0.9282333100148541,
+    "p_leer": 0.9282333100148541,
+    "zaehlung": 8.621794871794872,
+    "standard": [
+     "tA"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "N36",
+    "gruppen": 6,
+    "gelernt": "-",
+    "p": 0.9211880359874417,
+    "p_leer": 0.9211880359874417,
+    "zaehlung": 7.838461538461537,
+    "standard": [
+     "mi",
+     "mr"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "V13",
+    "gruppen": 6,
+    "gelernt": "T",
+    "p": 0.571598059802898,
+    "p_leer": 0.14047620459027835,
+    "zaehlung": 7.766666666666669,
+    "standard": [
+     "T"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "V28",
+    "gruppen": 6,
+    "gelernt": "H",
+    "p": 0.3637991504651847,
+    "p_leer": 0.30096446634001767,
+    "zaehlung": 8.166666666666668,
+    "standard": [
+     "H"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "B1",
+    "gruppen": 6,
+    "gelernt": "-",
+    "p": 0.7327033186800946,
+    "p_leer": 0.7327033186800946,
+    "zaehlung": 4.687854251012144,
+    "standard": [
+     "T",
+     "i",
+     "st"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "V30",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.9167547746372304,
+    "p_leer": 0.9167547746372304,
+    "zaehlung": 6.333333333333333,
+    "standard": [
+     "nb"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "F35",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.6361438598080653,
+    "p_leer": 0.6361438598080653,
+    "zaehlung": 8.999999999999996,
+    "standard": [
+     "nfr"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "M23",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.7763582446286798,
+    "p_leer": 0.7763582446286798,
+    "zaehlung": 11.73333333333333,
+    "standard": [
+     "sw"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "R4",
+    "gruppen": 5,
+    "gelernt": "T",
+    "p": 0.6187595887119842,
+    "p_leer": 0.13141772341441088,
+    "zaehlung": 8.5,
+    "standard": [
+     "Htp"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "Y1",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.8419228725724325,
+    "p_leer": 0.8419228725724325,
+    "zaehlung": 2.3333333333333335,
+    "standard": [
+     "dmD",
+     "mDAt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "Ff100",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.9307909491413889,
+    "p_leer": 0.9307909491413889,
+    "zaehlung": 8.333333333333337,
+    "standard": [],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "G29",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.8057397741671333,
+    "p_leer": 0.8057397741671333,
+    "zaehlung": 6.771428571428571,
+    "standard": [
+     "bA"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "I9",
+    "gruppen": 5,
+    "gelernt": "P",
+    "p": 0.3228433741299336,
+    "p_leer": 0.1888858141573647,
+    "zaehlung": 6.999999999999998,
+    "standard": [
+     "f",
+     "it",
+     "sA-tA"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "U33",
+    "gruppen": 5,
+    "gelernt": "T",
+    "p": 0.729302312002178,
+    "p_leer": 0.17530372982429837,
+    "zaehlung": 7.714285714285712,
+    "standard": [
+     "ti",
+     "tit"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "G43",
+    "gruppen": 5,
+    "gelernt": "-",
+    "p": 0.8144797810099716,
+    "p_leer": 0.8144797810099716,
+    "zaehlung": 3.333862433862434,
+    "standard": [
+     "w"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "Q1",
+    "gruppen": 5,
+    "gelernt": "S",
+    "p": 0.8370831056065111,
+    "p_leer": 0.1075782833870247,
+    "zaehlung": 12.14285714285714,
+    "standard": [
+     "As",
+     "Htm",
+     "st",
+     "ws",
+     "wz"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "N37",
+    "gruppen": 5,
+    "gelernt": "S",
+    "p": 0.5882753756278332,
+    "p_leer": 0.22445272516128634,
+    "zaehlung": 4.971014492753623,
+    "standard": [
+     "S",
+     "sn"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "C10",
+    "gruppen": 4,
+    "gelernt": "M",
+    "p": 0.3737114192856018,
+    "p_leer": 0.2471031720841752,
+    "zaehlung": 3.4000000000000004,
+    "standard": [
+     "mAat"
+    ],
+    "urteil": "teil"
+   },
+   {
+    "zeichen": "I12",
+    "gruppen": 4,
+    "gelernt": "-",
+    "p": 0.8331061730466736,
+    "p_leer": 0.8331061730466736,
+    "zaehlung": 4.049350649350648,
+    "standard": [
+     "iart",
+     "nsrt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "D37",
+    "gruppen": 4,
+    "gelernt": "T",
+    "p": 0.6250348900001576,
+    "p_leer": 0.2600372238104815,
+    "zaehlung": 3.2736842105263153,
+    "standard": [
+     "D",
+     "d",
+     "di",
+     "imi",
+     "m",
+     "mi",
+     "rdi"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "G41",
+    "gruppen": 4,
+    "gelernt": "-",
+    "p": 0.22599298911449897,
+    "p_leer": 0.22599298911449897,
+    "zaehlung": 3.933333333333333,
+    "standard": [
+     "Htm",
+     "Tn",
+     "pA",
+     "qmA",
+     "qmyt",
+     "sHw",
+     "xn"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "O6",
+    "gruppen": 4,
+    "gelernt": "-",
+    "p": 0.9360032122626328,
+    "p_leer": 0.9360032122626328,
+    "zaehlung": 9.045454545454545,
+    "standard": [
+     "Htt",
+     "Hwt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "Aa1",
+    "gruppen": 4,
+    "gelernt": "-",
+    "p": 0.6778849063344375,
+    "p_leer": 0.6778849063344375,
+    "zaehlung": 6.333333333333333,
+    "standard": [
+     "x"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "R8",
+    "gruppen": 4,
+    "gelernt": "-",
+    "p": 0.5072253247942349,
+    "p_leer": 0.5072253247942349,
+    "zaehlung": 6.583333333333332,
+    "standard": [
+     "nTr",
+     "nTrw"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "E1",
+    "gruppen": 4,
+    "gelernt": "-",
+    "p": 0.9113225653975305,
+    "p_leer": 0.9113225653975305,
+    "zaehlung": 5.75,
+    "standard": [
+     "iH",
+     "kA"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "L1",
+    "gruppen": 3,
+    "gelernt": "KPR",
+    "p": 0.33335274364038475,
+    "p_leer": 0.2217313040149351,
+    "zaehlung": 4.0,
+    "standard": [
+     "xpr"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "E23",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.7584551202517593,
+    "p_leer": 0.7584551202517593,
+    "zaehlung": 4.999999999999999,
+    "standard": [
+     "l",
+     "nb",
+     "rw"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "D54",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.8747997407155712,
+    "p_leer": 0.8747997407155712,
+    "zaehlung": 3.5,
+    "standard": [
+     "iw",
+     "nmtt"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "I10",
+    "gruppen": 3,
+    "gelernt": "C",
+    "p": 0.5001103897191811,
+    "p_leer": 0.1900921687898276,
+    "zaehlung": 10.0,
+    "standard": [
+     "D",
+     "Dt",
+     "d"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "D2",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.4301048471039007,
+    "p_leer": 0.4301048471039007,
+    "zaehlung": 5.545454545454545,
+    "standard": [
+     "Hr"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "G5",
+    "gruppen": 3,
+    "gelernt": "R",
+    "p": 0.35753758795390195,
+    "p_leer": 0.1517374743839344,
+    "zaehlung": 6.803480589022755,
+    "standard": [
+     "Hr"
+    ],
+    "urteil": "teil"
+   },
+   {
+    "zeichen": "G39",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.6955235194333759,
+    "p_leer": 0.6955235194333759,
+    "zaehlung": 8.666666666666666,
+    "standard": [
+     "bA",
+     "sA",
+     "zA"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "F18",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.5006220014611387,
+    "p_leer": 0.5006220014611387,
+    "zaehlung": 4.196519410977243,
+    "standard": [
+     "Hw",
+     "bH",
+     "bi",
+     "biA",
+     "ibH",
+     "nHDt",
+     "psH"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "R118",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.651783342724839,
+    "p_leer": 0.651783342724839,
+    "zaehlung": 4.583333333333333,
+    "standard": [],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "G36",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.6366166751276182,
+    "p_leer": 0.6366166751276182,
+    "zaehlung": 2.666666666666667,
+    "standard": [
+     "wr"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "R12",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.8416165470385617,
+    "p_leer": 0.8416165470385617,
+    "zaehlung": 2.249999999999999,
+    "standard": [
+     "iAt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "U15",
+    "gruppen": 3,
+    "gelernt": "TM",
+    "p": 0.3829290075771388,
+    "p_leer": 0.23692721287802848,
+    "zaehlung": 3.833333333333334,
+    "standard": [
+     "tm"
+    ],
+    "urteil": "genau"
+   },
+   {
+    "zeichen": "N1",
+    "gruppen": 3,
+    "gelernt": "-",
+    "p": 0.8744730537397791,
+    "p_leer": 0.8744730537397791,
+    "zaehlung": 3.519230769230769,
+    "standard": [
+     "Hr",
+     "hAy",
+     "pt"
+    ],
+    "urteil": "nein"
+   },
+   {
+    "zeichen": "H6",
+    "gruppen": 2,
+    "gelernt": "S",
+    "p": 0.46081990292247244,
+    "p_leer": 0.37219663373815853,
+    "zaehlung": 1.6,
+    "standard": [
+     "Sw",
+     "mAat"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F31",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.34413026258610635,
+    "p_leer": 0.34413026258610635,
+    "zaehlung": 1.9999999999999998,
+    "standard": [
+     "ms",
+     "msi"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U6",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.4160891294897272,
+    "p_leer": 0.4160891294897272,
+    "zaehlung": 1.2000000000000002,
+    "standard": [
+     "mr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N17",
+    "gruppen": 2,
+    "gelernt": "TR",
+    "p": 0.3567884476467108,
+    "p_leer": 0.2941802259806117,
+    "zaehlung": 3.6666666666666665,
+    "standard": [
+     "Dt",
+     "tA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O4",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.732858551153297,
+    "p_leer": 0.732858551153297,
+    "zaehlung": 4.999999999999998,
+    "standard": [
+     "h"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N29",
+    "gruppen": 2,
+    "gelernt": "K",
+    "p": 0.6057901038170564,
+    "p_leer": 0.16873884077398107,
+    "zaehlung": 5.999999999999999,
+    "standard": [
+     "q",
+     "qAA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U1",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.4205259735928844,
+    "p_leer": 0.4205259735928844,
+    "zaehlung": 1.1666666666666665,
+    "standard": [
+     "mA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa18",
+    "gruppen": 2,
+    "gelernt": "S",
+    "p": 0.6076679045806049,
+    "p_leer": 0.27194878598191075,
+    "zaehlung": 3.0,
+    "standard": [
+     "sA",
+     "zA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "V29",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.8859430906681189,
+    "p_leer": 0.8859430906681189,
+    "zaehlung": 4.000000000000001,
+    "standard": [
+     "sk",
+     "wAH"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F20",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.8643179087940234,
+    "p_leer": 0.8643179087940234,
+    "zaehlung": 2.9999999999999987,
+    "standard": [
+     "dp",
+     "imy-rA",
+     "mr",
+     "ns"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "R11",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.4275378572294002,
+    "p_leer": 0.4275378572294002,
+    "zaehlung": 6.166666666666666,
+    "standard": [
+     "Dd",
+     "dd"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M8",
+    "gruppen": 2,
+    "gelernt": "S",
+    "p": 0.6717304474483602,
+    "p_leer": 0.21646329666390995,
+    "zaehlung": 8.000000000000004,
+    "standard": [
+     "Axt",
+     "SA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G40",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.6336441736851993,
+    "p_leer": 0.6336441736851993,
+    "zaehlung": 0.4173913043478261,
+    "standard": [
+     "pA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "X8",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.7556925486714539,
+    "p_leer": 0.7556925486714539,
+    "zaehlung": 1.2000000000000004,
+    "standard": [
+     "d",
+     "di",
+     "rdi"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Z3",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.8095857261364321,
+    "p_leer": 0.8095857261364321,
+    "zaehlung": 1.5333333333333332,
+    "standard": [
+     "3"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N12",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.7737930659038903,
+    "p_leer": 0.7737930659038903,
+    "zaehlung": 1.1333333333333333,
+    "standard": [
+     "iaH"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N11",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.7312065411980317,
+    "p_leer": 0.7312065411980317,
+    "zaehlung": 0.5333333333333333,
+    "standard": [
+     "Abd",
+     "Ssp",
+     "iaH"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "I5",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.4128836637082473,
+    "p_leer": 0.4128836637082473,
+    "zaehlung": 1.2222222222222223,
+    "standard": [
+     "sAq",
+     "sbk"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E34",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.5501822177555955,
+    "p_leer": 0.5501822177555955,
+    "zaehlung": 2.0,
+    "standard": [
+     "wn",
+     "wnt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "R15",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.8458467316737356,
+    "p_leer": 0.8458467316737356,
+    "zaehlung": 2.4516129032258065,
+    "standard": [
+     "Ab",
+     "iAb"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M2",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.5619017668791011,
+    "p_leer": 0.5619017668791011,
+    "zaehlung": 2.333333333333334,
+    "standard": [
+     "Hn",
+     "Hrrt",
+     "i",
+     "is"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M12",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.826883320173818,
+    "p_leer": 0.826883320173818,
+    "zaehlung": 6.249999999999999,
+    "standard": [
+     "xA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G4",
+    "gruppen": 2,
+    "gelernt": "T",
+    "p": 0.4889408208341457,
+    "p_leer": 0.2113881158720658,
+    "zaehlung": 4.333333333333334,
+    "standard": [
+     "tw",
+     "tyw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N24",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.6091986523373826,
+    "p_leer": 0.6091986523373826,
+    "zaehlung": 1.4166666666666663,
+    "standard": [
+     "Hsp",
+     "Xnw",
+     "spAt",
+     "tA-wr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "W2",
+    "gruppen": 2,
+    "gelernt": "PST",
+    "p": 0.3580269562021764,
+    "p_leer": 0.3453755347293161,
+    "zaehlung": 1.8571428571428572,
+    "standard": [
+     "bAs"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A2",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.6230319373158759,
+    "p_leer": 0.6230319373158759,
+    "zaehlung": 2.1428571428571432,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D28",
+    "gruppen": 2,
+    "gelernt": "KPT",
+    "p": 0.3539860912221194,
+    "p_leer": 0.28654753957324935,
+    "zaehlung": 2.6666666666666665,
+    "standard": [
+     "kA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M44",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.4277444495884441,
+    "p_leer": 0.4277444495884441,
+    "zaehlung": 1.75,
+    "standard": [
+     "spd",
+     "srt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Z6",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.8267395851906233,
+    "p_leer": 0.8267395851906233,
+    "zaehlung": 2.804347826086956,
+    "standard": [
+     "mwt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "C7",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.5657581721035317,
+    "p_leer": 0.5657581721035317,
+    "zaehlung": 1.0521739130434784,
+    "standard": [
+     "stX"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N31",
+    "gruppen": 2,
+    "gelernt": "-",
+    "p": 0.7389957581664751,
+    "p_leer": 0.7389957581664751,
+    "zaehlung": 4.0,
+    "standard": [
+     "Hr",
+     "mTn",
+     "wAt",
+     "wa"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Ff301",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.681115407191029,
+    "p_leer": 0.681115407191029,
+    "zaehlung": 0.10000000000000002,
+    "standard": [
+     "1"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F12",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4434625122308798,
+    "p_leer": 0.4434625122308798,
+    "zaehlung": 1.0,
+    "standard": [
+     "wsr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U21",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.44363606091224894,
+    "p_leer": 0.44363606091224894,
+    "zaehlung": 1.0000000000000002,
+    "standard": [
+     "stp"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "C2",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7207916096998539,
+    "p_leer": 0.7207916096998539,
+    "zaehlung": 0.4,
+    "standard": [
+     "nb-mAat-ra",
+     "ra"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "C12",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.720801549327218,
+    "p_leer": 0.720801549327218,
+    "zaehlung": 0.39999999999999997,
+    "standard": [
+     "imn",
+     "imn-Hr-xpS-f",
+     "nb"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "V4",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8258888083556359,
+    "p_leer": 0.8258888083556359,
+    "zaehlung": 1.9999999999999993,
+    "standard": [
+     "wA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F34",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.3328957558988456,
+    "p_leer": 0.3328957558988456,
+    "zaehlung": 2.0,
+    "standard": [
+     "HAty",
+     "ib"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D40",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.332593821563832,
+    "p_leer": 0.332593821563832,
+    "zaehlung": 1.9999999999999998,
+    "standard": [
+     "nxt",
+     "xAi"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F4",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4434961739304009,
+    "p_leer": 0.4434961739304009,
+    "zaehlung": 1.0000000000000002,
+    "standard": [
+     "HAt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G21",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.47971644459449314,
+    "p_leer": 0.47971644459449314,
+    "zaehlung": 0.782608695652174,
+    "standard": [
+     "nH"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M18",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7128408821941483,
+    "p_leer": 0.7128408821941483,
+    "zaehlung": 0.357142857142857,
+    "standard": [
+     "ii"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "W11",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7421774619221787,
+    "p_leer": 0.7421774619221787,
+    "zaehlung": 0.6666666666666664,
+    "standard": [
+     "g",
+     "nst"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N16",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5996308506959103,
+    "p_leer": 0.5996308506959103,
+    "zaehlung": 1.333333333333333,
+    "standard": [
+     "Dt",
+     "tA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A52",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6942826291652292,
+    "p_leer": 0.6942826291652292,
+    "zaehlung": 0.2,
+    "standard": [
+     "Sps",
+     "Spsi",
+     "saH"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "B21",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6986575024874475,
+    "p_leer": 0.6986575024874475,
+    "zaehlung": 0.23076923076923075,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A51",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.720810122392982,
+    "p_leer": 0.720810122392982,
+    "zaehlung": 0.41666666666666674,
+    "standard": [
+     "Sps",
+     "Spsi"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "P5",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.775246117556511,
+    "p_leer": 0.775246117556511,
+    "zaehlung": 0.9999999999999998,
+    "standard": [
+     "TAw",
+     "nfw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U23",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8073558624880954,
+    "p_leer": 0.8073558624880954,
+    "zaehlung": 1.548387096774194,
+    "standard": [
+     "Ab",
+     "mHr",
+     "mr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N26",
+    "gruppen": 1,
+    "gelernt": "T",
+    "p": 0.45524455582823986,
+    "p_leer": 0.3756300706005199,
+    "zaehlung": 1.5483870967741935,
+    "standard": [
+     "Dw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "I6",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.33265513837891103,
+    "p_leer": 0.33265513837891103,
+    "zaehlung": 2.0,
+    "standard": [
+     "km"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O28",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8609156174470124,
+    "p_leer": 0.8609156174470124,
+    "zaehlung": 2.9999999999999996,
+    "standard": [
+     "iwn"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O24",
+    "gruppen": 1,
+    "gelernt": "P",
+    "p": 0.3872761753933182,
+    "p_leer": 0.21482677800704392,
+    "zaehlung": 5.0,
+    "standard": [
+     "mHr",
+     "mr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa2",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8288564575706581,
+    "p_leer": 0.8288564575706581,
+    "zaehlung": 1.9999999999999998,
+    "standard": [
+     "Hsb",
+     "Xpw",
+     "gA",
+     "wHA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A17",
+    "gruppen": 1,
+    "gelernt": "HNS",
+    "p": 0.5991896511678051,
+    "p_leer": 0.13319068067339263,
+    "zaehlung": 8.0,
+    "standard": [
+     "Hms",
+     "Hmsi",
+     "Sri",
+     "Xrd",
+     "msw",
+     "nmH",
+     "nni"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "L2",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5000177268240199,
+    "p_leer": 0.5000177268240199,
+    "zaehlung": 0.6666666666666665,
+    "standard": [
+     "bit",
+     "kAt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M16",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5919991797600599,
+    "p_leer": 0.5919991797600599,
+    "zaehlung": 0.33333333333333326,
+    "standard": [
+     "HA",
+     "mHw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "S3",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6905497146399895,
+    "p_leer": 0.6905497146399895,
+    "zaehlung": 0.3333333333333333,
+    "standard": [
+     "bity",
+     "dSrt",
+     "n"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M15",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7123031280817357,
+    "p_leer": 0.7123031280817357,
+    "zaehlung": 0.33333333333333326,
+    "standard": [
+     "Ax",
+     "Dyt",
+     "mHw",
+     "wAx"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "R5",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5173846716931242,
+    "p_leer": 0.5173846716931242,
+    "zaehlung": 0.5714285714285713,
+    "standard": [
+     "kAp",
+     "kp"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D35",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8255645541632519,
+    "p_leer": 0.8255645541632519,
+    "zaehlung": 1.9999999999999993,
+    "standard": [
+     "n",
+     "smx",
+     "xm"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "V33",
+    "gruppen": 1,
+    "gelernt": "K",
+    "p": 0.6083725498387477,
+    "p_leer": 0.2661337560130511,
+    "zaehlung": 3.000000000000001,
+    "standard": [
+     "Ss",
+     "g",
+     "qAr",
+     "sSr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "T63",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5006143128831424,
+    "p_leer": 0.5006143128831424,
+    "zaehlung": 0.666666666666667,
+    "standard": [
+     "nt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Z9",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6373062074661004,
+    "p_leer": 0.6373062074661004,
+    "zaehlung": 0.6666666666666666,
+    "standard": [
+     "Sbn",
+     "sD",
+     "swA",
+     "wp",
+     "wr",
+     "xbs"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "T11",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6373062074661003,
+    "p_leer": 0.6373062074661003,
+    "zaehlung": 0.6666666666666667,
+    "standard": [
+     "sSr",
+     "sXr",
+     "sin",
+     "swn",
+     "zin",
+     "zwn"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D19",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.26674289475777885,
+    "p_leer": 0.26674289475777885,
+    "zaehlung": 2.9999999999999996,
+    "standard": [
+     "fnD",
+     "fnd",
+     "rS",
+     "sn",
+     "sty",
+     "xn",
+     "xnt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "W1",
+    "gruppen": 1,
+    "gelernt": "PST",
+    "p": 0.6000510777277068,
+    "p_leer": 0.2660743878669246,
+    "zaehlung": 3.0,
+    "standard": [
+     "mrHt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "T25",
+    "gruppen": 1,
+    "gelernt": "T",
+    "p": 0.5129542960889606,
+    "p_leer": 0.3369599049743697,
+    "zaehlung": 2.0,
+    "standard": [
+     "DbA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa28",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4436525928517498,
+    "p_leer": 0.4436525928517498,
+    "zaehlung": 0.9999999999999996,
+    "standard": [
+     "qd"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M1",
+    "gruppen": 1,
+    "gelernt": "PNN",
+    "p": 0.43458216191008864,
+    "p_leer": 0.37057209641752337,
+    "zaehlung": 1.6000000000000003,
+    "standard": [
+     "iAm",
+     "im",
+     "imA",
+     "m",
+     "nbs",
+     "nht"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D41",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5555246249044503,
+    "p_leer": 0.5555246249044503,
+    "zaehlung": 0.39999999999999986,
+    "standard": [
+     "gbA",
+     "ni",
+     "rmn"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N41",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7281997819536639,
+    "p_leer": 0.7281997819536639,
+    "zaehlung": 0.49999999999999983,
+    "standard": [
+     "Hm",
+     "biA",
+     "id",
+     "idt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D1",
+    "gruppen": 1,
+    "gelernt": "TPH",
+    "p": 0.4000037399974782,
+    "p_leer": 0.39911845459601947,
+    "zaehlung": 1.333333333333333,
+    "standard": [
+     "DADA",
+     "tp"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D516",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4988927198484789,
+    "p_leer": 0.4988927198484789,
+    "zaehlung": 0.6666666666666665,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A38",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.3327160958587538,
+    "p_leer": 0.3327160958587538,
+    "zaehlung": 1.9999999999999996,
+    "standard": [
+     "qis",
+     "qiz"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G47",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.33371809939323355,
+    "p_leer": 0.33371809939323355,
+    "zaehlung": 2.0,
+    "standard": [
+     "TA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa19",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7750023388500895,
+    "p_leer": 0.7750023388500895,
+    "zaehlung": 1.0,
+    "standard": [
+     "Hr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "I106",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5321463416886539,
+    "p_leer": 0.5321463416886539,
+    "zaehlung": 0.49999999999999994,
+    "standard": [
+     "iAt-dit",
+     "iq"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "I3",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5322195486522643,
+    "p_leer": 0.5322195486522643,
+    "zaehlung": 0.4999999999999998,
+    "standard": [
+     "Ad",
+     "TAmt",
+     "it",
+     "msH",
+     "mzH",
+     "xnti"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D56",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7743621377696591,
+    "p_leer": 0.7743621377696591,
+    "zaehlung": 0.9999999999999999,
+    "standard": [
+     "ATw",
+     "gH",
+     "gHs",
+     "rd",
+     "sbq"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U28",
+    "gruppen": 1,
+    "gelernt": "C",
+    "p": 0.4014359168120536,
+    "p_leer": 0.2699067435177191,
+    "zaehlung": 3.0,
+    "standard": [
+     "DA",
+     "wDA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U30",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.3336626873044274,
+    "p_leer": 0.3336626873044274,
+    "zaehlung": 2.0000000000000004,
+    "standard": [
+     "tA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G20",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.776727917448237,
+    "p_leer": 0.776727917448237,
+    "zaehlung": 1.0,
+    "standard": [
+     "m",
+     "m-a",
+     "mi"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa23",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4434867267506392,
+    "p_leer": 0.4434867267506392,
+    "zaehlung": 1.0000000000000002,
+    "standard": [
+     "Ssmw",
+     "mDd"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E9",
+    "gruppen": 1,
+    "gelernt": "PNT",
+    "p": 0.2857343232539325,
+    "p_leer": 0.2851125119833321,
+    "zaehlung": 2.666666666666666,
+    "standard": [
+     "iw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "V14",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.49905941364431194,
+    "p_leer": 0.49905941364431194,
+    "zaehlung": 0.6666666666666667,
+    "standard": [
+     "T"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E315",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4988848641894604,
+    "p_leer": 0.4988848641894604,
+    "zaehlung": 0.6666666666666667,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E208",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4837661413422872,
+    "p_leer": 0.4837661413422872,
+    "zaehlung": 0.75,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N76",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.3802344366741802,
+    "p_leer": 0.3802344366741802,
+    "zaehlung": 1.5,
+    "standard": [
+     "HA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "W4",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5324473954170321,
+    "p_leer": 0.5324473954170321,
+    "zaehlung": 0.4999999999999998,
+    "standard": [
+     "Hb"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "T26",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5330001222476518,
+    "p_leer": 0.5330001222476518,
+    "zaehlung": 0.5,
+    "standard": [
+     "sxt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G13",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4435660029395936,
+    "p_leer": 0.4435660029395936,
+    "zaehlung": 1.0,
+    "standard": [
+     "Hr",
+     "nxny",
+     "spdw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa15",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7315137962479811,
+    "p_leer": 0.7315137962479811,
+    "zaehlung": 0.5,
+    "standard": [
+     "gs",
+     "im",
+     "m"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "S13",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.44352356715989316,
+    "p_leer": 0.44352356715989316,
+    "zaehlung": 1.0,
+    "standard": [
+     "nbi"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O7",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6317948164840993,
+    "p_leer": 0.6317948164840993,
+    "zaehlung": 0.4999999999999999,
+    "standard": [
+     "Hwt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U40",
+    "gruppen": 1,
+    "gelernt": "PS",
+    "p": 0.6613777204209659,
+    "p_leer": 0.22291644928222434,
+    "zaehlung": 4.0,
+    "standard": [
+     "Ts",
+     "rs",
+     "wTs",
+     "wTst"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D6",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8766403187249602,
+    "p_leer": 0.8766403187249602,
+    "zaehlung": 4.0,
+    "standard": [
+     "Sp",
+     "dgi",
+     "pti",
+     "ptr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "D4",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6162417007717053,
+    "p_leer": 0.6162417007717053,
+    "zaehlung": 1.5477707006369423,
+    "standard": [
+     "ir",
+     "irt",
+     "mA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E15",
+    "gruppen": 1,
+    "gelernt": "NP",
+    "p": 0.4206914256903243,
+    "p_leer": 0.38594578187969236,
+    "zaehlung": 1.4470046082949308,
+    "standard": [
+     "Hry-sStA",
+     "inpw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E16",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5796936643494174,
+    "p_leer": 0.5796936643494174,
+    "zaehlung": 0.29493087557603687,
+    "standard": [
+     "Hry-sStA",
+     "inpw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "E21",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5230707025960549,
+    "p_leer": 0.5230707025960549,
+    "zaehlung": 0.5434782608695652,
+    "standard": [
+     "nSni",
+     "stX"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G26",
+    "gruppen": 1,
+    "gelernt": "TT",
+    "p": 0.40061311888627005,
+    "p_leer": 0.2660816611290814,
+    "zaehlung": 3.000000000000001,
+    "standard": [
+     "DHwty",
+     "HHwti",
+     "hb"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O29",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.8119580772254475,
+    "p_leer": 0.8119580772254475,
+    "zaehlung": 1.9999999999999998,
+    "standard": [
+     "a",
+     "aA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O10",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5419972509483032,
+    "p_leer": 0.5419972509483032,
+    "zaehlung": 0.45454545454545453,
+    "standard": [
+     "Hwt-Hr",
+     "Hwt_Hr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G38",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.443551990779953,
+    "p_leer": 0.443551990779953,
+    "zaehlung": 0.9999999999999999,
+    "standard": [
+     "Apd",
+     "Htm",
+     "Trp",
+     "gb",
+     "wdf",
+     "wfA",
+     "wsf"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O9",
+    "gruppen": 1,
+    "gelernt": "NPT",
+    "p": 0.5000487048366059,
+    "p_leer": 0.33260397192144997,
+    "zaehlung": 2.0,
+    "standard": [
+     "nbt-Hwt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "W9",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.3326121083724706,
+    "p_leer": 0.3326121083724706,
+    "zaehlung": 1.9999999999999998,
+    "standard": [
+     "Xnm"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "R22",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.551392757833859,
+    "p_leer": 0.551392757833859,
+    "zaehlung": 0.4166666666666668,
+    "standard": [
+     "mnw",
+     "xm"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "M14",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4442501125657364,
+    "p_leer": 0.4442501125657364,
+    "zaehlung": 1.0000000000000002,
+    "standard": [
+     "wAD"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G15",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.5095137829756939,
+    "p_leer": 0.5095137829756939,
+    "zaehlung": 0.611111111111111,
+    "standard": [
+     "mwt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "G14",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.44818449338480504,
+    "p_leer": 0.44818449338480504,
+    "zaehlung": 1.222222222222222,
+    "standard": [
+     "mt",
+     "mwt",
+     "nr",
+     "nrt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "W25",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4453255893780094,
+    "p_leer": 0.4453255893780094,
+    "zaehlung": 0.9999999999999998,
+    "standard": [
+     "in",
+     "ini"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A19",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.4894422454351039,
+    "p_leer": 0.4894422454351039,
+    "zaehlung": 0.7777777777777777,
+    "standard": [
+     "iAw",
+     "ikw",
+     "rhn",
+     "smsw",
+     "tni",
+     "wr"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A311",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6239558798238156,
+    "p_leer": 0.6239558798238156,
+    "zaehlung": 0.22222222222222215,
+    "standard": [
+     "ity"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "A24",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6947071760799934,
+    "p_leer": 0.6947071760799934,
+    "zaehlung": 0.20000000000000004,
+    "standard": [
+     "Hw",
+     "Hwi",
+     "nxt",
+     "sbA"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U104",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.570293997155835,
+    "p_leer": 0.570293997155835,
+    "zaehlung": 0.3333333333333333,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "N14",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6801382565977083,
+    "p_leer": 0.6801382565977083,
+    "zaehlung": 0.25,
+    "standard": [
+     "dwA",
+     "sbA",
+     "wnwt"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "I64",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.6978842255326815,
+    "p_leer": 0.6978842255326815,
+    "zaehlung": 0.25000000000000006,
+    "standard": [
+     "k",
+     "nTrt",
+     "nb",
+     "xm"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F28",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.75385719343587,
+    "p_leer": 0.75385719343587,
+    "zaehlung": 0.75,
+    "standard": [
+     "Ab",
+     "sAb"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Ff1",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.727057928710269,
+    "p_leer": 0.727057928710269,
+    "zaehlung": 0.49999999999999994,
+    "standard": [],
+    "urteil": ""
+   },
+   {
+    "zeichen": "Aa5",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.578472452071625,
+    "p_leer": 0.578472452071625,
+    "zaehlung": 1.9999999999999996,
+    "standard": [
+     "Hp"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "O5",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.44797095415018684,
+    "p_leer": 0.44797095415018684,
+    "zaehlung": 1.0000000000000002,
+    "standard": [
+     "mr",
+     "mrrt",
+     "nm"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "U19",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7723339979483591,
+    "p_leer": 0.7723339979483591,
+    "zaehlung": 1.0,
+    "standard": [
+     "nw"
+    ],
+    "urteil": ""
+   },
+   {
+    "zeichen": "F13",
+    "gruppen": 1,
+    "gelernt": "-",
+    "p": 0.7408225968595342,
+    "p_leer": 0.7408225968595342,
+    "zaehlung": 1.0000000000000002,
+    "standard": [
+     "ip",
+     "wp",
+     "wpt"
+    ],
+    "urteil": ""
+   }
+  ]
+ },
+ "P4": {
+  "lemmata": 1159,
+  "paare": 1194,
+  "kandidaten": 462,
+  "anker": {
+   "rangplatz_prozent": 6.717244937631032,
+   "median_prozent": 1.5184381778741864,
+   "rang1": 0.24958123953098826,
+   "unter_ersten_10": 0.5527638190954773,
+   "null_mittel": 19.31748334041865,
+   "null_min": 18.41065413837081,
+   "p": 0.0004997501249375312
+  },
+  "anker_ohne_koptisch": {
+   "rangplatz_prozent": 7.994328111998896,
+   "median_prozent": 1.9522776572668112,
+   "rang1": 0.2202680067001675,
+   "unter_ersten_10": 0.5175879396984925,
+   "null_mittel": 19.519925004632707,
+   "null_min": 18.564532714185532,
+   "p": 0.0004997501249375312
+  },
+  "anker_nur_keilschrift_semitisch": {
+   "rangplatz_prozent": 10.359643481325644,
+   "median_prozent": 3.2537960954446854,
+   "rang1": 0.1440536013400335,
+   "unter_ersten_10": 0.41792294807370184,
+   "null_mittel": 19.377575467721837,
+   "null_min": 18.52610848893782,
+   "p": 0.0004997501249375312
+  },
+  "vertauschte_anker": {
+   "rangplatz_prozent": 18.30428352899712,
+   "median_prozent": 8.676789587852495,
+   "rang1": 0.03098827470686767,
+   "unter_ersten_10": 0.22529313232830822,
+   "null_mittel": 18.49492777517377,
+   "null_min": 18.063655224786256,
+   "p": 0.05297351324337831
+  },
+  "nach_laenge": {
+   "1": {
+    "n": 286,
+    "rangplatz_prozent": 0.6484838372040108
+   },
+   "2": {
+    "n": 603,
+    "rangplatz_prozent": 4.220042232798408
+   },
+   "3": {
+    "n": 265,
+    "rangplatz_prozent": 14.080956083984775
+   },
+   "4": {
+    "n": 40,
+    "rangplatz_prozent": 38.96963123644252
+   }
+  },
+  "anteil_obergrenze": 0.9090087030840434,
+  "zahlwoerter": [
+   {
+    "zahl": "1000",
+    "lemma": "ḫꜣ",
+    "koptisch": "ϣⲟ",
+    "folge": "S",
+    "schreibung": "M12",
+    "rangplatz_prozent": 0.6507592190889371
+   },
+   {
+    "zahl": "3",
+    "lemma": "ḫmt.w",
+    "koptisch": "ϣⲟⲙⲛⲧ",
+    "folge": "SMNT",
+    "schreibung": "Z1-Z1-Z1",
+    "rangplatz_prozent": 78.95878524945769
+   },
+   {
+    "zahl": "6",
+    "lemma": "sjs",
+    "koptisch": "ⲥⲟⲟⲩ",
+    "folge": "S",
+    "schreibung": "Z1-Z1-Z1-Z1-Z1-Z1",
+    "rangplatz_prozent": 0.6507592190889371
+   },
+   {
+    "zahl": "2",
+    "lemma": "sn.w",
+    "koptisch": "ⲥⲛⲁⲩ",
+    "folge": "SN",
+    "schreibung": "Z1-Z1",
+    "rangplatz_prozent": 2.8199566160520604
+   },
+   {
+    "zahl": "100",
+    "lemma": "šn.t",
+    "koptisch": "ϣⲉ",
+    "folge": "S",
+    "schreibung": "V1-V1-V1-X1",
+    "rangplatz_prozent": 0.43383947939262474
+   },
+   {
+    "zahl": "10000",
+    "lemma": "ḏbꜥ",
+    "koptisch": "ⲧⲃⲁ",
+    "folge": "TP",
+    "schreibung": "D50",
+    "rangplatz_prozent": 4.4468546637744035
+   },
+   {
+    "zahl": "10",
+    "lemma": "mḏ",
+    "koptisch": "ⲙⲏⲧ",
+    "folge": "MT",
+    "schreibung": "V20",
+    "rangplatz_prozent": 6.832971800433839
+   },
+   {
+    "zahl": "4",
+    "lemma": "jfd.w",
+    "koptisch": "ϥⲧⲟⲟⲩ",
+    "folge": "PT",
+    "schreibung": "Z1-Z1-Z1-Z1-X1",
+    "rangplatz_prozent": 1.735357917570499
+   }
+  ]
+ },
+ "P5": {
+  "rangplatz_prozent": 2.3846637380685056,
+  "median_prozent": 0.0,
+  "rang1": 0.5150753768844221,
+  "unter_ersten_10": 0.8358458961474037,
+  "null_mittel": 19.988334432466022,
+  "null_min": 18.631025699720585,
+  "p": 0.0004997501249375312
+ },
+ "kriterien": {
+  "K1": true,
+  "K2": true,
+  "K3": true,
+  "K4": true
+ }
+}

@@ -1,0 +1,193 @@
+zeichen	namensgruppen	gelernter_wert	wahrscheinlichkeit	w_kein_laut	standardwerte_jsesh	urteil
+X1	56	-	0.99	0.99	t	nein
+G7	52	-	0.99	0.99	Hr anty nTr nmty nsw	nein
+N35	40	-	0.85	0.85	mw n nt	nein
+O49	40	-	0.95	0.95	niwt	nein
+Z1	35	-	0.99	0.99	1	genau
+Z7	28	-	0.97	0.97	w	genau
+M17	25	-	0.98	0.98	i	genau
+D21	25	R	0.76	0.22	r rA	genau
+Q3	20	P	0.66	0.32	p	genau
+Z4	19	-	0.96	0.96	2 y	genau
+G1	19	-	0.98	0.98	A	genau
+N25	18	-	0.97	0.97	xAst	nein
+A1	17	-	0.97	0.97	i z	genau
+T14	16	-	0.97	0.97	THnw am nHsi qmA	nein
+D58	14	P	0.69	0.22	b bw	genau
+Y5	13	MN	0.63	0.08	mn	genau
+S29	13	S	0.65	0.17	s	genau
+H8	13	-	0.75	0.75	mrwt sA swHt	nein
+N5	11	-	0.59	0.59	hrw ra sw wnwt zw	nein
+V31	11	K	0.89	0.08	k	genau
+O1	11	-	0.77	0.77	p pr	nein
+Z5	10	-	0.94	0.94	ms	nein
+B7	10	-	0.82	0.82	Hnwt	nein
+A40	10	R	0.54	0.40	nTr	teil
+G17	9	M	0.60	0.36	m mwt	genau
+D46	9	T	0.54	0.42	Drt Hnt Sp Ssp d iAdt ia iai idt sSp siA	genau
+W24	8	N	0.68	0.26	nw	genau
+O34	8	S	0.83	0.14	s z	genau
+D36	8	-	0.83	0.83	a di mH	genau
+Z2	7	-	0.94	0.94	3	genau
+N23	7	-	0.93	0.93	tA	nein
+N36	6	-	0.92	0.92	mi mr	nein
+V13	6	T	0.57	0.14	T	genau
+V28	6	H	0.36	0.30	H	genau
+B1	6	-	0.73	0.73	T i st	genau
+V30	5	-	0.92	0.92	nb	nein
+F35	5	-	0.64	0.64	nfr	nein
+M23	5	-	0.78	0.78	sw	nein
+R4	5	T	0.62	0.13	Htp	nein
+Y1	5	-	0.84	0.84	dmD mDAt	nein
+Ff100	5	-	0.93	0.93		nein
+G29	5	-	0.81	0.81	bA	nein
+I9	5	P	0.32	0.19	f it sA-tA	genau
+U33	5	T	0.73	0.18	ti tit	genau
+G43	5	-	0.81	0.81	w	genau
+Q1	5	S	0.84	0.11	As Htm st ws wz	genau
+N37	5	S	0.59	0.22	S sn	genau
+C10	4	M	0.37	0.25	mAat	teil
+I12	4	-	0.83	0.83	iart nsrt	nein
+D37	4	T	0.63	0.26	D d di imi m mi rdi	genau
+G41	4	-	0.23	0.23	Htm Tn pA qmA qmyt sHw xn	nein
+O6	4	-	0.94	0.94	Htt Hwt	nein
+Aa1	4	-	0.68	0.68	x	nein
+R8	4	-	0.51	0.51	nTr nTrw	nein
+E1	4	-	0.91	0.91	iH kA	nein
+L1	3	KPR	0.33	0.22	xpr	genau
+E23	3	-	0.76	0.76	l nb rw	nein
+D54	3	-	0.87	0.87	iw nmtt	genau
+I10	3	C	0.50	0.19	D Dt d	genau
+D2	3	-	0.43	0.43	Hr	nein
+G5	3	R	0.36	0.15	Hr	teil
+G39	3	-	0.70	0.70	bA sA zA	nein
+F18	3	-	0.50	0.50	Hw bH bi biA ibH nHDt psH	nein
+R118	3	-	0.65	0.65		nein
+G36	3	-	0.64	0.64	wr	nein
+R12	3	-	0.84	0.84	iAt	nein
+U15	3	TM	0.38	0.24	tm	genau
+N1	3	-	0.87	0.87	Hr hAy pt	nein
+H6	2	S	0.46	0.37	Sw mAat	
+F31	2	-	0.34	0.34	ms msi	
+U6	2	-	0.42	0.42	mr	
+N17	2	TR	0.36	0.29	Dt tA	
+O4	2	-	0.73	0.73	h	
+N29	2	K	0.61	0.17	q qAA	
+U1	2	-	0.42	0.42	mA	
+Aa18	2	S	0.61	0.27	sA zA	
+V29	2	-	0.89	0.89	sk wAH	
+F20	2	-	0.86	0.86	dp imy-rA mr ns	
+R11	2	-	0.43	0.43	Dd dd	
+M8	2	S	0.67	0.22	Axt SA	
+G40	2	-	0.63	0.63	pA	
+X8	2	-	0.76	0.76	d di rdi	
+Z3	2	-	0.81	0.81	3	
+N12	2	-	0.77	0.77	iaH	
+N11	2	-	0.73	0.73	Abd Ssp iaH	
+I5	2	-	0.41	0.41	sAq sbk	
+E34	2	-	0.55	0.55	wn wnt	
+R15	2	-	0.85	0.85	Ab iAb	
+M2	2	-	0.56	0.56	Hn Hrrt i is	
+M12	2	-	0.83	0.83	xA	
+G4	2	T	0.49	0.21	tw tyw	
+N24	2	-	0.61	0.61	Hsp Xnw spAt tA-wr	
+W2	2	PST	0.36	0.35	bAs	
+A2	2	-	0.62	0.62		
+D28	2	KPT	0.35	0.29	kA	
+M44	2	-	0.43	0.43	spd srt	
+Z6	2	-	0.83	0.83	mwt	
+C7	2	-	0.57	0.57	stX	
+N31	2	-	0.74	0.74	Hr mTn wAt wa	
+Ff301	1	-	0.68	0.68	1	
+F12	1	-	0.44	0.44	wsr	
+U21	1	-	0.44	0.44	stp	
+C2	1	-	0.72	0.72	nb-mAat-ra ra	
+C12	1	-	0.72	0.72	imn imn-Hr-xpS-f nb	
+V4	1	-	0.83	0.83	wA	
+F34	1	-	0.33	0.33	HAty ib	
+D40	1	-	0.33	0.33	nxt xAi	
+F4	1	-	0.44	0.44	HAt	
+G21	1	-	0.48	0.48	nH	
+M18	1	-	0.71	0.71	ii	
+W11	1	-	0.74	0.74	g nst	
+N16	1	-	0.60	0.60	Dt tA	
+A52	1	-	0.69	0.69	Sps Spsi saH	
+B21	1	-	0.70	0.70		
+A51	1	-	0.72	0.72	Sps Spsi	
+P5	1	-	0.78	0.78	TAw nfw	
+U23	1	-	0.81	0.81	Ab mHr mr	
+N26	1	T	0.46	0.38	Dw	
+I6	1	-	0.33	0.33	km	
+O28	1	-	0.86	0.86	iwn	
+O24	1	P	0.39	0.21	mHr mr	
+Aa2	1	-	0.83	0.83	Hsb Xpw gA wHA	
+A17	1	HNS	0.60	0.13	Hms Hmsi Sri Xrd msw nmH nni	
+L2	1	-	0.50	0.50	bit kAt	
+M16	1	-	0.59	0.59	HA mHw	
+S3	1	-	0.69	0.69	bity dSrt n	
+M15	1	-	0.71	0.71	Ax Dyt mHw wAx	
+R5	1	-	0.52	0.52	kAp kp	
+D35	1	-	0.83	0.83	n smx xm	
+V33	1	K	0.61	0.27	Ss g qAr sSr	
+T63	1	-	0.50	0.50	nt	
+Z9	1	-	0.64	0.64	Sbn sD swA wp wr xbs	
+T11	1	-	0.64	0.64	sSr sXr sin swn zin zwn	
+D19	1	-	0.27	0.27	fnD fnd rS sn sty xn xnt	
+W1	1	PST	0.60	0.27	mrHt	
+T25	1	T	0.51	0.34	DbA	
+Aa28	1	-	0.44	0.44	qd	
+M1	1	PNN	0.43	0.37	iAm im imA m nbs nht	
+D41	1	-	0.56	0.56	gbA ni rmn	
+N41	1	-	0.73	0.73	Hm biA id idt	
+D1	1	TPH	0.40	0.40	DADA tp	
+D516	1	-	0.50	0.50		
+A38	1	-	0.33	0.33	qis qiz	
+G47	1	-	0.33	0.33	TA	
+Aa19	1	-	0.78	0.78	Hr	
+I106	1	-	0.53	0.53	iAt-dit iq	
+I3	1	-	0.53	0.53	Ad TAmt it msH mzH xnti	
+D56	1	-	0.77	0.77	ATw gH gHs rd sbq	
+U28	1	C	0.40	0.27	DA wDA	
+U30	1	-	0.33	0.33	tA	
+G20	1	-	0.78	0.78	m m-a mi	
+Aa23	1	-	0.44	0.44	Ssmw mDd	
+E9	1	PNT	0.29	0.29	iw	
+V14	1	-	0.50	0.50	T	
+E315	1	-	0.50	0.50		
+E208	1	-	0.48	0.48		
+N76	1	-	0.38	0.38	HA	
+W4	1	-	0.53	0.53	Hb	
+T26	1	-	0.53	0.53	sxt	
+G13	1	-	0.44	0.44	Hr nxny spdw	
+Aa15	1	-	0.73	0.73	gs im m	
+S13	1	-	0.44	0.44	nbi	
+O7	1	-	0.63	0.63	Hwt	
+U40	1	PS	0.66	0.22	Ts rs wTs wTst	
+D6	1	-	0.88	0.88	Sp dgi pti ptr	
+D4	1	-	0.62	0.62	ir irt mA	
+E15	1	NP	0.42	0.39	Hry-sStA inpw	
+E16	1	-	0.58	0.58	Hry-sStA inpw	
+E21	1	-	0.52	0.52	nSni stX	
+G26	1	TT	0.40	0.27	DHwty HHwti hb	
+O29	1	-	0.81	0.81	a aA	
+O10	1	-	0.54	0.54	Hwt-Hr Hwt_Hr	
+G38	1	-	0.44	0.44	Apd Htm Trp gb wdf wfA wsf	
+O9	1	NPT	0.50	0.33	nbt-Hwt	
+W9	1	-	0.33	0.33	Xnm	
+R22	1	-	0.55	0.55	mnw xm	
+M14	1	-	0.44	0.44	wAD	
+G15	1	-	0.51	0.51	mwt	
+G14	1	-	0.45	0.45	mt mwt nr nrt	
+W25	1	-	0.45	0.45	in ini	
+A19	1	-	0.49	0.49	iAw ikw rhn smsw tni wr	
+A311	1	-	0.62	0.62	ity	
+A24	1	-	0.69	0.69	Hw Hwi nxt sbA	
+U104	1	-	0.57	0.57		
+N14	1	-	0.68	0.68	dwA sbA wnwt	
+I64	1	-	0.70	0.70	k nTrt nb xm	
+F28	1	-	0.75	0.75	Ab sAb	
+Ff1	1	-	0.73	0.73		
+Aa5	1	-	0.58	0.58	Hp	
+O5	1	-	0.45	0.45	mr mrrt nm	
+U19	1	-	0.77	0.77	nw	
+F13	1	-	0.74	0.74	ip wp wpt	

@@ -1,0 +1,21 @@
+1  Rueckgewinnung M2 (Abschreibtreue), 150 Werke, 12 Handschriften, 12 % unabhaengige Abweichung je Abschrift
+   wahre Rate 0.0000/Jahr (Normtreue 100.00%) -> geschaetzt -0.00000 (100.02%), gleichzeitig 80.5% (erwartet etwa 77.4%), Paare 2419
+   wahre Rate 0.0001/Jahr (Normtreue 99.00%) -> geschaetzt 0.00008 (99.17%), gleichzeitig 80.4% (erwartet etwa 77.4%), Paare 2554
+   wahre Rate 0.0005/Jahr (Normtreue 95.12%) -> geschaetzt 0.00046 (95.49%), gleichzeitig 80.4% (erwartet etwa 77.4%), Paare 2253
+   wahre Rate 0.0020/Jahr (Normtreue 81.87%) -> geschaetzt 0.00185 (83.10%), gleichzeitig 80.7% (erwartet etwa 77.4%), Paare 1301
+
+2  Rueckgewinnung M1 (Zerfall mit Hintergrund, 90 % Nullen), 10000 Paare
+   wahre Rate 0.0005 -> geschaetzt 0.0005; Niveau 1.0279% (wahr 1.0100%)
+   wahre Rate 0.0050 -> geschaetzt 0.0058; Niveau 0.9750% (wahr 1.0100%)
+   wahre Rate 0.0120 -> geschaetzt 0.0090; Niveau 0.9807% (wahr 1.0100%)
+
+3  Ausrichtung an echten Totenbuch-Paaren ohne Luecken (hoechstens 600 Woerter)
+   Paare 150: difflib findet 97.6% der gleichen Stellen, die die laengste gemeinsame Teilfolge (bestmoegliche Ausrichtung) findet; je Paar mindestens 65.9%
+
+4  Ueberlappung gegen direkten Mengenschnitt
+   groesste Abweichung 0.00e+00 bei 701 Abschnitten
+
+5  Totenbuch: Verteilung der Uebereinstimmung je Spruchpaar
+   0-50 Jahre        Paare  59 | gewichtetes Mittel 74.7% | Median 78.5% | Quartile 71.8%-84.3% | Anteil der Paare ueber 90 %: 5%
+   300-1000 Jahre    Paare  85 | gewichtetes Mittel 71.6% | Median 74.5% | Quartile 67.5%-80.7% | Anteil der Paare ueber 90 %: 1%
+   ueber 1000 Jahre  Paare 128 | gewichtetes Mittel 66.9% | Median 68.5% | Quartile 63.2%-75.3% | Anteil der Paare ueber 90 %: 2%

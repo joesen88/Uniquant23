@@ -1,0 +1,23 @@
+E1 Gleiche Zaehlnummer, gleicher Koenig: Spanne der Tage im Jahr
+   Sethos I.                  Jahr  1: Tage [31, 83, 310, 360] -> Spanne 329
+   Ramses II.                 Jahr  8: Tage [158, 321] -> Spanne 163
+   Ramses V.                  Jahr  2: Tage [86, 88, 206] -> Spanne 120
+   Amenophis IV. / Echnaton   Jahr  6: Tage [126, 223] -> Spanne 97
+   Ramses II.                 Jahr  3: Tage [56, 94, 101, 124] -> Spanne 68
+   Amenemhet III.             Jahr 18: Tage [283, 287, 333] -> Spanne 50
+   Amenemhet III.             Jahr 25: Tage [316, 338, 349] -> Spanne 33
+   Merenptah                  Jahr  3: Tage [255, 257, 262, 265] -> Spanne 10
+   Amenemhet III.             Jahr  3: Tage [212, 218] -> Spanne 6
+   Sesostris I.               Jahr 17: Tage [37, 38] -> Spanne 1
+   10 Faelle; Spanne ueber 56 Tage: 5, ueber 30 Tage: 7, groesste 329
+
+E2 Laenge der Zaehleinheit aus zwei Neumonden (Jahr 23 Tag 261, Jahr 24 Tag 180, Jahreswechsel am Tag 244)
+   Einheit 365 Tage      : Abstand   649.0 Tage =  21.98 Mondmonate,  0.7 Tage neben dem naechsten Neumond
+   Einheit 360 Tage      : Abstand   639.0 Tage =  21.64 Mondmonate, 10.7 Tage neben dem naechsten Neumond
+   Einheit 12 Mondmonate : Abstand   627.7 Tage =  21.26 Mondmonate,  7.6 Tage neben dem naechsten Neumond
+   Einheit 56 Wochen     : Abstand   703.0 Tage =  23.81 Mondmonate,  5.7 Tage neben dem naechsten Neumond
+   Einheit 56 Mondmonate : Abstand  3226.4 Tage = 109.26 Mondmonate,  7.6 Tage neben dem naechsten Neumond
+   Einheit 56 Tage: Tag 261 und Tag 180 gaebe es in ihr nicht
+
+E3 Mondzahlen
+   siderischer + synodischer Monat = 56.85 Tage | Schwebung 1/(1/27.32 - 1/29.53) = 365.26 Tage | 56 synodische Monate = 1654 Tage = 4.53 Jahre | 56 Wochen = 392 Tage | 3 x 18,61 Jahre = 55.83 Jahre

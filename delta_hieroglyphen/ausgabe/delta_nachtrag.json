@@ -1,0 +1,570 @@
+{
+ "wort": {
+  "abschnitte": 765,
+  "A fremder Bearbeiter": {
+   "anfragen": 299,
+   "alle_kandidaten": 0.919732441471572,
+   "ki_alle": [
+    0.8753887308682108,
+    0.9586242445787415
+   ],
+   "mit_ausschluss": 0.46488294314381273,
+   "ki_ausschluss": [
+    0.3951890034364261,
+    0.5366710526315789
+   ],
+   "zufall_ausschluss": 0.050931433713143265
+  },
+  "A fremde Epoche (Protokoll)": {
+   "anfragen": 246,
+   "alle_kandidaten": 0.9552845528455285,
+   "ki_alle": [
+    0.9270357378672829,
+    0.979253112033195
+   ],
+   "mit_ausschluss": 0.6788617886178862,
+   "ki_ausschluss": [
+    0.6072874493927125,
+    0.745995591188653
+   ],
+   "zufall_ausschluss": 0.08463765188772038
+  },
+  "A fremde Epoche (eindeutig datiert)": {
+   "anfragen": 128,
+   "alle_kandidaten": 0.9375,
+   "ki_alle": [
+    0.8951506791171477,
+    0.9763779527559056
+   ],
+   "mit_ausschluss": 0.7265625,
+   "ki_ausschluss": [
+    0.6183097498913921,
+    0.8257658102766798
+   ],
+   "zufall_ausschluss": 0.09092085090299583
+  },
+  "B Gattung | gleicher Bearbeiter": {
+   "anfragen": 177,
+   "cluster": 112,
+   "treffer": 0.8813559322033898,
+   "ki": [
+    0.8111938775510203,
+    0.9444444444444444
+   ],
+   "zufallsnachbar": 0.5821532528369655,
+   "p": 0.0004997501249375312
+  },
+  "B Gattung | gleiche Epoche": {
+   "anfragen": 422,
+   "cluster": 343,
+   "treffer": 0.9170616113744076,
+   "ki": [
+    0.8793780599755202,
+    0.9505889615105301
+   ],
+   "zufallsnachbar": 0.3363394638308898,
+   "p": 0.0004997501249375312
+  },
+  "B Gattung | gleicher Bearbeiter und Epoche": {
+   "anfragen": 60,
+   "cluster": 31,
+   "treffer": 0.7833333333333333,
+   "ki": [
+    0.6285351089588378,
+    0.9444444444444444
+   ],
+   "zufallsnachbar": 0.5917726805872909,
+   "p": 0.0004997501249375312
+  },
+  "B Epoche | gleiche Gattung": {
+   "anfragen": 127,
+   "cluster": 80,
+   "treffer": 0.6377952755905512,
+   "ki": [
+    0.5223491915422885,
+    0.7419870967741933
+   ],
+   "zufallsnachbar": 0.4182155713933246,
+   "p": 0.0004997501249375312
+  },
+  "B Epoche | gleiche Gattung und Bearbeiter": {
+   "anfragen": 77,
+   "cluster": 50,
+   "treffer": 0.5454545454545454,
+   "ki": [
+    0.4025974025974026,
+    0.6861031410450013
+   ],
+   "zufallsnachbar": 0.41025253120298033,
+   "p": 0.008995502248875561
+  },
+  "B Bearbeiter | gleiche Gattung": {
+   "anfragen": 137,
+   "cluster": 76,
+   "treffer": 0.6934306569343066,
+   "ki": [
+    0.5895485321735693,
+    0.7872340425531915
+   ],
+   "zufallsnachbar": 0.45067943684899825,
+   "p": 0.0004997501249375312
+  },
+  "B Bearbeiter | gleiche Gattung und Epoche": {
+   "anfragen": 119,
+   "cluster": 66,
+   "treffer": 0.7310924369747899,
+   "ki": [
+    0.625,
+    0.8254140786749481
+   ],
+   "zufallsnachbar": 0.5354744860624192,
+   "p": 0.0004997501249375312
+  },
+  "C": {
+   "sawlit": {
+    "groesse": 191,
+    "teilkorpus": {
+     "nachbar": 0.611764705882353,
+     "antwort": 0.07450980392156863,
+     "treffer": 0.9359477124183007
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.38104575163398696,
+     "antwort": 0.04372549019607843,
+     "treffer": 0.9269934640522877,
+     "gemeinsame_merkmale": 140.2
+    }
+   },
+   "bbawpyramidentexte": {
+    "groesse": 112,
+    "teilkorpus": {
+     "nachbar": 0.7150326797385621,
+     "antwort": 0.13725490196078433,
+     "treffer": 0.8496732026143791
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4330065359477125,
+     "antwort": 0.05137254901960784,
+     "treffer": 0.9257516339869282,
+     "gemeinsame_merkmale": 135.85
+    }
+   },
+   "tb": {
+    "groesse": 110,
+    "teilkorpus": {
+     "nachbar": 0.6784313725490196,
+     "antwort": 0.12026143790849673,
+     "treffer": 0.8483660130718954
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4279738562091504,
+     "antwort": 0.049019607843137254,
+     "treffer": 0.924248366013072,
+     "gemeinsame_merkmale": 136.3
+    }
+   },
+   "bbawgrabinschriften": {
+    "groesse": 100,
+    "teilkorpus": {
+     "nachbar": 0.8169934640522876,
+     "antwort": 0.13986928104575164,
+     "treffer": 0.8431372549019608
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4366666666666667,
+     "antwort": 0.048758169934640515,
+     "treffer": 0.9262091503267975,
+     "gemeinsame_merkmale": 135.5
+    }
+   },
+   "sawmedizin": {
+    "groesse": 56,
+    "teilkorpus": {
+     "nachbar": 0.7764705882352941,
+     "antwort": 0.15555555555555556,
+     "treffer": 0.8431372549019608
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4922222222222222,
+     "antwort": 0.053464052287581706,
+     "treffer": 0.9270588235294118,
+     "gemeinsame_merkmale": 130.4
+    }
+   },
+   "bbawbriefe": {
+    "groesse": 48,
+    "teilkorpus": {
+     "nachbar": 0.7620915032679738,
+     "antwort": 0.13725490196078433,
+     "treffer": 0.8784313725490196
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4963398692810458,
+     "antwort": 0.05568627450980392,
+     "treffer": 0.9222222222222223,
+     "gemeinsame_merkmale": 129.15
+    }
+   },
+   "bbawramessiden": {
+    "groesse": 43,
+    "teilkorpus": {
+     "nachbar": 0.7176470588235294,
+     "antwort": 0.12287581699346405,
+     "treffer": 0.8784313725490196
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4963398692810457,
+     "antwort": 0.05633986928104575,
+     "treffer": 0.9238562091503268,
+     "gemeinsame_merkmale": 129.7
+    }
+   },
+   "bbawtotenlit": {
+    "groesse": 37,
+    "teilkorpus": {
+     "nachbar": 0.7215686274509804,
+     "antwort": 0.13202614379084968,
+     "treffer": 0.8483660130718954
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.5099346405228757,
+     "antwort": 0.05797385620915032,
+     "treffer": 0.9186274509803922,
+     "gemeinsame_merkmale": 127.95
+    }
+   }
+  }
+ },
+ "zeichen": {
+  "abschnitte": 243,
+  "A fremder Bearbeiter": {
+   "anfragen": 174,
+   "alle_kandidaten": 0.9425287356321839,
+   "ki_alle": [
+    0.860815751618317,
+    0.9942204836887913
+   ],
+   "mit_ausschluss": 0.6379310344827587,
+   "ki_ausschluss": [
+    0.5426932146767357,
+    0.7378121370499419
+   ],
+   "zufall_ausschluss": 0.1378552568612014
+  },
+  "A fremde Epoche (Protokoll)": {
+   "anfragen": 131,
+   "alle_kandidaten": 0.9847328244274809,
+   "ki_alle": [
+    0.9618320610687023,
+    1.0
+   ],
+   "mit_ausschluss": 0.42748091603053434,
+   "ki_ausschluss": [
+    0.3178202288667405,
+    0.531527682843472
+   ],
+   "zufall_ausschluss": 0.13769286508051487
+  },
+  "A fremde Epoche (eindeutig datiert)": {
+   "anfragen": 72,
+   "alle_kandidaten": 0.9722222222222222,
+   "ki_alle": [
+    0.9285714285714286,
+    1.0
+   ],
+   "mit_ausschluss": 0.7222222222222222,
+   "ki_ausschluss": [
+    0.5820300670560242,
+    0.8571428571428571
+   ],
+   "zufall_ausschluss": 0.17862519241433789
+  },
+  "B Gattung | gleicher Bearbeiter": {
+   "anfragen": 93,
+   "cluster": 54,
+   "treffer": 0.8387096774193549,
+   "ki": [
+    0.6875,
+    0.9659186670071501
+   ],
+   "zufallsnachbar": 0.42310386826278973,
+   "p": 0.0004997501249375312
+  },
+  "B Gattung | gleiche Epoche": {
+   "anfragen": 140,
+   "cluster": 87,
+   "treffer": 0.8642857142857143,
+   "ki": [
+    0.7590144893298685,
+    0.9504204981957863
+   ],
+   "zufallsnachbar": 0.39801516255615416,
+   "p": 0.0004997501249375312
+  },
+  "B Gattung | gleicher Bearbeiter und Epoche": {
+   "anfragen": 51,
+   "cluster": 27,
+   "treffer": 0.7450980392156863,
+   "ki": [
+    0.5079093281148075,
+    0.9565217391304348
+   ],
+   "zufallsnachbar": 0.5691983484309444,
+   "p": 0.0014992503748125937
+  },
+  "B Epoche | gleiche Gattung": {
+   "anfragen": 71,
+   "cluster": 43,
+   "treffer": 0.8732394366197183,
+   "ki": [
+    0.7702442827442828,
+    0.9545624151967435
+   ],
+   "zufallsnachbar": 0.4409447616318607,
+   "p": 0.0004997501249375312
+  },
+  "B Epoche | gleiche Gattung und Bearbeiter": {
+   "anfragen": 28,
+   "cluster": 15,
+   "treffer": 0.8928571428571429,
+   "ki": [
+    0.7096774193548387,
+    1.0
+   ],
+   "zufallsnachbar": 0.6492170527884814,
+   "p": 0.001999000499750125
+  },
+  "B Bearbeiter | gleiche Gattung": {
+   "anfragen": 91,
+   "cluster": 52,
+   "treffer": 0.8021978021978022,
+   "ki": [
+    0.6987910546294769,
+    0.883495145631068
+   ],
+   "zufallsnachbar": 0.4252646349904003,
+   "p": 0.0004997501249375312
+  },
+  "B Bearbeiter | gleiche Gattung und Epoche": {
+   "anfragen": 73,
+   "cluster": 41,
+   "treffer": 0.8767123287671232,
+   "ki": [
+    0.7833333333333333,
+    0.9459459459459459
+   ],
+   "zufallsnachbar": 0.646474231797058,
+   "p": 0.0004997501249375312
+  },
+  "C": {
+   "sawlit": {
+    "groesse": 91,
+    "teilkorpus": {
+     "nachbar": 0.3374485596707819,
+     "antwort": 0.03292181069958848,
+     "treffer": 0.9176954732510288
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.21748971193415642,
+     "antwort": 0.03065843621399177,
+     "treffer": 0.9179012345679013,
+     "gemeinsame_merkmale": 144.7
+    }
+   },
+   "sawmedizin": {
+    "groesse": 52,
+    "teilkorpus": {
+     "nachbar": 0.49382716049382713,
+     "antwort": 0.09053497942386832,
+     "treffer": 0.8847736625514403
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.2773662551440329,
+     "antwort": 0.03251028806584362,
+     "treffer": 0.9150205761316871,
+     "gemeinsame_merkmale": 141.35
+    }
+   },
+   "bbawtotenlit": {
+    "groesse": 36,
+    "teilkorpus": {
+     "nachbar": 0.4567901234567901,
+     "antwort": 0.06584362139917696,
+     "treffer": 0.9012345679012346
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.2843621399176955,
+     "antwort": 0.03456790123456789,
+     "treffer": 0.91440329218107,
+     "gemeinsame_merkmale": 140.6
+    }
+   }
+  }
+ },
+ "wort_gepaart": {
+  "abschnitte": 243,
+  "A fremder Bearbeiter": {
+   "anfragen": 174,
+   "alle_kandidaten": 0.9310344827586207,
+   "ki_alle": [
+    0.8783068783068783,
+    0.9768819347551657
+   ],
+   "mit_ausschluss": 0.5977011494252874,
+   "ki_ausschluss": [
+    0.5,
+    0.6923192771084337
+   ],
+   "zufall_ausschluss": 0.1378552568612014
+  },
+  "A fremde Epoche (Protokoll)": {
+   "anfragen": 131,
+   "alle_kandidaten": 0.9770992366412213,
+   "ki_alle": [
+    0.9461328124999999,
+    1.0
+   ],
+   "mit_ausschluss": 0.46564885496183206,
+   "ki_ausschluss": [
+    0.34955901567944253,
+    0.5661764705882353
+   ],
+   "zufall_ausschluss": 0.13769286508051487
+  },
+  "A fremde Epoche (eindeutig datiert)": {
+   "anfragen": 72,
+   "alle_kandidaten": 0.9583333333333334,
+   "ki_alle": [
+    0.9040874944763587,
+    1.0
+   ],
+   "mit_ausschluss": 0.7638888888888888,
+   "ki_ausschluss": [
+    0.6164120126448894,
+    0.8815982972136222
+   ],
+   "zufall_ausschluss": 0.17862519241433789
+  },
+  "B Gattung | gleicher Bearbeiter": {
+   "anfragen": 93,
+   "cluster": 54,
+   "treffer": 0.8817204301075269,
+   "ki": [
+    0.8113207547169812,
+    0.95
+   ],
+   "zufallsnachbar": 0.42310386826278973,
+   "p": 0.0004997501249375312
+  },
+  "B Gattung | gleiche Epoche": {
+   "anfragen": 140,
+   "cluster": 87,
+   "treffer": 0.9071428571428571,
+   "ki": [
+    0.8378102592388307,
+    0.9645390070921985
+   ],
+   "zufallsnachbar": 0.39801516255615416,
+   "p": 0.0004997501249375312
+  },
+  "B Gattung | gleicher Bearbeiter und Epoche": {
+   "anfragen": 51,
+   "cluster": 27,
+   "treffer": 0.8431372549019608,
+   "ki": [
+    0.7118562581486311,
+    0.9767573995771669
+   ],
+   "zufallsnachbar": 0.5691983484309444,
+   "p": 0.0004997501249375312
+  },
+  "B Epoche | gleiche Gattung": {
+   "anfragen": 71,
+   "cluster": 43,
+   "treffer": 0.7605633802816901,
+   "ki": [
+    0.6183714852198992,
+    0.8815982972136222
+   ],
+   "zufallsnachbar": 0.4409447616318607,
+   "p": 0.0004997501249375312
+  },
+  "B Epoche | gleiche Gattung und Bearbeiter": {
+   "anfragen": 28,
+   "cluster": 15,
+   "treffer": 0.9285714285714286,
+   "ki": [
+    0.8,
+    1.0
+   ],
+   "zufallsnachbar": 0.6492170527884814,
+   "p": 0.0004997501249375312
+  },
+  "B Bearbeiter | gleiche Gattung": {
+   "anfragen": 91,
+   "cluster": 52,
+   "treffer": 0.7472527472527473,
+   "ki": [
+    0.6144578313253012,
+    0.8526393188854489
+   ],
+   "zufallsnachbar": 0.4252646349904003,
+   "p": 0.0004997501249375312
+  },
+  "B Bearbeiter | gleiche Gattung und Epoche": {
+   "anfragen": 73,
+   "cluster": 41,
+   "treffer": 0.8493150684931506,
+   "ki": [
+    0.7384615384615385,
+    0.9294159072079536
+   ],
+   "zufallsnachbar": 0.646474231797058,
+   "p": 0.0004997501249375312
+  },
+  "C": {
+   "sawlit": {
+    "groesse": 91,
+    "teilkorpus": {
+     "nachbar": 0.4773662551440329,
+     "antwort": 0.09053497942386832,
+     "treffer": 0.9259259259259259
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.2911522633744856,
+     "antwort": 0.0419753086419753,
+     "treffer": 0.8973251028806585,
+     "gemeinsame_merkmale": 140.4
+    }
+   },
+   "sawmedizin": {
+    "groesse": 52,
+    "teilkorpus": {
+     "nachbar": 0.6831275720164609,
+     "antwort": 0.1934156378600823,
+     "treffer": 0.757201646090535
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.36687242798353903,
+     "antwort": 0.0588477366255144,
+     "treffer": 0.8987654320987655,
+     "gemeinsame_merkmale": 132.8
+    }
+   },
+   "bbawtotenlit": {
+    "groesse": 36,
+    "teilkorpus": {
+     "nachbar": 0.6008230452674898,
+     "antwort": 0.1522633744855967,
+     "treffer": 0.8065843621399177
+    },
+    "zufallsauswahl": {
+     "nachbar": 0.4024691358024691,
+     "antwort": 0.06604938271604939,
+     "treffer": 0.8930041152263375,
+     "gemeinsame_merkmale": 128.85
+    }
+   }
+  }
+ }
+}

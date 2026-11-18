@@ -1,0 +1,46 @@
+
+=== WORTEBENE: 694 Abschnitte ===
+   A  echte Bearbeiter: 357 Abschnitte angepasst, mittleres Gewicht der Abweichungen 0.43
+      Textgruppe wiedererkannt                   n= 693: vorher 90.5% -> nachher 93.9% (Aenderung [+1.6%, +5.5%]; Zufallsnachbar 11.8%)
+      Textgruppe, nur fremde Bearbeiter          n= 407: vorher 76.2% -> nachher 86.2% (Aenderung [+5.1%, +15.6%]; Zufallsnachbar 9.3%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 342: vorher 76.0% -> nachher 69.3% (Aenderung [-11.8%, -1.3%]; Zufallsnachbar 55.6%)
+      Kontrolle, erfundene Bearbeiter, Effekt 0.0: 689 Abschnitte angepasst, mittleres Gewicht der Abweichungen 0.21
+      Textgruppe wiedererkannt                   n= 693: vorher 90.5% -> nachher 91.9% (Aenderung [+0.3%, +2.7%]; Zufallsnachbar 11.8%)
+      Textgruppe, nur fremde Bearbeiter          n= 693: vorher 83.7% -> nachher 84.4% (Aenderung [-0.9%, +2.3%]; Zufallsnachbar 6.7%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 651: vorher 46.4% -> nachher 46.2% (Aenderung [-2.5%, +2.3%]; Zufallsnachbar 45.9%)
+      Kontrolle, erfundene Bearbeiter, Effekt 0.5: 689 Abschnitte angepasst, mittleres Gewicht der Abweichungen 0.28
+      Textgruppe wiedererkannt                   n= 693: vorher 88.9% -> nachher 91.5% (Aenderung [+1.1%, +4.1%]; Zufallsnachbar 11.8%)
+      Textgruppe, nur fremde Bearbeiter          n= 693: vorher 68.1% -> nachher 81.7% (Aenderung [+10.0%, +17.3%]; Zufallsnachbar 6.7%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 651: vorher 77.9% -> nachher 54.2% (Aenderung [-29.8%, -18.3%]; Zufallsnachbar 45.9%)
+   C  Schriftart: Abschnitte {'hieroglyphisch': 246, 'unbekannt': 61, 'hieratisch': 291, 'kursivhieroglyphisch': 96}; Schriftart allein erklaert 13.8%
+      eigener Bearbeiteranteil ohne Schriftart im Modell 3.5%, mit Schriftart 2.7% (roh 3.61% gegen Vertauschung 2.08%, p = 0.001)
+      Schriftart zusaetzlich zu Textgruppe und Zeit 1.4%, zusaetzlich auch zum Bearbeiter 0.6%
+
+=== ZEICHENEBENE: 209 Abschnitte ===
+   A  echte Bearbeiter: 126 Abschnitte angepasst, mittleres Gewicht der Abweichungen 0.51
+      Textgruppe wiedererkannt                   n= 208: vorher 86.5% -> nachher 86.5% (Aenderung [-5.0%, +6.2%]; Zufallsnachbar 18.5%)
+      Textgruppe, nur fremde Bearbeiter          n= 174: vorher 73.0% -> nachher 87.4% (Aenderung [+1.1%, +30.6%]; Zufallsnachbar 18.1%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 117: vorher 87.2% -> nachher 65.0% (Aenderung [-32.9%, -12.8%]; Zufallsnachbar 55.7%)
+      Kontrolle, erfundene Bearbeiter, Effekt 0.0: 203 Abschnitte angepasst, mittleres Gewicht der Abweichungen 0.27
+      Textgruppe wiedererkannt                   n= 208: vorher 86.5% -> nachher 86.1% (Aenderung [-3.7%, +3.0%]; Zufallsnachbar 18.5%)
+      Textgruppe, nur fremde Bearbeiter          n= 203: vorher 73.4% -> nachher 77.3% (Aenderung [-0.5%, +8.2%]; Zufallsnachbar 9.9%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 182: vorher 54.4% -> nachher 48.9% (Aenderung [-11.9%, -0.5%]; Zufallsnachbar 53.0%)
+      Kontrolle, erfundene Bearbeiter, Effekt 0.5: 203 Abschnitte angepasst, mittleres Gewicht der Abweichungen 0.32
+      Textgruppe wiedererkannt                   n= 208: vorher 87.0% -> nachher 86.5% (Aenderung [-5.3%, +3.4%]; Zufallsnachbar 18.5%)
+      Textgruppe, nur fremde Bearbeiter          n= 203: vorher 70.0% -> nachher 75.4% (Aenderung [+1.1%, +10.3%]; Zufallsnachbar 9.9%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 182: vorher 70.3% -> nachher 53.3% (Aenderung [-26.1%, -10.4%]; Zufallsnachbar 53.0%)
+   B  Austauschbare Zeichenpaare: Anteil der zweiten Schreibung je Bearbeiter (Zellen mit mindestens 5 Abschnitten)
+      Z2/Z3 (Pluralstriche waagrecht / senkrecht): Amarna [Gunnar Sperveslage] 5% (n=1129); Hist.-biog [Silke Grallert] 13% (n=518); Tempelbibl [Frank Feder] 34% (n=1092); Spaete Tot [Frank Feder] 29% (n=3663); Spaete Tot [Susanne Töpfer] 36% (n=583); Literatur [Frank Feder] 14% (n=528); Literatur [Lutz Popko] 34% (n=2596); Literatur [Peter Dils] 12% (n=1668); Literatur [ter Landgrafova & Dils] 25% (n=1108); Medizin [Lutz Popko] 4% (n=5466); Medizin [Marc Brose] 60% (n=2022); Medizin [Peter Dils] 20% (n=589)
+      D40/A24 (Arm mit Stock / schlagender Mann): Amarna [Gunnar Sperveslage] 3% (n=115); Hist.-biog [Silke Grallert] 3% (n=120); Tempelbibl [Frank Feder] 80% (n=244); Spaete Tot [Frank Feder] 72% (n=723); Spaete Tot [Susanne Töpfer] 82% (n=84); Literatur [Frank Feder] 88% (n=113); Literatur [Lutz Popko] 58% (n=660); Literatur [Peter Dils] 93% (n=552); Literatur [ter Landgrafova & Dils] 70% (n=94); Medizin [Lutz Popko] 93% (n=469); Medizin [Marc Brose] 83% (n=563); Medizin [Peter Dils] 50% (n=149)
+      G43/Z7 (w als Wachtelkueken / als Schleife): Amarna [Gunnar Sperveslage] 10% (n=1264); Grabinschr [Stefan Grunert] 0% (n=1346); Hist.-biog [Silke Grallert] 6% (n=352); Tempelbibl [Frank Feder] 99% (n=1124); Spaete Tot [Frank Feder] 100% (n=4263); Spaete Tot [Susanne Töpfer] 100% (n=645); Literatur [Frank Feder] 78% (n=871); Literatur [Lutz Popko] 85% (n=4549); Literatur [Peter Dils] 64% (n=3049); Literatur [ter Landgrafova & Dils] 0% (n=1407); Medizin [Lutz Popko] 92% (n=2250); Medizin [Marc Brose] 96% (n=1782); Medizin [Peter Dils] 95% (n=839)
+      W24/W22 (Topf / Bierkrug): Amarna [Gunnar Sperveslage] 16% (n=172); Grabinschr [Stefan Grunert] 42% (n=713); Hist.-biog [Silke Grallert] 5% (n=122); Tempelbibl [Frank Feder] 2% (n=213); Spaete Tot [Frank Feder] 1% (n=883); Spaete Tot [Susanne Töpfer] 0% (n=251); Literatur [Frank Feder] 1% (n=94); Literatur [Lutz Popko] 4% (n=451); Literatur [Peter Dils] 7% (n=339); Literatur [ter Landgrafova & Dils] 22% (n=482); Medizin [Lutz Popko] 3% (n=1796); Medizin [Marc Brose] 66% (n=713); Medizin [Peter Dils] 11% (n=287)
+      N35/D35 (Wasserlinie n / verneinende Arme): Amarna [Gunnar Sperveslage] 1% (n=4353); Grabinschr [Stefan Grunert] 1% (n=2708); Hist.-biog [Silke Grallert] 5% (n=1399); Tempelbibl [Frank Feder] 4% (n=2325); Spaete Tot [Frank Feder] 7% (n=7027); Spaete Tot [Susanne Töpfer] 2% (n=991); Literatur [Frank Feder] 9% (n=1336); Literatur [Lutz Popko] 3% (n=5667); Literatur [Peter Dils] 11% (n=4525); Literatur [ter Landgrafova & Dils] 4% (n=3625); Medizin [Lutz Popko] 3% (n=4278); Medizin [Marc Brose] 5% (n=2545); Medizin [Peter Dils] 7% (n=1503)
+   C  Schriftart: Abschnitte {'hieroglyphisch': 49, 'unbekannt': 25, 'hieratisch': 135}; Schriftart allein erklaert 18.7%
+      eigener Bearbeiteranteil ohne Schriftart im Modell 7.3%, mit Schriftart 5.1% (roh 6.75% gegen Vertauschung 5.12%, p = 0.001)
+      Schriftart zusaetzlich zu Textgruppe und Zeit 3.6%, zusaetzlich auch zum Bearbeiter 1.3%
+
+geschrieben: /home/claude/out/buendel_nachtrag.json
+
+real	0m9.188s
+user	0m8.679s
+sys	0m0.389s

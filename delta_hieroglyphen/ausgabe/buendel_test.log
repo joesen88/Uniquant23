@@ -1,0 +1,63 @@
+PROTOKOLL sha256: a845d0cf198d5fc9
+
+=== WORTEBENE: 694 Abschnitte, 12 Textgruppen, 17 Bearbeiter, 27 Zellen, 316 Cluster ===
+   Textgruppen: {'Literatur': 171, 'Pyramidentexte': 110, 'Totenbuch': 108, 'Grabinschriften': 96, 'Medizin': 51, 'Briefe': 43, 'Spaete Totenliteratur': 36, 'Ramessidische Inschriften': 28, 'Amarna': 26, 'Tempelbibliothek': 10, 'Archive': 9, 'Hist.-biogr. Spaetzeit': 6}
+   Bearbeiter : {'Doris Topmann': 110, 'Burkhard Backes': 108, 'Stefan Grunert': 96, 'Peter Dils': 84, 'Lutz Popko': 73, 'Ingelore Hafemann': 55, 'Frank Feder': 48, 'Silke Grallert': 25, 'Gunnar Sperveslage': 24, 'Marc Brose': 22, 'Renata & Peter Landgrafova & Dils': 19, 'Adelheid Burkhardt': 9, 'Alexander Schütze': 6, 'Susanne Töpfer': 5, 'Ines Köhler': 4, 'Roland Enmarch': 3, 'Verena Lepper': 3}
+   Zerlegung der Delta-Struktur (korrigierte Anteile; in Klammern euklidische Gegenrechnung):
+      nur Textgruppe                         4.7%  (  4.5%)
+      nur Zeit                               2.0%  (  1.8%)
+      nur Bearbeiter                         3.5%  (  3.3%)
+      Textgruppe und Zeit gemeinsam          0.9%  (  0.7%)
+      Textgruppe und Bearbeiter gemeinsam   22.1%  ( 16.5%)
+      Zeit und Bearbeiter gemeinsam          1.1%  (  0.8%)
+      alle drei gemeinsam                   11.0%  (  7.8%)
+      nicht erklaert                        54.7%  ( 64.5%)
+      erklaert insgesamt 45.3%; Modelle einzeln: Textgruppe 38.6%, Zeit 15.0%, Bearbeiter 37.7%
+   Test eigener Anteil Textgruppe : 5.20% gegen Vertauschung 1.76% (95 %: 2.01%), p = 0.001; Schichten mit Auswahl: 7
+   Test eigener Anteil Zeit       : 2.28% gegen Vertauschung 0.66% (95 %: 0.85%), p = 0.001; Schichten mit Auswahl: 20
+   Test eigener Anteil Bearbeiter : 4.42% gegen Vertauschung 2.06% (95 %: 2.57%), p = 0.001; Schichten mit Auswahl: 9
+   Bereinigung: 357 von 694 Abschnitten angepasst (die uebrigen liegen in Textgruppen mit einem Bearbeiter oder in neuen Zellen)
+      Textgruppe wiedererkannt                   n= 693: vorher 90.5% -> nachher 93.1% (Aenderung [-2.1%, +6.4%]; Zufallsnachbar 11.8%)
+      Textgruppe, nur fremde Bearbeiter          n= 407: vorher 76.2% -> nachher 83.5% (Aenderung [-2.1%, +15.6%]; Zufallsnachbar 9.3%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 342: vorher 76.0% -> nachher 76.6% (Aenderung [-5.1%, +7.1%]; Zufallsnachbar 55.6%)
+      Textgruppe bei gleichem Bearbeiter         n= 400: vorher 90.8% -> nachher 92.5% (Aenderung [-0.5%, +4.2%]; Zufallsnachbar 66.8%)
+   groesster eigener Anteil Bearbeiter: 64440 (m) 24%, 65370 (m-ẖnw) 20%, 64410 (m) 16%, 44000 (wj) 14%, 107 (ꜣpd) 12%, 25090 (jmꜣḫ.w) 12%, 157160 (šzp) 12%, 107520 (ḥr) 11%, 550034 (nfr) 10%, 850238 (pr.t-ḫrw) 10%
+   groesster eigener Anteil Zeit: 42370 (=w) 14%, 64440 (m) 12%, 600030 (mtw=) 12%, 49461 (Wsjr) 11%, 550008 (nꜣy=) 10%, 550021 (pꜣy=) 10%, 851623 (nꜣ) 10%, 851446 (pꜣ) 9%, 850806 (n) 9%, 66750 (mꜣꜥ-ḫrw) 9%
+   groesster eigener Anteil Textgruppe: 64750 (m-bꜣḥ) 32%, 850830 (_) 31%, 163760 (ky) 25%, 180130 (dr) 23%, 850814 (1...n) 20%, 30750 (jḫ.t) 16%, 850815 (1...n) 15%, 97580 (hꜣb) 15%, 850787 (n.j) 13%, 125010 (z) 12%
+   Kontrolle mit erfundenen Bearbeitern (je Handschrift zufaellig A oder B innerhalb der Textgruppe):
+      Effekt 0.0 Standardabweichungen auf 30 Merkmalen: eigener Anteil +0.78%; erfundener Bearbeiter erkannt vorher 53.7%, nachher 62.9% (Zufallsnachbar 54.9%)
+      Effekt 0.5 Standardabweichungen auf 30 Merkmalen: eigener Anteil +4.21%; erfundener Bearbeiter erkannt vorher 84.5%, nachher 65.1% (Zufallsnachbar 54.9%)
+
+=== ZEICHENEBENE: 209 Abschnitte, 7 Textgruppen, 12 Bearbeiter, 17 Zellen, 109 Cluster ===
+   Textgruppen: {'Literatur': 72, 'Medizin': 47, 'Spaete Totenliteratur': 35, 'Amarna': 20, 'Grabinschriften': 20, 'Tempelbibliothek': 9, 'Hist.-biogr. Spaetzeit': 6}
+   Bearbeiter : {'Lutz Popko': 50, 'Frank Feder': 44, 'Peter Dils': 27, 'Stefan Grunert': 20, 'Gunnar Sperveslage': 18, 'Renata & Peter Landgrafova & Dils': 18, 'Marc Brose': 12, 'Silke Grallert': 6, 'Susanne Töpfer': 5, 'Ingelore Hafemann': 3, 'Roland Enmarch': 3, 'Ines Köhler': 3}
+   Zerlegung der Delta-Struktur (korrigierte Anteile; in Klammern euklidische Gegenrechnung):
+      nur Textgruppe                         5.1%  (  4.3%)
+      nur Zeit                               2.6%  (  2.4%)
+      nur Bearbeiter                         7.3%  (  6.8%)
+      Textgruppe und Zeit gemeinsam          3.4%  (  3.0%)
+      Textgruppe und Bearbeiter gemeinsam   14.3%  ( 11.9%)
+      Zeit und Bearbeiter gemeinsam          4.4%  (  3.7%)
+      alle drei gemeinsam                   15.9%  ( 11.8%)
+      nicht erklaert                        47.0%  ( 56.0%)
+      erklaert insgesamt 53.0%; Modelle einzeln: Textgruppe 38.7%, Zeit 26.3%, Bearbeiter 42.0%
+   Test eigener Anteil Textgruppe : 5.60% gegen Vertauschung 3.63% (95 %: 5.09%), p = 0.010; Schichten mit Auswahl: 3
+   Test eigener Anteil Zeit       : 3.31% gegen Vertauschung 2.18% (95 %: 2.79%), p = 0.001; Schichten mit Auswahl: 11
+   Test eigener Anteil Bearbeiter : 9.01% gegen Vertauschung 4.94% (95 %: 6.03%), p = 0.001; Schichten mit Auswahl: 6
+   Bereinigung: 126 von 209 Abschnitten angepasst (die uebrigen liegen in Textgruppen mit einem Bearbeiter oder in neuen Zellen)
+      Textgruppe wiedererkannt                   n= 208: vorher 86.5% -> nachher 87.0% (Aenderung [-4.8%, +6.9%]; Zufallsnachbar 18.5%)
+      Textgruppe, nur fremde Bearbeiter          n= 174: vorher 73.0% -> nachher 86.2% (Aenderung [+0.5%, +29.0%]; Zufallsnachbar 18.1%)
+      Bearbeiter bei gleicher Gruppe und Epoche  n= 117: vorher 87.2% -> nachher 64.1% (Aenderung [-35.7%, -11.8%]; Zufallsnachbar 55.7%)
+      Textgruppe bei gleichem Bearbeiter         n= 114: vorher 82.5% -> nachher 72.8% (Aenderung [-20.7%, +2.6%]; Zufallsnachbar 53.0%)
+   groesster eigener Anteil Bearbeiter: T14 (am/nHsi/qmA) 30%, W22 (Hnqt/wdpw) 29%, G37 (bin/nDs) 29%, Z3 (3) 25%, A24 (Hwi/nxt/sbA) 24%, A2 23%, D40 (nxt/xAi) 22%, D35 (n/smx/xm) 21%, N26 (Dw) 19%, Z2 (3) 19%
+   groesster eigener Anteil Zeit: F32 (X) 13%, U6 (mr) 13%, D36 (a/mH/di) 12%, O29 (a/aA) 11%, D37 (d/D/di) 11%, U1 (mA) 11%, F20 (dp/imy-rA/mr) 10%, G41 (pA/qmA/qmyt) 9%, V6 (g/Ss/Ssr) 9%, Z7 (w) 9%
+   groesster eigener Anteil Textgruppe: A1 35%, W24 (nw) 23%, Aa2 (gA/Hsb/wHA) 22%, D40 (nxt/xAi) 22%, N33 (msdmt/nbw/Sai) 21%, T14 (am/nHsi/qmA) 18%, M17 (i) 17%, F51 (As/at/Haw) 15%, A2 15%, D54 (iw/nmtt) 14%
+   Kontrolle mit erfundenen Bearbeitern (je Handschrift zufaellig A oder B innerhalb der Textgruppe):
+      Effekt 0.0 Standardabweichungen auf 30 Merkmalen: eigener Anteil +1.08%; erfundener Bearbeiter erkannt vorher 43.9%, nachher 47.2% (Zufallsnachbar 44.8%)
+      Effekt 0.5 Standardabweichungen auf 30 Merkmalen: eigener Anteil +3.25%; erfundener Bearbeiter erkannt vorher 70.0%, nachher 47.2% (Zufallsnachbar 44.8%)
+
+geschrieben: /home/claude/out/buendel_ergebnis.json
+
+real	0m16.360s
+user	0m15.339s
+sys	0m0.412s

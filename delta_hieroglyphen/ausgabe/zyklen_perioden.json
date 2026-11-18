@@ -1,0 +1,592 @@
+{
+ "zyklen": {
+  "Sothis": {
+   "laenge": "1460 Jahre; der Aufgang des Sirius wandert im Kalender um 1 Tag je 4 Jahre",
+   "start": "Aufgang am Neujahrstag (I Achet 1)",
+   "a": "Zaehlung bis 1460",
+   "b": "zwei datierte Aufgaenge: Jahre = 4 x Tage Verschiebung"
+  },
+  "Mond": {
+   "laenge": "29,53 Tage; 309 Monate = 25 Kalenderjahre",
+   "start": "Neumond",
+   "a": "Zaehlung bis 25",
+   "b": "zwei Neumonde unter einem Namen: Abstand in Tagen = ganze Zahl x 29,53"
+  },
+  "Sedfest": {
+   "laenge": "30 Jahre, danach alle 3",
+   "start": "Amtsantritt",
+   "a": "Zaehlung bis 30",
+   "b": "erstes Fest im Jahr 30"
+  },
+  "Viehzaehlung": {
+   "laenge": "2 Jahre",
+   "start": "erste Zaehlung",
+   "a": "-",
+   "b": "'Jahr nach dem n-ten Mal' so haeufig wie 'Jahr des n-ten Mals'"
+  }
+ },
+ "aussen": {
+  "c14": {
+   "quelle": "Bronk Ramsey u. a. 2010, Science 328, Tabelle 1 (Amtsantritt, 68 %)",
+   "Sesostris III.": [
+    1884,
+    1860
+   ],
+   "Amenophis I.": [
+    1541,
+    1527
+   ],
+   "Ramses I.": [
+    1308,
+    1297
+   ],
+   "Ramses II.": [
+    1292,
+    1281
+   ]
+  },
+  "ebers": {
+   "quelle": "Berechnung des Aufgangs fuer Jahr 9 Amenophis' I.: Theben 1517 v. Chr., Memphis 1537 v. Chr."
+  },
+  "thutmosis": {
+   "quelle": "Urk. IV 657 und 836: Neumond Jahr 23, I Schemu 21 und Jahr 24, II Peret 30; Amtsantritt I Schemu 4",
+   "t1": [
+    23,
+    9,
+    21
+   ],
+   "t2": [
+    24,
+    6,
+    30
+   ],
+   "antritt": [
+    9,
+    4
+   ]
+  }
+ },
+ "jahre": {
+  "n": 196,
+  "max": 56,
+  "mittel": 11.489795918367347,
+  "grenzen": {
+   "Sothis-Vierjahr": {
+    "L": 4,
+    "darueber": 123,
+    "koenige": [
+     "1. Viertel 3. Jhdt. v.Chr.",
+     "12. Dyn.",
+     "13. / 14. Dynastie",
+     "15. / 16. / 17. Dynastie",
+     "18. Dyn.",
+     "19. Dyn.",
+     "20. Dyn.",
+     "21. Dyn.",
+     "4. Dyn.",
+     "6. Dyn.",
+     "8. Dyn.",
+     "Amenemhet II.",
+     "Amenemhet III.",
+     "Amenophis II.",
+     "Amenophis IV. / Echnaton",
+     "Cheops",
+     "Djedkare Asosi",
+     "Makedonen, Ptolemäer",
+     "Mentuhotep II. Nebhepetre",
+     "Mentuhotep II. Nebhepetre (vor der Reichseinigung)",
+     "Merenptah",
+     "Mittleres Reich",
+     "Pepi I.",
+     "Pepi II.",
+     "Ramses II.",
+     "Ramses III.",
+     "Ramses IV.",
+     "Ramses XI.",
+     "Sebekhotep IV.",
+     "Sesostris I.",
+     "Sesostris II.",
+     "Sesostris III.",
+     "Sethos I.",
+     "Sethos II.",
+     "Teti"
+    ],
+    "jahre": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     7,
+     7,
+     7,
+     7,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     9,
+     10,
+     10,
+     10,
+     10,
+     10,
+     11,
+     11,
+     11,
+     11,
+     11,
+     11,
+     12,
+     12,
+     12
+    ]
+   },
+   "Mond (25 Jahre)": {
+    "L": 25,
+    "darueber": 27,
+    "koenige": [
+     "13. / 14. Dynastie",
+     "19. Dyn.",
+     "20. Dyn.",
+     "8. Dyn.",
+     "Amenemhet III.",
+     "Amenophis IV. / Echnaton",
+     "Makedonen, Ptolemäer",
+     "Mentuhotep II. Nebhepetre",
+     "Mittleres Reich",
+     "Pepi II.",
+     "Ramses II.",
+     "Ramses III.",
+     "Sesostris I.",
+     "Sethos II."
+    ],
+    "jahre": [
+     26,
+     26,
+     27,
+     27,
+     30,
+     30,
+     30,
+     30,
+     31,
+     31,
+     33,
+     33,
+     33,
+     33,
+     33,
+     34,
+     34,
+     36,
+     37,
+     37,
+     38,
+     39,
+     43,
+     43,
+     44,
+     46,
+     56
+    ]
+   },
+   "Sedfest (30 Jahre)": {
+    "L": 30,
+    "darueber": 19,
+    "koenige": [
+     "8. Dyn.",
+     "Amenemhet III.",
+     "Amenophis IV. / Echnaton",
+     "Makedonen, Ptolemäer",
+     "Mentuhotep II. Nebhepetre",
+     "Mittleres Reich",
+     "Pepi II.",
+     "Ramses II.",
+     "Sesostris I.",
+     "Sethos II."
+    ],
+    "jahre": [
+     31,
+     31,
+     33,
+     33,
+     33,
+     33,
+     33,
+     34,
+     34,
+     36,
+     37,
+     37,
+     38,
+     39,
+     43,
+     43,
+     44,
+     46,
+     56
+    ]
+   },
+   "Sothis (1460 Jahre)": {
+    "L": 1460,
+    "darueber": 0,
+    "koenige": [],
+    "jahre": []
+   }
+  },
+  "klassen": {
+   "1-5": 85,
+   "6-10": 39,
+   "11-15": 18,
+   "16-20": 14,
+   "21-25": 13,
+   "26-30": 8,
+   "31-35": 9,
+   "36-40": 5,
+   "41-45": 3,
+   "46-50": 1,
+   "51-56": 1
+  },
+  "ll_gleich": -788.9689313840893,
+  "ll_zerfall": -665.7379103650804,
+  "halbwertszeit": 7.6122871606614595,
+  "ueberleben": {
+   "1": 1.0,
+   "5": 0.6275510204081632,
+   "10": 0.39285714285714285,
+   "20": 0.20408163265306123,
+   "30": 0.11734693877551021,
+   "40": 0.025510204081632654,
+   "50": 0.00510204081632653
+  }
+ },
+ "sothis": {
+  "belege": [
+   {
+    "korpus": "bbawbriefe",
+    "titel": "Brief des Nebkaure (2)",
+    "hs": "pBerlin 10012",
+    "nb": -1872,
+    "na": -1854,
+    "tag": 226,
+    "satz": "HA,t(j)-a (j)m(,j)-rA-⸢Hw,t-nTr⸣ nb-kA,w-[raw] Dd n Xr(,j)-HAb,t-Hr(,j)-tp ppy-Htp(,w) 〈r〉-Dd rx =k r-n,tt xpr pr,t spd,t m Abd 4 pr,t sw 16",
+    "text": "LPZ5X4FEKVBILDMJ4TAKEZQ7SQ",
+    "jahre_im_text": []
+   },
+   {
+    "korpus": "sawmedizin",
+    "titel": "[Verso:] Kalender",
+    "hs": "Papyrus Ebers",
+    "nb": -1649,
+    "na": -1293,
+    "tag": 309,
+    "satz": "wp-rnp,t Abd 3 Sm,w sw 9 pr,t-spd,t",
+    "text": "3RU7Z4VQ45CYFIQ4PUGQ3HDJFU",
+    "jahre_im_text": [
+     "9"
+    ]
+   }
+  ],
+  "verschiebung_tage": 83,
+  "jahre": 332,
+  "jahre_ortsunterschied": 346.0,
+  "c14": 340.0,
+  "c14_s": 13.892443989449804,
+  "bis_neujahr_tage": 57,
+  "marke_jahre_nach_jahr9": 228,
+  "beginn_der_ewigkeit": [
+   [
+    "bbawramessiden",
+    4,
+    "Sethos I.",
+    "rnp,t-zp 4 tp,j pr,t HA,t nHH Szp Aw,t-jb Hfn.pl"
+   ],
+   [
+    "bbawramessiden",
+    1,
+    "Sethos I.",
+    "rnp,t-zp 1 HA,t r nHH Szp D,t jri,t HH.pl"
+   ]
+  ]
+ },
+ "mond": {
+  "mondfeste": {
+   "Halbmonatsfest (Tp.j-smd.t)": 45,
+   "zweiter Mondtag (ꜣbd.w)": 9,
+   "Monatsanfang (tp-ꜣbd)": 8,
+   "15. Mondtag (tp-smd.t)": 14,
+   "Neumondtag (psḏn.tjw)": 7
+  },
+  "abstand_antritt": 649,
+  "monate_antritt": 21.977211494156112,
+  "abstand_neujahr": 284,
+  "monate_neujahr": 9.617146478182335
+ },
+ "sed": {
+  "erstes_mal": [
+   [
+    "〈Hammamat C-M 063〉",
+    -2351,
+    "Pepi I.",
+    [],
+    "zp tpj HAb-sd"
+   ],
+   [
+    "〈TEXT〉",
+    -2512,
+    "Sahure",
+    [],
+    "zp-tpj HAb-sd mAa"
+   ],
+   [
+    "〈Hammamat C-M 103〉",
+    -2351,
+    "Pepi I.",
+    [],
+    "zp tpj HAb-sd"
+   ],
+   [
+    "〈Sinai Nr. 16〉",
+    -2351,
+    "Pepi I.",
+    [
+     "nach 18"
+    ],
+    "d sxt zp 4 zp tp HAb-sd"
+   ],
+   [
+    "〈Hammamat C-M 062〉",
+    -2351,
+    "Pepi I.",
+    [],
+    "zp tpj HAb-sd"
+   ],
+   [
+    "〈Hammamat C-M 107〉",
+    -2351,
+    "Pepi I.",
+    [
+     "nach 18"
+    ],
+    "zp tpj HAb-sd"
+   ],
+   [
+    "〈Hammamat G 021〉",
+    -2351,
+    "Pepi I.",
+    [],
+    "zp tp HAb-sd"
+   ]
+  ],
+  "ueber25": [
+   {
+    "jahr": 26,
+    "werk": "Die Lehre des Amunnacht",
+    "edition": "Ramses III.",
+    "thronname": null
+   },
+   {
+    "jahr": 26,
+    "werk": "Stele Louvre C 284 (\"Bentresch-Stele\")",
+    "edition": "Makedonen, Ptolemäer",
+    "thronname": null
+   },
+   {
+    "jahr": 27,
+    "werk": "Erste Eintragung",
+    "edition": "Amenophis IV. / Echnaton",
+    "thronname": "Nb-mꜣꜥ.t-Rꜥw"
+   },
+   {
+    "jahr": 27,
+    "werk": "Briefliche Anweisung an Hor-em-saf",
+    "edition": "Amenemhet III.",
+    "thronname": null
+   },
+   {
+    "jahr": 30,
+    "werk": "Brief des Sobekhetep",
+    "edition": "Amenemhet III.",
+    "thronname": null
+   },
+   {
+    "jahr": 30,
+    "werk": "Sinuhe",
+    "edition": "19. Dyn.",
+    "thronname": null
+   },
+   {
+    "jahr": 30,
+    "werk": "〈Recto 〉Sinuhe",
+    "edition": "20. Dyn.",
+    "thronname": null
+   },
+   {
+    "jahr": 30,
+    "werk": "〈Verso: 〉Sinuhe",
+    "edition": "13. / 14. Dynastie",
+    "thronname": null
+   },
+   {
+    "jahr": 31,
+    "werk": "〈Hatnub Graffito 07〉",
+    "edition": "Pepi II.",
+    "thronname": null
+   },
+   {
+    "jahr": 31,
+    "werk": "〈Hatnub Graffito 09〉",
+    "edition": "8. Dyn.",
+    "thronname": null
+   },
+   {
+    "jahr": 33,
+    "werk": "Gurob II.2",
+    "edition": "Amenophis IV. / Echnaton",
+    "thronname": null
+   },
+   {
+    "jahr": 33,
+    "werk": "Gurob II.1",
+    "edition": "Amenophis IV. / Echnaton",
+    "thronname": "Nb-mꜣꜥ.t-Rꜥw"
+   },
+   {
+    "jahr": 33,
+    "werk": "Stele Louvre C 284 (\"Bentresch-Stele\")",
+    "edition": "Makedonen, Ptolemäer",
+    "thronname": "Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw"
+   },
+   {
+    "jahr": 33,
+    "werk": "23.7-25.2: Brief über den Transport und das Aufrichten von d",
+    "edition": "Sethos II.",
+    "thronname": null
+   },
+   {
+    "jahr": 33,
+    "werk": "〈Stele des Antefiqer (Leiden V 3 = AP 7)〉",
+    "edition": "Sesostris I.",
+    "thronname": "Ḫpr-kꜣ-Rꜥw"
+   },
+   {
+    "jahr": 34,
+    "werk": "Textfeld",
+    "edition": "Ramses II.",
+    "thronname": "Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw"
+   },
+   {
+    "jahr": 34,
+    "werk": "〈Stele des Djedj-iqu (Berlin 1199)〉",
+    "edition": "Sesostris I.",
+    "thronname": "Ḫpr-kꜣ-Rꜥw"
+   },
+   {
+    "jahr": 36,
+    "werk": "Admin. Brief (Insertion A)",
+    "edition": "Mittleres Reich",
+    "thronname": null
+   },
+   {
+    "jahr": 37,
+    "werk": "B:Brief des Chacheperra-seneb",
+    "edition": "Amenemhet III.",
+    "thronname": null
+   },
+   {
+    "jahr": 37,
+    "werk": "C:Brief des Haqaitef",
+    "edition": "Amenemhet III.",
+    "thronname": null
+   },
+   {
+    "jahr": 38,
+    "werk": "Brief des Iuseneb",
+    "edition": "Amenemhet III.",
+    "thronname": null
+   },
+   {
+    "jahr": 39,
+    "werk": "〈Stele des Antef, Sohn der Senet (BM EA 572)〉",
+    "edition": "Sesostris I.",
+    "thronname": null
+   },
+   {
+    "jahr": 43,
+    "werk": "Biographie des Amenemhat",
+    "edition": "Sesostris I.",
+    "thronname": "Ḫpr-kꜣ-Rꜥw"
+   },
+   {
+    "jahr": 43,
+    "werk": "Biographie des Amenemhat",
+    "edition": "Sesostris I.",
+    "thronname": null
+   },
+   {
+    "jahr": 44,
+    "werk": "〈Stele des Wepwawetaa (Leiden V4 = AP 63)〉",
+    "edition": "Sesostris I.",
+    "thronname": null
+   },
+   {
+    "jahr": 46,
+    "werk": "〈Stele des Meru (Turin Cat. 1447)〉",
+    "edition": "Mentuhotep II. Nebhepetre",
+    "thronname": null
+   },
+   {
+    "jahr": 56,
+    "werk": "Vso 17: Datierungsprotokoll des 56. Regierungsjahr Ramses' I",
+    "edition": "Ramses II.",
+    "thronname": "Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw"
+   }
+  ]
+ },
+ "viehzaehlung": {
+  "mal": 49,
+  "nach": 12,
+  "p": 9.84939209043318e-07,
+  "hoechste": [
+   31,
+   25,
+   18,
+   16,
+   15,
+   14
+  ]
+ }
+}

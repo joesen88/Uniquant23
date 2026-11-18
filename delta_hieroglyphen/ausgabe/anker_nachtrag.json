@@ -1,0 +1,300 @@
+{
+ "voll": {
+  "rangplatz_prozent": 6.717244937631032,
+  "rang1": 0.24958123953098826,
+  "unter_ersten_10": 0.5527638190954773
+ },
+ "N_a": [
+  {
+   "rangplatz_prozent": 17.99053110818009,
+   "rang1": 0.010050251256281407,
+   "unter_ersten_10": 0.2370184254606365
+  },
+  {
+   "rangplatz_prozent": 18.153493425188124,
+   "rang1": 0.021775544388609715,
+   "unter_ersten_10": 0.21105527638190955
+  },
+  {
+   "rangplatz_prozent": 17.79804663229379,
+   "rang1": 0.024288107202680067,
+   "unter_ersten_10": 0.21775544388609716
+  },
+  {
+   "rangplatz_prozent": 17.991893669359087,
+   "rang1": 0.01423785594639866,
+   "unter_ersten_10": 0.22278056951423786
+  },
+  {
+   "rangplatz_prozent": 17.865357154536238,
+   "rang1": 0.03098827470686767,
+   "unter_ersten_10": 0.211892797319933
+  },
+  {
+   "rangplatz_prozent": 18.542277548261918,
+   "rang1": 0.01675041876046901,
+   "unter_ersten_10": 0.21105527638190955
+  },
+  {
+   "rangplatz_prozent": 17.94029801938107,
+   "rang1": 0.02763819095477387,
+   "unter_ersten_10": 0.22780569514237856
+  },
+  {
+   "rangplatz_prozent": 18.105894621335164,
+   "rang1": 0.023450586264656615,
+   "unter_ersten_10": 0.20268006700167504
+  },
+  {
+   "rangplatz_prozent": 17.370474934324548,
+   "rang1": 0.04187604690117253,
+   "unter_ersten_10": 0.23031825795644892
+  },
+  {
+   "rangplatz_prozent": 18.66617977813871,
+   "rang1": 0.017587939698492462,
+   "unter_ersten_10": 0.20016750418760468
+  },
+  {
+   "rangplatz_prozent": 17.69158518550816,
+   "rang1": 0.023450586264656615,
+   "unter_ersten_10": 0.2102177554438861
+  },
+  {
+   "rangplatz_prozent": 18.37513671030496,
+   "rang1": 0.015912897822445562,
+   "unter_ersten_10": 0.1884422110552764
+  },
+  {
+   "rangplatz_prozent": 18.283935948724096,
+   "rang1": 0.020938023450586266,
+   "unter_ersten_10": 0.2236180904522613
+  },
+  {
+   "rangplatz_prozent": 18.235792120399537,
+   "rang1": 0.021775544388609715,
+   "unter_ersten_10": 0.2152428810720268
+  },
+  {
+   "rangplatz_prozent": 18.269129450578998,
+   "rang1": 0.02680067001675042,
+   "unter_ersten_10": 0.21273031825795644
+  },
+  {
+   "rangplatz_prozent": 18.775820534341992,
+   "rang1": 0.01423785594639866,
+   "unter_ersten_10": 0.20268006700167504
+  },
+  {
+   "rangplatz_prozent": 18.722771485773045,
+   "rang1": 0.01423785594639866,
+   "unter_ersten_10": 0.20016750418760468
+  },
+  {
+   "rangplatz_prozent": 18.084093642471213,
+   "rang1": 0.01507537688442211,
+   "unter_ersten_10": 0.22529313232830822
+  },
+  {
+   "rangplatz_prozent": 17.94992678504598,
+   "rang1": 0.02931323283082077,
+   "unter_ersten_10": 0.21775544388609716
+  },
+  {
+   "rangplatz_prozent": 18.64029111573776,
+   "rang1": 0.024288107202680067,
+   "unter_ersten_10": 0.2102177554438861
+  }
+ ],
+ "obergrenze": {
+  "rangplatz_prozent": 2.274387119981687,
+  "rang1": 0.5142378559463987,
+  "unter_ersten_10": 0.8324958123953099
+ },
+ "anteil_streng": 0.7205443870760206,
+ "N_b": [
+  {
+   "rangplatz_prozent": 7.52796883913421,
+   "rang1": 0.2169179229480737,
+   "unter_ersten_10": 0.5217755443886097
+  },
+  {
+   "rangplatz_prozent": 7.007107119109649,
+   "rang1": 0.22110552763819097,
+   "unter_ersten_10": 0.5360134003350083
+  },
+  {
+   "rangplatz_prozent": 8.326883877086082,
+   "rang1": 0.17169179229480738,
+   "unter_ersten_10": 0.4765494137353434
+  },
+  {
+   "rangplatz_prozent": 8.373937656467442,
+   "rang1": 0.18509212730318259,
+   "unter_ersten_10": 0.4539363484087102
+  },
+  {
+   "rangplatz_prozent": 7.14590668454347,
+   "rang1": 0.25041876046901174,
+   "unter_ersten_10": 0.5460636515912898
+  },
+  {
+   "rangplatz_prozent": 8.519186678148515,
+   "rang1": 0.18592964824120603,
+   "unter_ersten_10": 0.4556113902847571
+  },
+  {
+   "rangplatz_prozent": 8.411090157948092,
+   "rang1": 0.17922948073701842,
+   "unter_ersten_10": 0.4765494137353434
+  },
+  {
+   "rangplatz_prozent": 8.03393322360174,
+   "rang1": 0.1658291457286432,
+   "unter_ersten_10": 0.47571189279731996
+  },
+  {
+   "rangplatz_prozent": 8.496749837401033,
+   "rang1": 0.16499162479061977,
+   "unter_ersten_10": 0.4765494137353434
+  },
+  {
+   "rangplatz_prozent": 8.033115686894341,
+   "rang1": 0.1968174204355109,
+   "unter_ersten_10": 0.4983249581239531
+  },
+  {
+   "rangplatz_prozent": 7.840177023948375,
+   "rang1": 0.19430485762144054,
+   "unter_ersten_10": 0.5058626465661642
+  },
+  {
+   "rangplatz_prozent": 9.67382102123052,
+   "rang1": 0.15577889447236182,
+   "unter_ersten_10": 0.4539363484087102
+  },
+  {
+   "rangplatz_prozent": 6.815349342518812,
+   "rang1": 0.19597989949748743,
+   "unter_ersten_10": 0.5469011725293133
+  },
+  {
+   "rangplatz_prozent": 9.348259736862184,
+   "rang1": 0.15829145728643215,
+   "unter_ersten_10": 0.4396984924623116
+  },
+  {
+   "rangplatz_prozent": 8.979096494765948,
+   "rang1": 0.15912897822445563,
+   "unter_ersten_10": 0.4648241206030151
+  },
+  {
+   "rangplatz_prozent": 8.179182245282812,
+   "rang1": 0.16164154103852596,
+   "unter_ersten_10": 0.48743718592964824
+  },
+  {
+   "rangplatz_prozent": 9.37451174891086,
+   "rang1": 0.19514237855946398,
+   "unter_ersten_10": 0.4581239530988275
+  },
+  {
+   "rangplatz_prozent": 7.169433574234151,
+   "rang1": 0.2236180904522613,
+   "unter_ersten_10": 0.5376884422110553
+  },
+  {
+   "rangplatz_prozent": 6.577718672901746,
+   "rang1": 0.26800670016750416,
+   "unter_ersten_10": 0.5469011725293133
+  },
+  {
+   "rangplatz_prozent": 10.888498893600323,
+   "rang1": 0.14656616415410384,
+   "unter_ersten_10": 0.39949748743718594
+  }
+ ],
+ "N_c": [
+  {
+   "zahl": "2",
+   "lemma": "sn.w",
+   "schreibung": "T22-G43-Z1-Z1",
+   "belege": 1,
+   "koptisch": "ⲥⲛⲁⲩ",
+   "folge": "SN",
+   "rangplatz": 3.9045553145336225,
+   "rangplatz_ohne_werte": 2.711496746203905
+  },
+  {
+   "zahl": "3",
+   "lemma": "ḫmt.w",
+   "schreibung": "Aa1-D52-X1-N35",
+   "belege": 1,
+   "koptisch": "ϣⲟⲙⲛⲧ",
+   "folge": "SMNT",
+   "rangplatz": 79.39262472885032,
+   "rangplatz_ohne_werte": 74.18655097613883
+  },
+  {
+   "zahl": "4",
+   "lemma": "jfd.w",
+   "schreibung": "M17-I9-D46-Z1-Z1-Z1-Z1",
+   "belege": 1,
+   "koptisch": "ϥⲧⲟⲟⲩ",
+   "folge": "PT",
+   "rangplatz": 0.21691973969631237,
+   "rangplatz_ohne_werte": 4.229934924078091
+  }
+ ],
+ "N_d": {
+  "bekannt_n": 196,
+  "bekannt_rangplatz": 5.046704148036654,
+  "bekannt_vergleich": 15.804749746908298,
+  "bekannt_rang1": 0.336734693877551,
+  "rest_n": 998,
+  "rest_rangplatz": 7.045327096709688,
+  "rest_vergleich": 20.155990871491976,
+  "rest_rang1": 0.23246492985971945
+ },
+ "N_e": {
+  "Griechisch": {
+   "gruppen": 80,
+   "rangplatz_prozent": 14.660885773771243,
+   "rang1": 0.11809045226130653,
+   "unter_ersten_10": 0.4020100502512563
+  },
+  "Keilschrift": {
+   "gruppen": 52,
+   "rangplatz_prozent": 18.307008651355112,
+   "rang1": 0.09547738693467336,
+   "unter_ersten_10": 0.32077051926298156
+  },
+  "Koptisch": {
+   "gruppen": 45,
+   "rangplatz_prozent": 13.336657982610086,
+   "rang1": 0.0812395309882747,
+   "unter_ersten_10": 0.32663316582914576
+  },
+  "Hebraeisch/Aramaeisch/Phoenizisch": {
+   "gruppen": 30,
+   "rangplatz_prozent": 11.990447537761112,
+   "rang1": 0.09966499162479062,
+   "unter_ersten_10": 0.35510887772194305
+  },
+  "heutiges Arabisch": {
+   "gruppen": 23,
+   "rangplatz_prozent": 17.001675041876048,
+   "rang1": 0.05695142378559464,
+   "unter_ersten_10": 0.29229480737018426
+  }
+ },
+ "N_f": {
+  "8": 7,
+  "11": 4,
+  "0": 2
+ },
+ "N_g": {
+  "gleich": 12,
+  "vergleichbar": 12
+ }
+}

@@ -1,0 +1,27 @@
+synth seed=1 Namen=150 Fehler=0.1: Werte wiedergefunden ein 19/20, zwei 10/15, drei 3/3, stumm 15/15 | zurueckgehaltene Namen: Rang 1 57 % (Zufall 0.7 %), Rangplatz 5.9 % | Anteile Voranstellung [0.88, 0.1, 0.01, 0.01, 0.01]
+synth seed=2 Namen=149 Fehler=0.1: Werte wiedergefunden ein 16/20, zwei 13/15, drei 3/3, stumm 15/15 | zurueckgehaltene Namen: Rang 1 43 % (Zufall 0.7 %), Rangplatz 2.8 % | Anteile Voranstellung [0.86, 0.1, 0.02, 0.01, 0.01]
+synth seed=3 Namen=150 Fehler=0.1: Werte wiedergefunden ein 20/20, zwei 9/15, drei 2/3, stumm 15/15 | zurueckgehaltene Namen: Rang 1 52 % (Zufall 0.7 %), Rangplatz 2.7 % | Anteile Voranstellung [0.88, 0.1, 0.01, 0.01, 0.01]
+synth seed=4 Namen=80 Fehler=0.1: Werte wiedergefunden ein 18/20, zwei 8/11, drei 0/3, stumm 15/15 | zurueckgehaltene Namen: Rang 1 33 % (Zufall 1.3 %), Rangplatz 9.3 % | Anteile Voranstellung [0.95, 0.02, 0.01, 0.01, 0.01]
+synth seed=5 Namen=148 Fehler=0.25: Werte wiedergefunden ein 13/20, zwei 0/15, drei 0/5, stumm 15/15 | zurueckgehaltene Namen: Rang 1 0 % (Zufall 0.8 %), Rangplatz 23.1 % | Anteile Voranstellung [0.93, 0.04, 0.02, 0.01, 0.01]
+zaehlen: 131 Namensgruppen
+   D58  in  14 Gruppen | staerkste Bindung an Klasse P: 12/14 mit Zeichen gegen 43/117 ohne, p = 5.6e-04 | Standard b/bw           | passt
+   Q3   in  20 Gruppen | staerkste Bindung an Klasse P: 17/20 mit Zeichen gegen 38/111 ohne, p = 2.6e-05 | Standard p              | passt
+   I9   in   5 Gruppen | staerkste Bindung an Klasse P: 5/5 mit Zeichen gegen 50/126 ohne, p = 1.2e-02 | Standard f/it/sA-tA     | passt
+   G17  in   9 Gruppen | staerkste Bindung an Klasse M: 8/9 mit Zeichen gegen 35/122 ohne, p = 5.6e-04 | Standard m/mwt          | passt
+   N35  in  40 Gruppen | staerkste Bindung an Klasse N: 35/40 mit Zeichen gegen 19/91 ohne, p = 4.9e-13 | Standard mw/n/nt        | passt
+   D21  in  25 Gruppen | staerkste Bindung an Klasse R: 23/25 mit Zeichen gegen 19/106 ohne, p = 3.7e-12 | Standard r/rA           | passt
+   O4   in 2 Gruppen: zu selten
+   V28  in   6 Gruppen | staerkste Bindung an Klasse H: 5/6 mit Zeichen gegen 11/125 ohne, p = 8.2e-05 | Standard H              | passt
+   Aa1  in   4 Gruppen | staerkste Bindung an Klasse K: 3/4 mit Zeichen gegen 35/127 ohne, p = 7.3e-02 | Standard x              | passt
+   F32  in 0 Gruppen: zu selten
+   S29  in  13 Gruppen | staerkste Bindung an Klasse S: 13/13 mit Zeichen gegen 34/118 ohne, p = 4.8e-07 | Standard s              | passt
+   O34  in   8 Gruppen | staerkste Bindung an Klasse S: 8/8 mit Zeichen gegen 39/123 ohne, p = 1.8e-04 | Standard s/z            | passt
+   N37  in   5 Gruppen | staerkste Bindung an Klasse S: 4/5 mit Zeichen gegen 43/126 ohne, p = 5.5e-02 | Standard S/sn           | passt
+   N29  in 2 Gruppen: zu selten
+   V31  in  11 Gruppen | staerkste Bindung an Klasse K: 11/11 mit Zeichen gegen 27/120 ohne, p = 3.8e-07 | Standard k              | passt
+   W11  in 1 Gruppen: zu selten
+   X1   in  56 Gruppen | staerkste Bindung an Klasse T: 38/56 mit Zeichen gegen 19/75 ohne, p = 1.1e-06 | Standard t              | passt
+   V13  in   6 Gruppen | staerkste Bindung an Klasse T: 6/6 mit Zeichen gegen 51/125 ohne, p = 5.8e-03 | Standard T              | passt
+   D46  in   9 Gruppen | staerkste Bindung an Klasse T: 9/9 mit Zeichen gegen 48/122 ohne, p = 3.8e-04 | Standard Drt/Hnt/Sp/Ssp | passt
+   I10  in   3 Gruppen | staerkste Bindung an Klasse C: 3/3 mit Zeichen gegen 5/128 ohne, p = 1.5e-04 | Standard D/Dt/d         | passt
+zaehlen: 16 von 16 starken Einkonsonantenzeichen mit passender Klasse

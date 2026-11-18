@@ -1,0 +1,354 @@
+{
+ "Z1": {
+  "jahr": {
+   "1": 28,
+   "2": 17,
+   "3": 25,
+   "4": 9,
+   "5": 12,
+   "6": 18,
+   "7": 5,
+   "8": 16,
+   "9": 7,
+   "10": 5,
+   "11": 6,
+   "12": 5,
+   "13": 1,
+   "14": 4,
+   "15": 2,
+   "16": 3,
+   "17": 5,
+   "18": 5,
+   "19": 1,
+   "21": 1,
+   "23": 1,
+   "24": 2,
+   "25": 9,
+   "26": 2,
+   "27": 2,
+   "30": 7,
+   "31": 2,
+   "33": 5,
+   "34": 3,
+   "36": 1,
+   "37": 2,
+   "38": 1,
+   "39": 1,
+   "43": 2,
+   "44": 1,
+   "46": 1,
+   "56": 1
+  },
+  "monat_datum": {
+   "1": 67,
+   "2": 77,
+   "3": 99,
+   "4": 89
+  },
+  "monat_alle": {
+   "1": 72,
+   "2": 86,
+   "3": 107,
+   "4": 98,
+   "5": 1,
+   "7": 1,
+   "9": 1
+  },
+  "tag": {
+   "1": 10,
+   "2": 13,
+   "3": 17,
+   "4": 8,
+   "5": 13,
+   "6": 9,
+   "7": 19,
+   "8": 17,
+   "9": 28,
+   "10": 23,
+   "11": 10,
+   "12": 11,
+   "13": 9,
+   "14": 4,
+   "15": 11,
+   "16": 13,
+   "17": 7,
+   "18": 6,
+   "19": 9,
+   "20": 19,
+   "21": 11,
+   "22": 8,
+   "23": 15,
+   "24": 9,
+   "25": 14,
+   "26": 8,
+   "27": 7,
+   "28": 8,
+   "29": 7,
+   "30": 1
+  },
+  "jahreszeiten": {
+   "Achet (Ueberschwemmung)": 98,
+   "Schemu (Ernte)": 131,
+   "Peret (Aussaat)": 103
+  },
+  "zusatztage": {
+   "14": 1,
+   "5": 12
+  },
+  "uebrige_n": 14625,
+  "uebrige_le4": 0.8396581196581197,
+  "uebrige_le30": 0.9356581196581196,
+  "jahr_le4": 0.3623853211009174,
+  "jahr_le30": 0.908256880733945,
+  "ausnahmen": [
+   [
+    "bbawbriefe",
+    "monat",
+    7,
+    "kein Datum (Dauer)",
+    "Hr Di.t jni.tw Abd 7 n [⸮raw?] [...]",
+    "Ihr habt nicht veranlaßt, daß man [es?] bringen solle in den ganzen 7 Monaten ... , [ergänzt: und nie gesagt?]: bringt uns Gips!"
+   ],
+   [
+    "sawlit",
+    "monat",
+    5,
+    "kein Datum (Dauer)",
+    "km rnp,t 1 Abd 5",
+    "Dieser Gott gelangte nach Bachtan nach Ablauf von einem Jahr und fünf Monaten."
+   ],
+   [
+    "sawlit",
+    "monat",
+    9,
+    "kein Datum (Dauer)",
+    "pn rnp,t 3 Abd 9 n bxtn",
+    "Da verbrachte (wörtl.: vollendete) dieser Gott drei Jahre und neun Monate in Bachtan."
+   ]
+  ]
+ },
+ "Z2": {
+  "monat": {
+   "n": 97,
+   "striche": {
+    "1": 24,
+    "2": 20,
+    "3": 26,
+    "4": 27
+   },
+   "buegel": {
+    "0": 97
+   },
+   "gleich": 97,
+   "verletzt": []
+  },
+  "tag": {
+   "n": 74,
+   "striche": {
+    "0": 8,
+    "1": 4,
+    "2": 4,
+    "3": 6,
+    "4": 4,
+    "5": 10,
+    "6": 4,
+    "7": 11,
+    "8": 4,
+    "9": 19
+   },
+   "buegel": {
+    "0": 32,
+    "1": 18,
+    "2": 24
+   },
+   "gleich": 72,
+   "verletzt": []
+  },
+  "jahr": {
+   "n": 73,
+   "striche": {
+    "0": 12,
+    "1": 3,
+    "2": 7,
+    "3": 11,
+    "4": 6,
+    "5": 5,
+    "6": 12,
+    "7": 4,
+    "8": 7,
+    "9": 6
+   },
+   "buegel": {
+    "0": 38,
+    "1": 12,
+    "2": 7,
+    "3": 12,
+    "4": 4
+   },
+   "gleich": 70,
+   "verletzt": []
+  }
+ },
+ "Z3": {
+  "S1": [
+   [
+    "bbawarchive",
+    15,
+    13,
+    2,
+    true,
+    "⸢x⸣s dmD 15 13 2"
+   ],
+   [
+    "bbawarchive",
+    225,
+    200,
+    25,
+    true,
+    "[...] dmD 225 200 25"
+   ]
+  ],
+  "S1_stimmt": 2,
+  "S2": [
+   [
+    "bbawamarna",
+    [
+     2,
+     16,
+     2,
+     1
+    ],
+    2,
+    "[jw] =[f] [⸮Hr?] [Di.t] [n] =[j] jd,t 2 jri n Sna,tj 16 bHz,t 2 jri n dbn 1 dmD dbn 2 Sna,tj ⸮4?",
+    "[So gab er mir (?)] 2 Kühe - macht als Wert 16 Schenati und zwei Kälber - macht als Wert einen Deben - in der Summe: zwei Deben und 4 (?) Schenati."
+   ],
+   [
+    "bbawamarna",
+    [
+     8,
+     4,
+     6,
+     3,
+     1
+    ],
+    12,
+    "aHa,n rDi n =f [mnj,w] mss-jA sSr XAr 8 jri n Sna,tj 4 aw,t-[⸮nDs,t?] 6 jri n Sna,tj 3 HD Sna,tj 1 dmD Sna,tj 12",
+    "Da gab der Hirt Mesi-su-ia an ihn 8 Sack - an Wert 4 Schenati, und 6 Ziegen - an Wert 3 Schenati und Silber  - an Wert 1 Schenati: das macht in der Su"
+   ],
+   [
+    "bbawbriefe",
+    [
+     3,
+     1
+    ],
+    4,
+    "jr.y =j smtr =f gmi =j z 3 mnH 1 dmD 4 jri.n XAr 700",
+    "Ich habe es untersucht und ich fand 3 Mann und 1 jungen Burschen, zusammen 4 (Mann), die 700 Sack (Getreide) machten."
+   ],
+   [
+    "bbawbriefe",
+    [
+     20,
+     3
+    ],
+    38,
+    "n,tt m spA,t-mA,t m-a nHr zA jpj bd,t 20 sn =f dSr 3 dmD 38 13+5",
+    "Das, was in Sepat-maat in der Hand von Nehers Sohn Ipi ist, sind 20 Sack Emmer, (und bei) seinem Bruder Descher 3 Sack; die Summe ist 38 Sack (Emmer) "
+   ],
+   [
+    "bbawhistbiospzt",
+    [
+     12,
+     24,
+     2
+    ],
+    30,
+    "jm,j-rn≡w pAj 12 Abd HD dbn 24 msi wsjr [...] mn dbn 2 dmD.t HD dbn 30 jri.w jH.pl 38",
+    "Namentliche Auflistung: (für) diese 12 Monate 24 Deben Silber, (für) die Anfertigung eines Osiris(-Bildnisses) ..., bleiben 2 Deben (Silber) übrig; Su"
+   ],
+   [
+    "sawlit",
+    [
+     2,
+     10
+    ],
+    130,
+    "rDi n =f m k,tj ms,w 2 jri n ⸮Hmt? dbn 10 dmD 130",
+    "Ihm wurden noch 2 weitere $mss$-Gewänder gegeben - macht an (Wert) 10 Kupferdeben; Summe: 130 (Kupferdeben)."
+   ],
+   [
+    "sawlit",
+    [
+     3,
+     2
+    ],
+    5,
+    "bd,tj XAr 3 jt XAr 2 dmD 5 ⸢nA⸣ n,tj Hr rmn{,t} ={k}〈j〉 j.n =f Hr Dd n =sst",
+    "\"Drei Sack Emmer und zwei Sack Gerste, (macht) zusammen fünf (Sack) - (das) ist das, was auf {deiner} 〈meiner〉 Schulter ist\", sagte er, zu ihr spreche"
+   ],
+   [
+    "sawlit",
+    [
+     200,
+     300
+    ],
+    500,
+    "jr sp wn ma~npl~Dq~tj jw =s mH.tj m H(n)q,t qdj mtw r(m)T.pl pri r jri pA gAy n-bw~npl~rA wnn 200 〈n〉 jw aA m-dj 300 〈n〉 wnSjw dmD 500 jw =w aHa grg.v ra-nb r rA pA pr r-",
+    "Wenn ich mal ein Maziqda-Gefäß öffne (wörtl.: Was den Fall des Öffnens eines Maziqda-Gefäßes betrifft), das mit Qedi-Bier gefüllt ist,\nund Menschen ko"
+   ],
+   [
+    "sawlit",
+    [
+     5,
+     5
+    ],
+    10,
+    "jx Dd =k n =j wa sHn,w nfr n SAw jri(.t) =f n =j Di =j jry.t(w) =f n =k m-rA-pw Di =j 〈Di.tw〉 n =j 〈Hm〉 s 5 〈Hm,t〉 s,t 5 dmD 10 r wAH n =j mw m(tw) =(tw) Di.t XAr n bd,tj",
+    "\"Ach nenne mir doch einen vernünftigen Auftrag, dazu geeignet, ihn für dich auszuführen (wörtl.: einen schönen Auftrag des: wert ist das 'Ihn-für-mich"
+   ],
+   [
+    "sawlit",
+    [
+     7,
+     4,
+     4,
+     6
+    ],
+    21,
+    "jw =j Hr gmi 〈kAm,y.pl〉 z 7 mnH{,t} 4 wr 4 nDs [...] Srj 6 dmD tp.pl 21",
+    "(Und) ich habe vorgefunden an {Weingärten} 〈Weinbauern〉: 7 (erwachsene) Männer, 4 Jugendliche, 4 Alte, 6 Kinder, Summe: 21 Köpfe/Personen."
+   ],
+   [
+    "sawlit",
+    [
+     87,
+     64,
+     27
+    ],
+    178,
+    "r rDi.t rx pAy =j nb nA nw,t.pl jTA.y =f ((m-dj)) =((j)) j:jri.tw pA (j)m(,j)-r(A)-pr-HD ptrj{.v} =w Ss-nswt mnwy.pl 87 mk mnwy.pl 64 Sma,t nfr mnwy.pl 27 dmD 178",
+    "Um meinen Herrn wissen zu lassen die Gewebe, die er ((mir)) fortgenommen hat, \nbis (i.e. bevor) der Schatzhausvorsteher sie in Augenschein nehmen konn"
+   ],
+   [
+    "sawmedizin",
+    [
+     5,
+     11
+    ],
+    16,
+    "jr m-xt jri{t} =k thAb,w 5 hnw rdi.xr =k st Hr x,t Hna ntk di.t n =sn ky hnw 11 dmD hnw 16",
+    "Nachdem du die Eindickung der fünf Hin gemacht hast, sollst du sie auf eine Flamme geben; und du gibst dazu die restlichen 11 Hin, macht zusammen 16 H"
+   ]
+  ],
+  "S2_stimmt": 7,
+  "S2_null_mittel": 0.841,
+  "S2_null_max": 6,
+  "tag_monat": [
+   [
+    "bbawarchive",
+    "⸢dmD-zmA⸣ Xr,t-hrw raw-nb 100 [...] Xr,t-Abd 3000 1000",
+    "Gesamtsumme:\nTäglicher Tagesbedarf 100 (Einheiten)...\nMonatsbedarf 3000 (Einheiten [in Schwarz] zu) 1000 (Einheiten [in Rot])."
+   ]
+  ]
+ }
+}

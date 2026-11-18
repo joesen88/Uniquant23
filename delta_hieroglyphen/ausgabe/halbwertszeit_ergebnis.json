@@ -1,0 +1,1979 @@
+{
+ "protokoll": {
+  "daten": "AES-Lemmata; Jahresgrenzen und Handschrift aus AED-TEI. Ausgeschlossen: undatierte Texte (auch Platzhalter 1..1) und Datierungen, die mehr als 450 Jahre offen lassen",
+  "zeit": "Datum einer Handschrift = Mitte ihrer Jahresgrenzen; Unsicherheit gleichverteilt zwischen den Grenzen",
+  "ergaenzungen": "ganz ergaenzte Woerter und zerstoerte Stellen zaehlen nie als Uebereinstimmung; Sensitivitaet: auch teilweise ergaenzte Woerter ausschliessen",
+  "M1": {
+   "name": "gemeinsamer Wortlaut zwischen Abschnitten verschiedener Handschriften",
+   "einheit": "Abschnitt aus L = 1000 nutzbaren Woertern, je Textgruppe in Datierungsreihenfolge gebildet; gemischte Abschnitte, deren Handschriften mehr als 150 Jahre auseinanderliegen, entfallen, ebenso Abschnitte mit weniger als 100 lueckenlosen Fuenfergruppen",
+   "mass": "Anteil gemeinsamer Lemma-Fuenfergruppen, bezogen auf den kleineren Abschnitt",
+   "hintergrund": "Mittel desselben Masses ueber Abschnittspaare aus verschiedenen Textgruppen",
+   "modell": "E[s] = b + A * exp(-lambda * dt), kleinste Quadrate ueber alle Paare ohne gemeinsame Handschrift",
+   "aufnahme": "mindestens 12 Abschnitte, 6 Cluster und 100 Jahre Spanne"
+  },
+  "M2": {
+   "name": "derselbe Spruch oder dasselbe Werk in zwei Handschriften (Abschreibtreue)",
+   "werke": "gleicher Titel in Totenbuch, Pyramidentexten und Literatur",
+   "mass": "nach Ausrichtung der Lemma-Folgen: gleiche Stellen / (gleiche + abweichende Stellen) im gemeinsamen Bereich; Bloecke, die eine Luecke oder Ergaenzung beruehren, zaehlen nicht mit",
+   "bedingung": "Ankerblock von mindestens 4 gleichen Woertern, mindestens 15 gleiche und 30 vergleichbare Stellen",
+   "modell": "E[a] = a0 * exp(-mu * dt), gewichtet mit der Zahl vergleichbarer Stellen"
+  },
+  "kennzahlen": "Normtreue je Jahrhundert = exp(-100 * Rate); Halbwertszeit = ln 2 / Rate",
+  "unsicherheit": "1000 Wiederholungen: Handschriften (M1) bzw. Werke (M2) mit Zuruecklegen gezogen, dazu jede Datierung neu zwischen ihren Grenzen gezogen",
+  "nullmodell": "Datierungen innerhalb der Textgruppe zwischen den Handschriften vertauscht (1000-mal)",
+  "vorhersagen": {
+   "V1": "M1: Normtreue Totenbuch > Literatur > Briefe",
+   "V2": "M2: Normtreue Totenbuch > Literatur",
+   "V3": "M2: Halbwertszeit des Totenbuchs ueber 1000 Jahre",
+   "offen": "Pyramidentexte: nur fuenf Pyramiden ueber 108 Jahre, keine Vorhersage",
+   "dagegen": "Totenbuch nicht ueber der Literatur"
+  },
+  "robustheit": {
+   "L": [
+    500,
+    1000
+   ],
+   "nur_ganz_erhaltene_woerter": true,
+   "literatur_gleicher_bearbeiter": true
+  },
+  "grenzen_rate": [
+   -0.002,
+   0.05
+  ],
+  "klassen": [
+   0,
+   50,
+   150,
+   300,
+   600,
+   1000
+  ],
+  "seed": 20261113
+ },
+ "M1": {
+  "abschnitte": 687,
+  "hintergrund": 0.00011523364602297902,
+  "gruppen": {
+   "sawlit": {
+    "abschnitte": 175,
+    "cluster": 133,
+    "paare": 14968,
+    "handschriften": 515,
+    "spanne_jahre": 1502.3345000000004,
+    "niveau_gleichzeitig": 0.005705345129277868,
+    "rate_je_jahr": 0.005505532795991983,
+    "normtreue_je_jahrhundert": 0.5766306841118097,
+    "halbwertszeit": 125.90010926182387,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 2342,
+      "mittel": 0.0054175688743161666,
+      "dt_mittel": 21.685790990606325
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 2313,
+      "mittel": 0.0030564999034847734,
+      "dt_mittel": 90.28484262862084
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 2087,
+      "mittel": 0.0020576665321592955,
+      "dt_mittel": 216.53951557259225
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 3006,
+      "mittel": 0.0005343129059283646,
+      "dt_mittel": 467.81944444444446
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 4583,
+      "mittel": 0.00047993007755170117,
+      "dt_mittel": 730.745587824569
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 637,
+      "mittel": 1.7636936616531347e-05,
+      "dt_mittel": 1204.0470722135008
+     }
+    ],
+    "rate_ki": [
+     0.0025745857896701287,
+     0.013031839465339753
+    ],
+    "normtreue_ki": [
+     0.2716654463088937,
+     0.7730136446740374
+    ],
+    "halbwertszeit_ki": [
+     53.18874456698767,
+     269.22667845873394
+    ],
+    "p_null": 0.000999000999000999
+   },
+   "tb": {
+    "abschnitte": 108,
+    "cluster": 17,
+    "paare": 4498,
+    "handschriften": 16,
+    "spanne_jahre": 1231.5,
+    "niveau_gleichzeitig": 0.009581539473644212,
+    "rate_je_jahr": 0.00044596975691707573,
+    "normtreue_je_jahrhundert": 0.9563828497080394,
+    "halbwertszeit": 1554.2470533239098,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 1042,
+      "mittel": 0.010079519729398044,
+      "dt_mittel": 25.7766962571977
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 23,
+      "mittel": 0.0003253701099605132,
+      "dt_mittel": 118.04530434782609
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 51,
+      "mittel": 0.002696036845374632,
+      "dt_mittel": 190.53647058823532
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 662,
+      "mittel": 0.007275936790959313,
+      "dt_mittel": 443.40947129909364
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 480,
+      "mittel": 0.007667666810069385,
+      "dt_mittel": 774.9816666666667
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 2240,
+      "mittel": 0.005566243117370311,
+      "dt_mittel": 1215.818080357143
+     }
+    ],
+    "rate_ki": [
+     -0.002,
+     0.0036695554867942817
+    ],
+    "normtreue_ki": [
+     0.6928404420324972,
+     1.2214027581601699
+    ],
+    "halbwertszeit_ki": [
+     188.8913202305813,
+     null
+    ],
+    "p_null": 0.2977022977022977
+   },
+   "bbawpyramidentexte": {
+    "abschnitte": 98,
+    "cluster": 7,
+    "paare": 3329,
+    "handschriften": 5,
+    "spanne_jahre": 108.0,
+    "niveau_gleichzeitig": 0.01138566829686048,
+    "rate_je_jahr": 0.0005032956257516426,
+    "normtreue_je_jahrhundert": 0.9509159865335522,
+    "halbwertszeit": 1377.216778955252,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 1252,
+      "mittel": 0.010439804559979315,
+      "dt_mittel": 34.97356230031949
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 2077,
+      "mittel": 0.011421486025272267,
+      "dt_mittel": 74.82004333172846
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ],
+    "rate_ki": [
+     -0.002,
+     0.05
+    ],
+    "normtreue_ki": [
+     0.006737946999085467,
+     1.2214027581601699
+    ],
+    "halbwertszeit_ki": [
+     13.862943611198904,
+     null
+    ],
+    "p_null": 0.35264735264735264
+   },
+   "bbawgrabinschriften": {
+    "abschnitte": 92,
+    "cluster": 41,
+    "paare": 3873,
+    "handschriften": 62,
+    "spanne_jahre": 352.5210000000002,
+    "niveau_gleichzeitig": 0.0809796052242786,
+    "rate_je_jahr": 0.0018886822033111963,
+    "normtreue_je_jahrhundert": 0.8278955993144262,
+    "halbwertszeit": 367.0004299001361,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 1340,
+      "mittel": 0.07050700061584146,
+      "dt_mittel": 23.439339552238813
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 1983,
+      "mittel": 0.07648315848872306,
+      "dt_mittel": 98.85189359556227
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 528,
+      "mittel": 0.03707846595213489,
+      "dt_mittel": 218.45447159090915
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 22,
+      "mittel": 0.033407649550688895,
+      "dt_mittel": 325.40475000000015
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ],
+    "rate_ki": [
+     -0.0006627100282794089,
+     0.004644352545768395
+    ],
+    "normtreue_ki": [
+     0.6284899418021687,
+     1.068516248857409
+    ],
+    "halbwertszeit_ki": [
+     149.24516899379051,
+     null
+    ],
+    "p_null": 0.03296703296703297
+   },
+   "sawmedizin": {
+    "abschnitte": 51,
+    "cluster": 13,
+    "paare": 952,
+    "handschriften": 25,
+    "spanne_jahre": 1394.5,
+    "niveau_gleichzeitig": 0.004147152137718461,
+    "rate_je_jahr": 0.0011535227016191778,
+    "normtreue_je_jahrhundert": 0.8910521975112097,
+    "halbwertszeit": 600.8960028155387,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 88,
+      "mittel": 0.0034059601616921063,
+      "dt_mittel": 40.900363636363636
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 210,
+      "mittel": 0.001508815553015478,
+      "dt_mittel": 116.2880523809524
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 417,
+      "mittel": 0.00499082045399058,
+      "dt_mittel": 252.26752757793767
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 161,
+      "mittel": 0.0012834167305876833,
+      "dt_mittel": 408.23570186335405
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 66,
+      "mittel": 0.0006245447727651063,
+      "dt_mittel": 797.1304848484849
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 10,
+      "mittel": 0.0,
+      "dt_mittel": 1172.9985000000001
+     }
+    ],
+    "rate_ki": [
+     -0.0012211894714937376,
+     0.05
+    ],
+    "normtreue_ki": [
+     0.006737946999085467,
+     1.1298884908026559
+    ],
+    "halbwertszeit_ki": [
+     13.862943611198904,
+     null
+    ],
+    "p_null": 0.34065934065934067
+   },
+   "bbawbriefe": {
+    "abschnitte": 44,
+    "cluster": 44,
+    "paare": 905,
+    "handschriften": 312,
+    "spanne_jahre": 1334.339,
+    "niveau_gleichzeitig": 0.034092276850302215,
+    "rate_je_jahr": 0.012057274648257779,
+    "normtreue_je_jahrhundert": 0.299474063405071,
+    "halbwertszeit": 57.487881862266605,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 156,
+      "mittel": 0.02523082607524156,
+      "dt_mittel": 20.30431730769231
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 174,
+      "mittel": 0.01284741943241976,
+      "dt_mittel": 98.20764655172411
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 161,
+      "mittel": 0.0050141357095861774,
+      "dt_mittel": 190.26133229813664
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 81,
+      "mittel": 0.002634140486514551,
+      "dt_mittel": 484.21962345679003
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 300,
+      "mittel": 0.0010075273403349022,
+      "dt_mittel": 774.46145
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 33,
+      "mittel": 0.0006367938733559789,
+      "dt_mittel": 1179.6062272727272
+     }
+    ],
+    "rate_ki": [
+     0.00734021172296025,
+     0.019318412250410814
+    ],
+    "normtreue_ki": [
+     0.1448811938691302,
+     0.47997504198528346
+    ],
+    "halbwertszeit_ki": [
+     35.88013194744849,
+     94.43149689971129
+    ],
+    "p_null": 0.000999000999000999
+   },
+   "bbawtotenlit": {
+    "abschnitte": 36,
+    "cluster": 7,
+    "paare": 454,
+    "handschriften": 7,
+    "spanne_jahre": 495.0,
+    "niveau_gleichzeitig": 0.04144653453069197,
+    "rate_je_jahr": 0.0061299264045113905,
+    "normtreue_je_jahrhundert": 0.5417272459564061,
+    "halbwertszeit": 113.07593840764802,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 60,
+      "mittel": 0.03981421360918407,
+      "dt_mittel": 11.4
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 239,
+      "mittel": 0.019986260177535128,
+      "dt_mittel": 122.01148326359834
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 155,
+      "mittel": 0.00010390260633457339,
+      "dt_mittel": 429.5459516129032
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ],
+    "rate_ki": [
+     -0.002,
+     0.05
+    ],
+    "normtreue_ki": [
+     0.006737946999085467,
+     1.2214027581601699
+    ],
+    "halbwertszeit_ki": [
+     13.862943611198904,
+     null
+    ],
+    "p_null": 0.26573426573426573
+   }
+  }
+ },
+ "M2": {
+  "tb": {
+   "paare": 273,
+   "werke": 116,
+   "handschriften": 11,
+   "vergleichbare_stellen": 55206,
+   "spanne_jahre": 1231.5,
+   "uebereinstimmung_gleichzeitig": 0.7509221370937215,
+   "rate_je_jahr": 9.421593667730188e-05,
+   "normtreue_je_jahrhundert": 0.9906226504867155,
+   "halbwertszeit": 7357.005672342219,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 59,
+     "mittel": 0.7474732607202433,
+     "dt_mittel": 28.033898305084747
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 1,
+     "mittel": 0.5234375,
+     "dt_mittel": 270.5
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 49,
+     "mittel": 0.7414998411185256,
+     "dt_mittel": 436.9795918367347
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 36,
+     "mittel": 0.6831258926749643,
+     "dt_mittel": 787.5
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 128,
+     "mittel": 0.6690353601974384,
+     "dt_mittel": 1219.7421875
+    }
+   ],
+   "rate_ki": [
+    5.537867110877587e-05,
+    0.000156252449450127
+   ],
+   "normtreue_ki": [
+    0.9844961958579457,
+    0.9944774386084774
+   ],
+   "halbwertszeit_ki": [
+    4436.0724135795745,
+    12516.50078779341
+   ],
+   "normtreue_ki_handschriften": [
+    0.7775486587607354,
+    1.2214027581601699
+   ],
+   "p_null": 0.24275724275724275
+  },
+  "bbawpyramidentexte": {
+   "paare": 383,
+   "werke": 191,
+   "handschriften": 5,
+   "vergleichbare_stellen": 40658,
+   "spanne_jahre": 108.0,
+   "uebereinstimmung_gleichzeitig": 0.8207770675461812,
+   "rate_je_jahr": -0.0009083322018613636,
+   "normtreue_je_jahrhundert": 1.095086351729522,
+   "halbwertszeit": null,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 144,
+     "mittel": 0.8464329643296433,
+     "dt_mittel": 32.798611111111114
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 239,
+     "mittel": 0.8764652840396754,
+     "dt_mittel": 76.9163179916318
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ],
+   "rate_ki": [
+    -0.0016108542216606127,
+    9.505229414503312e-05
+   ],
+   "normtreue_ki": [
+    0.9905398024861471,
+    1.174785317234276
+   ],
+   "halbwertszeit_ki": [
+    7292.271972966001,
+    null
+   ],
+   "normtreue_ki_handschriften": [
+    0.7526658651545334,
+    1.2214027581601699
+   ],
+   "p_null": 0.9110889110889111
+  },
+  "sawlit": {
+   "paare": 46,
+   "werke": 17,
+   "handschriften": 56,
+   "vergleichbare_stellen": 6607,
+   "spanne_jahre": 711.5,
+   "uebereinstimmung_gleichzeitig": 0.8919019903029439,
+   "rate_je_jahr": 0.0002692924180373886,
+   "normtreue_je_jahrhundert": 0.9734301172468298,
+   "halbwertszeit": 2573.957282613537,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 20,
+     "mittel": 0.906030855539972,
+     "dt_mittel": 7.125
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 9,
+     "mittel": 0.8294283036551078,
+     "dt_mittel": 78.33333333333333
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 10,
+     "mittel": 0.865323435843054,
+     "dt_mittel": 238.1
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 7,
+     "mittel": 0.7366761274046042,
+     "dt_mittel": 676.4285714285714
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ],
+   "rate_ki": [
+    5.1323758501037786e-05,
+    0.0008531046209633996
+   ],
+   "normtreue_ki": [
+    0.9182271654137375,
+    0.9948807722874844
+   ],
+   "halbwertszeit_ki": [
+    812.4996202425718,
+    13505.386214961822
+   ],
+   "normtreue_ki_handschriften": [
+    0.8954674918740947,
+    1.0083417277672437
+   ],
+   "p_null": 0.04695304695304695
+  }
+ },
+ "M1_L500": {
+  "abschnitte": 1389,
+  "hintergrund": 7.256077141259499e-05,
+  "gruppen": {
+   "sawlit": {
+    "abschnitte": 353,
+    "cluster": 211,
+    "paare": 61298,
+    "handschriften": 525,
+    "spanne_jahre": 1918.1689999999999,
+    "niveau_gleichzeitig": 0.0035605090096280457,
+    "rate_je_jahr": 0.00585130010356781,
+    "normtreue_je_jahrhundert": 0.5570334369884055,
+    "halbwertszeit": 118.46037090753578,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 9672,
+      "mittel": 0.003410262086070565,
+      "dt_mittel": 20.800221877584786
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 9466,
+      "mittel": 0.0018040478609522889,
+      "dt_mittel": 90.50126494823581
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 8371,
+      "mittel": 0.0012228031763293677,
+      "dt_mittel": 218.27864771234022
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 12346,
+      "mittel": 0.00031862329853386297,
+      "dt_mittel": 467.3337388627896
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 18471,
+      "mittel": 0.00024314252485494082,
+      "dt_mittel": 731.0203165502679
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 2972,
+      "mittel": 5.1472141894173614e-05,
+      "dt_mittel": 1215.6804343876179
+     }
+    ]
+   },
+   "tb": {
+    "abschnitte": 217,
+    "cluster": 21,
+    "paare": 18323,
+    "handschriften": 17,
+    "spanne_jahre": 1231.5,
+    "niveau_gleichzeitig": 0.004691818301268377,
+    "rate_je_jahr": 0.00040674302160606334,
+    "normtreue_je_jahrhundert": 0.9601417951360343,
+    "halbwertszeit": 1704.14031400708,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 4187,
+      "mittel": 0.004950148405024862,
+      "dt_mittel": 24.813342727489854
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 218,
+      "mittel": 0.002766214626287703,
+      "dt_mittel": 96.57569724770637
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 309,
+      "mittel": 0.0013131938531448749,
+      "dt_mittel": 191.3128155339806
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 2649,
+      "mittel": 0.003748286028704799,
+      "dt_mittel": 443.63080407701017
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 1920,
+      "mittel": 0.003983025601255359,
+      "dt_mittel": 774.8125
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 9040,
+      "mittel": 0.002834779909921791,
+      "dt_mittel": 1214.421460176991
+     }
+    ]
+   },
+   "bbawpyramidentexte": {
+    "abschnitte": 197,
+    "cluster": 8,
+    "paare": 13560,
+    "handschriften": 6,
+    "spanne_jahre": 126.36799999999994,
+    "niveau_gleichzeitig": 0.005716153454194732,
+    "rate_je_jahr": 0.0001118042149898197,
+    "normtreue_je_jahrhundert": 0.9888818471342247,
+    "halbwertszeit": 6199.651601892287,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 5005,
+      "mittel": 0.005379390625451375,
+      "dt_mittel": 34.61118881118881
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 8555,
+      "mittel": 0.005853268863677765,
+      "dt_mittel": 75.07095078901227
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   },
+   "bbawgrabinschriften": {
+    "abschnitte": 185,
+    "cluster": 53,
+    "paare": 15890,
+    "handschriften": 63,
+    "spanne_jahre": 388.91600000000017,
+    "niveau_gleichzeitig": 0.05089124946650844,
+    "rate_je_jahr": 0.0016570542667811263,
+    "normtreue_je_jahrhundert": 0.8472957881665645,
+    "halbwertszeit": 418.3008332650462,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 5704,
+      "mittel": 0.04377473174317187,
+      "dt_mittel": 23.485603962131833
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 7943,
+      "mittel": 0.04981591109810107,
+      "dt_mittel": 99.98140828402367
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 2088,
+      "mittel": 0.025541525707996487,
+      "dt_mittel": 217.13710201149425
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 155,
+      "mittel": 0.013154053589649549,
+      "dt_mittel": 319.3198322580646
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   },
+   "sawmedizin": {
+    "abschnitte": 104,
+    "cluster": 19,
+    "paare": 3968,
+    "handschriften": 26,
+    "spanne_jahre": 1394.5,
+    "niveau_gleichzeitig": 0.002498792789753711,
+    "rate_je_jahr": 0.001116745759279694,
+    "normtreue_je_jahrhundert": 0.8943352483683572,
+    "halbwertszeit": 620.6848557965676,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 368,
+      "mittel": 0.0017595774026903886,
+      "dt_mittel": 39.12397826086956
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 859,
+      "mittel": 0.0008875674753462635,
+      "dt_mittel": 115.23071944121071
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 1715,
+      "mittel": 0.0031505391446231836,
+      "dt_mittel": 250.5193271137026
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 711,
+      "mittel": 0.0008150060826695834,
+      "dt_mittel": 401.06547679324893
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 275,
+      "mittel": 0.0002617428037286284,
+      "dt_mittel": 794.7941890909091
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 40,
+      "mittel": 0.0,
+      "dt_mittel": 1172.9985000000001
+     }
+    ]
+   },
+   "bbawbriefe": {
+    "abschnitte": 91,
+    "cluster": 90,
+    "paare": 4002,
+    "handschriften": 326,
+    "spanne_jahre": 1378.6779999999999,
+    "niveau_gleichzeitig": 0.02566309528888551,
+    "rate_je_jahr": 0.01307998263498151,
+    "normtreue_je_jahrhundert": 0.2703607059789672,
+    "halbwertszeit": 52.99297406604891,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 735,
+      "mittel": 0.018675488143242547,
+      "dt_mittel": 17.18960136054421
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 688,
+      "mittel": 0.010542286215567897,
+      "dt_mittel": 95.30435610465118
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 684,
+      "mittel": 0.002920562433191049,
+      "dt_mittel": 186.3555073099415
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 379,
+      "mittel": 0.0019830194570935413,
+      "dt_mittel": 467.3892849604221
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 1273,
+      "mittel": 0.0006639123735607594,
+      "dt_mittel": 770.5535569520816
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 243,
+      "mittel": 0.0004654155084509361,
+      "dt_mittel": 1132.1959794238685
+     }
+    ]
+   },
+   "bbawtotenlit": {
+    "abschnitte": 73,
+    "cluster": 9,
+    "paare": 1938,
+    "handschriften": 7,
+    "spanne_jahre": 495.0,
+    "niveau_gleichzeitig": 0.021534162915446076,
+    "rate_je_jahr": 0.006136675050749816,
+    "normtreue_je_jahrhundert": 0.5413617767373329,
+    "halbwertszeit": 112.95158613217632,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 242,
+      "mittel": 0.019576112690178456,
+      "dt_mittel": 11.491219008264462
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 1014,
+      "mittel": 0.010909430508158024,
+      "dt_mittel": 118.6873550295858
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 682,
+      "mittel": 5.275177987856323e-05,
+      "dt_mittel": 429.54595161290325
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   },
+   "bbawarchive": {
+    "abschnitte": 19,
+    "cluster": 19,
+    "paare": 156,
+    "handschriften": 505,
+    "spanne_jahre": 127.5,
+    "niveau_gleichzeitig": 0.007367293302277287,
+    "rate_je_jahr": 0.016274120266847575,
+    "normtreue_je_jahrhundert": 0.19643729133233215,
+    "halbwertszeit": 42.59199079239774,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 108,
+      "mittel": 0.0076005829710125376,
+      "dt_mittel": 0.3266851851852624
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 48,
+      "mittel": 0.0,
+      "dt_mittel": 115.73933333333264
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   },
+   "bbawhistbiospzt": {
+    "abschnitte": 14,
+    "cluster": 7,
+    "paare": 50,
+    "handschriften": 21,
+    "spanne_jahre": 330.5,
+    "niveau_gleichzeitig": 0.21504194993747222,
+    "rate_je_jahr": 0.05,
+    "normtreue_je_jahrhundert": 0.006737946999085467,
+    "halbwertszeit": 13.862943611198904,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 37,
+      "mittel": 0.011973205786605939,
+      "dt_mittel": 45.908162162162185
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 9,
+      "mittel": 0.0,
+      "dt_mittel": 281.4533333333333
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 4,
+      "mittel": 0.0,
+      "dt_mittel": 329.7265
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   }
+  }
+ },
+ "M1_streng": {
+  "abschnitte": 667,
+  "hintergrund": 0.00011925239655315719,
+  "gruppen": {
+   "sawlit": {
+    "abschnitte": 169,
+    "cluster": 128,
+    "paare": 13951,
+    "handschriften": 516,
+    "spanne_jahre": 1502.3000000000002,
+    "niveau_gleichzeitig": 0.005436061365324337,
+    "rate_je_jahr": 0.004965369170309222,
+    "normtreue_je_jahrhundert": 0.6086347669566191,
+    "halbwertszeit": 139.59630327280962,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 2172,
+      "mittel": 0.00523049126037986,
+      "dt_mittel": 21.493576657458572
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 2201,
+      "mittel": 0.003120068198554448,
+      "dt_mittel": 90.69078146297137
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 1931,
+      "mittel": 0.002125581269408465,
+      "dt_mittel": 217.6314609010875
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 2781,
+      "mittel": 0.0005720065019213665,
+      "dt_mittel": 466.2206697231212
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 4310,
+      "mittel": 0.000498453430216805,
+      "dt_mittel": 731.7915212296984
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 556,
+      "mittel": 1.4119994087835928e-05,
+      "dt_mittel": 1200.4157769784174
+     }
+    ]
+   },
+   "tb": {
+    "abschnitte": 108,
+    "cluster": 17,
+    "paare": 4509,
+    "handschriften": 17,
+    "spanne_jahre": 1231.5000000000002,
+    "niveau_gleichzeitig": 0.009466066716946197,
+    "rate_je_jahr": 0.0004391092444443159,
+    "normtreue_je_jahrhundert": 0.9570392024750286,
+    "halbwertszeit": 1578.53014786129,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 1012,
+      "mittel": 0.009851267338997409,
+      "dt_mittel": 24.95854347826087
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 64,
+      "mittel": 0.008103496680995866,
+      "dt_mittel": 89.49007812499997
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 51,
+      "mittel": 0.002797073508143055,
+      "dt_mittel": 190.438
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 662,
+      "mittel": 0.007239801572963776,
+      "dt_mittel": 444.6946827794562
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 480,
+      "mittel": 0.007459068955644332,
+      "dt_mittel": 773.0616249999999
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 2240,
+      "mittel": 0.005569207120909114,
+      "dt_mittel": 1215.164125
+     }
+    ]
+   },
+   "bbawpyramidentexte": {
+    "abschnitte": 95,
+    "cluster": 7,
+    "paare": 3181,
+    "handschriften": 5,
+    "spanne_jahre": 108.0,
+    "niveau_gleichzeitig": 0.011276158936007651,
+    "rate_je_jahr": 0.0003140267103803253,
+    "normtreue_je_jahrhundert": 0.9690852719274263,
+    "halbwertszeit": 2207.2873346361466,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 1193,
+      "mittel": 0.010397442387734738,
+      "dt_mittel": 34.84145850796312
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 1988,
+      "mittel": 0.011470775645040222,
+      "dt_mittel": 75.12577464788733
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   },
+   "bbawgrabinschriften": {
+    "abschnitte": 88,
+    "cluster": 41,
+    "paare": 3543,
+    "handschriften": 62,
+    "spanne_jahre": 351.2109999999998,
+    "niveau_gleichzeitig": 0.07979926459129465,
+    "rate_je_jahr": 0.001864591598297222,
+    "normtreue_je_jahrhundert": 0.8298924542084005,
+    "halbwertszeit": 371.74209150837083,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 1235,
+      "mittel": 0.06871404599038176,
+      "dt_mittel": 23.502107287449395
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 1790,
+      "mittel": 0.07609286039066512,
+      "dt_mittel": 98.37743659217877
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 498,
+      "mittel": 0.0382963035874225,
+      "dt_mittel": 216.49027208835346
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 20,
+      "mittel": 0.03166067105080728,
+      "dt_mittel": 326.05209999999994
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   },
+   "sawmedizin": {
+    "abschnitte": 50,
+    "cluster": 12,
+    "paare": 904,
+    "handschriften": 22,
+    "spanne_jahre": 1394.5,
+    "niveau_gleichzeitig": 0.004208275090645089,
+    "rate_je_jahr": 0.0012723204307489011,
+    "normtreue_je_jahrhundert": 0.8805293281568812,
+    "halbwertszeit": 544.7897902197103,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 83,
+      "mittel": 0.003525055346102455,
+      "dt_mittel": 43.36144578313253
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 205,
+      "mittel": 0.00150994677247738,
+      "dt_mittel": 117.5791024390244
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 390,
+      "mittel": 0.0049335180822960385,
+      "dt_mittel": 249.38055384615384
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 153,
+      "mittel": 0.0013101043052913238,
+      "dt_mittel": 404.9751111111111
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 63,
+      "mittel": 0.0006031906633446231,
+      "dt_mittel": 801.3046349206351
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 10,
+      "mittel": 0.0,
+      "dt_mittel": 1171.73
+     }
+    ]
+   },
+   "bbawbriefe": {
+    "abschnitte": 42,
+    "cluster": 42,
+    "paare": 821,
+    "handschriften": 299,
+    "spanne_jahre": 1038.3380000000002,
+    "niveau_gleichzeitig": 0.032125181326422794,
+    "rate_je_jahr": 0.011581972196097504,
+    "normtreue_je_jahrhundert": 0.3140518373461053,
+    "halbwertszeit": 59.84707689019477,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 145,
+      "mittel": 0.02455386353045033,
+      "dt_mittel": 18.977
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 166,
+      "mittel": 0.013123154363021734,
+      "dt_mittel": 92.86998493975904
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 154,
+      "mittel": 0.004878103063157659,
+      "dt_mittel": 181.50287012987016
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 58,
+      "mittel": 0.0024240137320224965,
+      "dt_mittel": 493.20615517241384
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 296,
+      "mittel": 0.0009814442138876458,
+      "dt_mittel": 769.4272804054054
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 2,
+      "mittel": 0.0,
+      "dt_mittel": 1019.9190000000001
+     }
+    ]
+   },
+   "bbawtotenlit": {
+    "abschnitte": 36,
+    "cluster": 7,
+    "paare": 454,
+    "handschriften": 7,
+    "spanne_jahre": 495.0,
+    "niveau_gleichzeitig": 0.041363595141207195,
+    "rate_je_jahr": 0.0061260693498470745,
+    "normtreue_je_jahrhundert": 0.5419362334176987,
+    "halbwertszeit": 113.14713252099381,
+    "klassen": [
+     {
+      "von": 0,
+      "bis": 50,
+      "paare": 60,
+      "mittel": 0.039920203137587006,
+      "dt_mittel": 11.4
+     },
+     {
+      "von": 50,
+      "bis": 150,
+      "paare": 239,
+      "mittel": 0.01990862908527316,
+      "dt_mittel": 122.06805439330543
+     },
+     {
+      "von": 150,
+      "bis": 300,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 300,
+      "bis": 600,
+      "paare": 155,
+      "mittel": 0.00010397901959122223,
+      "dt_mittel": 429.4270967741936
+     },
+     {
+      "von": 600,
+      "bis": 1000,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     },
+     {
+      "von": 1000,
+      "bis": null,
+      "paare": 0,
+      "mittel": null,
+      "dt_mittel": null
+     }
+    ]
+   }
+  }
+ },
+ "M2_streng": {
+  "tb": {
+   "paare": 272,
+   "werke": 115,
+   "handschriften": 11,
+   "vergleichbare_stellen": 54589,
+   "spanne_jahre": 1231.5,
+   "uebereinstimmung_gleichzeitig": 0.7522102146397303,
+   "rate_je_jahr": 9.051668723479152e-05,
+   "normtreue_je_jahrhundert": 0.9909891743044423,
+   "halbwertszeit": 7657.672874858849,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 59,
+     "mittel": 0.7486166007905138,
+     "dt_mittel": 28.033898305084747
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 1,
+     "mittel": 0.5,
+     "dt_mittel": 270.5
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 49,
+     "mittel": 0.7480136208853575,
+     "dt_mittel": 436.9795918367347
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 36,
+     "mittel": 0.6833605887162715,
+     "dt_mittel": 787.5
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 127,
+     "mittel": 0.6732446670696951,
+     "dt_mittel": 1219.6496062992126
+    }
+   ]
+  },
+  "bbawpyramidentexte": {
+   "paare": 359,
+   "werke": 179,
+   "handschriften": 5,
+   "vergleichbare_stellen": 38181,
+   "spanne_jahre": 108.0,
+   "uebereinstimmung_gleichzeitig": 0.8225421922156088,
+   "rate_je_jahr": -0.0008974348793096059,
+   "normtreue_je_jahrhundert": 1.093893650790211,
+   "halbwertszeit": null,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 139,
+     "mittel": 0.847948717948718,
+     "dt_mittel": 32.776978417266186
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 220,
+     "mittel": 0.8780390593862096,
+     "dt_mittel": 77.93181818181819
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ]
+  },
+  "sawlit": {
+   "paare": 36,
+   "werke": 14,
+   "handschriften": 46,
+   "vergleichbare_stellen": 5856,
+   "spanne_jahre": 711.5,
+   "uebereinstimmung_gleichzeitig": 0.9084996097700042,
+   "rate_je_jahr": 0.0002882668807736038,
+   "normtreue_je_jahrhundert": 0.9715848371118173,
+   "halbwertszeit": 2404.53283672335,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 15,
+     "mittel": 0.9107452339688041,
+     "dt_mittel": 6.966666666666667
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 7,
+     "mittel": 0.8559814169570267,
+     "dt_mittel": 81.71428571428571
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 8,
+     "mittel": 0.8938401048492791,
+     "dt_mittel": 237.625
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 6,
+     "mittel": 0.737491877842755,
+     "dt_mittel": 670.5833333333334
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ]
+  }
+ },
+ "M2_gleicher_bearbeiter": {
+  "tb": {
+   "paare": 273,
+   "werke": 116,
+   "handschriften": 11,
+   "vergleichbare_stellen": 55206,
+   "spanne_jahre": 1231.5,
+   "uebereinstimmung_gleichzeitig": 0.7509221370937215,
+   "rate_je_jahr": 9.421593667730188e-05,
+   "normtreue_je_jahrhundert": 0.9906226504867155,
+   "halbwertszeit": 7357.005672342219,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 59,
+     "mittel": 0.7474732607202433,
+     "dt_mittel": 28.033898305084747
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 1,
+     "mittel": 0.5234375,
+     "dt_mittel": 270.5
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 49,
+     "mittel": 0.7414998411185256,
+     "dt_mittel": 436.9795918367347
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 36,
+     "mittel": 0.6831258926749643,
+     "dt_mittel": 787.5
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 128,
+     "mittel": 0.6690353601974384,
+     "dt_mittel": 1219.7421875
+    }
+   ]
+  },
+  "bbawpyramidentexte": {
+   "paare": 383,
+   "werke": 191,
+   "handschriften": 5,
+   "vergleichbare_stellen": 40658,
+   "spanne_jahre": 108.0,
+   "uebereinstimmung_gleichzeitig": 0.8207770675461812,
+   "rate_je_jahr": -0.0009083322018613636,
+   "normtreue_je_jahrhundert": 1.095086351729522,
+   "halbwertszeit": null,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 144,
+     "mittel": 0.8464329643296433,
+     "dt_mittel": 32.798611111111114
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 239,
+     "mittel": 0.8764652840396754,
+     "dt_mittel": 76.9163179916318
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ]
+  },
+  "sawlit": {
+   "paare": 46,
+   "werke": 17,
+   "handschriften": 56,
+   "vergleichbare_stellen": 6607,
+   "spanne_jahre": 711.5,
+   "uebereinstimmung_gleichzeitig": 0.8919019903029439,
+   "rate_je_jahr": 0.0002692924180373886,
+   "normtreue_je_jahrhundert": 0.9734301172468298,
+   "halbwertszeit": 2573.957282613537,
+   "klassen": [
+    {
+     "von": 0,
+     "bis": 50,
+     "paare": 20,
+     "mittel": 0.906030855539972,
+     "dt_mittel": 7.125
+    },
+    {
+     "von": 50,
+     "bis": 150,
+     "paare": 9,
+     "mittel": 0.8294283036551078,
+     "dt_mittel": 78.33333333333333
+    },
+    {
+     "von": 150,
+     "bis": 300,
+     "paare": 10,
+     "mittel": 0.865323435843054,
+     "dt_mittel": 238.1
+    },
+    {
+     "von": 300,
+     "bis": 600,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    },
+    {
+     "von": 600,
+     "bis": 1000,
+     "paare": 7,
+     "mittel": 0.7366761274046042,
+     "dt_mittel": 676.4285714285714
+    },
+    {
+     "von": 1000,
+     "bis": null,
+     "paare": 0,
+     "mittel": null,
+     "dt_mittel": null
+    }
+   ]
+  }
+ }
+}

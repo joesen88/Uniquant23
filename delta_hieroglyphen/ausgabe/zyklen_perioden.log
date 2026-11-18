@@ -1,0 +1,64 @@
+1 Jahreszahlen, je Werk und Datum einmal gezaehlt: 196 | hoechste 56 | Mittel 11.5 | Median 7
+   Obergrenze Sothis-Vierjahr     : 123 Angaben darueber (63 %)
+   Obergrenze Mond (25 Jahre)     :  27 Angaben darueber (14 %)
+   Obergrenze Sedfest (30 Jahre)  :  19 Angaben darueber (10 %)
+   Obergrenze Sothis (1460 Jahre) :   0 Angaben darueber (0 %)
+   Verteilung: gleichmaessig ueber 1..56 (ein fester Zyklus) log-Likelihood -789; Zerfall mit konstanter Endrate (geometrisch, mittlere Dauer 11.5 Jahre, Halbwertszeit 7.6 Jahre) -666; Unterschied 123
+   Angaben je Fuenfjahresklasse: 1-5: 85, 6-10: 39, 11-15: 18, 16-20: 14, 21-25: 13, 26-30: 8, 31-35: 9, 36-40: 5, 41-45: 3, 46-50: 1, 51-56: 1
+   Anteil der Angaben mit Jahr >= x: 1: 100 %, 5: 63 %, 10: 39 %, 20: 20 %, 30: 12 %, 40: 3 %, 50: 1 %
+
+2 Sothis
+   Aufgang am Tag 226 des Jahres | pBerlin 10012 (bbawbriefe), Edition -1872..-1854 | Jahresangaben im Text: [] | HA,t(j)-a (j)m(,j)-rA-⸢Hw,t-nTr⸣ nb-kA,w-[raw] Dd n Xr(,j)-HAb,t-Hr(,j)-tp ppy-Htp(,w) 〈r〉-Dd rx =k r-n,tt xpr
+   Aufgang am Tag 309 des Jahres | Papyrus Ebers (sawmedizin), Edition -1649..-1293 | Jahresangaben im Text: ['9'] | wp-rnp,t Abd 3 Sm,w sw 9 pr,t-spd,t
+   Verschiebung 83 Tage -> 332 Jahre (gleicher Beobachtungsort; 329 bis 335); mit rund 3,5 Tagen Unterschied zwischen Illahun und Theben 346 Jahre
+   Radiokarbon, unabhaengig von beiden Daten: Jahr 7 Sesostris' III. bis Jahr 9 Amenophis' I. = 340 Jahre, +/- 14
+   Startmarke: vom Ebers-Datum bis zum Aufgang am Neujahrstag fehlen 57 Tage -> 228 Jahre nach Jahr 9 (225 bis 231), also 236 Jahre nach dem Amtsantritt Amenophis' I.
+      Radiokarbon: Amtsantritt Amenophis I. 1541-1527 -> Marke 1305 bis 1291 v. Chr.; Amtsantritt Ramses I. 1308-1297, Ramses II. 1292-1281 (Sethos I. dazwischen)
+      Chronologie der Edition: Jahr 9 = 1517 v. Chr. (Theben) -> Marke 1289 v. Chr.; Sethos I. laut Edition 1290-1280; bei Beobachtung in Memphis (1537) -> 1309 v. Chr., unter Haremhab (1319-1293)
+   Jahresangaben, eroeffnet mit 'Beginn der Ewigkeit': [(4, 'Sethos I.'), (1, 'Sethos I.')]
+
+3 Mond
+   datierte Mondbeobachtungen unter einem Koenigsnamen im Korpus: keine | Mondfeste in Fest- und Opferlisten: Halbmonatsfest (Tp.j-smd.t) 45, 15. Mondtag (tp-smd.t) 14, zweiter Mondtag (ꜣbd.w) 9, Monatsanfang (tp-ꜣbd) 8, Neumondtag (psḏn.tjw) 7 (zusammen 83)
+   von aussen (Thutmosis III.): zwei Neumonde, Jahr 23 Tag 261 und Jahr 24 Tag 180
+      Jahreswechsel am Antrittstag (Tag 244): Abstand 649 Tage = 21.98 Mondmonate
+      Jahreswechsel am Neujahrstag:           Abstand 284 Tage = 9.62 Mondmonate
+
+4 Sedfest
+   'erstes Mal des Sedfestes': 〈Hammamat C-M 063〉         -2351 Pepi I.        Jahresangabe im Text: []
+   'erstes Mal des Sedfestes': 〈TEXT〉                     -2512 Sahure         Jahresangabe im Text: []
+   'erstes Mal des Sedfestes': 〈Hammamat C-M 103〉         -2351 Pepi I.        Jahresangabe im Text: []
+   'erstes Mal des Sedfestes': 〈Sinai Nr. 16〉             -2351 Pepi I.        Jahresangabe im Text: ['nach 18']
+   'erstes Mal des Sedfestes': 〈Hammamat C-M 062〉         -2351 Pepi I.        Jahresangabe im Text: []
+   'erstes Mal des Sedfestes': 〈Hammamat C-M 107〉         -2351 Pepi I.        Jahresangabe im Text: ['nach 18']
+   'erstes Mal des Sedfestes': 〈Hammamat G 021〉           -2351 Pepi I.        Jahresangabe im Text: []
+   Angaben ueber Jahr 25 (Jahr | Werk | Datierung der Handschrift laut Edition | Thronname in der Formel):
+      26 | Die Lehre des Amunnacht                            | Ramses III.                | -
+      26 | Stele Louvre C 284 ("Bentresch-Stele")             | Makedonen, Ptolemäer       | -
+      27 | Erste Eintragung                                   | Amenophis IV. / Echnaton   | Nb-mꜣꜥ.t-Rꜥw
+      27 | Briefliche Anweisung an Hor-em-saf                 | Amenemhet III.             | -
+      30 | Brief des Sobekhetep                               | Amenemhet III.             | -
+      30 | Sinuhe                                             | 19. Dyn.                   | -
+      30 | 〈Recto 〉Sinuhe                                     | 20. Dyn.                   | -
+      30 | 〈Verso: 〉Sinuhe                                    | 13. / 14. Dynastie         | -
+      31 | 〈Hatnub Graffito 07〉                               | Pepi II.                   | -
+      31 | 〈Hatnub Graffito 09〉                               | 8. Dyn.                    | -
+      33 | Gurob II.2                                         | Amenophis IV. / Echnaton   | -
+      33 | Gurob II.1                                         | Amenophis IV. / Echnaton   | Nb-mꜣꜥ.t-Rꜥw
+      33 | Stele Louvre C 284 ("Bentresch-Stele")             | Makedonen, Ptolemäer       | Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw
+      33 | 23.7-25.2: Brief über den Transport und das Aufric | Sethos II.                 | -
+      33 | 〈Stele des Antefiqer (Leiden V 3 = AP 7)〉          | Sesostris I.               | Ḫpr-kꜣ-Rꜥw
+      34 | Textfeld                                           | Ramses II.                 | Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw
+      34 | 〈Stele des Djedj-iqu (Berlin 1199)〉                | Sesostris I.               | Ḫpr-kꜣ-Rꜥw
+      36 | Admin. Brief (Insertion A)                         | Mittleres Reich            | -
+      37 | B:Brief des Chacheperra-seneb                      | Amenemhet III.             | -
+      37 | C:Brief des Haqaitef                               | Amenemhet III.             | -
+      38 | Brief des Iuseneb                                  | Amenemhet III.             | -
+      39 | 〈Stele des Antef, Sohn der Senet (BM EA 572)〉      | Sesostris I.               | -
+      43 | Biographie des Amenemhat                           | Sesostris I.               | Ḫpr-kꜣ-Rꜥw
+      43 | Biographie des Amenemhat                           | Sesostris I.               | -
+      44 | 〈Stele des Wepwawetaa (Leiden V4 = AP 63)〉         | Sesostris I.               | -
+      46 | 〈Stele des Meru (Turin Cat. 1447)〉                 | Mentuhotep II. Nebhepetre  | -
+      56 | Vso 17: Datierungsprotokoll des 56. Regierungsjahr | Ramses II.                 | Wsr-mꜣꜥ.t-Rꜥw-stp-n-Rꜥw
+
+5 Viehzaehlung (Texte vor 2100 v. Chr.)
+   'Jahr des n-ten Mals': 49 | 'Jahr nach dem n-ten Mal': 12 (20 %) | bei strenger Zweijahreszaehlung waeren 50 % zu erwarten, p = 9.8e-07 | hoechste Zahlen: [31, 25, 18, 16, 15, 14]

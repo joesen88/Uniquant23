@@ -1,0 +1,32 @@
+/home/claude/scripts/halbwertszeit.py:78: RuntimeWarning: invalid value encountered in scalar divide
+  A = max(0.0, float((w * y * e).sum() / (w * e * e).sum()))
+A  Reihenfolge der Vorhersagen (Anteil der 1000 Ziehungen)
+   M1: {'V1_tb_ueber_literatur': 0.982, 'V1_literatur_ueber_briefen': 0.955, 'V1_ganz': 0.937, 'tb_ueber_briefen': 0.99, 'tb_ueber_grabinschriften': 0.806, 'tb_zerfall_groesser_null': 0.802}
+      Totenbuch          Normtreue/Jh. Median 95.9%, Anteil der Ziehungen an der Suchgrenze 2.5%
+      Literatur          Normtreue/Jh. Median 59.7%, Anteil der Ziehungen an der Suchgrenze 0.1%
+      Briefe             Normtreue/Jh. Median 31.8%, Anteil der Ziehungen an der Suchgrenze 0.1%
+      Grabinschriften    Normtreue/Jh. Median 83.6%, Anteil der Ziehungen an der Suchgrenze 0.0%
+      Pyramidentexte     Normtreue/Jh. Median 82.1%, Anteil der Ziehungen an der Suchgrenze 20.3%
+      Medizin            Normtreue/Jh. Median 85.6%, Anteil der Ziehungen an der Suchgrenze 8.5%
+
+B  Abschreibtreue ohne und mit Namensfeld
+   Totenbuch        ohne Namensfeld: Paare  273 | gleichzeitig (Modell) 75.1% | 0-50 Jahre 74.7% | alle Paare 70.7% | Normtreue/Jh. 99.06% [98.48%, 99.45%]
+   Pyramidentexte   ohne Namensfeld: Paare  383 | gleichzeitig (Modell) 82.1% | 0-50 Jahre 84.6% | alle Paare 86.4% | Normtreue/Jh. 109.51% [99.37%, 117.64%]
+   Literatur        ohne Namensfeld: Paare   46 | gleichzeitig (Modell) 89.2% | 0-50 Jahre 90.6% | alle Paare 80.7% | Normtreue/Jh. 97.34% [92.00%, 99.24%]
+   Totenbuch        mit Namensfeld : Paare  273 | gleichzeitig (Modell) 75.1% | 0-50 Jahre 74.7% | alle Paare 70.7% | Normtreue/Jh. 99.06% [98.45%, 99.43%]
+   Pyramidentexte   mit Namensfeld : Paare  393 | gleichzeitig (Modell) 85.8% | 0-50 Jahre 89.1% | alle Paare 90.3% | Normtreue/Jh. 109.34% [100.36%, 115.69%]
+   Literatur        mit Namensfeld : Paare   46 | gleichzeitig (Modell) 89.2% | 0-50 Jahre 90.7% | alle Paare 80.7% | Normtreue/Jh. 97.34% [91.81%, 99.45%]
+   V2 (Totenbuch treuer als Literatur), Anteil der Ziehungen: 0.968
+
+C  Totenbuch: Handschriftenpaare mit mindestens 1000 vergleichbaren Stellen
+   inv:cg 25095           ( -1413) - inv:ea 10477           ( -1413):     0 Jahre |  19 Sprueche,   5847 Stellen | gleich 71.9%
+   inv:cg 25095           ( -1413) - inv:cg 51189, j.e. 958 ( -1370):    43 Jahre |  12 Sprueche,   4724 Stellen | gleich 70.9%
+   inv:ea 10477           ( -1413) - inv:cg 51189, j.e. 958 ( -1370):    43 Jahre |  26 Sprueche,   9681 Stellen | gleich 78.3%
+   inv:cg 51189, j.e. 958 ( -1370) - inv:10793              (  -969):   401 Jahre |   8 Sprueche,   1394 Stellen | gleich 71.0%
+   inv:ea 10477           ( -1413) - inv:10793              (  -969):   444 Jahre |  35 Sprueche,   4205 Stellen | gleich 74.6%
+   inv:10793              (  -969) - inv:1791               (  -182):   788 Jahre |  36 Sprueche,   4901 Stellen | gleich 68.3%
+   inv:cg 51189, j.e. 958 ( -1370) - inv:1791               (  -182):  1188 Jahre |  16 Sprueche,   4623 Stellen | gleich 66.0%
+   inv:ea 10477           ( -1413) - inv:1791               (  -182):  1232 Jahre |  86 Sprueche,  15596 Stellen | gleich 67.7%
+   inv:cg 25095           ( -1413) - inv:1791               (  -182):  1232 Jahre |  15 Sprueche,   2230 Stellen | gleich 67.4%
+
+geschrieben: /home/claude/out/halbwertszeit_nachtrag.json

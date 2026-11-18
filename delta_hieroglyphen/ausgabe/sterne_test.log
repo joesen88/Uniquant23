@@ -1,0 +1,38 @@
+A Stern- und Sternbildnamen: 40 Lemmata, 633 Belege; davon in den Pyramidentexten 422, im Totenbuch 131
+    158 Jḫm-sk         Nicht-Untergehender (Zirkumpolarstern)         {'bbawpyramidentexte': 144, 'tb': 11}
+    152 sbꜣ            Stern                                          {'bbawpyramidentexte': 90, 'tb': 31}
+     63 Spd.t          Sothis (Stern des Sirius als Göttin)           {'bbawpyramidentexte': 58, 'bbawtotenlit': 5}
+     59 Sꜣḥ            Orion (Sternbild)                              {'bbawpyramidentexte': 41, 'tb': 16}
+     44 nṯr-dwꜣ.j      Morgendlicher Gott (Morgenstern, Venus)        {'bbawpyramidentexte': 33, 'tb': 8}
+     23 ḫꜣ-bꜣ=s        Sterne                                         {'tb': 14, 'bbawpyramidentexte': 6}
+     21 Jḫm-wrḏ        Nicht-Ermüdender (Zirkumpolarstern)            {'tb': 13, 'bbawpyramidentexte': 4}
+     16 Spd.t          Sirius                                         {'tb': 15, 'bbawbriefe': 1}
+     16 sḥd            [ein Stern]                                    {'bbawpyramidentexte': 16}
+      9 Ꜣḫꜣḫ           Achach (Sterne eines Sternbildes)              {'bbawpyramidentexte': 5, 'tb': 2}
+      7 nḫḫ            Dauernder (Bez. eines Sterns)                  {'bbawpyramidentexte': 7}
+      6 jm.j-Spd.t     der in Sothis ist (u.a. Horus)                 {'bbawpyramidentexte': 6}
+      5 ḫpš            [Sternbild des Großen Bären]                   {'tb': 5}
+      4 srwḏ-knm.tw-r- der die Kenemet-Sterne (am Himmel) befestigt b {'bbawtotenlit': 4}
+
+B Koenigsname und Sternwort im selben Satz
+   bbawpyramidentexte     Saetze  14016 | mit Koenig  4237 | mit Stern  354 | mit beiden  123 (erwartet  107.0) | Verhaeltnis 1.15 | p = 0.036
+   sawlit                 Saetze  23505 | mit Koenig   416 | mit Stern   29 | mit beiden    1 (erwartet    0.5) | Verhaeltnis 1.95 | p = 0.4
+   bbawamarna             Saetze   2634 | mit Koenig   385 | mit Stern    1 | mit beiden    0 (erwartet    0.1) | Verhaeltnis 0.00 | p = 1
+   bbawbriefe             Saetze   3860 | mit Koenig    66 | mit Stern    2 | mit beiden    0 (erwartet    0.0) | Verhaeltnis 0.00 | p = 1
+   bbawfelsinschriften    Saetze    445 | mit Koenig    64 | mit Stern    0 | mit beiden    0 (erwartet    0.0) | Verhaeltnis 0.00 | p = 1
+   bbawgrabinschriften    Saetze  18255 | mit Koenig    59 | mit Stern    0 | mit beiden    0 (erwartet    0.0) | Verhaeltnis 0.00 | p = 1
+   bbawhistbiospzt        Saetze   1110 | mit Koenig    65 | mit Stern    1 | mit beiden    0 (erwartet    0.1) | Verhaeltnis 0.00 | p = 1
+   bbawramessiden         Saetze   4061 | mit Koenig   360 | mit Stern    6 | mit beiden    0 (erwartet    0.5) | Verhaeltnis 0.00 | p = 1
+   Pyramidentexte: 123 Saetze mit Koenig und Stern; Beispiele:
+      O (du) 'Dessen Gesicht hinter ihn gerichtet ist', Pförtner des Osiris, sag dem Osiris: "Veranlasse, daß diesem Pepi jene deine Barke gebracht werde, in der deine Reinen ü
+      Dieser Pepi ist zu der großen Insel inmitten des Opfergefildes gegangen, auf der sich die Götter und die Schwalben niederlassen - die Schwalben sind die Nicht-Untergehend
+      Pepi ist das Kind mit vor den Nicht-Untergehenden verborgenen Eigenschaften.
+      Die Schwester des Pepi ist Sothis, der Abkömmling dieses Pepi ist der Morgenstern.
+      "Wie schön ist es doch zu sehen", sagt Isis, "wie befriedigend ist es doch zu schauen", sagt Nephthys, "auf den Vater, auf Nemti-em-za-ef Merenre, wie er aber zum Himmel 
+      O (du) 'Dessen Gesicht hinter ihn gerichtet ist', Pförtner des Osiris, sag dem Osiris: "Veranlasse, daß diesem Pepi jene deine Barke gebracht werde, in der deine Reinen ü
+
+C Sternname als Bestandteil eines Koenigsnamens
+   257 Koenigsnamen, 34 Sternnamen; gemeinsame Bestandteile: ['ḫpš']
+
+D Lemmata mit 'Dekan' in der Uebersetzung: {('Bꜣk.tj', 'Bakti (Dekansterne)'): 1, ('Spd', '[der dem Sirius entsprechende Dekan]'): 1, ('Jḫm-wrḏ', '[Bez. für Planet oder Dekanstern]'): 8, (None, '[ein Dekansternbild]'): 1, ('Rmn-sꜣḥ', '[Dekan]'): 1}
+E 'Tag 70' / '70 Tage': 0 Saetze

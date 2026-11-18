@@ -1,0 +1,51 @@
+748 Abschnitte; Zellen (Teilkorpus|Epoche) mit mindestens 10 Abschnitten:
+   {'bbawamarna|NR': 27, 'bbawarchive|AR': 11, 'bbawbriefe|MR': 12, 'bbawbriefe|NR': 31, 'bbawgrabinschriften|AR': 99, 'bbawpyramidentexte|AR': 112, 'bbawramessiden|NR': 38, 'bbawtempelbib|SpZ': 11, 'bbawtotenlit|SpZ': 37, 'sawlit|MR': 62, 'sawlit|NR': 107, 'sawlit|SpZ': 17, 'sawmedizin|MR': 35, 'sawmedizin|NR': 18, 'tb|NR': 57, 'tb|SpZ': 53}
+
+V1/V2  gleiche Textgruppe ueber eine Epochengrenze
+   Textgruppe   Epochen          n | Wortlaut geteilt: ueber die Grenze | innerhalb | fremde Gruppe | Drift B/W alle Paare [95%-KI] | ohne Parallelen | Epoche erkannt (Zufall)
+   bbawbriefe   MR-NR      12/31   |   0.5% [0.4%, 0.6%] |   6.7% |  0.2% | 1.554 [1.475, 1.643] | 1.527 | 100.0% (56.9%)
+   sawlit       MR-NR      62/107  |   0.6% [0.2%, 1.1%] |   4.0% |  0.1% | 1.140 [1.103, 1.189] | 1.137 | 88.8% (52.6%)
+   sawlit       MR-SpZ     62/17   |   0.1% [0.0%, 0.1%] |   3.9% |  0.1% | 1.252 [1.177, 1.342] | 1.248 | 97.5% (64.5%)
+   sawlit       NR-SpZ    107/17   |   0.4% [0.3%, 0.5%] |   3.2% |  0.1% | 1.070 [1.022, 1.124] | 1.068 | 91.1% (75.6%)
+   sawmedizin   MR-NR      35/18   |   2.4% [1.7%, 3.2%] |   5.0% |  0.0% | 1.069 [0.976, 1.227] | 1.063 | 79.2% (51.3%)
+   tb           NR-SpZ     57/53   |   4.7% [4.3%, 5.2%] |   5.4% |  0.1% | 1.021 [1.010, 1.033] | 1.020 | 56.4% (48.6%)
+
+V3  Wortlaut der Pyramidentexte (AR) in anderen Textgruppen: Anteil der Fuenfergruppen, die in 10 Zielabschnitten stehen
+   -> bbawamarna|NR                ( 27):  0.07% [0.04%, 0.10%]
+   -> bbawarchive|AR               ( 11):  0.00% [0.00%, 0.00%]
+   -> bbawbriefe|MR                ( 12):  0.00% [0.00%, 0.01%]
+   -> bbawbriefe|NR                ( 31):  0.01% [0.00%, 0.01%]
+   -> bbawgrabinschriften|AR       ( 99):  0.01% [0.01%, 0.02%]
+   -> bbawpyramidentexte|AR        (112):  9.62% [9.08%, 10.20%]
+   -> bbawramessiden|NR            ( 38):  0.02% [0.02%, 0.03%]
+   -> bbawtempelbib|SpZ            ( 11):  0.03% [0.02%, 0.05%]
+   -> bbawtotenlit|SpZ             ( 37):  0.07% [0.05%, 0.08%]
+   -> sawlit|MR                    ( 62):  0.03% [0.02%, 0.04%]
+   -> sawlit|NR                    (107):  0.01% [0.00%, 0.01%]
+   -> sawlit|SpZ                   ( 17):  0.00% [0.00%, 0.01%]
+   -> sawmedizin|MR                ( 35):  0.00% [0.00%, 0.01%]
+   -> sawmedizin|NR                ( 18):  0.01% [0.00%, 0.01%]
+   -> tb|NR                        ( 57):  0.10% [0.08%, 0.11%]
+   -> tb|SpZ                       ( 53):  0.05% [0.04%, 0.06%]
+   Gegenrichtung: Anteil der Fuenfergruppen eines Abschnitts, die in 10 Pyramidentext-Abschnitten stehen
+   <- bbawamarna|NR                ( 27):  0.04% [0.00%, 0.12%]
+   <- bbawarchive|AR               ( 11):  0.00% [0.00%, 0.00%]
+   <- bbawbriefe|MR                ( 12):  0.00% [0.00%, 0.01%]
+   <- bbawbriefe|NR                ( 31):  0.00% [0.00%, 0.01%]
+   <- bbawgrabinschriften|AR       ( 99):  0.03% [0.02%, 0.03%]
+   <- bbawramessiden|NR            ( 38):  0.02% [0.01%, 0.03%]
+   <- bbawtempelbib|SpZ            ( 11):  0.03% [0.00%, 0.08%]
+   <- bbawtotenlit|SpZ             ( 37):  0.06% [0.03%, 0.11%]
+   <- sawlit|MR                    ( 62):  0.03% [0.02%, 0.04%]
+   <- sawlit|NR                    (107):  0.01% [0.00%, 0.01%]
+   <- sawlit|SpZ                   ( 17):  0.00% [0.00%, 0.01%]
+   <- sawmedizin|MR                ( 35):  0.00% [0.00%, 0.01%]
+   <- sawmedizin|NR                ( 18):  0.01% [0.00%, 0.02%]
+   <- tb|NR                        ( 57):  0.09% [0.05%, 0.14%]
+   <- tb|SpZ                       ( 53):  0.05% [0.03%, 0.07%]
+
+geschrieben: /home/claude/out/norm_ergebnis.json
+
+real	0m49.349s
+user	0m48.137s
+sys	0m0.469s
