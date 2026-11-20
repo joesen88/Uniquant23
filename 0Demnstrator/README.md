@@ -1,7 +1,7 @@
 # Zyklus23 · Demonstrator 1.0.0
 
 Lokaler interaktiver Viewer der Zyklus23-Zählung und eines 3D-Sonnensystems.
-
+Ligt im Ordner 0Demonstrator
 ## Start
 
 1. ZIP vollständig entpacken.
