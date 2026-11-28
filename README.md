@@ -1,0 +1,1 @@
+> **Machine-Verified Formalization (Lean 4):** All core theorems, rational time-quantization bounds, phase lattices (`299 = 13 × 23`), and integer solvers from this repository are formally verified in Lean 4 without `sorry` at **[joesen88/UNIQUANT-Formal](https://github.com)** (`DOI: 10.5281/zenodo.24570873`).
